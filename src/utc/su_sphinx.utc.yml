@@ -1,0 +1,153 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTC
+__struct_id: 4294967295
+Appearance_Type: {type: word, value: 365}
+BodyBag: {type: byte, value: 0}
+CRAdjust: {type: int, value: 0}
+Cha: {type: byte, value: 7}
+ChallengeRating: {type: float, value: 12.0}
+ClassList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 23}
+    ClassLevel: {type: short, value: 16}
+Comment: {type: cexostr, value: ''}
+Con: {type: byte, value: 18}
+Conversation: {type: resref, value: ''}
+CurrentHitPoints: {type: short, value: 66}
+DecayTime: {type: dword, value: 5000}
+Deity: {type: cexostr, value: ''}
+Description:
+  type: cexolocstr
+  str_ref: 12549
+  value:
+    0: Sphinxes are enigmatic creatures with great, feathery wings and leonine bodies.  Gynosphinxes
+      are the female counterparts of androsphinxes.  They have the bodies of winged
+      lions with female humanoid facial features.  They gladly bargain for treasure
+      or service but constantly seek out challenges to their staggering intellects.  Riddles,
+      puzzles and other such things delight them to no end.
+Dex: {type: byte, value: 10}
+Disarmable: {type: byte, value: 0}
+Equip_ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16384, EquippedRes: {type: resref,
+      value: nw_it_crewpsp005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32768, EquippedRes: {type: resref,
+      value: nw_it_crewpsp005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 65536, EquippedRes: {type: resref,
+      value: nw_it_crewps005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 131072, EquippedRes: {type: resref,
+      value: su_earth_prop}}
+FactionID: {type: word, value: 1}
+FeatList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 228}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 289}}
+FirstName:
+  type: cexolocstr
+  str_ref: 12550
+  value:
+    0: Sphinx
+Gender: {type: byte, value: 4}
+GoodEvil: {type: byte, value: 100}
+HitPoints: {type: short, value: 66}
+Int: {type: byte, value: 6}
+Interruptable: {type: byte, value: 1}
+IsImmortal: {type: byte, value: 0}
+IsPC: {type: byte, value: 0}
+LastName:
+  type: cexolocstr
+  value: {}
+LawfulChaotic: {type: byte, value: 0}
+Lootable: {type: byte, value: 0}
+MaxHitPoints: {type: short, value: 130}
+NaturalAC: {type: byte, value: 20}
+NoPermDeath: {type: byte, value: 0}
+PaletteID: {type: byte, value: 46}
+PerceptionRange: {type: byte, value: 11}
+Phenotype: {type: int, value: 0}
+Plot: {type: byte, value: 0}
+PortraitId: {type: word, value: 621}
+Race: {type: byte, value: 19}
+ScriptAttacked: {type: resref, value: nw_ch_ac5}
+ScriptDamaged: {type: resref, value: nw_ch_ac6}
+ScriptDeath: {type: resref, value: nw_ch_ac7}
+ScriptDialogue: {type: resref, value: nw_ch_ac4}
+ScriptDisturbed: {type: resref, value: nw_ch_ac8}
+ScriptEndRound: {type: resref, value: nw_ch_ac3}
+ScriptHeartbeat: {type: resref, value: nw_ch_ac1}
+ScriptOnBlocked: {type: resref, value: nw_ch_ace}
+ScriptOnNotice: {type: resref, value: nw_ch_ac2}
+ScriptRested: {type: resref, value: ''}
+ScriptSpawn: {type: resref, value: nw_ch_ac9}
+ScriptSpellAt: {type: resref, value: nw_ch_acb}
+ScriptUserDefine: {type: resref, value: nw_ch_acd}
+SkillList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 12}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 9}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 4}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 4}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+SoundSetFile: {type: word, value: 320}
+SpecAbilityList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 266}
+    SpellCasterLevel: {type: byte, value: 0}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 271}
+    SpellCasterLevel: {type: byte, value: 0}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 271}
+    SpellCasterLevel: {type: byte, value: 0}
+    SpellFlags: {type: byte, value: 1}
+StartingPackage: {type: byte, value: 0}
+Str: {type: byte, value: 24}
+Subrace: {type: cexostr, value: ''}
+Tag: {type: cexostr, value: SU_SPHINX}
+Tail_New: {type: dword, value: 0}
+TemplateList:
+  type: list
+  value: []
+TemplateResRef: {type: resref, value: su_sphinx}
+WalkRate: {type: int, value: 7}
+Wings_New: {type: dword, value: 0}
+Wis: {type: byte, value: 12}
+fortbonus: {type: short, value: 0}
+refbonus: {type: short, value: 0}
+willbonus: {type: short, value: 0}

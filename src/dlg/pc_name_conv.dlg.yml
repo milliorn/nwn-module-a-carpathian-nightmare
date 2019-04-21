@@ -1,0 +1,408 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: DLG
+__struct_id: 4294967295
+DelayEntry: {type: dword, value: 0}
+DelayReply: {type: dword, value: 0}
+EndConverAbort: {type: resref, value: nw_walk_wp}
+EndConversation: {type: resref, value: nw_walk_wp}
+EntryList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 1}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: |-
+          Welcome to <StartHighlight>ACN <Master/Mistress> <FullName></Start>.
+
+          What service do you require from me?
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 4}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 3}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 2}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: pc_name_listen}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Please speak out loud the name you wish to be known by for now on, then
+          select "Continue".
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 7}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 6}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 5}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: pc_name_confirm}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Are you sure you want to be known as <CUSTOM2000> for now on?
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 3
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 9}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 8}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: You now will be known as <CUSTOM2000> from here on out.
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 11}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 10}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Sorry, I did not understand that. Either the text was too long, or the
+          text spoken was invalid.
+NumWords: {type: dword, value: 94}
+PreventZoomIn: {type: byte, value: 0}
+ReplyList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Leave
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 1}
+        IsChild: {type: byte, value: 0}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: I wish to change my name.
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Leave
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 3
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Go Back
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: pc_name_invalid}
+        Index: {type: dword, value: 4}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 2}
+        IsChild: {type: byte, value: 0}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Continue
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Leave
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 1}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Go Back
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 3}
+        IsChild: {type: byte, value: 0}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: pc_change_name}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: 'Yes'
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Thank you!
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Go Back
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 10
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Leave
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 11
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 1}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Go Back
+StartingList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Active: {type: resref, value: ''}
+    Index: {type: dword, value: 0}

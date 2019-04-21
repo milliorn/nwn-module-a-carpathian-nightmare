@@ -1,0 +1,81 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: DLG
+__struct_id: 4294967295
+DelayEntry: {type: dword, value: 0}
+DelayReply: {type: dword, value: 0}
+EndConverAbort: {type: resref, value: ''}
+EndConversation: {type: resref, value: ''}
+EntryList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 1}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Welcome to my shop. Sell your loot here.
+NumWords: {type: dword, value: 20}
+PreventZoomIn: {type: byte, value: 0}
+ReplyList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: No, thanks.
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: store_market}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Yes. I'd like to see what you have for sale.
+StartingList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Active: {type: resref, value: ''}
+    Index: {type: dword, value: 0}

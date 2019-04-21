@@ -1,0 +1,1339 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 51}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 53}
+    AmbientSndNitVol: {type: int, value: 32}
+    EnvAudio: {type: int, value: 15}
+    MusicBattle: {type: int, value: 35}
+    MusicDay: {type: int, value: 4}
+    MusicDelay: {type: int, value: 90000}
+    MusicNight: {type: int, value: 6}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ZdaniceRuinsExit1}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: Zdбnice Forest Exit A
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_close}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: ZdniceForestExitA}
+    TemplateResRef: {type: resref, value: nw_door_ttr_09}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 25.0}
+    Y: {type: float, value: 285.44}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    CloseLockDC: {type: byte, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ZdaniceRuinsExit2}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: Zdбnice Forest Exit B
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_close}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: ZdniceForestExitB}
+    TemplateResRef: {type: resref, value: nw_door_ttr_09}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 35.0}
+    Y: {type: float, value: 285.44}
+    Z: {type: float, value: 0.0}
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -39.0741}
+        Y: {type: float, value: 0.2071}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -38.9361}
+        Y: {type: float, value: -9.3198}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: -9.1127}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Comment: {type: cexostr, value: ''}
+        Orientation: {type: float, value: -1.9635}
+        X: {type: float, value: 24.7755}
+        Y: {type: float, value: 34.3264}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.5026}
+    YPosition: {type: float, value: 19.4404}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -39.1997}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1207}
+        Y: {type: float, value: 9.3688}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.1363}
+        Y: {type: float, value: 9.2458}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.3562}
+        X: {type: float, value: 26.8048}
+        Y: {type: float, value: 64.5503}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.7265}
+    YPosition: {type: float, value: 40.3847}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.2641}
+        Y: {type: float, value: 0.2539}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.0224}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.19}
+        Y: {type: float, value: 9.3096}
+        Z: {type: float, value: 0.0224}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.2007}
+        Y: {type: float, value: 9.3097}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 1.1781}
+        X: {type: float, value: 23.8427}
+        Y: {type: float, value: 94.2372}
+        Z: {type: float, value: 0.0982}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.6009}
+    YPosition: {type: float, value: 70.0904}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.073}
+        Y: {type: float, value: 0.0633}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.3166}
+        Y: {type: float, value: 9.4358}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.0097}
+        Y: {type: float, value: 9.4358}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -1.7671}
+        X: {type: float, value: 23.7087}
+        Y: {type: float, value: 124.7193}
+        Z: {type: float, value: 0.2331}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.5365}
+    YPosition: {type: float, value: 100.1368}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.2618}
+        Y: {type: float, value: 0.0624}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.0277}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1289}
+        Y: {type: float, value: 9.3078}
+        Z: {type: float, value: 0.0224}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.0719}
+        Y: {type: float, value: 9.2449}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.5525}
+        X: {type: float, value: 25.095}
+        Y: {type: float, value: 156.0314}
+        Z: {type: float, value: -0.0019}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.662}
+    YPosition: {type: float, value: 130.2577}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.1363}
+        Y: {type: float, value: 0.0633}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0122}
+        Y: {type: float, value: 9.5662}
+        Z: {type: float, value: 0.0535}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.073}
+        Y: {type: float, value: 9.3725}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.3562}
+        X: {type: float, value: 25.9815}
+        Y: {type: float, value: 183.9433}
+        Z: {type: float, value: 0.1648}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.5998}
+    YPosition: {type: float, value: 160.2593}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -38.8197}
+        Y: {type: float, value: 0.0633}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.3166}
+        Y: {type: float, value: 9.3724}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -38.8197}
+        Y: {type: float, value: 9.3091}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.589}
+        X: {type: float, value: 32.164}
+        Y: {type: float, value: 215.067}
+        Z: {type: float, value: 0.1558}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.4732}
+    YPosition: {type: float, value: 190.2484}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.1997}
+        Y: {type: float, value: 0.1266}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1877}
+        Y: {type: float, value: 9.6264}
+        Z: {type: float, value: 0.0302}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -39.073}
+        Y: {type: float, value: 9.5624}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -1.7671}
+        X: {type: float, value: 31.1561}
+        Y: {type: float, value: 244.3034}
+        Z: {type: float, value: 0.1094}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.6632}
+    YPosition: {type: float, value: 220.0744}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -38.8197}
+        Y: {type: float, value: 9.4991}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -38.8197}
+        Y: {type: float, value: -0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -2.2824}
+        Y: {type: float, value: 9.3098}
+        Z: {type: float, value: 0.0319}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 1.5708}
+        X: {type: float, value: 27.5648}
+        Y: {type: float, value: 275.1479}
+        Z: {type: float, value: 0.0}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.4732}
+    YPosition: {type: float, value: 250.2603}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -3.3248}
+        Y: {type: float, value: -0.0917}
+        Z: {type: float, value: 4.3962}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 4.0347}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.6321}
+        Y: {type: float, value: 4.1479}
+        Z: {type: float, value: 4.3962}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -3.0956}
+        Y: {type: float, value: 4.1479}
+        Z: {type: float, value: 4.3962}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 30.2873}
+        Y: {type: float, value: 281.7344}
+        Z: {type: float, value: 0.005}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 31.8483}
+    YPosition: {type: float, value: 300.2857}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 157}
+        CR: {type: float, value: 3.0}
+        ResRef: {type: resref, value: aranea001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 2}
+    DifficultyIndex: {type: int, value: 2}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -38.3764}
+        Y: {type: float, value: 0.19}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.38}
+        Y: {type: float, value: 3.7363}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -38.3296}
+        Y: {type: float, value: 3.3889}
+        Z: {type: float, value: 0.1361}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Zdanice Forest
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 19.2182}
+        Y: {type: float, value: 284.7885}
+        Z: {type: float, value: 0.1004}
+    Tag: {type: cexostr, value: ZdaniceForestEncounter}
+    TemplateResRef: {type: resref, value: zdaniceforest}
+    XPosition: {type: float, value: 44.0299}
+    YPosition: {type: float, value: 310.1938}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 141}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1415}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: Bind Stone to portal back to after you bind your soul to the stone.  Return
+          here after binding anytime you wish by using the Bind Portal in the Astral
+          Plane.
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 2}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Zdбnice Forest Bind Stone
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: pws_binding}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 499}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: ZdniceForestBindStone}
+    TemplateResRef: {type: resref, value: bindingstone}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 15.0}
+    Y: {type: float, value: 7.5}
+    Z: {type: float, value: 0.01}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 159}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14672
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14673
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 0}
+    PortraitId: {type: word, value: 517}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 1}
+    Tag: {type: cexostr, value: Magic Sparks - Blue}
+    TemplateResRef: {type: resref, value: plc_magicblue}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 15.0}
+    Y: {type: float, value: 7.5}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 30.0}
+    Y: {type: float, value: 303.0}
+    Z: {type: float, value: 4.37}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 0.7854}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 8.0}
+    Y: {type: float, value: 312.0}
+    Z: {type: float, value: 0.03}
+SoundList:
+  type: list
+  value: []
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 1}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -9.6809}
+        PointY: {type: float, value: 4.017}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -9.6181}
+        PointY: {type: float, value: -0.1577}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0899}
+        PointY: {type: float, value: 4.017}
+        PointZ: {type: float, value: 0.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: CarpathianForestLaketoZdan}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14760
+      value:
+        0: Zdбnice Forest Exit C
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: ''}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: ZdniceForestExitC}
+    TemplateResRef: {type: resref, value: newtransition}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 1}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 29.8207}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 0.175}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value:
+        0: Map Note
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Zdбnice Ruins
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_ZdaniceRuins}
+    TemplateResRef: {type: resref, value: nw_mapnote001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 28.7555}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 281.6315}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value:
+        0: Carpathian Forest - Lake
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_ZdniceForestExitC}
+    TemplateResRef: {type: resref, value: ''}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 25.0252}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 2.1047}
+    ZPosition: {type: float, value: 0.025}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value:
+        0: Bindstone
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Bindstone
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPBindstone}
+    TemplateResRef: {type: resref, value: mapbindstone}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 12.346}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 7.3079}
+    ZPosition: {type: float, value: -0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 0}
+    Tag: {type: cexostr, value: WP_ZdniceForestExitC}
+    TemplateResRef: {type: resref, value: ''}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 25.0252}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 2.1047}
+    ZPosition: {type: float, value: 0.025}

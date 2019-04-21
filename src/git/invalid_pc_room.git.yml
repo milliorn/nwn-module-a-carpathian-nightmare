@@ -1,0 +1,109 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 57}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 57}
+    AmbientSndNitVol: {type: int, value: 32}
+    EnvAudio: {type: int, value: 0}
+    MusicBattle: {type: int, value: 38}
+    MusicDay: {type: int, value: 13}
+    MusicDelay: {type: int, value: 85000}
+    MusicNight: {type: int, value: 14}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value: []
+Encounter List:
+  type: list
+  value: []
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value: []
+SoundList:
+  type: list
+  value: []
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value: []
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: NO_TELEPORT}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: NO_PORTALS}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: NO_XP}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_HACKER
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_HACKER}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 14.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 15.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_INVALID_PC
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_INVALID_PC}
+    TemplateResRef: {type: resref, value: waypoint002}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 16.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 15.0}
+    ZPosition: {type: float, value: 0.0}

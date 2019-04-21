@@ -1,0 +1,384 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: DLG
+__struct_id: 4294967295
+DelayEntry: {type: dword, value: 0}
+DelayReply: {type: dword, value: 0}
+EndConverAbort: {type: resref, value: zdlg_end_abort}
+EndConversation: {type: resref, value: zdlg_end_normal}
+EntryList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_01}
+        Index: {type: dword, value: 12}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Active: {type: resref, value: zdlg_check_02}
+        Index: {type: dword, value: 11}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Active: {type: resref, value: zdlg_check_03}
+        Index: {type: dword, value: 10}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Active: {type: resref, value: zdlg_check_04}
+        Index: {type: dword, value: 9}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 4
+        Active: {type: resref, value: zdlg_check_05}
+        Index: {type: dword, value: 8}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 5
+        Active: {type: resref, value: zdlg_check_06}
+        Index: {type: dword, value: 7}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 6
+        Active: {type: resref, value: zdlg_check_07}
+        Index: {type: dword, value: 6}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 7
+        Active: {type: resref, value: zdlg_check_08}
+        Index: {type: dword, value: 5}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 8
+        Active: {type: resref, value: zdlg_check_09}
+        Index: {type: dword, value: 4}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 9
+        Active: {type: resref, value: zdlg_check_10}
+        Index: {type: dword, value: 3}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 10
+        Active: {type: resref, value: zdlg_check_11}
+        Index: {type: dword, value: 2}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 11
+        Active: {type: resref, value: zdlg_check_12}
+        Index: {type: dword, value: 1}
+        IsChild: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 12
+        Active: {type: resref, value: zdlg_check_13}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4200>"
+NumWords: {type: dword, value: 14}
+PreventZoomIn: {type: byte, value: 1}
+ReplyList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_13}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4213>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_12}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4212>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_11}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4211>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 3
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_10}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4210>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_09}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4209>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_08}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4208>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_07}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4207>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_06}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4206>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_05}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4205>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_04}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4204>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 10
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_03}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4203>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 11
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_02}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4202>"
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 12
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: zdlg_check_init}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 1}
+        LinkComment: {type: cexostr, value: ''}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: zdlg_do_01}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: "<CUSTOM4201>"
+StartingList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Active: {type: resref, value: zdlg_check_init}
+    Index: {type: dword, value: 0}

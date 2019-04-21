@@ -1,0 +1,987 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 90}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 91}
+    AmbientSndNitVol: {type: int, value: 32}
+    EnvAudio: {type: int, value: 89}
+    MusicBattle: {type: int, value: 60}
+    MusicDay: {type: int, value: 59}
+    MusicDelay: {type: int, value: 90000}
+    MusicNight: {type: int, value: 59}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 1}
+    Appearance: {type: dword, value: 92}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    CloseLockDC: {type: byte, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: OravskMagurasCave1Exit}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: Oravskб Magura's Cave Entrance
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: x2_door_death}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: OravskMagurasCaveEntrance}
+    TemplateResRef: {type: resref, value: nw_door_ttr_12}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 44.74}
+    Y: {type: float, value: 74.51}
+    Z: {type: float, value: 9.56}
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 175}
+        CR: {type: float, value: 18.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: oravskdirewol}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 184}
+        CR: {type: float, value: 18.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: oravskwinterw}
+        SingleSpawn: {type: byte, value: 1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 181}
+        CR: {type: float, value: 18.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: oravskwolf}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 185}
+        CR: {type: float, value: 18.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: oravskworg}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 5}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.638}
+        Y: {type: float, value: 24.7519}
+        Z: {type: float, value: 5.024}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.3629}
+        Y: {type: float, value: -0.1375}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1374}
+        Y: {type: float, value: 24.8898}
+        Z: {type: float, value: 5.0202}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Oravska Canine
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 41.0173}
+        Y: {type: float, value: 29.6483}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: OravskaCanine}
+    TemplateResRef: {type: resref, value: oravskacanine}
+    XPosition: {type: float, value: 52.5034}
+    YPosition: {type: float, value: 5.7674}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 175}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskdirewol}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 184}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwinterw}
+        SingleSpawn: {type: byte, value: 1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 181}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwolf}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 185}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskworg}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 5}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -17.3269}
+        Y: {type: float, value: -0.1375}
+        Z: {type: float, value: 5.0215}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.0202}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.825}
+        Y: {type: float, value: 14.7135}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -16.5011}
+        Y: {type: float, value: 13.8884}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Oravska Canine
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 58.8289}
+        Y: {type: float, value: 49.3564}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 41.0899}
+        Y: {type: float, value: 32.305}
+        Z: {type: float, value: 4.999}
+    Tag: {type: cexostr, value: OravskaCanine}
+    TemplateResRef: {type: resref, value: oravskacanine}
+    XPosition: {type: float, value: 53.6034}
+    YPosition: {type: float, value: 38.7682}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 175}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskdirewol}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 184}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwinterw}
+        SingleSpawn: {type: byte, value: 1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 181}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwolf}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 185}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskworg}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 5}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.2628}
+        Y: {type: float, value: 5.7754}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -3.9871}
+        Y: {type: float, value: -0.2745}
+        Z: {type: float, value: 5.0201}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0006}
+        Y: {type: float, value: 2.7498}
+        Z: {type: float, value: 5.0281}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Oravska Canine
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 56.4912}
+        Y: {type: float, value: 48.5313}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: OravskaCanine}
+    TemplateResRef: {type: resref, value: oravskacanine}
+    XPosition: {type: float, value: 72.8549}
+    YPosition: {type: float, value: 47.2937}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 175}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskdirewol}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 184}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwinterw}
+        SingleSpawn: {type: byte, value: 1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 181}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwolf}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 185}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskworg}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 5}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -27.5125}
+        Y: {type: float, value: 2.7513}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -27.0781}
+        Y: {type: float, value: -2.3168}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.9147}
+        Y: {type: float, value: -11.4394}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.8824}
+        Y: {type: float, value: -12.0186}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Oravska Canine
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value: []
+    Tag: {type: cexostr, value: OravskaCanine}
+    TemplateResRef: {type: resref, value: oravskacanine}
+    XPosition: {type: float, value: 34.0942}
+    YPosition: {type: float, value: 18.8655}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 175}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskdirewol}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 184}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwinterw}
+        SingleSpawn: {type: byte, value: 1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 181}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwolf}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 185}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskworg}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 5}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -22.3965}
+        Y: {type: float, value: 0.5209}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 10.0215}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.2614}
+        Y: {type: float, value: 17.1888}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -12.4999}
+        Y: {type: float, value: 17.8398}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -12.1107}
+        Y: {type: float, value: 4.688}
+        Z: {type: float, value: 10.0215}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -22.3965}
+        Y: {type: float, value: 5.3389}
+        Z: {type: float, value: 10.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Oravska Canine
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value: []
+    Tag: {type: cexostr, value: OravskaCanine}
+    TemplateResRef: {type: resref, value: oravskacanine}
+    XPosition: {type: float, value: 31.0504}
+    YPosition: {type: float, value: 36.4741}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 175}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskdirewol}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 184}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwinterw}
+        SingleSpawn: {type: byte, value: 1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 181}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskwolf}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 185}
+        CR: {type: float, value: 18.0}
+        ResRef: {type: resref, value: oravskworg}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 5}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.0785}
+        Y: {type: float, value: 18.3607}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.9491}
+        Y: {type: float, value: 13.152}
+        Z: {type: float, value: 10.0222}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 21.4859}
+        Y: {type: float, value: 1.9533}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 23.3089}
+        Y: {type: float, value: 17.1887}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.7563}
+        Y: {type: float, value: 17.1887}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.8865}
+        Y: {type: float, value: 11.4592}
+        Z: {type: float, value: 10.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0744}
+        Y: {type: float, value: 11.846}
+        Z: {type: float, value: 9.1669}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.1302}
+        Y: {type: float, value: 17.4492}
+        Z: {type: float, value: 10.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Oravska Canine
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 3}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value: []
+    Tag: {type: cexostr, value: OravskaCanine}
+    TemplateResRef: {type: resref, value: oravskacanine}
+    XPosition: {type: float, value: 34.1766}
+    YPosition: {type: float, value: 55.6568}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 141}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: Bind Stone to portal back to after you bind your soul to the stone.  Return
+          here after binding anytime you wish by using the Bind Portal in the Astral
+          Plane.
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 2}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Oravskб Magura - Upper Bind Stone
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: pws_binding}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 499}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: OravskMaguraUpperBindSton}
+    TemplateResRef: {type: resref, value: bindingstone}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 8.0}
+    Y: {type: float, value: 20.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 71.0}
+    Y: {type: float, value: 50.0}
+    Z: {type: float, value: 5.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 4}
+    Appearance: {type: dword, value: 164}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14672
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14673
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 0}
+    PortraitId: {type: word, value: 522}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 1}
+    Tag: {type: cexostr, value: MagicSparksBlue}
+    TemplateResRef: {type: resref, value: plc_magicblue}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 8.0}
+    Y: {type: float, value: 20.0}
+    Z: {type: float, value: 0.0}
+SoundList:
+  type: list
+  value: []
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 1}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -0.1118}
+        PointY: {type: float, value: 0.0242}
+        PointZ: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -0.0404}
+        PointY: {type: float, value: 2.2686}
+        PointZ: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -8.1961}
+        PointY: {type: float, value: 2.1339}
+        PointZ: {type: float, value: 3.8672}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -7.9759}
+        PointY: {type: float, value: 0.1805}
+        PointZ: {type: float, value: 5.029}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: WP_OravskMaguraLowerExit}
+    LinkedToFlags: {type: byte, value: 2}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14760
+      value:
+        0: Oravskб Magura - Upper Entrance
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: ''}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: OravskMaguraUpperEntrance}
+    TemplateResRef: {type: resref, value: newtransition}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 1}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 44.5526}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 0.3472}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 0}
+    Tag: {type: cexostr, value: WP_OravskMaguraUpperEntrance}
+    TemplateResRef: {type: resref, value: ''}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 40.4545}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 1.4815}
+    ZPosition: {type: float, value: 5.1204}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value:
+        0: Oravskб Magura's Cave
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Oravskб Magura's Cave
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_OravskMagurasCave}
+    TemplateResRef: {type: resref, value: nw_mapnote001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 44.4641}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 78.0329}
+    ZPosition: {type: float, value: 15.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value:
+        0: Bindstone
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Bindstone
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPBindstone}
+    TemplateResRef: {type: resref, value: mapbindstone}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 7.9734}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 17.6731}
+    ZPosition: {type: float, value: 0.0}

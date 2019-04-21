@@ -1,0 +1,467 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 103}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 103}
+    AmbientSndNitVol: {type: int, value: 32}
+    EnvAudio: {type: int, value: 94}
+    MusicBattle: {type: int, value: 74}
+    MusicDay: {type: int, value: 74}
+    MusicDelay: {type: int, value: 83000}
+    MusicNight: {type: int, value: 74}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 13}
+    AutoRemoveKey: {type: byte, value: 1}
+    Bearing: {type: float, value: -3.1412}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value:
+        0: ''
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: RavanasKey}
+    KeyRequired: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: gmroom001}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: gauntlet00c
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 1}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: rav_door_boss}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: gauntlet00c}
+    TemplateResRef: {type: resref, value: nw_door_ttr_08}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 35.0}
+    Y: {type: float, value: 5.0}
+    Z: {type: float, value: 0.0}
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 38}
+        CR: {type: float, value: 60.0}
+        ResRef: {type: resref, value: ravana}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -31.9904}
+        Y: {type: float, value: 2.6476}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -31.9904}
+        Y: {type: float, value: -0.173}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 21.8984}
+        Y: {type: float, value: -0.173}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 21.75}
+        Y: {type: float, value: 2.2765}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Ravana's Watcher
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 3.1413}
+        X: {type: float, value: 35.3103}
+        Y: {type: float, value: 55.5117}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: RavanasWatcher}
+    TemplateResRef: {type: resref, value: blueprint004}
+    XPosition: {type: float, value: 40.055}
+    YPosition: {type: float, value: 19.8306}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 414}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      str_ref: 110862
+      value: {}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 10681
+      value: {}
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 0}
+    PortraitId: {type: word, value: 864}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 1}
+    Tag: {type: cexostr, value: nw_plc_piratex}
+    TemplateResRef: {type: resref, value: nw_plc_piratex}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 35.0}
+    Y: {type: float, value: 21.0}
+    Z: {type: float, value: 0.0}
+SoundList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 25000}
+    IntervalVrtn: {type: dword, value: 5000}
+    LocName:
+      type: cexolocstr
+      str_ref: 67948
+      value: {}
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.2}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 1}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 10.0}
+    RandomRangeY: {type: float, value: 10.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamm1}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamm2}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamm3}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamm4}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamm5}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamm6}}
+    Tag: {type: cexostr, value: ScreamsMen}
+    TemplateResRef: {type: resref, value: screamsmen002}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 0}
+    XPosition: {type: float, value: 52.3072}
+    YPosition: {type: float, value: 23.4469}
+    ZPosition: {type: float, value: -4.5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 25000}
+    IntervalVrtn: {type: dword, value: 5000}
+    LocName:
+      type: cexolocstr
+      str_ref: 67949
+      value: {}
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.0}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 1}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamf1}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamf2}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamf3}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamf4}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamf5}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_screamf6}}
+    Tag: {type: cexostr, value: ScreamWomen}
+    TemplateResRef: {type: resref, value: screamwomen001}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 0}
+    XPosition: {type: float, value: 52.1904}
+    YPosition: {type: float, value: 23.1065}
+    ZPosition: {type: float, value: -4.5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 5000}
+    IntervalVrtn: {type: dword, value: 1000}
+    LocName:
+      type: cexolocstr
+      str_ref: 67875
+      value: {}
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.0}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 1}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_lafspook1}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_lafspook2}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_lafspook3}}
+    Tag: {type: cexostr, value: LaughingKidsSpooky}
+    TemplateResRef: {type: resref, value: laughingkidss001}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 64}
+    VolumeVrtn: {type: byte, value: 63}
+    XPosition: {type: float, value: 51.3796}
+    YPosition: {type: float, value: 25.703}
+    ZPosition: {type: float, value: -4.5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.0}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 10000}
+    IntervalVrtn: {type: dword, value: 5000}
+    LocName:
+      type: cexolocstr
+      str_ref: 91310
+      value: {}
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.3}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 1}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_hr_x2ghost10}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_hr_x2ghost6}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_hr_x2ghost7}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_hr_x2ghost8}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_hr_x2ghost9}}
+    Tag: {type: cexostr, value: Ghosts}
+    TemplateResRef: {type: resref, value: ghosts001}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 0}
+    XPosition: {type: float, value: 52.5275}
+    YPosition: {type: float, value: 24.1145}
+    ZPosition: {type: float, value: -5.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 5000}
+    IntervalVrtn: {type: dword, value: 1000}
+    LocName:
+      type: cexolocstr
+      str_ref: 67875
+      value: {}
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.0}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 1}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_lafspook1}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_lafspook2}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_pl_lafspook3}}
+    Tag: {type: cexostr, value: LaughingKidsSpooky}
+    TemplateResRef: {type: resref, value: laughingkidss001}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 64}
+    VolumeVrtn: {type: byte, value: 63}
+    XPosition: {type: float, value: 51.4298}
+    YPosition: {type: float, value: 26.6066}
+    ZPosition: {type: float, value: -4.5}
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value: []
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    Name: {type: cexostr, value: NO_PORTALS}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 4}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: MAP_J
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: MAP_J}
+    TemplateResRef: {type: resref, value: waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 35.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 11.057}
+    ZPosition: {type: float, value: -0.0}

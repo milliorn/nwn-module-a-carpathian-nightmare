@@ -1,0 +1,65 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 0}
+BaseItem: {type: int, value: 74}
+Charges: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Cost: {type: dword, value: 1}
+Cursed: {type: byte, value: 0}
+DescIdentified:
+  type: cexolocstr
+  value:
+    0: "Summon Spell Revisions for ACN - Katherine Taylor(Cheetah)\n\nThis Book was
+      last updated on 28th March 2008.\n\nThe special summoning system I designed
+      gives your creatures bonus stats. The bonus stats are: AB/AC/Saves/Damage Bonus/HP
+      Bonus. There are 7 levels of summon bonuses.\n<cу у>For every 10 levels of caster
+      after level 5, you get 1 \"Bonus\" level towards summon bonuses.\nFor each Spell
+      Focus Conjuration feat, you also get +1 for each.\n\nEpic Spell Focus: Conjuration
+      activates certain other summon abilities, such as a special summon with Summon
+      Creature IX.</c>\n\nThese spells have been changed:\n\n<cу у>Summon Creature
+      I to IX </c>\n<cюf > These creatures are much more powerful now and based on
+      your Good - Evil alignment. Summon Creature IX will summon a special, more powerful
+      creature if you have ::Epic Spell Focus - Conjuration::\nAnimal domain clerics
+      get each summon spell earlier. </c>\n\n<cу у>Shelgarn's Persistant Blade </c>\n<cюf
+      >Summons a dagger at levels 1-9, a katana otherwise.\nAt level 5 the dagger
+      gains 1d4 sonic damage.\nAt level 10 the dagger gains 2d4 sonic damage.\nAt
+      level 15+ the dagger gains 2d8 sonic damage. </c>\n\n<cу у>Elemental Swarm (Druid)
+      </c>\n<cюf >Summons 4 Elemental creatures when the creature dies. \nThere's
+      a 1 in 20 chance that the 2nd/3rd/4th creatures will be of the \"special\" variety.\n::Epic
+      Spell Focus - Conjuration:: increases the odds of getting a special summon,
+      1 in 6.</c>\n\n<cу у>Planar Binding Series </c>\n<cюf >The creatures summoned
+      are more powerful and have unique characteristics based on alignment. \nThis
+      spell loses the \"Hold Outsider\" ability when targetted at any Outsider. (Use
+      Hold Monster or whatever instead)</c>\n\n<cу у>Black Blade of Disaster </c>\n<cюf
+      >This is now a much more damaging summon to use. You will need to maintain concentration
+      still.\nDeals 1d8 extra magical damage at level 25\nDeals 2d8 extra magical
+      damage at level 30\nDeals 2d8 extra magical and negative damage at level 35\nEpic
+      Conjuration Users: 2d12 extra electrical damage\n\nBlack Blade of Disaster is
+      no longer invulnerable.</c>\n\n<cу у>Gate </c>\n<cюf >This spell summons either
+      a Balor, Pitfiend or Catapalon based on if you are Evil, Neutral or Good. These
+      summons should be more powerful than the summon creature IX summons. It lasts
+      less time however. \n\nMake sure you have protection versus alignment already
+      cast, these summons are powerful! For neutral alignments, they can cast either
+      of the two Protection From Alignment spells.\n\nIf you have Epic Spell Focus:
+      Conjuration, you don't need protective spells.</c>\n\nPost bugs and summon suggestions
+      on the appropiate forum thread.\n\nVersion 1.05\n- Cheetah (Katherine Taylor)\n"
+Description:
+  type: cexolocstr
+  value:
+    0: ''
+Identified: {type: byte, value: 1}
+LocalizedName:
+  type: cexolocstr
+  value:
+    0: Book of Carpathian Fiends
+ModelPart1: {type: byte, value: 1}
+PaletteID: {type: byte, value: 60}
+Plot: {type: byte, value: 0}
+PropertiesList:
+  type: list
+  value: []
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: book_of_summons}
+TemplateResRef: {type: resref, value: book_of_summons}

@@ -1,0 +1,1096 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 72}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 72}
+    AmbientSndNitVol: {type: int, value: 32}
+    EnvAudio: {type: int, value: 0}
+    MusicBattle: {type: int, value: 40}
+    MusicDay: {type: int, value: 25}
+    MusicDelay: {type: int, value: 83000}
+    MusicNight: {type: int, value: 25}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 0}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 1.5708}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: ''
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: BankEntrance}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Bank Exit
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_close}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 558}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: BankExit}
+    TemplateResRef: {type: resref, value: acn_town_door}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 3.34}
+    Y: {type: float, value: 25.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 0}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1416}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: CarpathiaXPBankExit}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: GP Bank To XP Bank
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_close}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: GPBankToXPBank}
+    TemplateResRef: {type: resref, value: nw_door_ttr_11}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 5.0}
+    Y: {type: float, value: 3.0}
+    Z: {type: float, value: -1.6}
+Encounter List:
+  type: list
+  value: []
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1416}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: "ACN Transfer Chest:\n\nUse these chest to transfer your items from one
+          character to another that is linked to your CDKEY.  The following is some
+          guidelines you must accept if you use these chest.\n\n* Deposit Limit: 30
+          items (stacked or non-stacked items).\n\n* Do not deposit gold.  Use the
+          Banker.  It will not deposit gold.  You will lose your gold.\n\n* Use at
+          your own risk.\n\n* These chest will carry items over a server reset or
+          crash.  Although they are persistent they are not perfect.\n\n* The Item
+          Limit is set for a reason.  It will not be raised for various reasons related
+          to stability.\n\n* Although scripts are in place for security beware that
+          nothing is full-proof. \n\n* Chest have scripted safety mechanism, but the
+          best thing to do is abort your transaction with the chest if someone is
+          trying to disrupt your transaction with the chest."
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Item Transfer Chest
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: sfpb_close}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: sfpb_chest_distu}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: sfpb_open}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: sfpb_used}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 367}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SFPB_Chest}
+    TemplateResRef: {type: resref, value: sfpb_chest}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 20.0}
+    Y: {type: float, value: 14.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1416}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: "ACN Transfer Chest:\n\nUse these chest to transfer your items from one
+          character to another that is linked to your CDKEY.  The following is some
+          guidelines you must accept if you use these chest.\n\n* Deposit Limit: 30
+          items (stacked or non-stacked items).\n\n* Do not deposit gold.  Use the
+          Banker.  It will not deposit gold.  You will lose your gold.\n\n* Use at
+          your own risk.\n\n* These chest will carry items over a server reset or
+          crash.  Although they are persistent they are not perfect.\n\n* The Item
+          Limit is set for a reason.  It will not be raised for various reasons related
+          to stability.\n\n* Although scripts are in place for security beware that
+          nothing is full-proof. \n\n* Chest have scripted safety mechanism, but the
+          best thing to do is abort your transaction with the chest if someone is
+          trying to disrupt your transaction with the chest."
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Item Transfer Chest
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: sfpb_close}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: sfpb_chest_distu}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: sfpb_open}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: sfpb_used}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 367}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SFPB_Chest}
+    TemplateResRef: {type: resref, value: sfpb_chest}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 30.0}
+    Y: {type: float, value: 14.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: "ACN Transfer Chest:\n\nUse these chest to transfer your items from one
+          character to another that is linked to your CDKEY.  The following is some
+          guidelines you must accept if you use these chest.\n\n* Deposit Limit: 30
+          items (stacked or non-stacked items).\n\n* Do not deposit gold.  Use the
+          Banker.  It will not deposit gold.  You will lose your gold.\n\n* Use at
+          your own risk.\n\n* These chest will carry items over a server reset or
+          crash.  Although they are persistent they are not perfect.\n\n* The Item
+          Limit is set for a reason.  It will not be raised for various reasons related
+          to stability.\n\n* Although scripts are in place for security beware that
+          nothing is full-proof. \n\n* Chest have scripted safety mechanism, but the
+          best thing to do is abort your transaction with the chest if someone is
+          trying to disrupt your transaction with the chest."
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Item Transfer Chest
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: sfpb_close}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: sfpb_chest_distu}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: sfpb_open}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: sfpb_used}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 367}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SFPB_Chest}
+    TemplateResRef: {type: resref, value: sfpb_chest}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 36.0}
+    Y: {type: float, value: 20.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: "ACN Transfer Chest:\n\nUse these chest to transfer your items from one
+          character to another that is linked to your CDKEY.  The following is some
+          guidelines you must accept if you use these chest.\n\n* Deposit Limit: 30
+          items (stacked or non-stacked items).\n\n* Do not deposit gold.  Use the
+          Banker.  It will not deposit gold.  You will lose your gold.\n\n* Use at
+          your own risk.\n\n* These chest will carry items over a server reset or
+          crash.  Although they are persistent they are not perfect.\n\n* The Item
+          Limit is set for a reason.  It will not be raised for various reasons related
+          to stability.\n\n* Although scripts are in place for security beware that
+          nothing is full-proof. \n\n* Chest have scripted safety mechanism, but the
+          best thing to do is abort your transaction with the chest if someone is
+          trying to disrupt your transaction with the chest."
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Item Transfer Chest
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: sfpb_close}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: sfpb_chest_distu}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: sfpb_open}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: sfpb_used}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 367}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SFPB_Chest}
+    TemplateResRef: {type: resref, value: sfpb_chest}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 36.0}
+    Y: {type: float, value: 30.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: "ACN Transfer Chest:\n\nUse these chest to transfer your items from one
+          character to another that is linked to your CDKEY.  The following is some
+          guidelines you must accept if you use these chest.\n\n* Deposit Limit: 30
+          items (stacked or non-stacked items).\n\n* Do not deposit gold.  Use the
+          Banker.  It will not deposit gold.  You will lose your gold.\n\n* Use at
+          your own risk.\n\n* These chest will carry items over a server reset or
+          crash.  Although they are persistent they are not perfect.\n\n* The Item
+          Limit is set for a reason.  It will not be raised for various reasons related
+          to stability.\n\n* Although scripts are in place for security beware that
+          nothing is full-proof. \n\n* Chest have scripted safety mechanism, but the
+          best thing to do is abort your transaction with the chest if someone is
+          trying to disrupt your transaction with the chest."
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Item Transfer Chest
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: sfpb_close}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: sfpb_chest_distu}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: sfpb_open}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: sfpb_used}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 367}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SFPB_Chest}
+    TemplateResRef: {type: resref, value: sfpb_chest}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 30.0}
+    Y: {type: float, value: 36.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 9}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: "ACN Transfer Chest:\n\nUse these chest to transfer your items from one
+          character to another that is linked to your CDKEY.  The following is some
+          guidelines you must accept if you use these chest.\n\n* Deposit Limit: 30
+          items (stacked or non-stacked items).\n\n* Do not deposit gold.  Use the
+          Banker.  It will not deposit gold.  You will lose your gold.\n\n* Use at
+          your own risk.\n\n* These chest will carry items over a server reset or
+          crash.  Although they are persistent they are not perfect.\n\n* The Item
+          Limit is set for a reason.  It will not be raised for various reasons related
+          to stability.\n\n* Although scripts are in place for security beware that
+          nothing is full-proof. \n\n* Chest have scripted safety mechanism, but the
+          best thing to do is abort your transaction with the chest if someone is
+          trying to disrupt your transaction with the chest."
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Item Transfer Chest
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: sfpb_close}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: sfpb_chest_distu}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: sfpb_open}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: sfpb_used}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 367}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SFPB_Chest}
+    TemplateResRef: {type: resref, value: sfpb_chest}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 10.0}
+    Y: {type: float, value: 36.0}
+    Z: {type: float, value: 0.0}
+SoundList:
+  type: list
+  value: []
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 0}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -2.61}
+        PointY: {type: float, value: 0.0644}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -2.61}
+        PointY: {type: float, value: -5.7677}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 3.2544}
+        PointY: {type: float, value: -5.8}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 3.0611}
+        PointY: {type: float, value: -0.3867}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: ''}
+    LinkedToFlags: {type: byte, value: 0}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14759
+      value: {}
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: obj_exam_bank}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: GenericTrigger}
+    TemplateResRef: {type: resref, value: newgeneric}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 0}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 9.8675}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 38.5505}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 0}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -2.1589}
+        PointY: {type: float, value: 0.0644}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -2.1589}
+        PointY: {type: float, value: -5.7677}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 2.5778}
+        PointY: {type: float, value: -5.7363}
+        PointZ: {type: float, value: 0.0342}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 2.4811}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: ''}
+    LinkedToFlags: {type: byte, value: 0}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14759
+      value: {}
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: obj_exam_bank}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: GenericTrigger}
+    TemplateResRef: {type: resref, value: newgeneric}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 0}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 29.8111}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 38.5505}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 0}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -5.7358}
+        PointY: {type: float, value: 2.4156}
+        PointZ: {type: float, value: 0.0422}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -5.7033}
+        PointY: {type: float, value: -2.1911}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: -2.1911}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 2.3522}
+        PointZ: {type: float, value: 0.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: ''}
+    LinkedToFlags: {type: byte, value: 0}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14759
+      value: {}
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: obj_exam_bank}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: GenericTrigger}
+    TemplateResRef: {type: resref, value: newgeneric}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 0}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 38.5432}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 29.915}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 0}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -5.6711}
+        PointY: {type: float, value: -2.5778}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -0.29}
+        PointY: {type: float, value: -2.5778}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -0.0}
+        PointY: {type: float, value: 2.32}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -5.5422}
+        PointY: {type: float, value: 2.3522}
+        PointZ: {type: float, value: 0.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: ''}
+    LinkedToFlags: {type: byte, value: 0}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14759
+      value: {}
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: obj_exam_bank}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: GenericTrigger}
+    TemplateResRef: {type: resref, value: newgeneric}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 0}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 38.5755}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 19.9645}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 0}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -3.2391}
+        PointY: {type: float, value: 5.8412}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -3.1746}
+        PointY: {type: float, value: 0.5246}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 2.5609}
+        PointY: {type: float, value: 0.1057}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 2.5931}
+        PointY: {type: float, value: 5.9056}
+        PointZ: {type: float, value: 0.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: ''}
+    LinkedToFlags: {type: byte, value: 0}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14759
+      value: {}
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: obj_exam_bank}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: GenericTrigger}
+    TemplateResRef: {type: resref, value: newgeneric}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 0}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 29.9568}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 11.25}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 0}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -2.0622}
+        PointY: {type: float, value: -0.0322}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 2.3301}
+        PointY: {type: float, value: -0.0734}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 2.4166}
+        PointY: {type: float, value: 5.9611}
+        PointZ: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: -2.028}
+        PointY: {type: float, value: 5.8957}
+        PointZ: {type: float, value: 0.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: ''}
+    LinkedToFlags: {type: byte, value: 0}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14759
+      value: {}
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: obj_exam_bank}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: GenericTrigger}
+    TemplateResRef: {type: resref, value: newgeneric}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 0}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 19.7445}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 11.8361}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: NO_PVP}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: NO_CASTING}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: PC_AUTO_RAISE}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: Carp to Bank
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: Carp_to_Bank}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 1.0}
+    XPosition: {type: float, value: 4.1985}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 25.0562}
+    ZPosition: {type: float, value: 0.0029}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 2}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: POST_banker
+    MapNote:
+      type: cexolocstr
+      value:
+        0: Banker
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: POST_banker}
+    TemplateResRef: {type: resref, value: post_001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 20.0}
+    YOrientation: {type: float, value: -1.0}
+    YPosition: {type: float, value: 35.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value: {}
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: 'Carpathia : Bank - XP'
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    TemplateResRef: {type: resref, value: nw_mapnote001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 4.8621}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 9.2691}
+    ZPosition: {type: float, value: -0.0}

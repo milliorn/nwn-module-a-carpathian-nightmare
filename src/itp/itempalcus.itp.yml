@@ -1,0 +1,2237 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: ITP
+__struct_id: 4294967295
+MAIN:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 5}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Custom Clothing (Female)}
+            RESREF: {type: resref, value: mil_clothing667}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Custom Outfit}
+            RESREF: {type: resref, value: mil_clothing668}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: ILR Robe}
+            RESREF: {type: resref, value: 0_mcloth012}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: mcloth006}
+            STRREF: {type: dword, value: 91028}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Silesian Ogre Robes +4}
+            RESREF: {type: resref, value: silesianogrero}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Silesian Ogre Robes +5}
+            RESREF: {type: resref, value: mcloth023}
+        STRREF: {type: dword, value: 186}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 8}
+        STRREF: {type: dword, value: 4818}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 9}
+        STRREF: {type: dword, value: 6739}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 6}
+        STRREF: {type: dword, value: 4815}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 7}
+        STRREF: {type: dword, value: 6669}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 58}
+        STRREF: {type: dword, value: 6813}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 11}
+            STRREF: {type: dword, value: 6822}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 10}
+            STRREF: {type: dword, value: 6741}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 12}
+            STRREF: {type: dword, value: 6742}
+        STRREF: {type: dword, value: 6740}
+    STRREF: {type: dword, value: 335}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 55}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+13 Bite2d6"}
+            RESREF: {type: resref, value: it_crewps016}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+3 Bite1d4"}
+            RESREF: {type: resref, value: it_crewps004}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+5 Bite1d4"}
+            RESREF: {type: resref, value: it_crewps003}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+9 Bite2d6"}
+            RESREF: {type: resref, value: 9bite2d6}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_crewpdr002}
+            STRREF: {type: dword, value: 90612}
+        STRREF: {type: dword, value: 6810}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 13}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+5 Claw1d6"}
+            RESREF: {type: resref, value: it_crewpsp007}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+8 Claw1d6"}
+            RESREF: {type: resref, value: it_crewpsp006}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+9 Claw1d8"}
+            RESREF: {type: resref, value: claw1d89}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_crewp_d002}
+            STRREF: {type: dword, value: 90604}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_crewp_d003}
+            STRREF: {type: dword, value: 90604}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Epic Shadow Lord Claw}
+            RESREF: {type: resref, value: epicshadowlord}
+        STRREF: {type: dword, value: 6744}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 63}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Formian Sting +10}
+            RESREF: {type: resref, value: formian_sting001}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Formian Sting 4d6}
+            RESREF: {type: resref, value: formian_sting002}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: NPC Myrmarch Sting}
+            RESREF: {type: resref, value: formmyr_sting001}
+        STRREF: {type: dword, value: 6831}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 59}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Astral Deva's Longsword}
+            RESREF: {type: resref, value: su_devalongsword}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Balor Sword}
+            RESREF: {type: resref, value: su_balor_sword}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: su_avenger_sword}
+            STRREF: {type: dword, value: 13214}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Celestial Paladin Greatsword}
+            RESREF: {type: resref, value: su_celestpaliswo}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Hound Archon Greatsword}
+            RESREF: {type: resref, value: su_hound_gs}
+        STRREF: {type: dword, value: 6814}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 14}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Astral Deva's Clothing}
+            RESREF: {type: resref, value: su_devaclothes}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Catapalon Properties}
+            RESREF: {type: resref, value: su_catapalon_pro}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Cozia Spider Properties}
+            RESREF: {type: resref, value: coziaspiderpro}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Cozia Wraith Spider Properties}
+            RESREF: {type: resref, value: coziawraithspi}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_credlichpr001}
+            STRREF: {type: dword, value: 90558}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_creadra002}
+            STRREF: {type: dword, value: 90552}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Dragon Properties}
+            RESREF: {type: resref, value: it_creitemdra001}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gate Keeper - Alhoon Properties}
+            RESREF: {type: resref, value: gatekeeperal}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gate Keeper - Beholder Properties}
+            RESREF: {type: resref, value: gatekeeperbe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gate Keeper - Rogue Properties}
+            RESREF: {type: resref, value: keeperrogueprope}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gate Keeper - Slaad Properties}
+            RESREF: {type: resref, value: gatekeepersl}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gate Keeper - Vrok Properties}
+            RESREF: {type: resref, value: gatekeepervr}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Bebilith Properties}
+            RESREF: {type: resref, value: gauntletbebilit}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Beholder Properties}
+            RESREF: {type: resref, value: gauntletbeholde}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Drider Properties}
+            RESREF: {type: resref, value: gauntletdrider}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Gray Slaad Properties}
+            RESREF: {type: resref, value: gauntletgraysl}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Half-Celestial Properties}
+            RESREF: {type: resref, value: gauntlethalfce}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Mini Boss Properties}
+            RESREF: {type: resref, value: gauntletminibo}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Vrock Properties}
+            RESREF: {type: resref, value: gauntletvrockp}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: creitemlic001}
+            STRREF: {type: dword, value: 12937}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Mur-Zhagul Properties}
+            RESREF: {type: resref, value: murzhagulprope}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Negative Elemental Properties}
+            RESREF: {type: resref, value: su_negelemprop}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: NPC Formian Queen Properties}
+            RESREF: {type: resref, value: formquen_prop001}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: NPC Zombie Properties}
+            RESREF: {type: resref, value: it_creitemunf001}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Adamantine Golem Properties}
+            RESREF: {type: resref, value: pcadamantineg}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Archon Skin}
+            RESREF: {type: resref, value: pcarchonskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Azer Skin}
+            RESREF: {type: resref, value: pcazerskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Bone Golem Properties}
+            RESREF: {type: resref, value: pcbonegolemprope}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Clay Golem Properties}
+            RESREF: {type: resref, value: pcclaygolemprope}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Demonflesh Golem Properties}
+            RESREF: {type: resref, value: pcdemonfleshgole}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Derro Skin}
+            RESREF: {type: resref, value: pcderroskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Diamond Golem Properties}
+            RESREF: {type: resref, value: pcdiamondgolem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Doom Knight Skin}
+            RESREF: {type: resref, value: pcdoomknightskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Drider Skin}
+            RESREF: {type: resref, value: pcdriderskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Drow Skin}
+            RESREF: {type: resref, value: pcdrowskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Duergar Properties}
+            RESREF: {type: resref, value: pcduergarprope}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Elf-Aquatic}
+            RESREF: {type: resref, value: sfsub_elfaquatic}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Emerald Golem Properties}
+            RESREF: {type: resref, value: pcemeraldgolem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Fire Giant Skin}
+            RESREF: {type: resref, value: pcfiregiantskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Flesh Golem Properties}
+            RESREF: {type: resref, value: pcsubracefleshgo}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Frost Giant Skin}
+            RESREF: {type: resref, value: pcfrostgiantskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Horror Properties}
+            RESREF: {type: resref, value: pchorrorproper}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Iron Golem Properties}
+            RESREF: {type: resref, value: pcirongolemprope}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Mind Flayer Skin}
+            RESREF: {type: resref, value: pcmindflayer}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Mummy Skin}
+            RESREF: {type: resref, value: pcmummyskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Pixie Skin}
+            RESREF: {type: resref, value: pcpixieskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Quasit Skin}
+            RESREF: {type: resref, value: pcsubracequas}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Rakshasa Skin}
+            RESREF: {type: resref, value: pcrakshasaskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Ruby Golem Properties}
+            RESREF: {type: resref, value: pcrubygolempr}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Sahuagin Skin}
+            RESREF: {type: resref, value: pcsahuaginskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Sea-Hag Skin}
+            RESREF: {type: resref, value: pcseahagskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Sea-Hag Skin}
+            RESREF: {type: resref, value: pcsubracesea}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Shield Golem Properties}
+            RESREF: {type: resref, value: pcshieldgolempro}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Skeleton Skin}
+            RESREF: {type: resref, value: pcskeletonskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Stinger Skin}
+            RESREF: {type: resref, value: pcstingerskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Stone Golem Skin}
+            RESREF: {type: resref, value: pcstonegolemp}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Svirfneblin Skin}
+            RESREF: {type: resref, value: pcsvirfneblins}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Troll Skin}
+            RESREF: {type: resref, value: pcsubracetroll}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Undead Skin}
+            RESREF: {type: resref, value: pcundeadskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Vampire Skin}
+            RESREF: {type: resref, value: pcsubracevamp}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: PC Zombie Skin}
+            RESREF: {type: resref, value: pczombieskin}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Positive Elemental Properties}
+            RESREF: {type: resref, value: su_poselemprop}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Ravana Rak Properties}
+            RESREF: {type: resref, value: ravanarakprope}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Rune Elemental Properties}
+            RESREF: {type: resref, value: su_runeelemprop}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Shadow Lord Properties}
+            RESREF: {type: resref, value: shadowlordprop}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Summoned Demonflesh Properties}
+            RESREF: {type: resref, value: su_demonfleshpro}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Summoned Earth Elemental Properties}
+            RESREF: {type: resref, value: su_earth_prop}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Summoned Shapechanger Properties}
+            RESREF: {type: resref, value: su_shapechangerp}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Vah Shadow/Spectre/Allip/Wraith Properties}
+            RESREF: {type: resref, value: it_creitemun005}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Vah Skeleton Mage/Priest Properties}
+            RESREF: {type: resref, value: it_creitemun007}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Vah Skeleton Properties}
+            RESREF: {type: resref, value: it_creitemune001}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Vah Skeleton Warrior Properties}
+            RESREF: {type: resref, value: it_creitemun008}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_creitemun004}
+            STRREF: {type: dword, value: 13194}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_creitem015}
+            STRREF: {type: dword, value: 90574}
+        STRREF: {type: dword, value: 6809}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 56}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Summoned Negative Elemental Slam}
+            RESREF: {type: resref, value: su_negelemslam}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Summoned Positive Elemental Slam}
+            RESREF: {type: resref, value: su_poselemslam}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Summoned Rune Elemental Slam}
+            RESREF: {type: resref, value: su_runeelemslam}
+        STRREF: {type: dword, value: 6811}
+    STRREF: {type: dword, value: 6743}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 60}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Book of Carpathian Fiends}
+            RESREF: {type: resref, value: book_of_summons}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Carpathian Spellbook}
+            RESREF: {type: resref, value: itm_spellbook}
+        STRREF: {type: dword, value: 6815}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 16}
+            STRREF: {type: dword, value: 6745}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 15}
+            STRREF: {type: dword, value: 1520}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 17}
+            STRREF: {type: dword, value: 6746}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 18}
+            STRREF: {type: dword, value: 6747}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 19}
+            STRREF: {type: dword, value: 1530}
+        STRREF: {type: dword, value: 186}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 64}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Beige'}
+            RESREF: {type: resref, value: dyec10}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Black'}
+            RESREF: {type: resref, value: dyec45}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Blue'}
+            RESREF: {type: resref, value: dyec27}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Bright Copper'}
+            RESREF: {type: resref, value: dyec59}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Bright Orange'}
+            RESREF: {type: resref, value: dyec58}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Brown'}
+            RESREF: {type: resref, value: dyec02}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Burnt Orange'}
+            RESREF: {type: resref, value: dyec35}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Cerulean'}
+            RESREF: {type: resref, value: dyec26}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Dark Beige'}
+            RESREF: {type: resref, value: dyec11}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Dark Brown'}
+            RESREF: {type: resref, value: dyec03}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Dark Grey'}
+            RESREF: {type: resref, value: dyec23}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Dark Olive'}
+            RESREF: {type: resref, value: dyec19}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Dark Tan'}
+            RESREF: {type: resref, value: dyec07}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Dark Taupe'}
+            RESREF: {type: resref, value: dyec15}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Forest Green'}
+            RESREF: {type: resref, value: dyec31}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Fuchsia'}
+            RESREF: {type: resref, value: dyec39}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Goldenrod'}
+            RESREF: {type: resref, value: dyec33}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Green'}
+            RESREF: {type: resref, value: dyec30}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Grey'}
+            RESREF: {type: resref, value: dyec22}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Indigo'}
+            RESREF: {type: resref, value: dyec43}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Lavender'}
+            RESREF: {type: resref, value: dyec42}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Light Beige'}
+            RESREF: {type: resref, value: dyec09}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Light Brown'}
+            RESREF: {type: resref, value: dyec01}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Light Grey'}
+            RESREF: {type: resref, value: dyec21}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Light Olive'}
+            RESREF: {type: resref, value: dyec17}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Light Red'}
+            RESREF: {type: resref, value: dyec36}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Light Tan'}
+            RESREF: {type: resref, value: dyec05}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Light Taupe'}
+            RESREF: {type: resref, value: dyec13}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Lightest Beige'}
+            RESREF: {type: resref, value: dyec08}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Lightest Brown'}
+            RESREF: {type: resref, value: dyec00}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Lightest Grey'}
+            RESREF: {type: resref, value: dyec20}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Lightest Olive'}
+            RESREF: {type: resref, value: dyec16}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Lightest Tan'}
+            RESREF: {type: resref, value: dyec04}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Lightest Taupe'}
+            RESREF: {type: resref, value: dyec12}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Navy'}
+            RESREF: {type: resref, value: dyec25}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Obsidian'}
+            RESREF: {type: resref, value: dyec57}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Olive'}
+            RESREF: {type: resref, value: dyec18}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Orange'}
+            RESREF: {type: resref, value: dyec34}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Orchid'}
+            RESREF: {type: resref, value: dyec40}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Pink'}
+            RESREF: {type: resref, value: dyec38}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Pure Black'}
+            RESREF: {type: resref, value: dyec63}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Pure White'}
+            RESREF: {type: resref, value: dyec62}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Purple'}
+            RESREF: {type: resref, value: dyec41}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Red'}
+            RESREF: {type: resref, value: dyec37}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Reflective'}
+            RESREF: {type: resref, value: dyec61}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Blue'}
+            RESREF: {type: resref, value: dyec47}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Burnt Orange'}
+            RESREF: {type: resref, value: dyec51}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Forest Green'}
+            RESREF: {type: resref, value: dyec49}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Fuchsia'}
+            RESREF: {type: resref, value: dyec53}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Goldenrod'}
+            RESREF: {type: resref, value: dyec50}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Grey'}
+            RESREF: {type: resref, value: dyec60}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Indigo'}
+            RESREF: {type: resref, value: dyec55}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Navy'}
+            RESREF: {type: resref, value: dyec46}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Purple'}
+            RESREF: {type: resref, value: dyec54}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Red'}
+            RESREF: {type: resref, value: dyec52}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Shiny Teal'}
+            RESREF: {type: resref, value: dyec48}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Silver'}
+            RESREF: {type: resref, value: dyec56}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Slate'}
+            RESREF: {type: resref, value: dyec24}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Tan'}
+            RESREF: {type: resref, value: dyec06}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Taupe'}
+            RESREF: {type: resref, value: dyec14}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Teal'}
+            RESREF: {type: resref, value: dyec29}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Turquoise'}
+            RESREF: {type: resref, value: dyec28}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, White'}
+            RESREF: {type: resref, value: dyec44}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Cloth Dye, Yellow'}
+            RESREF: {type: resref, value: dyec32}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Beige'}
+            RESREF: {type: resref, value: dyel10}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Black'}
+            RESREF: {type: resref, value: dyel45}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Blue'}
+            RESREF: {type: resref, value: dyel27}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Bright Copper'}
+            RESREF: {type: resref, value: dyel59}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Bright Orange'}
+            RESREF: {type: resref, value: dyel58}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Brown'}
+            RESREF: {type: resref, value: dyel02}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Burnt Orange'}
+            RESREF: {type: resref, value: dyel35}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Cerulean'}
+            RESREF: {type: resref, value: dyel26}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Dark Beige'}
+            RESREF: {type: resref, value: dyel11}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Dark Brown'}
+            RESREF: {type: resref, value: dyel03}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Dark Grey'}
+            RESREF: {type: resref, value: dyel23}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Dark Olive'}
+            RESREF: {type: resref, value: dyel19}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Dark Tan'}
+            RESREF: {type: resref, value: dyel07}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Dark Taupe'}
+            RESREF: {type: resref, value: dyel15}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Forest Green'}
+            RESREF: {type: resref, value: dyel31}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Fuchsia'}
+            RESREF: {type: resref, value: dyel39}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Goldenrod'}
+            RESREF: {type: resref, value: dyel33}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Green'}
+            RESREF: {type: resref, value: dyel30}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Grey'}
+            RESREF: {type: resref, value: dyel22}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Indigo'}
+            RESREF: {type: resref, value: dyel43}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Lavender'}
+            RESREF: {type: resref, value: dyel42}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Light Beige'}
+            RESREF: {type: resref, value: dyel09}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Light Brown'}
+            RESREF: {type: resref, value: dyel01}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Light Grey'}
+            RESREF: {type: resref, value: dyel21}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Light Olive'}
+            RESREF: {type: resref, value: dyel17}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Light Red'}
+            RESREF: {type: resref, value: dyel36}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Light Tan'}
+            RESREF: {type: resref, value: dyel05}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Light Taupe'}
+            RESREF: {type: resref, value: dyel13}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Lightest Beige'}
+            RESREF: {type: resref, value: dyel08}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Lightest Brown'}
+            RESREF: {type: resref, value: dyel00}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Lightest Grey'}
+            RESREF: {type: resref, value: dyel20}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Lightest Olive'}
+            RESREF: {type: resref, value: dyel16}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Lightest Tan'}
+            RESREF: {type: resref, value: dyel04}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Lightest Taupe'}
+            RESREF: {type: resref, value: dyel12}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Navy'}
+            RESREF: {type: resref, value: dyel25}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Obsidian'}
+            RESREF: {type: resref, value: dyel57}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Olive'}
+            RESREF: {type: resref, value: dyel18}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Orange'}
+            RESREF: {type: resref, value: dyel34}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Orchid'}
+            RESREF: {type: resref, value: dyel40}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Pink'}
+            RESREF: {type: resref, value: dyel38}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Pure Black'}
+            RESREF: {type: resref, value: dyel63}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Pure White'}
+            RESREF: {type: resref, value: dyel62}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Purple'}
+            RESREF: {type: resref, value: dyel41}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Red'}
+            RESREF: {type: resref, value: dyel37}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Reflective'}
+            RESREF: {type: resref, value: dyel61}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Blue'}
+            RESREF: {type: resref, value: dyel47}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Burnt Orange'}
+            RESREF: {type: resref, value: dyel51}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Forest Green'}
+            RESREF: {type: resref, value: dyel49}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Fuchsia'}
+            RESREF: {type: resref, value: dyel53}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Goldenrod'}
+            RESREF: {type: resref, value: dyel50}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Grey'}
+            RESREF: {type: resref, value: dyel60}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Indigo'}
+            RESREF: {type: resref, value: dyel55}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Navy'}
+            RESREF: {type: resref, value: dyel46}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Purple'}
+            RESREF: {type: resref, value: dyel54}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Red'}
+            RESREF: {type: resref, value: dyel52}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Shiny Teal'}
+            RESREF: {type: resref, value: dyel48}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Silver'}
+            RESREF: {type: resref, value: dyel56}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Slate'}
+            RESREF: {type: resref, value: dyel24}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Tan'}
+            RESREF: {type: resref, value: dyel06}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Taupe'}
+            RESREF: {type: resref, value: dyel014}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Teal'}
+            RESREF: {type: resref, value: dyel29}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Turquoise'}
+            RESREF: {type: resref, value: dyel28}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, White'}
+            RESREF: {type: resref, value: dyel44}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Leather Dye, Yellow'}
+            RESREF: {type: resref, value: dyel32}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Black'}
+            RESREF: {type: resref, value: dyem07}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Blue'}
+            RESREF: {type: resref, value: dyem32}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Bright Copper'}
+            RESREF: {type: resref, value: dyem20}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Bright Gold'}
+            RESREF: {type: resref, value: dyem12}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Bright Orange'}
+            RESREF: {type: resref, value: dyem16}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Bright Yellow'}
+            RESREF: {type: resref, value: dyem08}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Copper'}
+            RESREF: {type: resref, value: dyem21}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Copper'}
+            RESREF: {type: resref, value: dyem23}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Gold'}
+            RESREF: {type: resref, value: dyem15}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Green'}
+            RESREF: {type: resref, value: dyem41}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Grey'}
+            RESREF: {type: resref, value: dyem06}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Mottled Grey'}
+            RESREF: {type: resref, value: dyem55}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Mottled Rust'}
+            RESREF: {type: resref, value: dyem53}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Orange'}
+            RESREF: {type: resref, value: dyem19}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Purple'}
+            RESREF: {type: resref, value: dyem29}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Rust'}
+            RESREF: {type: resref, value: dyem52}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Steel'}
+            RESREF: {type: resref, value: dyem02}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Dark Yellow'}
+            RESREF: {type: resref, value: dyem11}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Deep Green'}
+            RESREF: {type: resref, value: dyem43}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Forest Green'}
+            RESREF: {type: resref, value: dyem45}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Gold'}
+            RESREF: {type: resref, value: dyem13}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Green'}
+            RESREF: {type: resref, value: dyem40}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Grey'}
+            RESREF: {type: resref, value: dyem05}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Jungle Green'}
+            RESREF: {type: resref, value: dyem47}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Lavender'}
+            RESREF: {type: resref, value: dyem30}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Light Grey'}
+            RESREF: {type: resref, value: dyem04}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Light Rust'}
+            RESREF: {type: resref, value: dyem50}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Lime Green'}
+            RESREF: {type: resref, value: dyem44}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Maroon'}
+            RESREF: {type: resref, value: dyem25}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Mottled Grey'}
+            RESREF: {type: resref, value: dyem54}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Mottled Rust'}
+            RESREF: {type: resref, value: dyem51}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Blue'}
+            RESREF: {type: resref, value: dyem34}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Copper'}
+            RESREF: {type: resref, value: dyem22}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Gold'}
+            RESREF: {type: resref, value: dyem14}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Green'}
+            RESREF: {type: resref, value: dyem42}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Lavender'}
+            RESREF: {type: resref, value: dyem31}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Maroon'}
+            RESREF: {type: resref, value: dyem27}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Navy'}
+            RESREF: {type: resref, value: dyem35}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Orange'}
+            RESREF: {type: resref, value: dyem18}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Rainbow'}
+            RESREF: {type: resref, value: dyem49}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Red'}
+            RESREF: {type: resref, value: dyem26}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Teal'}
+            RESREF: {type: resref, value: dyem39}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Turquoise'}
+            RESREF: {type: resref, value: dyem38}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Muted Yellow'}
+            RESREF: {type: resref, value: dyem10}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Navy'}
+            RESREF: {type: resref, value: dyem33}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Obsidian'}
+            RESREF: {type: resref, value: dyem03}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Orange'}
+            RESREF: {type: resref, value: dyem17}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Pale Green'}
+            RESREF: {type: resref, value: dyem46}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Pure Black'}
+            RESREF: {type: resref, value: dyem63}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Pure White'}
+            RESREF: {type: resref, value: dyem62}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Purple'}
+            RESREF: {type: resref, value: dyem28}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Rainbow'}
+            RESREF: {type: resref, value: dyem48}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Red'}
+            RESREF: {type: resref, value: dyem24}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Reflective'}
+            RESREF: {type: resref, value: dyem61}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Shiny Black'}
+            RESREF: {type: resref, value: dyem60}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Silver'}
+            RESREF: {type: resref, value: dyem00}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Steel'}
+            RESREF: {type: resref, value: dyem01}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Teal'}
+            RESREF: {type: resref, value: dyem37}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Turquoise'}
+            RESREF: {type: resref, value: dyem36}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: 'Metal Dye, Yellow'}
+            RESREF: {type: resref, value: dyem09}
+        STRREF: {type: dword, value: 83602}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 57}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>AC Bonus +1</c>"}
+            RESREF: {type: resref, value: 1acgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Acid Damage Bonus</c>"}
+            RESREF: {type: resref, value: acidamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Acid Resistance Bonus</c>"}
+            RESREF: {type: resref, value: aciresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Attack Bonus +1</c>"}
+            RESREF: {type: resref, value: 1attackgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Bludgeoning Damage Bonus</c>"}
+            RESREF: {type: resref, value: bludamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Bludgeoning Resistance Bonus</c>"}
+            RESREF: {type: resref, value: bluresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Bonus Spell Slot Wizard Level
+                5</c>"}
+            RESREF: {type: resref, value: 5wizspellgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Cha Ability Bonus +1</c>"}
+            RESREF: {type: resref, value: 1chagem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Cold Damage Bonus</c>"}
+            RESREF: {type: resref, value: coldamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Cold Resistance Bonus</c>"}
+            RESREF: {type: resref, value: colresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Con Ability Bonus +1</c>"}
+            RESREF: {type: resref, value: 1congem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Dex Ability Bonus +1</c>"}
+            RESREF: {type: resref, value: 1dexgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Electrical Damage Bonus</c>"}
+            RESREF: {type: resref, value: eledamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Electrical Resistance Bonus</c>"}
+            RESREF: {type: resref, value: eleresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Enhancement Bonus +1</c>"}
+            RESREF: {type: resref, value: 1enhgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Fire Damage Bonus</c>"}
+            RESREF: {type: resref, value: firedamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Fire Resistance Bonus</c>"}
+            RESREF: {type: resref, value: fireresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Fireball Level 5 On-Hit</c>"}
+            RESREF: {type: resref, value: lvl5fireballgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Fortitude Bonus +1</c>"}
+            RESREF: {type: resref, value: 1fortgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Haste</c>"}
+            RESREF: {type: resref, value: hastegem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Int Ability Bonus +1</c>"}
+            RESREF: {type: resref, value: 1intgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Keen</c>"}
+            RESREF: {type: resref, value: keengem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Massive Critical Bonus</c>"}
+            RESREF: {type: resref, value: masscritgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Mighty +1</c>"}
+            RESREF: {type: resref, value: 1mightygem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Piercing Damage Bonus</c>"}
+            RESREF: {type: resref, value: pierdamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Piercing Resistance Bonus</c>"}
+            RESREF: {type: resref, value: pieresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Reflex Bonus +1</c>"}
+            RESREF: {type: resref, value: 1reflexgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Slashing Damage Bonus</c>"}
+            RESREF: {type: resref, value: sladamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Slashing Resistance Bonus</c>"}
+            RESREF: {type: resref, value: slaresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Sonic Damage Bonus</c>"}
+            RESREF: {type: resref, value: sondamgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Sonic Resistance Bonus</c>"}
+            RESREF: {type: resref, value: sonresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Spell Resistance Bonus</c>"}
+            RESREF: {type: resref, value: spellresistgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Str Ability Bonus +1</c>"}
+            RESREF: {type: resref, value: 1strgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Unlimited Ammo 1d6 Basic +5</c>"}
+            RESREF: {type: resref, value: unlimbasicgem001}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Unlimited Ammo 1d6 Basic</c>"}
+            RESREF: {type: resref, value: unlimbasicgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Unlimited Ammo 1d6 Cold"}
+            RESREF: {type: resref, value: unlimcoldgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Unlimited Ammo 1d6 Fire</c>"}
+            RESREF: {type: resref, value: unlimfiregem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Unlimited Ammo 1d6 Lightning</c>"}
+            RESREF: {type: resref, value: unlimlightgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Vampiric Regeneration +2</c>"}
+            RESREF: {type: resref, value: vampiricregen2}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Will Bonus +1</c>"}
+            RESREF: {type: resref, value: 1willgem}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Wis Ability Bonus +1</c>"}
+            RESREF: {type: resref, value: 1wisgem}
+        STRREF: {type: dword, value: 6812}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 21}
+            LIST:
+              type: list
+              value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                RESREF: {type: resref, value: it_mneck024}
+                STRREF: {type: dword, value: 13409}
+            STRREF: {type: dword, value: 6750}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 22}
+            STRREF: {type: dword, value: 6751}
+        STRREF: {type: dword, value: 6749}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 20}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Healer's Kit +20}
+            RESREF: {type: resref, value: itm_heal_kit_20}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Healer's Kit +30}
+            RESREF: {type: resref, value: itm_heal_kit_30}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Healer's Kit +40}
+            RESREF: {type: resref, value: itm_heal_kit_40}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Healer's Kit +50}
+            RESREF: {type: resref, value: itm_heal_kit_50}
+        STRREF: {type: dword, value: 6748}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 23}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: King Merry's Bones}
+            RESREF: {type: resref, value: lordmerrysbon}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: King Merry's Finger}
+            RESREF: {type: resref, value: itm_merry}
+        STRREF: {type: dword, value: 6699}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 24}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Harm Potion}
+            RESREF: {type: resref, value: itm_potion_harm}
+        STRREF: {type: dword, value: 6753}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 26}
+        STRREF: {type: dword, value: 6754}
+    STRREF: {type: dword, value: 1592}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ID: {type: byte, value: 54}
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cа\x01\x01>Ravana's Key</c>"}
+        RESREF: {type: resref, value: ravanaskey}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c\x01фу>Carpathian Gem</c>"}
+        RESREF: {type: resref, value: itm_carp_gem}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Carpathian Sequencer}
+        RESREF: {type: resref, value: itm_sequencer}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Quill of Legends}
+        RESREF: {type: resref, value: hgll_check_level}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Ravana's Eye}
+        RESREF: {type: resref, value: gauntlet_token}
+    STRREF: {type: dword, value: 6808}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 0}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Asterius Quiver}
+            RESREF: {type: resref, value: itm_ammo_creator}
+        STRREF: {type: dword, value: 6688}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 1}
+        STRREF: {type: dword, value: 6689}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 2}
+        STRREF: {type: dword, value: 6690}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 3}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet 3 Key}
+            RESREF: {type: resref, value: gauntlet3key}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet 4 Key}
+            RESREF: {type: resref, value: gauntlet4key}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet 6 Key}
+            RESREF: {type: resref, value: gauntlet6key}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet 7 Key}
+            RESREF: {type: resref, value: gauntlet7key}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Gauntlet Key}
+            RESREF: {type: resref, value: gauntletkey}
+        STRREF: {type: dword, value: 6691}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 4}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Amulet</c>"}
+            RESREF: {type: resref, value: socketamulet}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Bastard Sword</c>"}
+            RESREF: {type: resref, value: socketbsword}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Battleaxe</c>"}
+            RESREF: {type: resref, value: socketbaxe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Belt</c>"}
+            RESREF: {type: resref, value: socketbelt}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Boots</c>"}
+            RESREF: {type: resref, value: socketboots}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Bracers</c>"}
+            RESREF: {type: resref, value: socketbracer}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Cloak</c>"}
+            RESREF: {type: resref, value: socketcloak}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Cloth</c>"}
+            RESREF: {type: resref, value: socketcloth}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Club</c>"}
+            RESREF: {type: resref, value: socketclub}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Dagger</c>"}
+            RESREF: {type: resref, value: socketdagger}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Dire Mace</c>"}
+            RESREF: {type: resref, value: socketdmace}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Double Axe</c>"}
+            RESREF: {type: resref, value: socketdbaxe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Dwarven Waraxe</c>"}
+            RESREF: {type: resref, value: socketdaxe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Gauntlet</c>"}
+            RESREF: {type: resref, value: socketgloves}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Greataxe</c>"}
+            RESREF: {type: resref, value: socketgaxe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Greatsword</c>"}
+            RESREF: {type: resref, value: socketgsword}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Halberd</c>"}
+            RESREF: {type: resref, value: sockethalberd}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Handaxe</c>"}
+            RESREF: {type: resref, value: sockethaxe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Heavy Armour</c>"}
+            RESREF: {type: resref, value: socketheavy}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Heavy Crossbow</c>"}
+            RESREF: {type: resref, value: sockethcbow}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Heavy Flail</c>"}
+            RESREF: {type: resref, value: sockethflail}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Helmet</c>"}
+            RESREF: {type: resref, value: sockethelm}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Kama</c>"}
+            RESREF: {type: resref, value: socketkama}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Katana</c>"}
+            RESREF: {type: resref, value: socketkatana}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Kukri</c>"}
+            RESREF: {type: resref, value: socketkukri}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Large Shield</c>"}
+            RESREF: {type: resref, value: socketlshield}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Light Armour</c>"}
+            RESREF: {type: resref, value: socketlight}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Light Crossbow</c>"}
+            RESREF: {type: resref, value: socketlcbow}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Light Flail</c>"}
+            RESREF: {type: resref, value: socketlflail}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Light Hammer</c>"}
+            RESREF: {type: resref, value: sockethammer}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Longbow</c>"}
+            RESREF: {type: resref, value: socketlbow}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Longsword</c>"}
+            RESREF: {type: resref, value: socketlsword}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Mace</c>"}
+            RESREF: {type: resref, value: socketmace}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Medium Armour</c>"}
+            RESREF: {type: resref, value: socketmedium}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Morningstar</c>"}
+            RESREF: {type: resref, value: socketmstar}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Quarterstaff</c>"}
+            RESREF: {type: resref, value: socketqstaff}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Rapier</c>"}
+            RESREF: {type: resref, value: socketrapier}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Ring</c>"}
+            RESREF: {type: resref, value: socketring}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Scimitar</c>"}
+            RESREF: {type: resref, value: socketscimitar}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Scythe</c>"}
+            RESREF: {type: resref, value: socketscythe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Short Sword</c>"}
+            RESREF: {type: resref, value: socketssword}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Shortbow</c>"}
+            RESREF: {type: resref, value: socketsbow}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Sickle</c>"}
+            RESREF: {type: resref, value: socketsickle}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Sling</c>"}
+            RESREF: {type: resref, value: socketsling}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Small Shield</c>"}
+            RESREF: {type: resref, value: socketsshield}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Spear</c>"}
+            RESREF: {type: resref, value: socketspear}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Staff</c>"}
+            RESREF: {type: resref, value: socketstaff}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Tower Shield</c>"}
+            RESREF: {type: resref, value: sockettshield}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Two-Bladed Sword</c>"}
+            RESREF: {type: resref, value: sockettbsword}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "<c\x01ю\x01>Warhammer</c>"}
+            RESREF: {type: resref, value: socketwhammer}
+        STRREF: {type: dword, value: 6692}
+    STRREF: {type: dword, value: 6687}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ID: {type: byte, value: 53}
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Bastard Sword</c>"}
+        RESREF: {type: resref, value: '018'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Bracers</c>"}
+        RESREF: {type: resref, value: '010'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Chainmail</c> "}
+        RESREF: {type: resref, value: '002'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Cloak</c>"}
+        RESREF: {type: resref, value: '011'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Club</c>"}
+        RESREF: {type: resref, value: '026'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Dagger</c>"}
+        RESREF: {type: resref, value: '019'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Dire Mace</c>"}
+        RESREF: {type: resref, value: '033'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Double Axe</c>"}
+        RESREF: {type: resref, value: '034'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Dwarven Waraxe</c>"}
+        RESREF: {type: resref, value: '016'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Full Plate</c> "}
+        RESREF: {type: resref, value: '001'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Greataxe</c>"}
+        RESREF: {type: resref, value: '015'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Greatsword</c>"}
+        RESREF: {type: resref, value: '020'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Halberd</c>"}
+        RESREF: {type: resref, value: '042'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Handaxe</c>"}
+        RESREF: {type: resref, value: '017'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Heavy Crossbow</c>"}
+        RESREF: {type: resref, value: '045'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Heavy Flail</c>"}
+        RESREF: {type: resref, value: '027'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Kama</c>"}
+        RESREF: {type: resref, value: '037'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Katana</c>"}
+        RESREF: {type: resref, value: '022'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Kukri</c>"}
+        RESREF: {type: resref, value: '038'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Large Shield</c>"}
+        RESREF: {type: resref, value: '007'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Light Crossbow</c>"}
+        RESREF: {type: resref, value: '046'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Light Flail</c>"}
+        RESREF: {type: resref, value: '028'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Light Hammer</c>"}
+        RESREF: {type: resref, value: '029'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Longbow</c>"}
+        RESREF: {type: resref, value: '047'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Longsword</c>"}
+        RESREF: {type: resref, value: '021'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Mace</c>"}
+        RESREF: {type: resref, value: '031'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Morningstar</c>"}
+        RESREF: {type: resref, value: '032'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Quarterstaff</c>"}
+        RESREF: {type: resref, value: '035'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Rapier</c>"}
+        RESREF: {type: resref, value: '023'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Ring</c>"}
+        RESREF: {type: resref, value: '014'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Scimitar</c>"}
+        RESREF: {type: resref, value: '024'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Scythe</c>"}
+        RESREF: {type: resref, value: '043'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Short Sword</c>"}
+        RESREF: {type: resref, value: '025'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Shortbow</c>"}
+        RESREF: {type: resref, value: '048'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Sickle</c>"}
+        RESREF: {type: resref, value: '039'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Sling</c>"}
+        RESREF: {type: resref, value: '049'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Small Shield</c>"}
+        RESREF: {type: resref, value: '006'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Spear</c>"}
+        RESREF: {type: resref, value: '044'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Staff</c>"}
+        RESREF: {type: resref, value: '041'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Studded Leather Armor</c> "}
+        RESREF: {type: resref, value: '003'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Tower Shield</c>"}
+        RESREF: {type: resref, value: '005'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Two-Bladed Sword</c>"}
+        RESREF: {type: resref, value: '036'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Warhammer</c>"}
+        RESREF: {type: resref, value: '030'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<c fю>Whip</c>"}
+        RESREF: {type: resref, value: '040'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cfМю>Amulet</c>"}
+        RESREF: {type: resref, value: '013'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cfМю>Belt</c>"}
+        RESREF: {type: resref, value: '008'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cfМю>Boots</c>"}
+        RESREF: {type: resref, value: '009'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cfМю>Cloth</c>"}
+        RESREF: {type: resref, value: '050'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cfМю>Gauntlets</c>"}
+        RESREF: {type: resref, value: '012'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cfМю>Helmet</c>"}
+        RESREF: {type: resref, value: '004'}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: "<cfМю>Trident</c>"}
+        RESREF: {type: resref, value: wpltr012}
+    STRREF: {type: dword, value: 6732}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 27}
+            LIST:
+              type: list
+              value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                NAME: {type: cexostr, value: Celestial Arrows}
+                RESREF: {type: resref, value: su_celestarrow}
+            STRREF: {type: dword, value: 6757}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 28}
+            STRREF: {type: dword, value: 6758}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 29}
+            STRREF: {type: dword, value: 6759}
+        STRREF: {type: dword, value: 6756}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 32}
+            LIST:
+              type: list
+              value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                RESREF: {type: resref, value: waxmgr005}
+                STRREF: {type: dword, value: 13920}
+            STRREF: {type: dword, value: 6762}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 30}
+            STRREF: {type: dword, value: 6760}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 31}
+            STRREF: {type: dword, value: 6761}
+        STRREF: {type: dword, value: 490}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 33}
+            STRREF: {type: dword, value: 6764}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 34}
+            STRREF: {type: dword, value: 6765}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 35}
+            STRREF: {type: dword, value: 6766}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 36}
+            STRREF: {type: dword, value: 6767}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 37}
+            STRREF: {type: dword, value: 6699}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 38}
+            STRREF: {type: dword, value: 6768}
+        STRREF: {type: dword, value: 6763}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 39}
+            STRREF: {type: dword, value: 6769}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 40}
+            STRREF: {type: dword, value: 6770}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 41}
+            STRREF: {type: dword, value: 6771}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 42}
+            STRREF: {type: dword, value: 6772}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 61}
+            STRREF: {type: dword, value: 6817}
+        STRREF: {type: dword, value: 491}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 46}
+        STRREF: {type: dword, value: 6775}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 47}
+        STRREF: {type: dword, value: 6776}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 48}
+            LIST:
+              type: list
+              value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                NAME: {type: cexostr, value: Rod of the Arachnid}
+                RESREF: {type: resref, value: itm_cozia}
+            STRREF: {type: dword, value: 6778}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 49}
+            STRREF: {type: dword, value: 6779}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 50}
+            STRREF: {type: dword, value: 6780}
+        STRREF: {type: dword, value: 6777}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 51}
+        STRREF: {type: dword, value: 489}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 43}
+            STRREF: {type: dword, value: 6774}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 44}
+            STRREF: {type: dword, value: 6819}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 45}
+            STRREF: {type: dword, value: 6820}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            ID: {type: byte, value: 62}
+            STRREF: {type: dword, value: 6821}
+        STRREF: {type: dword, value: 6818}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 52}
+        STRREF: {type: dword, value: 494}
+    STRREF: {type: dword, value: 500}

@@ -1,0 +1,556 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 0}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 0}
+    AmbientSndNitVol: {type: int, value: 32}
+    EnvAudio: {type: int, value: 0}
+    MusicBattle: {type: int, value: 57}
+    MusicDay: {type: int, value: 0}
+    MusicDelay: {type: int, value: 88000}
+    MusicNight: {type: int, value: 0}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 0}
+    AutoRemoveKey: {type: byte, value: 1}
+    Bearing: {type: float, value: -0.0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: ''
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    GenericType_New: {type: dword, value: 10}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: gauntletkey}
+    KeyRequired: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: GauntletStoreExit}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Gauntlet Shop Entrance
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 1}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_plot_cl_60}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 558}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: GauntletShopEntrance}
+    TemplateResRef: {type: resref, value: acn_town_door}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 40.83}
+    Y: {type: float, value: 76.07}
+    Z: {type: float, value: 0.0}
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 405}
+        CR: {type: float, value: 480.0}
+        ResRef: {type: resref, value: gauntletmaster}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -69.575}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.2305}
+        Y: {type: float, value: 9.54}
+        Z: {type: float, value: 0.0306}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -69.338}
+        Y: {type: float, value: 9.3071}
+        Z: {type: float, value: 0.0361}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Gauntlet Master
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 600}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 3.1169}
+        X: {type: float, value: 40.2862}
+        Y: {type: float, value: 51.0463}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: GauntletMaster}
+    TemplateResRef: {type: resref, value: gauntletmaster}
+    XPosition: {type: float, value: 74.6712}
+    YPosition: {type: float, value: 20.3628}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 391}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      str_ref: 14533
+      value: {}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5670
+      value: {}
+    Lockable: {type: byte, value: 1}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 0}
+    PortraitId: {type: word, value: 826}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 1}
+    Tag: {type: cexostr, value: nw_plc_portal2}
+    TemplateResRef: {type: resref, value: nw_plc_portal2}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 40.0}
+    Y: {type: float, value: 11.0}
+    Z: {type: float, value: -0.0}
+SoundList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 0}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 0}
+    IntervalVrtn: {type: dword, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 67848
+      value: {}
+    Looping: {type: byte, value: 1}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.0}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 2}
+    Random: {type: byte, value: 0}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: al_mg_entrvscry1}}
+    Tag: {type: cexostr, value: EntranceVeryScary}
+    TemplateResRef: {type: resref, value: entranceveryscar}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 0}
+    XPosition: {type: float, value: 63.5776}
+    YPosition: {type: float, value: 62.9133}
+    ZPosition: {type: float, value: 1.5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 25000}
+    IntervalVrtn: {type: dword, value: 5000}
+    LocName:
+      type: cexolocstr
+      str_ref: 67795
+      value: {}
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.2}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 1}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_cv_belltower1}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_cv_belltower2}}
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_cv_belltower3}}
+    Tag: {type: cexostr, value: BellTowerRings}
+    TemplateResRef: {type: resref, value: belltowerring001}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 127}
+    XPosition: {type: float, value: 64.7796}
+    YPosition: {type: float, value: 68.4005}
+    ZPosition: {type: float, value: 1.52}
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value: []
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    Name: {type: cexostr, value: NO_PORTALS}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 2}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: POST_gauntlet_boss
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 0}
+    Tag: {type: cexostr, value: POST_gauntlet_boss}
+    TemplateResRef: {type: resref, value: post_}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 40.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 11.0}
+    ZPosition: {type: float, value: -0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_ALHOON
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_ALHOON}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0002}
+    XPosition: {type: float, value: 40.0}
+    YOrientation: {type: float, value: -1.0}
+    YPosition: {type: float, value: 40.0}
+    ZPosition: {type: float, value: -0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_BEBILITH
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_BEBILITH}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0002}
+    XPosition: {type: float, value: 50.0}
+    YOrientation: {type: float, value: -1.0}
+    YPosition: {type: float, value: 50.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_CELESTIAL
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_CELESTIAL}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 30.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 30.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_DRIDER
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_DRIDER}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0002}
+    XPosition: {type: float, value: 30.0}
+    YOrientation: {type: float, value: -1.0}
+    YPosition: {type: float, value: 50.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_SLAAD
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_SLAAD}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 50.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 30.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_TYRANT
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_TYRANT}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 1.0}
+    XPosition: {type: float, value: 20.04}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 40.1}
+    ZPosition: {type: float, value: -0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_VROK
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_VROK}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -1.0}
+    XPosition: {type: float, value: 60.0}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 40.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_SPAWN_ROGUE
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SPAWN_ROGUE}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0002}
+    XPosition: {type: float, value: 40.0}
+    YOrientation: {type: float, value: -1.0}
+    YPosition: {type: float, value: 60.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value: {}
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Gauntlet - Store
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    TemplateResRef: {type: resref, value: nw_mapnote001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 45.2408}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 70.8735}
+    ZPosition: {type: float, value: 0.0795}

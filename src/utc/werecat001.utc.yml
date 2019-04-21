@@ -1,0 +1,134 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTC
+__struct_id: 4294967295
+Appearance_Type: {type: word, value: 99}
+BodyBag: {type: byte, value: 0}
+CRAdjust: {type: int, value: 0}
+Cha: {type: byte, value: 10}
+ChallengeRating: {type: float, value: 5.0}
+ClassList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 25}
+    ClassLevel: {type: short, value: 6}
+Comment: {type: cexostr, value: ''}
+Con: {type: byte, value: 18}
+Conversation: {type: resref, value: ''}
+CurrentHitPoints: {type: short, value: 31}
+DecayTime: {type: dword, value: 5000}
+Deity: {type: cexostr, value: ''}
+Description:
+  type: cexolocstr
+  str_ref: 12805
+  value: {}
+Dex: {type: byte, value: 15}
+Disarmable: {type: byte, value: 0}
+Equip_ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16384, EquippedRes: {type: resref,
+      value: nw_it_crewpsp010}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32768, EquippedRes: {type: resref,
+      value: nw_it_crewpsp010}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 65536, EquippedRes: {type: resref,
+      value: nw_it_crewps015}}
+FactionID: {type: word, value: 1}
+FeatList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 6}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 228}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 28}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 291}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 289}}
+FirstName:
+  type: cexolocstr
+  str_ref: 12806
+  value:
+    0: Werecat
+Gender: {type: byte, value: 1}
+GoodEvil: {type: byte, value: 0}
+HitPoints: {type: short, value: 31}
+Int: {type: byte, value: 10}
+Interruptable: {type: byte, value: 1}
+IsImmortal: {type: byte, value: 0}
+IsPC: {type: byte, value: 0}
+LastName:
+  type: cexolocstr
+  value: {}
+LawfulChaotic: {type: byte, value: 50}
+Lootable: {type: byte, value: 1}
+MaxHitPoints: {type: short, value: 55}
+NaturalAC: {type: byte, value: 0}
+NoPermDeath: {type: byte, value: 0}
+PaletteID: {type: byte, value: 12}
+PerceptionRange: {type: byte, value: 11}
+Phenotype: {type: int, value: 0}
+Plot: {type: byte, value: 0}
+PortraitId: {type: word, value: 314}
+Race: {type: byte, value: 23}
+ScriptAttacked: {type: resref, value: ai_onattacked}
+ScriptDamaged: {type: resref, value: ai_ondamaged}
+ScriptDeath: {type: resref, value: ai_ondeath}
+ScriptDialogue: {type: resref, value: nw_c2_default4}
+ScriptDisturbed: {type: resref, value: nw_c2_default8}
+ScriptEndRound: {type: resref, value: nw_c2_default3}
+ScriptHeartbeat: {type: resref, value: nw_c2_default1}
+ScriptOnBlocked: {type: resref, value: nw_c2_defaulte}
+ScriptOnNotice: {type: resref, value: nw_c2_default2}
+ScriptRested: {type: resref, value: nw_c2_defaulta}
+ScriptSpawn: {type: resref, value: ai_onspawn_def_2}
+ScriptSpellAt: {type: resref, value: ai_onspellcast}
+ScriptUserDefine: {type: resref, value: x2_def_userdef}
+SkillList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 9}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 10}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 9}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 8}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 10}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+SoundSetFile: {type: word, value: 98}
+SpecAbilityList:
+  type: list
+  value: []
+StartingPackage: {type: byte, value: 0}
+Str: {type: byte, value: 20}
+Subrace: {type: cexostr, value: ''}
+Tag: {type: cexostr, value: NW_WERECAT}
+Tail_New: {type: dword, value: 0}
+TemplateList:
+  type: list
+  value: []
+TemplateResRef: {type: resref, value: werecat001}
+WalkRate: {type: int, value: 7}
+Wings_New: {type: dword, value: 0}
+Wis: {type: byte, value: 12}
+fortbonus: {type: short, value: 0}
+refbonus: {type: short, value: 0}
+willbonus: {type: short, value: 0}

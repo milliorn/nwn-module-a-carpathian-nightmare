@@ -1,0 +1,183 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTC
+__struct_id: 4294967295
+Appearance_Type: {type: word, value: 238}
+BodyBag: {type: byte, value: 0}
+CRAdjust: {type: int, value: 0}
+Cha: {type: byte, value: 10}
+ChallengeRating: {type: float, value: 93.0}
+ClassList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 5}
+    ClassLevel: {type: short, value: 60}
+Comment: {type: cexostr, value: ''}
+Con: {type: byte, value: 14}
+Conversation: {type: resref, value: ''}
+CurrentHitPoints: {type: short, value: 273}
+DecayTime: {type: dword, value: 5000}
+Deity: {type: cexostr, value: ''}
+Description:
+  type: cexolocstr
+  value: {}
+Dex: {type: byte, value: 14}
+Disarmable: {type: byte, value: 0}
+Equip_ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, EquippedRes: {type: resref, value: x0_armhe015}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 2, EquippedRes: {type: resref, value: x2_mcloth002}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 4, EquippedRes: {type: resref, value: nw_it_mboots003}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, EquippedRes: {type: resref, value: x0_it_mbracer002}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16, EquippedRes: {type: resref, value: x2_it_wpmwhip7}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32, EquippedRes: {type: resref, value: x2_ashmto004}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 64, EquippedRes: {type: resref, value: x2_it_mcloak007}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 128, EquippedRes: {type: resref,
+      value: x2_it_mring018}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 256, EquippedRes: {type: resref,
+      value: x0_it_mring004}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 512, EquippedRes: {type: resref,
+      value: x2_it_mneck021}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1024, EquippedRes: {type: resref,
+      value: x2_it_mbelt008}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16384, EquippedRes: {type: resref,
+      value: x2_it_crewps004}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32768, EquippedRes: {type: resref,
+      value: x2_it_crewps004}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 65536, EquippedRes: {type: resref,
+      value: x2_it_crewps004}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 131072, EquippedRes: {type: resref,
+      value: nw_it_creitemunh}}
+FactionID: {type: word, value: 1}
+FeatList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 490}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 6}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 8}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 214}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 215}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 297}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 492}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 494}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 971}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 754}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 755}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 756}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 757}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 759}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 206}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 204}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 212}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 697}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 698}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 17}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 21}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 344}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 23}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 260}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 207}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 1089}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 216}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 209}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 258}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 296}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 32}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 208}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 39}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 41}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 289}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 44}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 49}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 211}}
+FirstName:
+  type: cexolocstr
+  value:
+    0: Bubba
+Gender: {type: byte, value: 0}
+GoodEvil: {type: byte, value: 50}
+HitPoints: {type: short, value: 273}
+Int: {type: byte, value: 10}
+Interruptable: {type: byte, value: 0}
+IsImmortal: {type: byte, value: 0}
+IsPC: {type: byte, value: 0}
+LastName:
+  type: cexolocstr
+  value:
+    0: The Trap
+LawfulChaotic: {type: byte, value: 50}
+Lootable: {type: byte, value: 0}
+MaxHitPoints: {type: short, value: 393}
+NaturalAC: {type: byte, value: 0}
+NoPermDeath: {type: byte, value: 0}
+PaletteID: {type: byte, value: 1}
+PerceptionRange: {type: byte, value: 10}
+Phenotype: {type: int, value: 0}
+Plot: {type: byte, value: 1}
+PortraitId: {type: word, value: 120}
+Race: {type: byte, value: 6}
+ScriptAttacked: {type: resref, value: x2_def_attacked}
+ScriptDamaged: {type: resref, value: x2_def_ondamage}
+ScriptDeath: {type: resref, value: x2_def_ondeath}
+ScriptDialogue: {type: resref, value: x2_def_onconv}
+ScriptDisturbed: {type: resref, value: x2_def_ondisturb}
+ScriptEndRound: {type: resref, value: x2_def_endcombat}
+ScriptHeartbeat: {type: resref, value: ai_hb_bubba}
+ScriptOnBlocked: {type: resref, value: x2_def_onblocked}
+ScriptOnNotice: {type: resref, value: x2_def_percept}
+ScriptRested: {type: resref, value: x2_def_rested}
+ScriptSpawn: {type: resref, value: ai_spawn_bubba}
+ScriptSpellAt: {type: resref, value: x2_def_spellcast}
+ScriptUserDefine: {type: resref, value: x2_def_userdef}
+SkillList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 61}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 61}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 1}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 61}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 61}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 61}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 1}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+SoundSetFile: {type: word, value: 22}
+SpecAbilityList:
+  type: list
+  value: []
+StartingPackage: {type: byte, value: 5}
+Str: {type: byte, value: 14}
+Subrace: {type: cexostr, value: ''}
+Tag: {type: cexostr, value: Bubba}
+Tail_New: {type: dword, value: 0}
+TemplateList:
+  type: list
+  value: []
+TemplateResRef: {type: resref, value: bubba}
+WalkRate: {type: int, value: 8}
+Wings_New: {type: dword, value: 0}
+Wis: {type: byte, value: 30}
+fortbonus: {type: short, value: 0}
+refbonus: {type: short, value: 0}
+willbonus: {type: short, value: 0}

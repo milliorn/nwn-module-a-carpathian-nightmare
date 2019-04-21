@@ -1,0 +1,2478 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 69}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 69}
+    AmbientSndNitVol: {type: int, value: 32}
+    EnvAudio: {type: int, value: 0}
+    MusicBattle: {type: int, value: 38}
+    MusicDay: {type: int, value: 11}
+    MusicDelay: {type: int, value: 90000}
+    MusicNight: {type: int, value: 12}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 1}
+    Appearance: {type: dword, value: 60}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1416}
+    CloseLockDC: {type: byte, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 60}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 28}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 28}
+    GenericType_New: {type: dword, value: 18}
+    HP: {type: short, value: 60}
+    Hardness: {type: byte, value: 15}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: MerrysCemeterytoMerrysTomb}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: Merry's Tomb to Merry's Cemetery
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_close}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 28}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: MerrysTombtoMerrysCemetery}
+    TemplateResRef: {type: resref, value: x3_door_oth001}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 2}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 70.0}
+    Y: {type: float, value: 69.16}
+    Z: {type: float, value: 3.0}
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.3386}
+        Y: {type: float, value: -30.5884}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 4.5149}
+        Y: {type: float, value: -30.5884}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 4.8794}
+        Y: {type: float, value: -46.1322}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 6.6832}
+        Y: {type: float, value: -46.0195}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 7.111}
+        Y: {type: float, value: -30.8142}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 21.5586}
+        Y: {type: float, value: -30.5884}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 21.5586}
+        Y: {type: float, value: -20.5428}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.2656}
+        Y: {type: float, value: -20.7685}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.3785}
+        Y: {type: float, value: -15.915}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.3656}
+        Y: {type: float, value: -15.6939}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.3656}
+        Y: {type: float, value: -14.2284}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.2656}
+        Y: {type: float, value: -14.5605}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.2656}
+        Y: {type: float, value: -6.3208}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.7038}
+        Y: {type: float, value: -5.6606}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.5911}
+        Y: {type: float, value: -4.195}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.1528}
+        Y: {type: float, value: -4.0634}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.2656}
+        Y: {type: float, value: 0.2258}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.589}
+        X: {type: float, value: 24.8158}
+        Y: {type: float, value: 115.7352}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 9.2394}
+    YPosition: {type: float, value: 130.1829}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.7545}
+        Y: {type: float, value: -46.4544}
+        Z: {type: float, value: 0.0821}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.0562}
+        Y: {type: float, value: -46.355}
+        Z: {type: float, value: 0.0392}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.0562}
+        Y: {type: float, value: -41.9538}
+        Z: {type: float, value: 0.0392}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 41.8186}
+        Y: {type: float, value: -41.9315}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 41.8186}
+        Y: {type: float, value: -40.3532}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 26.8314}
+        Y: {type: float, value: -39.8129}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 26.6057}
+        Y: {type: float, value: -25.2523}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.853}
+        Y: {type: float, value: -25.2523}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 7.2027}
+        Y: {type: float, value: -15.5493}
+        Z: {type: float, value: 0.0881}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.1124}
+        Y: {type: float, value: -15.5453}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.1361}
+        Y: {type: float, value: 0.2311}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.1473}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.2579}
+        Y: {type: float, value: -15.4324}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.4342}
+        Y: {type: float, value: -15.3196}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 0.7854}
+        X: {type: float, value: 24.3643}
+        Y: {type: float, value: 24.7665}
+        Z: {type: float, value: 0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 13.7865}
+    YPosition: {type: float, value: 55.7753}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.1751}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.0894}
+        Y: {type: float, value: 0.1075}
+        Z: {type: float, value: 0.1469}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.1932}
+        Y: {type: float, value: -4.4086}
+        Z: {type: float, value: 0.1139}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.8862}
+        Y: {type: float, value: -4.0912}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.8862}
+        Y: {type: float, value: 26.8358}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 42.4842}
+        Y: {type: float, value: 26.8358}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 42.1397}
+        Y: {type: float, value: 41.7024}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 40.2232}
+        Y: {type: float, value: 41.8151}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 40.1139}
+        Y: {type: float, value: 26.3844}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 35.9376}
+        Y: {type: float, value: 26.2715}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 35.8247}
+        Y: {type: float, value: 16.5645}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.6206}
+        Y: {type: float, value: 16.4516}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.3998}
+        Y: {type: float, value: 2.2326}
+        Z: {type: float, value: 0.0435}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0898}
+        Y: {type: float, value: 2.0199}
+        Z: {type: float, value: 0.125}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value: []
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 83.7448}
+    YPosition: {type: float, value: 13.8095}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.1127}
+        Y: {type: float, value: -1.5783}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.981}
+        Y: {type: float, value: -1.2298}
+        Z: {type: float, value: 0.078}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.4182}
+        Y: {type: float, value: -15.8915}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.2381}
+        Y: {type: float, value: -15.8915}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.1259}
+        Y: {type: float, value: -26.5011}
+        Z: {type: float, value: 0.0297}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 39.5729}
+        Y: {type: float, value: -26.3887}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 40.1334}
+        Y: {type: float, value: -41.8244}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 41.7117}
+        Y: {type: float, value: -41.8244}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 42.0561}
+        Y: {type: float, value: -26.5015}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.5709}
+        Y: {type: float, value: -26.3887}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 46.2323}
+        Y: {type: float, value: 4.7641}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.0845}
+        Y: {type: float, value: 4.3073}
+        Z: {type: float, value: 0.0435}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.0845}
+        Y: {type: float, value: 0.2448}
+        Z: {type: float, value: 0.0435}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 0.3927}
+        X: {type: float, value: 114.9417}
+        Y: {type: float, value: 115.1468}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 84.0601}
+    YPosition: {type: float, value: 125.7333}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.8231}
+        Y: {type: float, value: -12.0696}
+        Z: {type: float, value: 0.0449}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.7064}
+        Y: {type: float, value: -19.3719}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.1815}
+        Y: {type: float, value: -19.2943}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.0263}
+        Y: {type: float, value: -26.6649}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 12.9056}
+        Y: {type: float, value: -26.6649}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 12.9056}
+        Y: {type: float, value: -10.6823}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.2764}
+        Y: {type: float, value: -10.6047}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.7908}
+        Y: {type: float, value: -0.2336}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0779}
+        Y: {type: float, value: -11.835}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.9452}
+        X: {type: float, value: 57.2334}
+        Y: {type: float, value: 97.0925}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 53.9633}
+    YPosition: {type: float, value: 112.5092}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -11.1097}
+        Y: {type: float, value: -30.3688}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -7.3856}
+        Y: {type: float, value: -30.2912}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -7.1529}
+        Y: {type: float, value: -22.9981}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 7.3557}
+        Y: {type: float, value: -22.7654}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.9677}
+        Y: {type: float, value: -14.5413}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.0798}
+        Y: {type: float, value: -14.5413}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.8654}
+        Y: {type: float, value: -0.0777}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.1459}
+        Y: {type: float, value: -15.0746}
+        Z: {type: float, value: 0.0602}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.877}
+        Y: {type: float, value: -14.9292}
+        Z: {type: float, value: 0.225}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.5525}
+        X: {type: float, value: 82.7774}
+        Y: {type: float, value: 97.7933}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 83.9303}
+    YPosition: {type: float, value: 115.9803}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.3109}
+        Y: {type: float, value: -1.7099}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.1577}
+        Y: {type: float, value: -1.9438}
+        Z: {type: float, value: 0.1459}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.2413}
+        Y: {type: float, value: -13.0413}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 35.782}
+        Y: {type: float, value: -13.3075}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 35.782}
+        Y: {type: float, value: -9.0251}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 23.2326}
+        Y: {type: float, value: -8.9293}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 23.4653}
+        Y: {type: float, value: 6.0448}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.5516}
+        Y: {type: float, value: 5.8896}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.6158}
+        Y: {type: float, value: 0.4741}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -1.5708}
+        X: {type: float, value: 42.6433}
+        Y: {type: float, value: 84.3876}
+        Z: {type: float, value: 0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 23.6795}
+    YPosition: {type: float, value: 85.938}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -35.5564}
+        Y: {type: float, value: -9.3367}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -35.5564}
+        Y: {type: float, value: -12.6847}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.6126}
+        Y: {type: float, value: -12.3429}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.6122}
+        Y: {type: float, value: -1.8659}
+        Z: {type: float, value: 0.1403}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0777}
+        Y: {type: float, value: -1.7877}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -15.1566}
+        Y: {type: float, value: 0.0846}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -15.2334}
+        Y: {type: float, value: 5.4296}
+        Z: {type: float, value: 0.1922}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -22.9142}
+        Y: {type: float, value: 5.3467}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -22.8366}
+        Y: {type: float, value: -9.2395}
+        Z: {type: float, value: 0.225}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -1.5708}
+        X: {type: float, value: 96.6304}
+        Y: {type: float, value: 85.0884}
+        Z: {type: float, value: 0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 115.758}
+    YPosition: {type: float, value: 85.8602}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -35.4682}
+        Y: {type: float, value: 13.465}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -35.3904}
+        Y: {type: float, value: 9.4162}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -23.2349}
+        Y: {type: float, value: 9.4706}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -23.3125}
+        Y: {type: float, value: -4.3397}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -15.5356}
+        Y: {type: float, value: -4.2875}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -15.4577}
+        Y: {type: float, value: -0.083}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1554}
+        Y: {type: float, value: 2.3317}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.3902}
+        Y: {type: float, value: 1.7896}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.4677}
+        Y: {type: float, value: 13.1947}
+        Z: {type: float, value: 0.225}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 0.589}
+        X: {type: float, value: 96.3637}
+        Y: {type: float, value: 57.7652}
+        Z: {type: float, value: -0.0012}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 115.9481}
+    YPosition: {type: float, value: 53.7994}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0912}
+        Y: {type: float, value: -20.6312}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 10.8137}
+        Y: {type: float, value: -20.7881}
+        Z: {type: float, value: 0.0984}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 10.7297}
+        Y: {type: float, value: -35.9368}
+        Z: {type: float, value: 0.1499}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.0644}
+        Y: {type: float, value: -35.8662}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.0646}
+        Y: {type: float, value: -20.8655}
+        Z: {type: float, value: 0.1242}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.4411}
+        Y: {type: float, value: -20.5555}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.2377}
+        Y: {type: float, value: -13.5709}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 3.3498}
+        Y: {type: float, value: -13.4157}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 3.2702}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.7489}
+        X: {type: float, value: 81.4569}
+        Y: {type: float, value: 43.094}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 73.0529}
+    YPosition: {type: float, value: 59.7679}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.4328}
+        Y: {type: float, value: 22.5646}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.1652}
+        Y: {type: float, value: 15.4612}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0121}
+        Y: {type: float, value: 15.4612}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.364}
+        Y: {type: float, value: -2.4099}
+        Z: {type: float, value: -5.775}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.419}
+        Y: {type: float, value: 15.6637}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.1447}
+        Y: {type: float, value: 15.9983}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.4603}
+        Y: {type: float, value: 35.5178}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.0033}
+        Y: {type: float, value: 35.3152}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.1039}
+        Y: {type: float, value: 22.4636}
+        Z: {type: float, value: 0.225}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -3.1416}
+        X: {type: float, value: 59.0103}
+        Y: {type: float, value: 43.8439}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 53.9576}
+    YPosition: {type: float, value: 23.8244}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 59}
+        CR: {type: float, value: 58.0}
+        ResRef: {type: resref, value: merrywarrior}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 124}
+        CR: {type: float, value: 63.0}
+        ResRef: {type: resref, value: merrypriest001}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.4046}
+        Y: {type: float, value: -1.8208}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.7859}
+        Y: {type: float, value: -1.606}
+        Z: {type: float, value: 0.2184}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.883}
+        Y: {type: float, value: -6.864}
+        Z: {type: float, value: 0.1965}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 22.5656}
+        Y: {type: float, value: -7.0602}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 22.3636}
+        Y: {type: float, value: 7.3856}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 35.5167}
+        Y: {type: float, value: 7.3834}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 35.618}
+        Y: {type: float, value: 10.9288}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.3932}
+        Y: {type: float, value: 11.1234}
+        Z: {type: float, value: 0.225}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.5614}
+        Y: {type: float, value: 0.0901}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Merry Mummy Tomb
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 8}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.3562}
+        X: {type: float, value: 42.5354}
+        Y: {type: float, value: 58.7086}
+        Z: {type: float, value: -0.0013}
+    Tag: {type: cexostr, value: MerryMummyTomb}
+    TemplateResRef: {type: resref, value: merrymummytomb}
+    XPosition: {type: float, value: 23.834}
+    YPosition: {type: float, value: 55.681}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 761}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14537
+      value:
+        0: |-
+          The sarcophagus' heavy lid is fashioned from unadorned stone. Inside contains King Merry, an ancient king of Carpathia.
+
+
+          Find all of King Merry's bones that are guarded by his Mummy Priest.  When you find 12 of his bones, come back here and put it in his coffin.  If you defeat King Merry, he will drop an item into your inventory.  Use that item on a weapon or ammo to get the unique reward.
+
+          Reward:  Evil Blight On-Hit Property.
+
+          Evil Blight will do a Curse effect.  It is a SR check followed by a Will save if you fail the SR check.  It is a one turn temporary effect duration.  The curse is ability point damage.  Each ability point will do a random 50/50 chance of damage.  If fail, -1 ability damage is done to that ability.  Effects stack
+
+          This reward will apply to the following items if they are equipped.
+
+          Right Hand Weapon
+          Gloves (not Bracers)
+          Arrows
+          Bolts
+          Bullets
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14538
+      value:
+        0: King Merry's Coffin
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: merry_dist_coffi}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 1230}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: LordMerrysCoffin}
+    TemplateResRef: {type: resref, value: nw_vampire_shad}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 70.0}
+    Y: {type: float, value: 145.0}
+    Z: {type: float, value: 0.6}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 761}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.6981}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 1230}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low001}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 15.0}
+    Y: {type: float, value: 125.0}
+    Z: {type: float, value: 1.4}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 761}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 0.7854}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 1230}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low001}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 125.0}
+    Y: {type: float, value: 125.0}
+    Z: {type: float, value: 1.4}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 761}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 2.3562}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 1230}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low001}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 125.0}
+    Y: {type: float, value: 15.0}
+    Z: {type: float, value: 1.4}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 761}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -2.3562}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 1230}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low001}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 15.0}
+    Y: {type: float, value: 15.0}
+    Z: {type: float, value: 1.4}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 4}
+    Appearance: {type: dword, value: 172}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14718
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14719
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 530}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 1}
+    Tag: {type: cexostr, value: ShaftofLightBlue}
+    TemplateResRef: {type: resref, value: plc_solblue}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 70.0}
+    Y: {type: float, value: 145.0}
+    Z: {type: float, value: 0.6}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 723}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14609
+      value:
+        0: The smoke has an acrid smell, as if something foul smoulders at its source.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 111246
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 1172}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: x3_plc_smokemag}
+    TemplateResRef: {type: resref, value: x3_plc_smokemag}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 70.0}
+    Y: {type: float, value: 145.0}
+    Z: {type: float, value: 0.6}
+SoundList:
+  type: list
+  value: []
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value: []
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value: {}
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Merry's Cemetery
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    TemplateResRef: {type: resref, value: nw_mapnote001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 69.9806}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 71.8577}
+    ZPosition: {type: float, value: 3.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: Waypoint
+    MapNote:
+      type: cexolocstr
+      value:
+        0: Lord Merry's Coffin
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 1.0}
+    XPosition: {type: float, value: 55.0}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 145.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_A}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -0.3827}
+    XPosition: {type: float, value: 25.0}
+    YOrientation: {type: float, value: -0.9239}
+    YPosition: {type: float, value: 115.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_B}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -0.831}
+    XPosition: {type: float, value: 115.0}
+    YOrientation: {type: float, value: 0.5563}
+    YPosition: {type: float, value: 115.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_C}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.9239}
+    XPosition: {type: float, value: 55.0}
+    YOrientation: {type: float, value: 0.3827}
+    YPosition: {type: float, value: 96.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_D}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.196}
+    XPosition: {type: float, value: 85.0}
+    YOrientation: {type: float, value: -0.9806}
+    YPosition: {type: float, value: 96.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_E}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.1942}
+    XPosition: {type: float, value: 42.0}
+    YOrientation: {type: float, value: 0.981}
+    YPosition: {type: float, value: 81.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_F}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.7071}
+    XPosition: {type: float, value: 96.0}
+    YOrientation: {type: float, value: 0.7071}
+    YPosition: {type: float, value: 81.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_G}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -0.3827}
+    XPosition: {type: float, value: 41.0}
+    YOrientation: {type: float, value: -0.9239}
+    YPosition: {type: float, value: 55.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_H}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 96.0}
+    YOrientation: {type: float, value: -1.0}
+    YPosition: {type: float, value: 55.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_I}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.9239}
+    XPosition: {type: float, value: 55.0}
+    YOrientation: {type: float, value: 0.3827}
+    YPosition: {type: float, value: 44.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_J}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 85.0}
+    YOrientation: {type: float, value: -1.0}
+    YPosition: {type: float, value: 44.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_K}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.7071}
+    XPosition: {type: float, value: 25.0}
+    YOrientation: {type: float, value: 0.7071}
+    YPosition: {type: float, value: 25.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_SPAWN_L}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.9239}
+    XPosition: {type: float, value: 115.0}
+    YOrientation: {type: float, value: 0.3827}
+    YPosition: {type: float, value: 25.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_A}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 1.0}
+    XPosition: {type: float, value: 61.0}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 145.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_B}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -0.7071}
+    XPosition: {type: float, value: 89.0}
+    YOrientation: {type: float, value: -0.7071}
+    YPosition: {type: float, value: 149.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_C}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -1.0}
+    XPosition: {type: float, value: 79.0}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 145.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_D}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.5736}
+    XPosition: {type: float, value: 59.0}
+    YOrientation: {type: float, value: 0.8192}
+    YPosition: {type: float, value: 141.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_E}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.7071}
+    XPosition: {type: float, value: 59.0}
+    YOrientation: {type: float, value: -0.7071}
+    YPosition: {type: float, value: 149.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_F}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.7071}
+    XPosition: {type: float, value: 51.0}
+    YOrientation: {type: float, value: -0.7071}
+    YPosition: {type: float, value: 149.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_G}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.6428}
+    XPosition: {type: float, value: 51.0}
+    YOrientation: {type: float, value: 0.766}
+    YPosition: {type: float, value: 141.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_H}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -0.7071}
+    XPosition: {type: float, value: 89.0}
+    YOrientation: {type: float, value: 0.7071}
+    YPosition: {type: float, value: 141.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_I}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -0.7071}
+    XPosition: {type: float, value: 81.0}
+    YOrientation: {type: float, value: -0.7071}
+    YPosition: {type: float, value: 149.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MERRY_BOSS_J}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: -0.7071}
+    XPosition: {type: float, value: 81.0}
+    YOrientation: {type: float, value: 0.7071}
+    YPosition: {type: float, value: 141.0}
+    ZPosition: {type: float, value: 0.0}

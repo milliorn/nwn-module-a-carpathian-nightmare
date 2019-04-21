@@ -1,0 +1,147 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: DLG
+__struct_id: 4294967295
+DelayEntry: {type: dword, value: 0}
+DelayReply: {type: dword, value: 0}
+EndConverAbort: {type: resref, value: nw_walk_wp}
+EndConversation: {type: resref, value: nw_walk_wp}
+EntryList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 0}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Run and return here with one of Ravana's Eyes and I will give you a good
+          prize!
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 1}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Ahhh, I see you have one of Ravana's Eyes! Would you like your prize and
+          GP/XP?
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 2}
+        IsChild: {type: byte, value: 0}
+    Script: {type: resref, value: rav_conv_gpxp}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: There you go, <FirstName>, now here is your other prize.
+NumWords: {type: dword, value: 51}
+PreventZoomIn: {type: byte, value: 0}
+ReplyList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: OK
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Active: {type: resref, value: ''}
+        Index: {type: dword, value: 2}
+        IsChild: {type: byte, value: 0}
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: rav_conv_gift}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Yes, give me my Prize Reward!
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    EntriesList:
+      type: list
+      value: []
+    Quest: {type: cexostr, value: ''}
+    Script: {type: resref, value: ''}
+    Sound: {type: resref, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: Thanks!
+StartingList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Active: {type: resref, value: rav_conv_sc}
+    Index: {type: dword, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Active: {type: resref, value: ''}
+    Index: {type: dword, value: 0}

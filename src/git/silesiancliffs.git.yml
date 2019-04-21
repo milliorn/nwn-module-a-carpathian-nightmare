@@ -1,0 +1,1719 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 51}
+    AmbientSndDayVol: {type: int, value: 42}
+    AmbientSndNight: {type: int, value: 55}
+    AmbientSndNitVol: {type: int, value: 42}
+    EnvAudio: {type: int, value: 92}
+    MusicBattle: {type: int, value: 72}
+    MusicDay: {type: int, value: 5}
+    MusicDelay: {type: int, value: 90000}
+    MusicNight: {type: int, value: 4}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 1}
+    Appearance: {type: dword, value: 57}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 1.5708}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: SilesianFallsExit}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: Silesian Cliffs Entrance
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_close}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SilesianCliffsEntrance}
+    TemplateResRef: {type: resref, value: nw_door_ttr_12}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 15.49}
+    Y: {type: float, value: 34.74}
+    Z: {type: float, value: 4.56}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 197}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1415}
+    CloseLockDC: {type: byte, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LinkedToFlags: {type: byte, value: 0}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: door_close_60}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: WallDoor}
+    TemplateResRef: {type: resref, value: nw_door_ttr_07}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 66.37}
+    Y: {type: float, value: 34.95}
+    Z: {type: float, value: 5.0}
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -0.1693}
+        Y: {type: float, value: -26.7474}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 30.1332}
+        Y: {type: float, value: -27.086}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 28.7789}
+        Y: {type: float, value: 10.3265}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Comment: {type: cexostr, value: ''}
+        Orientation: {type: float, value: -2.7488}
+        X: {type: float, value: 67.5511}
+        Y: {type: float, value: 62.9385}
+        Z: {type: float, value: 4.7923}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Comment: {type: cexostr, value: ''}
+        Orientation: {type: float, value: 2.5525}
+        X: {type: float, value: 39.5563}
+        Y: {type: float, value: 53.2702}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 39.0484}
+    YPosition: {type: float, value: 71.384}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.6987}
+        Y: {type: float, value: 15.1341}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 32.6215}
+        Y: {type: float, value: 1.2345}
+        Z: {type: float, value: 4.7024}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 29.3416}
+        Y: {type: float, value: 15.4429}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.3562}
+        X: {type: float, value: 106.0255}
+        Y: {type: float, value: 45.7092}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.7488}
+        X: {type: float, value: 75.7573}
+        Y: {type: float, value: 52.0408}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 77.4932}
+    YPosition: {type: float, value: 37.8557}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 38.5684}
+        Y: {type: float, value: 0.4803}
+        Z: {type: float, value: 5.2181}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 38.6074}
+        Y: {type: float, value: 20.0758}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 32.8935}
+        Y: {type: float, value: 27.6429}
+        Z: {type: float, value: 5.0222}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 3.7083}
+        Y: {type: float, value: 27.0198}
+        Z: {type: float, value: 5.069}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 1.1781}
+        X: {type: float, value: 80.2358}
+        Y: {type: float, value: 75.2155}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -1.5708}
+        X: {type: float, value: 111.8938}
+        Y: {type: float, value: 75.061}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 75.7573}
+    YPosition: {type: float, value: 55.1396}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.7721}
+        Y: {type: float, value: 16.2151}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.6429}
+        Y: {type: float, value: -0.1544}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.4885}
+        Y: {type: float, value: 16.524}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.3562}
+        X: {type: float, value: 147.4887}
+        Y: {type: float, value: 47.1093}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 0.1963}
+        X: {type: float, value: 121.2357}
+        Y: {type: float, value: 46.8004}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 121.0812}
+    YPosition: {type: float, value: 38.3068}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.5595}
+        Y: {type: float, value: -22.0834}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 28.0026}
+        Y: {type: float, value: -19.9333}
+        Z: {type: float, value: 4.8039}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.9518}
+        Y: {type: float, value: 0.1544}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.9452}
+        X: {type: float, value: 147.4887}
+        Y: {type: float, value: 71.6636}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.9452}
+        X: {type: float, value: 118.6104}
+        Y: {type: float, value: 69.1927}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 121.3901}
+    YPosition: {type: float, value: 81.7015}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -2.9342}
+        Y: {type: float, value: -21.3113}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 28.4244}
+        Y: {type: float, value: -20.6966}
+        Z: {type: float, value: 4.9745}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.9517}
+        Y: {type: float, value: 0.1544}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 187.9037}
+        Y: {type: float, value: 72.2813}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.5525}
+        X: {type: float, value: 159.4886}
+        Y: {type: float, value: 71.3548}
+        Z: {type: float, value: 4.9989}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 160.7241}
+    YPosition: {type: float, value: 81.7015}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.638}
+        Y: {type: float, value: 18.6645}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.104}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 29.491}
+        Y: {type: float, value: 0.2874}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 28.5644}
+        Y: {type: float, value: 19.8999}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -1.1781}
+        X: {type: float, value: 189.6502}
+        Y: {type: float, value: 48.1462}
+        Z: {type: float, value: 4.7484}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.9452}
+        X: {type: float, value: 159.952}
+        Y: {type: float, value: 49.1169}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 161.1924}
+    YPosition: {type: float, value: 37.4017}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.5457}
+        Y: {type: float, value: -20.0771}
+        Z: {type: float, value: 5.0047}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.7973}
+        Y: {type: float, value: -20.3847}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.4885}
+        Y: {type: float, value: 0.3089}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.3562}
+        X: {type: float, value: 227.5136}
+        Y: {type: float, value: 70.8914}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 1.7671}
+        X: {type: float, value: 201.5694}
+        Y: {type: float, value: 70.1193}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 201.415}
+    YPosition: {type: float, value: 80.7749}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: -24.9463}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 32.4609}
+        Y: {type: float, value: -24.9768}
+        Z: {type: float, value: 4.7376}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 32.4476}
+        Y: {type: float, value: 0.1745}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 0.7854}
+        X: {type: float, value: 230.8934}
+        Y: {type: float, value: 42.9204}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 1.5708}
+        X: {type: float, value: 199.884}
+        Y: {type: float, value: 43.7863}
+        Z: {type: float, value: 3.4855}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 199.1436}
+    YPosition: {type: float, value: 55.8296}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.0472}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.756}
+        Y: {type: float, value: -9.7673}
+        Z: {type: float, value: 5.0478}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 38.1986}
+        Y: {type: float, value: -9.4233}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 38.3742}
+        Y: {type: float, value: -0.007}
+        Z: {type: float, value: 4.996}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -3.1415}
+        X: {type: float, value: 229.6723}
+        Y: {type: float, value: 21.4631}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 192.3459}
+    YPosition: {type: float, value: 27.0485}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.4117}
+        Y: {type: float, value: -23.3762}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.3381}
+        Y: {type: float, value: -25.1207}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 31.5752}
+        Y: {type: float, value: -0.1746}
+        Z: {type: float, value: 5.0254}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.9452}
+        X: {type: float, value: 270.0817}
+        Y: {type: float, value: 66.9944}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.5525}
+        X: {type: float, value: 240.5997}
+        Y: {type: float, value: 58.7953}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 240.1393}
+    YPosition: {type: float, value: 80.2526}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 128}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianberserk}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 208}
+        CR: {type: float, value: 37.0}
+        ResRef: {type: resref, value: silesianguard}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.3489}
+        Y: {type: float, value: -23.5507}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 27.563}
+        Y: {type: float, value: -23.8996}
+        Z: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 26.8347}
+        Y: {type: float, value: -0.3588}
+        Z: {type: float, value: 5.1573}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Ogre
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 120}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.7488}
+        X: {type: float, value: 282.5659}
+        Y: {type: float, value: 48.0592}
+        Z: {type: float, value: 5.0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.5525}
+        X: {type: float, value: 247.7704}
+        Y: {type: float, value: 37.5951}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianCliffsOgre}
+    TemplateResRef: {type: resref, value: silesiancliffsog}
+    XPosition: {type: float, value: 247.0544}
+    YPosition: {type: float, value: 54.0851}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 141}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1415}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 10}
+    Description:
+      type: cexolocstr
+      value:
+        0: Bind Stone to portal back to after you bind your soul to the stone.  Return
+          here after binding anytime you wish by using the Bind Portal in the Astral
+          Plane.
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 2}
+    Fort: {type: byte, value: 5}
+    HP: {type: short, value: 10}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Silesian Cliffs Bind Stone
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: pws_binding}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 0}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 499}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SilesianCliffsBindStone}
+    TemplateResRef: {type: resref, value: bindingstone}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 25.0}
+    Y: {type: float, value: 9.0}
+    Z: {type: float, value: 5.01}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1415}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 40.0}
+    Y: {type: float, value: 10.0}
+    Z: {type: float, value: 5.01}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1415}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 106.0}
+    Y: {type: float, value: 26.0}
+    Z: {type: float, value: -8.49}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 115.0}
+    Y: {type: float, value: 82.0}
+    Z: {type: float, value: 5.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 0.7854}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 170.0}
+    Y: {type: float, value: 20.0}
+    Z: {type: float, value: 5.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 191}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 66929
+      value:
+        0: A small chest for storing valuables.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 1}
+    Interruptable: {type: byte, value: 0}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 64112
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: obj_loot_low}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 554}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Treasure_Low}
+    TemplateResRef: {type: resref, value: treasure_low}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 263.0}
+    Y: {type: float, value: 82.0}
+    Z: {type: float, value: 5.24}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 159}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14672
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14673
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 0}
+    PortraitId: {type: word, value: 517}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 1}
+    Tag: {type: cexostr, value: Magic Sparks - Blue}
+    TemplateResRef: {type: resref, value: plc_magicblue}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 25.0}
+    Y: {type: float, value: 9.0}
+    Z: {type: float, value: 5.0}
+SoundList:
+  type: list
+  value: []
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    AutoRemoveKey: {type: byte, value: 0}
+    Cursor: {type: byte, value: 1}
+    DisarmDC: {type: byte, value: 0}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.0}
+        PointY: {type: float, value: 0.0}
+        PointZ: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 0.3575}
+        PointY: {type: float, value: -15.9884}
+        PointZ: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 7.9687}
+        PointY: {type: float, value: -16.2949}
+        PointZ: {type: float, value: 5.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        PointX: {type: float, value: 9.2968}
+        PointY: {type: float, value: 0.1532}
+        PointZ: {type: float, value: 5.025}
+    HighlightHeight: {type: float, value: 0.0}
+    KeyName: {type: cexostr, value: ''}
+    LinkedTo: {type: cexostr, value: WP_SilesianBayEntrance}
+    LinkedToFlags: {type: byte, value: 2}
+    LoadScreenID: {type: word, value: 0}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14760
+      value:
+        0: Silesian Falls Exit
+    OnClick: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    PortraitId: {type: word, value: 0}
+    ScriptHeartbeat: {type: resref, value: ''}
+    ScriptOnEnter: {type: resref, value: ''}
+    ScriptOnExit: {type: resref, value: ''}
+    ScriptUserDefine: {type: resref, value: ''}
+    Tag: {type: cexostr, value: SilesianFallsExit}
+    TemplateResRef: {type: resref, value: newtransition}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: int, value: 1}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 300.4494}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 62.9852}
+    ZOrientation: {type: float, value: 0.0}
+    ZPosition: {type: float, value: 0.0}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value: {}
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Silesian Falls
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    TemplateResRef: {type: resref, value: nw_mapnote001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 11.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 33.0}
+    ZPosition: {type: float, value: 7.48}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      value: {}
+    MapNote:
+      type: cexolocstr
+      value:
+        0: Silesian Bay
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_SilesianFallsExit}
+    TemplateResRef: {type: resref, value: ''}
+    XOrientation: {type: float, value: -1.0}
+    XPosition: {type: float, value: 305.1}
+    YOrientation: {type: float, value: 0.0}
+    YPosition: {type: float, value: 54.91}
+    ZPosition: {type: float, value: 5.02}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value:
+        0: Bindstone
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Bindstone
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPBindstone}
+    TemplateResRef: {type: resref, value: mapbindstone}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 25.0917}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 7.0826}
+    ZPosition: {type: float, value: 5.0}

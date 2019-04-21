@@ -1,0 +1,56 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 1}
+BaseItem: {type: int, value: 24}
+Charges: {type: byte, value: 50}
+Comment: {type: cexostr, value: '1'}
+Cost: {type: dword, value: 2}
+Cursed: {type: byte, value: 0}
+DescIdentified:
+  type: cexolocstr
+  str_ref: 58567
+  value:
+    0: |-
+      This is the knuckle bone from King Merry. Use that item on a weapon or ammo to get the unique reward.
+
+      Reward:  Evil Blight On-Hit Property.
+
+      Evil Blight will do a Curse effect.  It is a SR check followed by a Will save if you fail the SR check.  It is a one turn temporary effect duration.  The curse is ability point damage.  Each ability point will do a random 50/50 chance of damage.  If fail, -1 ability damage is done to that ability.  Effects stack
+
+      This reward will apply to the following items if they are equipped.
+
+      Right Hand Weapon
+      Gloves (not Bracers)
+      Arrows
+      Bolts
+      Bullets
+Description:
+  type: cexolocstr
+  value:
+    0: ''
+Identified: {type: byte, value: 1}
+LocalizedName:
+  type: cexolocstr
+  str_ref: 13495
+  value:
+    0: King Merry's Finger
+ModelPart1: {type: byte, value: 69}
+PaletteID: {type: byte, value: 23}
+Plot: {type: byte, value: 0}
+PropertiesList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 3}
+    CostValue: {type: word, value: 6}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 15}
+    Subtype: {type: word, value: 329}
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: itm_merry}
+TemplateResRef: {type: resref, value: itm_merry}

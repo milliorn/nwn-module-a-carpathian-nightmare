@@ -1,0 +1,72 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 0}
+BaseItem: {type: int, value: 24}
+Charges: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Cost: {type: dword, value: 3}
+Cursed: {type: byte, value: 0}
+DescIdentified:
+  type: cexolocstr
+  value:
+    0: "Socket Items are found only within the loot system on A Carpathian Nightmare,
+      they can not be purchased through a Merchant.\n\nOnce you find a Socket Gem
+      you wish to use on a Socket Item, you may insert it into a Socket Item in two
+      ways. \n\nInserting the Socket Gem into a Socket Item may either be done with
+      the Socket Item equipped or on an inventory page.\n\nRight click on the Socket
+      Gem, on the small radial dial that appears, select Use : Unique Power, then
+      click on equipped socket item.\n\nThis grants the item the power of the socket.
+      This works for weapons, clothing items and armor. \n\nMost socket gems powers
+      will combine with others of the same power - thus creating a powerful and unique
+      item."
+Description:
+  type: cexolocstr
+  value:
+    0: "Socket Items are found only within the loot system on A Carpathian Nightmare,
+      they can not be purchased through a Merchant.\n\nOnce you find a Socket Gem
+      you wish to use on a Socket Item, you may insert it into a Socket Item in two
+      ways. \n\nInserting the Socket Gem into a Socket Item may either be done with
+      the Socket Item equipped or on an inventory page.\n\nRight click on the Socket
+      Gem, on the small radial dial that appears, select Use : Unique Power, then
+      click on equipped socket item.\n\nThis grants the item the power of the socket.
+      This works for weapons, clothing items and armor. \n\nMost socket gems powers
+      will combine with others of the same power - thus creating a powerful and unique
+      item."
+Identified: {type: byte, value: 1}
+LocalizedName:
+  type: cexolocstr
+  value:
+    0: "<c\x01ю\x01>Slashing Resistance Bonus</c>"
+ModelPart1: {type: byte, value: 49}
+PaletteID: {type: byte, value: 57}
+Plot: {type: byte, value: 0}
+PropertiesList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 3}
+    CostValue: {type: word, value: 13}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 15}
+    Subtype: {type: word, value: 329}
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: sf_sockets}
+TemplateResRef: {type: resref, value: slaresistgem}
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: IP_TYPE}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 23}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: IP_SUBTYPE}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 2}

@@ -1,0 +1,34 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTS
+__struct_id: 4294967295
+Active: {type: byte, value: 1}
+Comment: {type: cexostr, value: ''}
+Continuous: {type: byte, value: 1}
+Elevation: {type: float, value: 1.0}
+Hours: {type: dword, value: 0}
+Interval: {type: dword, value: 25000}
+IntervalVrtn: {type: dword, value: 5000}
+LocName:
+  type: cexolocstr
+  value:
+    0: Boss - Evil_Laugh
+Looping: {type: byte, value: 0}
+MaxDistance: {type: float, value: 10.0}
+MinDistance: {type: float, value: 1.0}
+PaletteID: {type: byte, value: 0}
+PitchVariation: {type: float, value: 0.1}
+Positional: {type: byte, value: 0}
+Priority: {type: byte, value: 19}
+Random: {type: byte, value: 0}
+RandomPosition: {type: byte, value: 0}
+RandomRangeX: {type: float, value: 0.0}
+RandomRangeY: {type: float, value: 0.0}
+Sounds:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: vs_nx2mephm_haha}}
+Tag: {type: cexostr, value: Evil_Laugh}
+TemplateResRef: {type: resref, value: evil_laugh}
+Times: {type: byte, value: 3}
+Volume: {type: byte, value: 127}
+VolumeVrtn: {type: byte, value: 0}

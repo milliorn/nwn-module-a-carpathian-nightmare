@@ -1,0 +1,144 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTC
+__struct_id: 4294967295
+Appearance_Type: {type: word, value: 82}
+BodyBag: {type: byte, value: 0}
+CRAdjust: {type: int, value: 0}
+Cha: {type: byte, value: 8}
+ChallengeRating: {type: float, value: 8.0}
+ClassList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 14}
+    ClassLevel: {type: short, value: 4}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 8}
+    ClassLevel: {type: short, value: 8}
+Comment: {type: cexostr, value: ''}
+Con: {type: byte, value: 11}
+Conversation: {type: resref, value: ''}
+CurrentHitPoints: {type: short, value: 50}
+DecayTime: {type: dword, value: 5000}
+Deity: {type: cexostr, value: ''}
+Description:
+  type: cexolocstr
+  str_ref: 12565
+  value: {}
+Dex: {type: byte, value: 16}
+Disarmable: {type: byte, value: 0}
+Equip_ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 2, EquippedRes: {type: resref, value: nw_aarcl002}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16, EquippedRes: {type: resref, value: nw_wswss001}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32, EquippedRes: {type: resref, value: nw_wswdg001}}
+FactionID: {type: word, value: 1}
+FeatList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 1}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 3}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 469}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 206}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 221}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 346}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 347}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 41}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 195}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 251}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 289}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 50}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 46}}
+FirstName:
+  type: cexolocstr
+  str_ref: 12566
+  value:
+    0: Pripet Goblin Rogue
+Gender: {type: byte, value: 1}
+GoodEvil: {type: byte, value: 0}
+HitPoints: {type: short, value: 50}
+Int: {type: byte, value: 10}
+Interruptable: {type: byte, value: 1}
+IsImmortal: {type: byte, value: 0}
+IsPC: {type: byte, value: 0}
+LastName:
+  type: cexolocstr
+  value: {}
+LawfulChaotic: {type: byte, value: 50}
+Lootable: {type: byte, value: 1}
+MaxHitPoints: {type: short, value: 50}
+NaturalAC: {type: byte, value: 3}
+NoPermDeath: {type: byte, value: 0}
+PaletteID: {type: byte, value: 16}
+PerceptionRange: {type: byte, value: 11}
+Phenotype: {type: int, value: 0}
+Plot: {type: byte, value: 0}
+PortraitId: {type: word, value: 219}
+Race: {type: byte, value: 12}
+ScriptAttacked: {type: resref, value: ai_onattacked}
+ScriptDamaged: {type: resref, value: ai_ondamaged}
+ScriptDeath: {type: resref, value: ai_ondeath}
+ScriptDialogue: {type: resref, value: nw_c2_default4}
+ScriptDisturbed: {type: resref, value: nw_c2_default8}
+ScriptEndRound: {type: resref, value: nw_c2_default3}
+ScriptHeartbeat: {type: resref, value: nw_c2_default1}
+ScriptOnBlocked: {type: resref, value: nw_c2_defaulte}
+ScriptOnNotice: {type: resref, value: nw_c2_default2}
+ScriptRested: {type: resref, value: nw_c2_defaulta}
+ScriptSpawn: {type: resref, value: ai_onspawn_ambus}
+ScriptSpellAt: {type: resref, value: ai_onspellcast}
+ScriptUserDefine: {type: resref, value: x2_def_userdef}
+SkillList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 20}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 20}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 20}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 5}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 5}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+SoundSetFile: {type: word, value: 44}
+SpecAbilityList:
+  type: list
+  value: []
+StartingPackage: {type: byte, value: 8}
+Str: {type: byte, value: 14}
+Subrace: {type: cexostr, value: ''}
+Tag: {type: cexostr, value: PripetGoblinRogue}
+Tail_New: {type: dword, value: 0}
+TemplateList:
+  type: list
+  value: []
+TemplateResRef: {type: resref, value: pripetgoblinro}
+WalkRate: {type: int, value: 7}
+Wings_New: {type: dword, value: 0}
+Wis: {type: byte, value: 11}
+fortbonus: {type: short, value: 0}
+refbonus: {type: short, value: 0}
+willbonus: {type: short, value: 0}

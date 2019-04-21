@@ -1,0 +1,191 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTC
+__struct_id: 4294967295
+Appearance_Type: {type: word, value: 40}
+BodyBag: {type: byte, value: 0}
+CRAdjust: {type: int, value: 0}
+Cha: {type: byte, value: 12}
+ChallengeRating: {type: float, value: 30.0}
+ClassList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 24}
+    ClassLevel: {type: short, value: 21}
+Comment: {type: cexostr, value: ''}
+Con: {type: byte, value: 19}
+Conversation: {type: resref, value: ''}
+CurrentHitPoints: {type: short, value: 176}
+DecayTime: {type: dword, value: 5000}
+Deity: {type: cexostr, value: ''}
+Description:
+  type: cexolocstr
+  str_ref: 12458
+  value:
+    0: The cursed, undead corruptions of once-upright paladins who fell from grace,
+      Black Knights are the scourge of all lands over which they hold dominion.
+Dex: {type: byte, value: 15}
+Disarmable: {type: byte, value: 1}
+Equip_ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 2, EquippedRes: {type: resref, value: x2_maarcl046}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16, EquippedRes: {type: resref, value: x2_wswmgs005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 131072, EquippedRes: {type: resref,
+      value: nw_it_creitem048}}
+FactionID: {type: word, value: 1}
+FeatList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 6}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 228}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 107}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 289}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 45}}
+FirstName:
+  type: cexolocstr
+  str_ref: 56566
+  value:
+    0: Black Knight
+Gender: {type: byte, value: 0}
+GoodEvil: {type: byte, value: 0}
+HitPoints: {type: short, value: 176}
+Int: {type: byte, value: 12}
+Interruptable: {type: byte, value: 1}
+IsImmortal: {type: byte, value: 0}
+IsPC: {type: byte, value: 0}
+LastName:
+  type: cexolocstr
+  value: {}
+LawfulChaotic: {type: byte, value: 0}
+Lootable: {type: byte, value: 0}
+MaxHitPoints: {type: short, value: 260}
+NaturalAC: {type: byte, value: 6}
+NoPermDeath: {type: byte, value: 0}
+PaletteID: {type: byte, value: 29}
+PerceptionRange: {type: byte, value: 11}
+Phenotype: {type: int, value: 0}
+Plot: {type: byte, value: 0}
+PortraitId: {type: word, value: 190}
+Race: {type: byte, value: 24}
+ScriptAttacked: {type: resref, value: nw_ch_ac5}
+ScriptDamaged: {type: resref, value: nw_ch_ac6}
+ScriptDeath: {type: resref, value: nw_ch_ac7}
+ScriptDialogue: {type: resref, value: nw_ch_ac4}
+ScriptDisturbed: {type: resref, value: nw_ch_ac8}
+ScriptEndRound: {type: resref, value: nw_ch_ac3}
+ScriptHeartbeat: {type: resref, value: nw_ch_ac1}
+ScriptOnBlocked: {type: resref, value: nw_ch_ace}
+ScriptOnNotice: {type: resref, value: nw_ch_ac2}
+ScriptRested: {type: resref, value: ''}
+ScriptSpawn: {type: resref, value: nw_ch_ac9}
+ScriptSpellAt: {type: resref, value: nw_ch_acb}
+ScriptUserDefine: {type: resref, value: nw_ch_acd}
+SkillList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 4}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 24}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 24}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 24}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 5}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 24}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+SoundSetFile: {type: word, value: 28}
+SpecAbilityList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 198}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 198}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 5}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 5}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 41}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 41}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 58}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 132}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 157}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 157}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 157}
+    SpellCasterLevel: {type: byte, value: 9}
+    SpellFlags: {type: byte, value: 1}
+StartingPackage: {type: byte, value: 86}
+Str: {type: byte, value: 19}
+Subrace: {type: cexostr, value: ''}
+Tag: {type: cexostr, value: NW_BLCKGRD_23}
+Tail_New: {type: dword, value: 0}
+TemplateList:
+  type: list
+  value: []
+TemplateResRef: {type: resref, value: blckgrd_023}
+WalkRate: {type: int, value: 7}
+Wings_New: {type: dword, value: 0}
+Wis: {type: byte, value: 15}
+fortbonus: {type: short, value: 0}
+refbonus: {type: short, value: 0}
+willbonus: {type: short, value: 0}

@@ -1,0 +1,320 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTP
+__struct_id: 4294967295
+AnimationState: {type: byte, value: 0}
+Appearance: {type: dword, value: 0}
+AutoRemoveKey: {type: byte, value: 0}
+BodyBag: {type: byte, value: 0}
+CloseLockDC: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Conversation: {type: resref, value: ''}
+CurrentHP: {type: short, value: 10}
+Description:
+  type: cexolocstr
+  value:
+    0: ''
+DisarmDC: {type: byte, value: 0}
+Faction: {type: dword, value: 1}
+Fort: {type: byte, value: 5}
+HP: {type: short, value: 10}
+Hardness: {type: byte, value: 5}
+HasInventory: {type: byte, value: 1}
+Interruptable: {type: byte, value: 1}
+ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    InventoryRes: {type: resref, value: '001'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    InventoryRes: {type: resref, value: '002'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    InventoryRes: {type: resref, value: '003'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 3
+    InventoryRes: {type: resref, value: '004'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 3}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    InventoryRes: {type: resref, value: '005'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    InventoryRes: {type: resref, value: '006'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 3}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    InventoryRes: {type: resref, value: '007'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    InventoryRes: {type: resref, value: '008'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 3}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    InventoryRes: {type: resref, value: '009'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    InventoryRes: {type: resref, value: '010'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 4}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 10
+    InventoryRes: {type: resref, value: '011'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 7}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 11
+    InventoryRes: {type: resref, value: '012'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 8}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 12
+    InventoryRes: {type: resref, value: '013'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 13
+    InventoryRes: {type: resref, value: '014'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 14
+    InventoryRes: {type: resref, value: '015'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 10}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 15
+    InventoryRes: {type: resref, value: '016'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 10}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 16
+    InventoryRes: {type: resref, value: '017'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 3}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 17
+    InventoryRes: {type: resref, value: '018'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 10}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 18
+    InventoryRes: {type: resref, value: '019'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 5}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 19
+    InventoryRes: {type: resref, value: '020'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 15}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 20
+    InventoryRes: {type: resref, value: '021'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 6}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 21
+    InventoryRes: {type: resref, value: '022'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 15}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 22
+    InventoryRes: {type: resref, value: '023'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 10}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 23
+    InventoryRes: {type: resref, value: '024'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 15}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 24
+    InventoryRes: {type: resref, value: '025'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 13}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 25
+    InventoryRes: {type: resref, value: '026'}
+    Repos_PosX: {type: word, value: 5}
+    Repos_Posy: {type: word, value: 15}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 26
+    InventoryRes: {type: resref, value: '027'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 20}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 27
+    InventoryRes: {type: resref, value: '028'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 15}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 28
+    InventoryRes: {type: resref, value: '029'}
+    Repos_PosX: {type: word, value: 3}
+    Repos_Posy: {type: word, value: 13}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 29
+    InventoryRes: {type: resref, value: '030'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 20}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 30
+    InventoryRes: {type: resref, value: '031'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 13}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 31
+    InventoryRes: {type: resref, value: '032'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 20}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 32
+    InventoryRes: {type: resref, value: '033'}
+    Repos_PosX: {type: word, value: 5}
+    Repos_Posy: {type: word, value: 20}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 33
+    InventoryRes: {type: resref, value: '034'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 25}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 34
+    InventoryRes: {type: resref, value: '035'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 25}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 35
+    InventoryRes: {type: resref, value: '036'}
+    Repos_PosX: {type: word, value: 3}
+    Repos_Posy: {type: word, value: 25}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 36
+    InventoryRes: {type: resref, value: '037'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 18}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 37
+    InventoryRes: {type: resref, value: '038'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 18}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 38
+    InventoryRes: {type: resref, value: '039'}
+    Repos_PosX: {type: word, value: 5}
+    Repos_Posy: {type: word, value: 18}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 39
+    InventoryRes: {type: resref, value: '040'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 23}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 40
+    InventoryRes: {type: resref, value: '041'}
+    Repos_PosX: {type: word, value: 5}
+    Repos_Posy: {type: word, value: 25}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 41
+    InventoryRes: {type: resref, value: '042'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 30}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 42
+    InventoryRes: {type: resref, value: '043'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 30}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 43
+    InventoryRes: {type: resref, value: '044'}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 25}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 44
+    InventoryRes: {type: resref, value: '045'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 30}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 45
+    InventoryRes: {type: resref, value: '046'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 35}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 46
+    InventoryRes: {type: resref, value: '047'}
+    Repos_PosX: {type: word, value: 2}
+    Repos_Posy: {type: word, value: 35}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 47
+    InventoryRes: {type: resref, value: '048'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 35}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 48
+    InventoryRes: {type: resref, value: '049'}
+    Repos_PosX: {type: word, value: 4}
+    Repos_Posy: {type: word, value: 23}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 49
+    InventoryRes: {type: resref, value: '050'}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 40}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 50
+    InventoryRes: {type: resref, value: wpltr012}
+    Repos_PosX: {type: word, value: 6}
+    Repos_Posy: {type: word, value: 30}
+KeyName: {type: cexostr, value: ''}
+KeyRequired: {type: byte, value: 0}
+LocName:
+  type: cexolocstr
+  value:
+    0: Ravana Loot Chest
+Lockable: {type: byte, value: 1}
+Locked: {type: byte, value: 0}
+OnClick: {type: resref, value: ''}
+OnClosed: {type: resref, value: ''}
+OnDamaged: {type: resref, value: ''}
+OnDeath: {type: resref, value: ''}
+OnDisarm: {type: resref, value: ''}
+OnHeartbeat: {type: resref, value: ''}
+OnInvDisturbed: {type: resref, value: ''}
+OnLock: {type: resref, value: ''}
+OnMeleeAttacked: {type: resref, value: ''}
+OnOpen: {type: resref, value: ''}
+OnSpellCastAt: {type: resref, value: ''}
+OnTrapTriggered: {type: resref, value: ''}
+OnUnlock: {type: resref, value: ''}
+OnUsed: {type: resref, value: ''}
+OnUserDefined: {type: resref, value: ''}
+OpenLockDC: {type: byte, value: 0}
+PaletteID: {type: byte, value: 6}
+Plot: {type: byte, value: 1}
+PortraitId: {type: word, value: 358}
+Ref: {type: byte, value: 0}
+Static: {type: byte, value: 0}
+Tag: {type: cexostr, value: Ravana_Loot_Chest}
+TemplateResRef: {type: resref, value: ravana_loot_ches}
+TrapDetectDC: {type: byte, value: 0}
+TrapDetectable: {type: byte, value: 1}
+TrapDisarmable: {type: byte, value: 1}
+TrapFlag: {type: byte, value: 0}
+TrapOneShot: {type: byte, value: 1}
+TrapType: {type: byte, value: 0}
+Type: {type: byte, value: 0}
+Useable: {type: byte, value: 1}
+Will: {type: byte, value: 0}

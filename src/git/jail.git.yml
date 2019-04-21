@@ -1,0 +1,698 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 66}
+    AmbientSndDayVol: {type: int, value: 32}
+    AmbientSndNight: {type: int, value: 66}
+    AmbientSndNitVol: {type: int, value: 32}
+    Comment: {type: cexostr, value: ''}
+    EnvAudio: {type: int, value: 0}
+    MusicBattle: {type: int, value: 41}
+    MusicDay: {type: int, value: 50}
+    MusicDelay: {type: int, value: 84000}
+    MusicNight: {type: int, value: 50}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value: []
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 238}
+        CR: {type: float, value: 93.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: bubba}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.8073}
+        Y: {type: float, value: 15.5413}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 12.3119}
+        Y: {type: float, value: -1.211}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 11.3028}
+        Y: {type: float, value: 15.945}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Jail Spawn
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 1}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.3562}
+        X: {type: float, value: 9.7869}
+        Y: {type: float, value: 37.8531}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: JailSpawn}
+    TemplateResRef: {type: resref, value: jailspawn}
+    XPosition: {type: float, value: 4.5092}
+    YPosition: {type: float, value: 3.6693}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 238}
+        CR: {type: float, value: 93.0}
+        ResRef: {type: resref, value: bubba}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -11.1457}
+        Y: {type: float, value: 9.2028}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.3276}
+        Y: {type: float, value: -0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1023}
+        Y: {type: float, value: 8.8961}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Jail Spawn
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 1}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 9.904}
+        Y: {type: float, value: 188.1763}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: JailSpawn}
+    TemplateResRef: {type: resref, value: jailspawn}
+    XPosition: {type: float, value: 15.1716}
+    YPosition: {type: float, value: 160.5415}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 238}
+        CR: {type: float, value: 93.0}
+        ResRef: {type: resref, value: bubba}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.2254}
+        Y: {type: float, value: 8.4871}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -9.9186}
+        Y: {type: float, value: -0.5113}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.409}
+        Y: {type: float, value: 8.5893}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Jail Spawn
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 1}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.5525}
+        X: {type: float, value: 10.6852}
+        Y: {type: float, value: 226.7885}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: JailSpawn}
+    TemplateResRef: {type: resref, value: jailspawn}
+    XPosition: {type: float, value: 15.2429}
+    YPosition: {type: float, value: 191.6626}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 238}
+        CR: {type: float, value: 93.0}
+        ResRef: {type: resref, value: bubba}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.8485}
+        Y: {type: float, value: 0.1895}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.4221}
+        Y: {type: float, value: -9.3799}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0947}
+        Y: {type: float, value: -9.4747}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Jail Spawn
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 1}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.3562}
+        X: {type: float, value: 9.7673}
+        Y: {type: float, value: 117.8047}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: JailSpawn}
+    TemplateResRef: {type: resref, value: jailspawn}
+    XPosition: {type: float, value: 15.776}
+    YPosition: {type: float, value: 90.018}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 238}
+        CR: {type: float, value: 93.0}
+        ResRef: {type: resref, value: bubba}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.4288}
+        Y: {type: float, value: 0.4199}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.3588}
+        Y: {type: float, value: -9.3089}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.5599}
+        Y: {type: float, value: -9.0989}
+        Z: {type: float, value: 0.125}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.125}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Jail Spawn
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 1}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.1598}
+        X: {type: float, value: 9.7661}
+        Y: {type: float, value: 158.2047}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: JailSpawn}
+    TemplateResRef: {type: resref, value: jailspawn}
+    XPosition: {type: float, value: 15.6589}
+    YPosition: {type: float, value: 129.7082}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 238}
+        CR: {type: float, value: 93.0}
+        ResRef: {type: resref, value: bubba}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.7787}
+        Y: {type: float, value: 0.07}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.2188}
+        Y: {type: float, value: -8.819}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.42}
+        Y: {type: float, value: -8.889}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Jail Spawn
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 1}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -2.9451}
+        X: {type: float, value: 9.719}
+        Y: {type: float, value: 78.0433}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: JailSpawn}
+    TemplateResRef: {type: resref, value: jailspawn}
+    XPosition: {type: float, value: 15.8172}
+    YPosition: {type: float, value: 49.605}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 238}
+        CR: {type: float, value: 93.0}
+        ResRef: {type: resref, value: bubba}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -8.4957}
+        Y: {type: float, value: 0.531}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.8584}
+        Y: {type: float, value: 9.0267}
+        Z: {type: float, value: 0.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -8.4957}
+        Y: {type: float, value: 7.6992}
+        Z: {type: float, value: 0.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Jail Spawn
+    MaxCreatures: {type: int, value: 1}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 1}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 1}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: 2.7488}
+        X: {type: float, value: 10.4829}
+        Y: {type: float, value: 267.178}
+        Z: {type: float, value: -0.0}
+    Tag: {type: cexostr, value: JailSpawn}
+    TemplateResRef: {type: resref, value: jailspawn}
+    XPosition: {type: float, value: 13.5564}
+    YPosition: {type: float, value: 230.9974}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 391}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -3.1415}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14533
+      value:
+        0: A portal glows softly before you. You wonder where it leads.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5670
+      value:
+        0: Escape from Jail Portal
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: port_to_home}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 826}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: Portal_Home}
+    TemplateResRef: {type: resref, value: portal_home}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 10.0}
+    Y: {type: float, value: 275.0}
+    Z: {type: float, value: 0.0}
+SoundList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.0}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 25000}
+    IntervalVrtn: {type: dword, value: 5000}
+    LocName:
+      type: cexolocstr
+      value:
+        0: Evil_Laugh
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.1}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 0}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: vs_nx2mephm_haha}}
+    Tag: {type: cexostr, value: Evil_Laugh}
+    TemplateResRef: {type: resref, value: evil_laugh}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 0}
+    XPosition: {type: float, value: 10.0}
+    YPosition: {type: float, value: 160.0}
+    ZPosition: {type: float, value: 1.0}
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value: []
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    Name: {type: cexostr, value: NO_TELEPORT}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    Name: {type: cexostr, value: PC_AUTO_RAISE}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    Name: {type: cexostr, value: NO_PORTALS}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    Name: {type: cexostr, value: NO_XP}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: WP_JAIL
+    MapNote:
+      type: cexolocstr
+      value:
+        0: Jail
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: WP_JAIL}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 10.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 8.0}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14817
+      value:
+        0: FKY_WAY_JAIL
+    MapNote:
+      type: cexolocstr
+      value: {}
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: FKY_WAY_JAIL}
+    TemplateResRef: {type: resref, value: nw_waypoint001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 10.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 305.0}
+    ZPosition: {type: float, value: 0.0}

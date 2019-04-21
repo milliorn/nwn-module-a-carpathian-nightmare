@@ -1,0 +1,148 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTC
+__struct_id: 4294967295
+Appearance_Type: {type: word, value: 158}
+BodyBag: {type: byte, value: 0}
+CRAdjust: {type: int, value: -2}
+Cha: {type: byte, value: 3}
+ChallengeRating: {type: float, value: 43.0}
+ClassList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 26}
+    ClassLevel: {type: short, value: 60}
+Comment: {type: cexostr, value: Boss Monster}
+Con: {type: byte, value: 12}
+Conversation: {type: resref, value: ''}
+CurrentHitPoints: {type: short, value: 459}
+DecayTime: {type: dword, value: 5000}
+Deity: {type: cexostr, value: ''}
+Description:
+  type: cexolocstr
+  str_ref: 12717
+  value: {}
+Dex: {type: byte, value: 17}
+Disarmable: {type: byte, value: 0}
+Equip_ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16384, EquippedRes: {type: resref,
+      value: nw_it_crewps019}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32768, EquippedRes: {type: resref,
+      value: nw_it_crewps019}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 65536, EquippedRes: {type: resref,
+      value: nw_it_crewps019}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 131072, EquippedRes: {type: resref,
+      value: coziaspiderpro}}
+FactionID: {type: word, value: 1}
+FeatList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 228}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 289}}
+FirstName:
+  type: cexolocstr
+  str_ref: 56576
+  value:
+    0: Cozia Queen Spider
+Gender: {type: byte, value: 1}
+GoodEvil: {type: byte, value: 50}
+HitPoints: {type: short, value: 459}
+Int: {type: byte, value: 3}
+Interruptable: {type: byte, value: 1}
+IsImmortal: {type: byte, value: 0}
+IsPC: {type: byte, value: 0}
+LastName:
+  type: cexolocstr
+  value: {}
+LawfulChaotic: {type: byte, value: 50}
+Lootable: {type: byte, value: 1}
+MaxHitPoints: {type: short, value: 519}
+NaturalAC: {type: byte, value: 4}
+NoPermDeath: {type: byte, value: 0}
+PaletteID: {type: byte, value: 11}
+PerceptionRange: {type: byte, value: 11}
+Phenotype: {type: int, value: 0}
+Plot: {type: byte, value: 0}
+PortraitId: {type: word, value: 300}
+Race: {type: byte, value: 25}
+ScriptAttacked: {type: resref, value: ai_onattacked}
+ScriptDamaged: {type: resref, value: ai_ondamaged}
+ScriptDeath: {type: resref, value: ai_ondeath}
+ScriptDialogue: {type: resref, value: nw_c2_default4}
+ScriptDisturbed: {type: resref, value: nw_c2_default8}
+ScriptEndRound: {type: resref, value: nw_c2_default3}
+ScriptHeartbeat: {type: resref, value: nw_c2_default1}
+ScriptOnBlocked: {type: resref, value: nw_c2_defaulte}
+ScriptOnNotice: {type: resref, value: nw_c2_default2}
+ScriptRested: {type: resref, value: nw_c2_defaulta}
+ScriptSpawn: {type: resref, value: ai_spawn_dropin}
+ScriptSpellAt: {type: resref, value: ai_onspellcast}
+ScriptUserDefine: {type: resref, value: nw_c2_dimdoor}
+SkillList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 49}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 7}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+SoundSetFile: {type: word, value: 86}
+SpecAbilityList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 228}
+    SpellCasterLevel: {type: byte, value: 1}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 65}
+    SpellCasterLevel: {type: byte, value: 11}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 74}
+    SpellCasterLevel: {type: byte, value: 11}
+    SpellFlags: {type: byte, value: 1}
+StartingPackage: {type: byte, value: 88}
+Str: {type: byte, value: 32}
+Subrace: {type: cexostr, value: ''}
+Tag: {type: cexostr, value: CoziaQueenSpider}
+Tail_New: {type: dword, value: 0}
+TemplateList:
+  type: list
+  value: []
+TemplateResRef: {type: resref, value: coziaqueenspid}
+WalkRate: {type: int, value: 7}
+Wings_New: {type: dword, value: 0}
+Wis: {type: byte, value: 10}
+fortbonus: {type: short, value: 0}
+refbonus: {type: short, value: 0}
+willbonus: {type: short, value: 0}

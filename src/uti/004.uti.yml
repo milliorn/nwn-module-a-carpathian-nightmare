@@ -1,0 +1,40 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 0}
+BaseItem: {type: int, value: 17}
+Charges: {type: byte, value: 0}
+Cloth1Color: {type: byte, value: 20}
+Cloth2Color: {type: byte, value: 45}
+Comment: {type: cexostr, value: ''}
+Cost: {type: dword, value: 3}
+Cursed: {type: byte, value: 0}
+DescIdentified:
+  type: cexolocstr
+  str_ref: 13514
+  value:
+    0: ''
+Description:
+  type: cexolocstr
+  value:
+    0: ''
+Identified: {type: byte, value: 1}
+Leather1Color: {type: byte, value: 56}
+Leather2Color: {type: byte, value: 7}
+LocalizedName:
+  type: cexolocstr
+  str_ref: 13513
+  value:
+    0: "<cfМю>Helmet</c>"
+Metal1Color: {type: byte, value: 63}
+Metal2Color: {type: byte, value: 56}
+ModelPart1: {type: byte, value: 28}
+PaletteID: {type: byte, value: 53}
+Plot: {type: byte, value: 0}
+PropertiesList:
+  type: list
+  value: []
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: cfStuddedLeatherArmorc}
+TemplateResRef: {type: resref, value: '004'}

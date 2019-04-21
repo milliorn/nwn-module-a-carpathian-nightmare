@@ -1,0 +1,893 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTC
+__struct_id: 4294967295
+Appearance_Type: {type: word, value: 38}
+BodyBag: {type: byte, value: 0}
+CRAdjust: {type: int, value: -4}
+Cha: {type: byte, value: 19}
+ChallengeRating: {type: float, value: 60.0}
+ClassList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 1}
+    ClassLevel: {type: short, value: 24}
+    KnownList0:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 33}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 37}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 100}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 151}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    KnownList1:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 16}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 86}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 102}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 544}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 174}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    KnownList2:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 21}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 569}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 120}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 83}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 167}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    KnownList3:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 15}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 545}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 78}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 539}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 176}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    KnownList4:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 31}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 45}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 88}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 376}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 177}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    KnownList5:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 121}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 67}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 80}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 118}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 179}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    KnownList6:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 369}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 368}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 113}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 180}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 2}
+    ClassLevel: {type: short, value: 20}
+    MemorizedList0:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 431}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 431}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 431}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 431}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 431}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 431}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList1:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 6}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 32}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 32}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 32}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 32}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 32}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 32}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 432}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList2:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 1}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 34}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 34}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 34}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 34}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 34}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 433}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList3:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 2}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 35}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 41}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 434}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 91}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 145}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 147}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList4:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 31}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 40}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 42}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 62}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 76}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 76}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 435}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList5:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 19}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 61}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 80}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 164}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 164}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 168}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 186}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList6:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 430}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 5}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 28}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 67}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 77}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 79}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList7:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 366}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 366}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 70}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 374}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 194}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList8:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 426}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 57}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 114}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 182}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 183}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+    MemorizedList9:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 51}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 63}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 87}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 173}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 3
+        Spell: {type: word, value: 444}
+        SpellFlags: {type: byte, value: 1}
+        SpellMetaMagic: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Class: {type: int, value: 34}
+    ClassLevel: {type: short, value: 16}
+Comment: {type: cexostr, value: Boss Monster}
+Con: {type: byte, value: 20}
+Conversation: {type: resref, value: ''}
+CurrentHitPoints: {type: short, value: 550}
+DecayTime: {type: dword, value: 5000}
+Deity: {type: cexostr, value: ''}
+Description:
+  type: cexolocstr
+  str_ref: 12442
+  value: {}
+Dex: {type: byte, value: 14}
+Disarmable: {type: byte, value: 1}
+Equip_ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, EquippedRes: {type: resref, value: x0_armhe015}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 2, EquippedRes: {type: resref, value: x2_maarcl048}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 4, EquippedRes: {type: resref, value: nw_it_mboots005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, EquippedRes: {type: resref, value: x0_it_mbracer002}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16, EquippedRes: {type: resref, value: nw_it_crewbs001}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32, EquippedRes: {type: resref, value: x2_ashmto005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 64, EquippedRes: {type: resref, value: x2_it_mcloak005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 128, EquippedRes: {type: resref,
+      value: x3_it_ringregen}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 256, EquippedRes: {type: resref,
+      value: x3_it_ringregen}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 512, EquippedRes: {type: resref,
+      value: x2_it_mneck015}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1024, EquippedRes: {type: resref,
+      value: x2_it_mbelt002}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16384, EquippedRes: {type: resref,
+      value: nw_it_crewpb009}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32768, EquippedRes: {type: resref,
+      value: nw_it_crewpb009}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 65536, EquippedRes: {type: resref,
+      value: nw_it_crewpb009}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 131072, EquippedRes: {type: resref,
+      value: nw_it_creitem020}}
+FactionID: {type: word, value: 1}
+FeatList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 889}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 415}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 373}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 357}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 944}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 6}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 946}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 871}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 228}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 897}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 896}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 891}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 968}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 984}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 423}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 394}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 424}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 29}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 945}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 32}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 35}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 166}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 167}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 168}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 169}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 307}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 895}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 890}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 894}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 41}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 893}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 306}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 289}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 44}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Feat: {type: word, value: 45}}
+FirstName:
+  type: cexolocstr
+  str_ref: 56562
+  value:
+    0: Ravana
+Gender: {type: byte, value: 0}
+GoodEvil: {type: byte, value: 0}
+HitPoints: {type: short, value: 550}
+Int: {type: byte, value: 14}
+Interruptable: {type: byte, value: 1}
+IsImmortal: {type: byte, value: 0}
+IsPC: {type: byte, value: 0}
+ItemList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Dropable: {type: byte, value: 1}
+    InventoryRes: {type: resref, value: ravanaskey}
+    Pickpocketable: {type: byte, value: 1}
+    Repos_PosX: {type: word, value: 0}
+    Repos_Posy: {type: word, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Dropable: {type: byte, value: 1}
+    InventoryRes: {type: resref, value: gauntlet_token}
+    Pickpocketable: {type: byte, value: 1}
+    Repos_PosX: {type: word, value: 1}
+    Repos_Posy: {type: word, value: 0}
+LastName:
+  type: cexolocstr
+  value: {}
+LawfulChaotic: {type: byte, value: 0}
+Lootable: {type: byte, value: 1}
+MaxHitPoints: {type: short, value: 850}
+NaturalAC: {type: byte, value: 20}
+NoPermDeath: {type: byte, value: 0}
+PaletteID: {type: byte, value: 24}
+PerceptionRange: {type: byte, value: 11}
+Phenotype: {type: int, value: 0}
+Plot: {type: byte, value: 0}
+PortraitId: {type: word, value: 176}
+Race: {type: byte, value: 20}
+ScriptAttacked: {type: resref, value: ai_onattacked}
+ScriptDamaged: {type: resref, value: ai_ondamaged}
+ScriptDeath: {type: resref, value: rav_boss_ondeath}
+ScriptDialogue: {type: resref, value: nw_c2_default4}
+ScriptDisturbed: {type: resref, value: nw_c2_default8}
+ScriptEndRound: {type: resref, value: nw_c2_default3}
+ScriptHeartbeat: {type: resref, value: nw_c2_default1}
+ScriptOnBlocked: {type: resref, value: nw_c2_defaulte}
+ScriptOnNotice: {type: resref, value: nw_c2_default2}
+ScriptRested: {type: resref, value: nw_c2_defaulta}
+ScriptSpawn: {type: resref, value: ai_onspawn_boss}
+ScriptSpellAt: {type: resref, value: ai_onspellcast}
+ScriptUserDefine: {type: resref, value: x2_def_userdef}
+SkillList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 62}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 28}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 43}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 20}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 28}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 70}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 20}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 20}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 63}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 43}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 3}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 13}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 35}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Rank: {type: byte, value: 0}}
+SoundSetFile: {type: word, value: 25}
+SpecAbilityList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 323}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 323}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 323}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 323}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 323}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 36}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 36}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 36}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 36}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 36}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 54}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 54}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 54}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 54}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 54}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 57}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 67}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 67}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 67}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 67}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 67}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 87}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 304}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 304}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 304}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 304}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 191}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 191}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 191}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 191}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Spell: {type: word, value: 191}
+    SpellCasterLevel: {type: byte, value: 15}
+    SpellFlags: {type: byte, value: 1}
+StartingPackage: {type: byte, value: 1}
+Str: {type: byte, value: 34}
+Subrace: {type: cexostr, value: ''}
+Tag: {type: cexostr, value: Ravana}
+Tail_New: {type: dword, value: 0}
+TemplateList:
+  type: list
+  value: []
+TemplateResRef: {type: resref, value: ravana}
+WalkRate: {type: int, value: 2}
+Wings_New: {type: dword, value: 0}
+Wis: {type: byte, value: 26}
+fortbonus: {type: short, value: 0}
+refbonus: {type: short, value: 0}
+willbonus: {type: short, value: 0}

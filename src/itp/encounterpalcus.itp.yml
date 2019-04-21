@@ -1,0 +1,306 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: ITP
+__struct_id: 4294967295
+MAIN:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ID: {type: byte, value: 8}
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Formian Silesian Hive}
+        RESREF: {type: resref, value: formiansilesianh}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Silesian Bay Ogre}
+        RESREF: {type: resref, value: silesianbayogre}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Silesian Cliffs Ogre}
+        RESREF: {type: resref, value: silesiancliffsog}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Silesian Falls Ogre}
+        RESREF: {type: resref, value: silesianfallsogr}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Silesian Giant Wasteland}
+        RESREF: {type: resref, value: silesiangiantwas}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Silesian Gorge Ogre}
+        RESREF: {type: resref, value: silesiangorgeogr}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Silesian Hive Myrmarch}
+        RESREF: {type: resref, value: silesianhivemyrm}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Silesian Sewer Beetles}
+        RESREF: {type: resref, value: silesiansewerbee}
+    STRREF: {type: dword, value: 5546}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ID: {type: byte, value: 9}
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Cozia Hive Spider}
+        RESREF: {type: resref, value: coziahivespider}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Cozia Wraith Spider}
+        RESREF: {type: resref, value: coziawraithspide}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Merry Mummy Cemetery}
+        RESREF: {type: resref, value: merrymummycemete}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Merry Mummy Tomb}
+        RESREF: {type: resref, value: merrymummytomb}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: MinotaurMazeCR60}
+        RESREF: {type: resref, value: minotaurmazecr5}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Mur-Zhagul Troll Group}
+        RESREF: {type: resref, value: balshazaarkeepmo}
+    STRREF: {type: dword, value: 5547}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ID: {type: byte, value: 6}
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Deliblato Sea Cave}
+        RESREF: {type: resref, value: deliblatoseacave}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Deliblato Stinger}
+        RESREF: {type: resref, value: deliblatostinger}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Kjempe's Black White Wyrmling}
+        RESREF: {type: resref, value: blueprint001}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Kjempe's Blue Wyrmling}
+        RESREF: {type: resref, value: kjempesbluewy}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: 'Kjempe''s Green Wyrmling '}
+        RESREF: {type: resref, value: kjempesredgreenw}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: 'Kjempe''s Red Wyrmling '}
+        RESREF: {type: resref, value: kjempesredwyrmli}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Vбh Cult Melee}
+        RESREF: {type: resref, value: vhcultmelee}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Vбh Valley Cult}
+        RESREF: {type: resref, value: vhvalleycult}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Vбh Valley Ghost}
+        RESREF: {type: resref, value: vhvalleyghost}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Vбh Valley Undead}
+        RESREF: {type: resref, value: vhvalleyundead}
+    STRREF: {type: dword, value: 4817}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ID: {type: byte, value: 7}
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Gцdцllo Cave 1}
+        RESREF: {type: resref, value: gdllocave1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Gцdцllo Cave 2}
+        RESREF: {type: resref, value: gdllocave2}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Godollo Hills Feline}
+        RESREF: {type: resref, value: godollohillsfeli}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Oravska Bugbear A}
+        RESREF: {type: resref, value: oravskabugbeara}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Oravska Bugbear B}
+        RESREF: {type: resref, value: oravskabugbea001}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Oravska Canine}
+        RESREF: {type: resref, value: oravskacanine}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Rucar-Bran Sahuagin}
+        RESREF: {type: resref, value: rucarbransahuagi}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Rucar's Crypt Zombies}
+        RESREF: {type: resref, value: rucarscryptzombi}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Turzovka Bandits}
+        RESREF: {type: resref, value: turzovkabandits}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Turzovka Gypsy}
+        RESREF: {type: resref, value: turzovkagypsy}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Turzovka Mercenary}
+        RESREF: {type: resref, value: turzovkamercenar}
+    STRREF: {type: dword, value: 5545}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 0}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Chief Deliblato}
+            RESREF: {type: resref, value: bosschiefdelibla}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Chief Magura}
+            RESREF: {type: resref, value: bosschiefmagura}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Gareshona}
+            RESREF: {type: resref, value: bossgareshona}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Gцdцllo}
+            RESREF: {type: resref, value: gdlloboss}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Jareth}
+            RESREF: {type: resref, value: bosspripetmansio}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Kjempe}
+            RESREF: {type: resref, value: bosskjempethe}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Lord Rucar}
+            RESREF: {type: resref, value: bosslordrucar}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Silesian Hive Mother}
+            RESREF: {type: resref, value: bosssilesianhive}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Silesian The High Mage}
+            RESREF: {type: resref, value: bosssilesiantheh}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Turzovka}
+            RESREF: {type: resref, value: bossturzovka}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Vбh Cult Leader}
+            RESREF: {type: resref, value: bossvhcult}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Zdбnice}
+            RESREF: {type: resref, value: custom002}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss Silesian Hive Mother}
+            RESREF: {type: resref, value: bosssilesianh001}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Jail Spawn}
+            RESREF: {type: resref, value: jailspawn}
+        STRREF: {type: dword, value: 6688}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 1}
+        STRREF: {type: dword, value: 6689}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 2}
+        STRREF: {type: dword, value: 6690}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 3}
+        STRREF: {type: dword, value: 6691}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        ID: {type: byte, value: 4}
+        STRREF: {type: dword, value: 6692}
+    STRREF: {type: dword, value: 6687}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ID: {type: byte, value: 5}
+    LIST:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Carpathia Forest - Cave}
+        RESREF: {type: resref, value: blueprint}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Carpathian Forest}
+        RESREF: {type: resref, value: carpathianforest}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Carpathian Forest - Lake}
+        RESREF: {type: resref, value: carpathianfor001}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Pripet Mansion 1}
+        RESREF: {type: resref, value: pripetmansion1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Pripet Mansion 2}
+        RESREF: {type: resref, value: pripetmansion003}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Pripet Marshes 1}
+        RESREF: {type: resref, value: pripetmarshes1}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Pripet Marshes 2}
+        RESREF: {type: resref, value: pripetmarshes002}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Zdanice Forest}
+        RESREF: {type: resref, value: zdaniceforest}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Zdanice Ruins Werewolves}
+        RESREF: {type: resref, value: zdaniceforestrui}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        NAME: {type: cexostr, value: Zdanice Werecats}
+        RESREF: {type: resref, value: zdanicewerecats}
+    STRREF: {type: dword, value: 5543}

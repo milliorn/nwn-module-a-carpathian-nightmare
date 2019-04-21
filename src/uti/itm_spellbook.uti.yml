@@ -1,0 +1,41 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 0}
+BaseItem: {type: int, value: 74}
+Charges: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Cost: {type: dword, value: 1}
+Cursed: {type: byte, value: 0}
+DescIdentified:
+  type: cexolocstr
+  value:
+    0: Unique Spellbook that when activated will produce 1-20 random spell scrolls.
+Description:
+  type: cexolocstr
+  value:
+    0: ''
+Identified: {type: byte, value: 1}
+LocalizedName:
+  type: cexolocstr
+  value:
+    0: Carpathian Spellbook
+ModelPart1: {type: byte, value: 4}
+PaletteID: {type: byte, value: 60}
+Plot: {type: byte, value: 0}
+PropertiesList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 3}
+    CostValue: {type: word, value: 1}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 15}
+    Subtype: {type: word, value: 335}
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: itm_spellbook}
+TemplateResRef: {type: resref, value: itm_spellbook}

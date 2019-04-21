@@ -1,0 +1,62 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 0}
+BaseItem: {type: int, value: 13}
+Charges: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Cost: {type: dword, value: 37080}
+Cursed: {type: byte, value: 0}
+DescIdentified:
+  type: cexolocstr
+  str_ref: 13213
+  value: {}
+Description:
+  type: cexolocstr
+  value:
+    0: ''
+Identified: {type: byte, value: 0}
+LocalizedName:
+  type: cexolocstr
+  str_ref: 66642
+  value:
+    0: Celestial Paladin Greatsword
+ModelPart1: {type: byte, value: 42}
+ModelPart2: {type: byte, value: 42}
+ModelPart3: {type: byte, value: 22}
+PaletteID: {type: byte, value: 59}
+Plot: {type: byte, value: 0}
+PropertiesList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 4}
+    CostValue: {type: word, value: 7}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 16}
+    Subtype: {type: word, value: 12}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 2}
+    CostValue: {type: word, value: 3}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 255}
+    PropertyName: {type: word, value: 6}
+    Subtype: {type: word, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 0}
+    CostValue: {type: word, value: 0}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 83}
+    Subtype: {type: word, value: 4}
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: su_celestpaliswo}
+TemplateResRef: {type: resref, value: su_celestpaliswo}

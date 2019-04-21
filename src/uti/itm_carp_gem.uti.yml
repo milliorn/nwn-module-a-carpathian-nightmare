@@ -1,0 +1,43 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 0}
+BaseItem: {type: int, value: 24}
+Charges: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Cost: {type: dword, value: 3}
+Cursed: {type: byte, value: 1}
+DescIdentified:
+  type: cexolocstr
+  value:
+    0: Use this to teleport back The Astral Plane.  From there you can use the Bindstone
+      portal to port back to your last location your our bound to.  You can also access
+      the Party Leader portal there as well as the portal back to Carpathia.
+Description:
+  type: cexolocstr
+  value:
+    0: Use this to teleport back The Astral Plane.
+Identified: {type: byte, value: 1}
+LocalizedName:
+  type: cexolocstr
+  value:
+    0: "<c\x01фу>Carpathian Gem</c>"
+ModelPart1: {type: byte, value: 73}
+PaletteID: {type: byte, value: 54}
+Plot: {type: byte, value: 1}
+PropertiesList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 3}
+    CostValue: {type: word, value: 13}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 15}
+    Subtype: {type: word, value: 335}
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: itm_carp_gem}
+TemplateResRef: {type: resref, value: itm_carp_gem}

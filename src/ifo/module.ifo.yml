@@ -1,0 +1,200 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: IFO
+__struct_id: 4294967295
+Expansion_Pack: {type: word, value: 3}
+Mod_Area_list:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ccloaktower}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: astralrealm}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: dmroom}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: arena}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gladiatorpit}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: bankcarpathia}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: itemscribeshop}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: market}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: invalid_pc_room}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: jail}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: omegaforge}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: carpathianfor001}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: carpathianfor002}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: carpathianforest}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: forestruins}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: forestruins2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: forestruinsboss}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: pripetmanorentra}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: pripetmansion}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: pripetmarshes}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: pripetmarshes2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: turzovka001}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: turzovka3}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: turzovkahighland}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: turzovkasden}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: godollorucarbran}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: legendarylevelro}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: rucarcrypt1}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: rucarcrypt2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: rucarscryptboss}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: carpathia}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: godollocave}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: godollocave2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: godollocave3}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: godollohills}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: oravskmaguralowe}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: oravskmagurauppe}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: oravskacave1}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: oravskacave2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: oravskaden}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: vhvalleyland}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: vhvalleycoven}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: vhvalleycatacomb}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: vhvalleyhallofth}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: vhvalleysanctuar}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: kjempescavern}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: kjempeshole}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: kjempesmines}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: vhvalleynorth}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: kjempesnest}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: deliblatosands}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: deliblatobeach}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: deliblatoseacave}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: deliblatopit}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesianwastelan}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesiansewersup}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesiansewerslo}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesianhivetunn}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesianhive}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesianfalls}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesiangorge}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesiancliffs}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesianbay}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: silesiantower001}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: zdaniceforest}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_b}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_c}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_d}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_e}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_f}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_g}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_h}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_i}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanas_t_k}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanasboss}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanascoven}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanascovenspec}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanasentrance}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: ravanaststairs}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: xpbank}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet1}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet3}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet4}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet5}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet6}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet8}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet9}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntletentra}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntletexodu}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntletstore}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: gauntlet7}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: litencicegate}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: moraviangate}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: moraviangatemurz}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: asteriuslabyrin}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: asteriusstrongh}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: coziaforest1}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: coziaforest2}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: coziagrotto}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: merryscemetery}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 6, Area_Name: {type: resref, value: merrystomb}}
+Mod_CacheNSSList:
+  type: list
+  value: []
+Mod_Creator_ID: {type: int, value: 2}
+Mod_CustomTlk: {type: cexostr, value: ''}
+Mod_CutSceneList:
+  type: list
+  value: []
+Mod_DawnHour: {type: byte, value: 6}
+Mod_Description:
+  type: cexolocstr
+  value:
+    0: "<cъъ\x01>Welcome to \" A Carpathian Nightmare v4\"</c> \n\n<cъъ\x01>Discord
+      </c>https://discord.gg/jG7JUN4\n\n<cъъ\x01>Facebook</c> https://www.facebook.com/a.carpathian.nightmare\n\n<cъъ\x01>Forums</c>
+      http://acnpoa.proboards.com\n\n\n<cъъ\x01>We are a Level 1-60 module and the
+      longest running PvP module in NwN along with its original owner and developer,
+      Milliorn.</c>\n\n<cъъ\x01>Features:</c>\n\n+5 AB/AC - Balanced PvP\n3.0, 3.5,
+      5.0 Spells, Feats, and Items \nDnD 3.0 UMD System\n90 Playable Races\nLegendary
+      Levels(60)\nCharacter Deleter\nGP, XP, Item Bank\nOmega Forge - Crafting\nSocketed
+      Items - Crafting\nChat Commands\nPvP Bounty System\nPvP Score System\nSequener
+      Wands(Fast Buffing)\nPersistant Location Bindstones\nParty Portal\nRecall Stone
+      (Carpathian Gem)\nTotal PC Appearance Modifier"
+Mod_DuskHour: {type: byte, value: 18}
+Mod_Entry_Area: {type: resref, value: carpathia}
+Mod_Entry_Dir_X: {type: float, value: 0.0}
+Mod_Entry_Dir_Y: {type: float, value: 1.0}
+Mod_Entry_X: {type: float, value: 35.0}
+Mod_Entry_Y: {type: float, value: 35.0}
+Mod_Entry_Z: {type: float, value: 0.0}
+Mod_Expan_List:
+  type: list
+  value: []
+Mod_GVar_List:
+  type: list
+  value: []
+Mod_HakList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: acn}}
+Mod_ID: {type: void, value: !binary "U1e3IlIFxuotSq8vTY436A=="}
+Mod_IsSaveGame: {type: byte, value: 0}
+Mod_MinGameVer: {type: cexostr, value: '1.77'}
+Mod_MinPerHour: {type: byte, value: 2}
+Mod_Name:
+  type: cexolocstr
+  value:
+    0: A Carpathian Nightmare
+Mod_OnAcquirItem: {type: resref, value: mod_acquire_item}
+Mod_OnActvtItem: {type: resref, value: x2_mod_def_act}
+Mod_OnClientEntr: {type: resref, value: mod_client_enter}
+Mod_OnClientLeav: {type: resref, value: mod_client_leave}
+Mod_OnCutsnAbort: {type: resref, value: ''}
+Mod_OnHeartbeat: {type: resref, value: mod_on_heartbeat}
+Mod_OnModLoad: {type: resref, value: mod_module_load}
+Mod_OnModStart: {type: resref, value: ''}
+Mod_OnPlrChat: {type: resref, value: mod_pc_chat}
+Mod_OnPlrDeath: {type: resref, value: mod_pc_death}
+Mod_OnPlrDying: {type: resref, value: nw_o0_dying}
+Mod_OnPlrEqItm: {type: resref, value: mod_pc_eq_item}
+Mod_OnPlrLvlUp: {type: resref, value: mod_pc_level_up}
+Mod_OnPlrRest: {type: resref, value: mod_pc_rest}
+Mod_OnPlrUnEqItm: {type: resref, value: mod_pc_uneq_item}
+Mod_OnSpawnBtnDn: {type: resref, value: mod_pc_respawn}
+Mod_OnUnAqreItem: {type: resref, value: mod_unacquire_it}
+Mod_OnUsrDefined: {type: resref, value: ''}
+Mod_StartDay: {type: byte, value: 1}
+Mod_StartHour: {type: byte, value: 13}
+Mod_StartMonth: {type: byte, value: 6}
+Mod_StartMovie: {type: resref, value: ''}
+Mod_StartYear: {type: dword, value: 1372}
+Mod_Tag: {type: cexostr, value: MODULE}
+Mod_Version: {type: dword, value: 3}
+Mod_XPScale: {type: byte, value: 0}
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: X2_S_UD_SPELLSCRIPT}
+    Type: {type: dword, value: 3}
+    Value: {type: cexostr, value: mod_spellhook}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: 'X2_L_NOTREASURE '}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 1}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Name: {type: cexostr, value: 'X2_L_AI_AOE_DISPEL_CHANCE '}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 50}

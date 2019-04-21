@@ -1,0 +1,73 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTP
+__struct_id: 4294967295
+AnimationState: {type: byte, value: 0}
+Appearance: {type: dword, value: 9}
+AutoRemoveKey: {type: byte, value: 0}
+BodyBag: {type: byte, value: 0}
+CloseLockDC: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Conversation: {type: resref, value: ''}
+CurrentHP: {type: short, value: 10}
+Description:
+  type: cexolocstr
+  value:
+    0: "ACN Transfer Chest:\n\n\nUse these chest to transfer your items from one character
+      to another that is linked to your CDKEY.  The following is some guidelines you
+      must accept if you use these chest.\n\n* Deposit Limit: 30 items (stacked or
+      non-stacked items).\n* Do not deposit gold.  Use the Banker.  Its more secure.\n*
+      Use at your own risk.\n* These chest will not carry items over a server reset
+      or crash.  Although they are persistent, a purge occurs when the server is loaded
+      to clean the database.  This is done to prevent an \"exploded\" database.\n*
+      The Item Limit is set for a reason.  It will not be raised for various reasons
+      related to stability.\n* Although scripts are in place for security beware that
+      nothing is full-proof. \n* Chest have scripted safety mechanism, but the best
+      thing to do is abort your transaction with the chest if someone is trying to
+      disrupt your transaction with the chest."
+DisarmDC: {type: byte, value: 0}
+Faction: {type: dword, value: 1}
+Fort: {type: byte, value: 5}
+HP: {type: short, value: 10}
+Hardness: {type: byte, value: 5}
+HasInventory: {type: byte, value: 1}
+Interruptable: {type: byte, value: 1}
+KeyName: {type: cexostr, value: ''}
+KeyRequired: {type: byte, value: 0}
+LocName:
+  type: cexolocstr
+  value:
+    0: Item Transfer Chest
+Lockable: {type: byte, value: 1}
+Locked: {type: byte, value: 0}
+OnClick: {type: resref, value: ''}
+OnClosed: {type: resref, value: sfpb_close}
+OnDamaged: {type: resref, value: ''}
+OnDeath: {type: resref, value: ''}
+OnDisarm: {type: resref, value: ''}
+OnHeartbeat: {type: resref, value: ''}
+OnInvDisturbed: {type: resref, value: sfpb_chest_distu}
+OnLock: {type: resref, value: ''}
+OnMeleeAttacked: {type: resref, value: ''}
+OnOpen: {type: resref, value: sfpb_open}
+OnSpellCastAt: {type: resref, value: ''}
+OnTrapTriggered: {type: resref, value: ''}
+OnUnlock: {type: resref, value: ''}
+OnUsed: {type: resref, value: sfpb_used}
+OnUserDefined: {type: resref, value: ''}
+OpenLockDC: {type: byte, value: 0}
+PaletteID: {type: byte, value: 6}
+Plot: {type: byte, value: 1}
+PortraitId: {type: word, value: 367}
+Ref: {type: byte, value: 0}
+Static: {type: byte, value: 0}
+Tag: {type: cexostr, value: SFPB_Chest}
+TemplateResRef: {type: resref, value: sfpb_chest}
+TrapDetectDC: {type: byte, value: 0}
+TrapDetectable: {type: byte, value: 1}
+TrapDisarmable: {type: byte, value: 1}
+TrapFlag: {type: byte, value: 0}
+TrapOneShot: {type: byte, value: 1}
+TrapType: {type: byte, value: 0}
+Type: {type: byte, value: 0}
+Useable: {type: byte, value: 1}
+Will: {type: byte, value: 0}

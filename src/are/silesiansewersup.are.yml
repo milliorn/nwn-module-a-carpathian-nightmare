@@ -1,0 +1,3124 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: ARE
+__struct_id: 4294967295
+ChanceLightning: {type: int, value: 0}
+ChanceRain: {type: int, value: 0}
+ChanceSnow: {type: int, value: 0}
+Comments: {type: cexostr, value: ''}
+Creator_ID: {type: int, value: -1}
+DayNightCycle: {type: byte, value: 0}
+Expansion_List:
+  type: list
+  value: []
+Flags: {type: dword, value: 3}
+FogClipDist: {type: float, value: 45.0}
+Height: {type: int, value: 16}
+ID: {type: int, value: -1}
+IsNight: {type: byte, value: 1}
+LightingScheme: {type: byte, value: 18}
+LoadScreenID: {type: word, value: 0}
+ModListenCheck: {type: int, value: 0}
+ModSpotCheck: {type: int, value: 0}
+MoonAmbientColor: {type: dword, value: 2310951}
+MoonDiffuseColor: {type: dword, value: 2114144}
+MoonFogAmount: {type: byte, value: 10}
+MoonFogColor: {type: dword, value: 1849670}
+MoonShadows: {type: byte, value: 0}
+Name:
+  type: cexolocstr
+  value:
+    0: Silesian Sewers - Upper
+NoRest: {type: byte, value: 0}
+OnEnter: {type: resref, value: ''}
+OnExit: {type: resref, value: area_cleanup_map}
+OnHeartbeat: {type: resref, value: ''}
+OnUserDefined: {type: resref, value: ''}
+PlayerVsPlayer: {type: byte, value: 3}
+ResRef: {type: resref, value: silesiansewersup}
+ShadowOpacity: {type: byte, value: 60}
+SkyBox: {type: byte, value: 0}
+SunAmbientColor: {type: dword, value: 0}
+SunDiffuseColor: {type: dword, value: 0}
+SunFogAmount: {type: byte, value: 0}
+SunFogColor: {type: dword, value: 0}
+SunShadows: {type: byte, value: 0}
+Tag: {type: cexostr, value: SilesianSewersUpper}
+Tile_List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 115}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 151}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 150}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 117}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 118}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 0}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 117}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 118}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 1}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 151}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 94}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 95}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 54}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 112}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 54}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 102}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 87}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 148}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 76}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 77}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 170}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 92}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 93}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 13}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 26}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 100}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 101}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 86}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 103}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 74}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 75}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 171}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 66}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 13}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 27}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 63}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 89}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 139}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 139}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 139}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 170}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 148}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 90}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 91}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 88}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 66}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 63}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 3}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 171}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 64}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 63}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 64}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 89}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 90}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 91}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 151}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 170}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 84}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 85}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 99}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 98}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 88}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 3}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 102}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 3}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 171}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 82}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 83}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 66}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 105}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 87}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 119}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 100}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 101}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 170}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 108}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 62}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 106}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 4}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 86}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 94}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 95}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 119}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 171}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 108}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 103}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 107}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 89}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 92}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 93}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 3}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 170}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 97}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 96}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 139}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 64}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 88}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 63}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 98}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 99}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 171}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 97}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 96}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 66}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 139}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 87}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 84}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 85}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 3}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 1}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 108}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 63}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 104}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 86}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 82}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 83}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 117}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 170}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 78}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 80}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 65}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 64}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 118}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 119}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 103}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 119}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 171}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 79}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 81}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 17}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 64}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 64}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 20}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 73}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 112}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 73}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 20}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 96}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 97}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 123}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 114}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 170}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 171}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 24}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 116}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 117}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 0}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 110}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 11}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 114}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 150}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 3}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 1}
+    Tile_MainLight1: {type: byte, value: 1}
+    Tile_MainLight2: {type: byte, value: 2}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Tile_AnimLoop1: {type: byte, value: 1}
+    Tile_AnimLoop2: {type: byte, value: 1}
+    Tile_AnimLoop3: {type: byte, value: 1}
+    Tile_Height: {type: int, value: 0}
+    Tile_ID: {type: int, value: 25}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 0}
+    Tile_Orientation: {type: int, value: 2}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
+Tileset: {type: resref, value: tds01}
+Version: {type: dword, value: 12}
+Width: {type: int, value: 16}
+WindPower: {type: int, value: 0}

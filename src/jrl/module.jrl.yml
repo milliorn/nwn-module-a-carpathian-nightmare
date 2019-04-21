@@ -1,0 +1,890 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: JRL
+__struct_id: 4294967295
+Categories:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: "ACN Chat Commands:\n\nThese are the list of commands you can use in
+              chat.  They can be typed into any chat channel except private channel.
+              \ \n\nType *(name of shortcut) all in one word to access the emotes.\n\nType
+              !(name of shortcut) all in one word to access the commands\n\nDo not
+              add the () in the command.\n\n\n!emotes = List of all emotes commands\n\n!wpnv
+              = List of all Weapon VFX commands\n\n!player = List of all Player commands\n\n!dice
+              = List of all Dice commands\n\n!alignment = List of all Alignment commands\n\n!wings
+              = List of all Wings commands\n\n!tails = List of all Tails commands\n\n!eyes
+              = List of all Eyes commands\n\n!heads = List of all Heads commands\n\n!arms
+              = List of all Arms commands"
+    Name:
+      type: cexolocstr
+      value:
+        0: ACN - Chat Commands
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_CHAT}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 1
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              READ THIS JOURNAL ENTIRELY!  It will answer almost all your questions here on this module.
+
+              Getting Started:  Go to the Market.  Talk to Basic Loot Merchant.  Buy gear.  Go explore starting at the Carpathian Forest west of town.  All exits from Carpathia has a sign next to the exit with details of the area.  Examine it.
+
+              Alignment:  No Alignment Restrictions after creation.  However, you can only take Neutral alignment if you have one class level in Druid.
+
+              Bank: GP/XP bankers inside the bank.  Follow the instructions in the conversation.  The chest inside bank are used to transfer items.  Examine the chest for more info.
+
+              Bindstones: Used to save your location at that bindstone.  You can port back to it with the Bindstone portal in the Astral Realm.  To reach the Astral Realm use the Carpathian Gem.
+
+              Carpathian Gem:  Examine it for more information.
+
+              Carpathian Sequencer:  Examine it for more information.
+
+              Crafting and Forging: Change your appearance of your gear by accessing the crafting menu.  Clothing dyes sold in the Item Scribe and Dye shop.  Upgrade your gear at the Omega Forge in Carpathia.
+
+              Delete Character:  Go to the Bank and talk to the XP banker.
+
+              Legendary Levels:  Levels 41-60.  Access these levels at the Tower of Legends in Carpathia.  Go to the portal across from the door of entry.  More info is found on the leveller by examing it.
+
+              Merchants:  You cannot sell items directly to a Merchant except to the Market Merchant.  You can drop an item for gold, an that item is sent to the Market to be sold by the Market Merchant.  Party Loot Splitter inside the Market.  All items unacquired will be sent to the market unless bartered.  Market purges its inventory when it reaches a certain limit in inventory with a shout message. Items are bought at a rate of 10% of their value.
+
+              Multiclass XP Penalty:  None.
+
+              Quill of Legends:  Examine the item for more information.
+
+              Rare Gems:  If you find Rare Gems you can sell those to the Rare Gem Dealer in the Market in Carpathia for a full value price.  Check with the Rare Gem Dealer on what gems can be sold for gold.  They are a good way to make a lot of gold pieces.  Diamonds alone go for 4000gp.
+
+              Sockets:  Examine the socketed item and gem for more information.  10 gems per item max.  They are colored with a green text.
+
+              Subraces:  Read the signs in town.  They are to your left (West) of the starting location when you enter the module.
+
+              Tower of Legends:  This building is located in Carpathia.  Inside you will find useful things for your character.
+    Name:
+      type: cexolocstr
+      value:
+        0: ACN - FAQ
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_ACN_FAQ}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 2
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              Welcome to A Carpathian Nightmare Enhanced Edition!
+
+              Milliorn{DM} - Original Developer & Owner
+              Bastard{DM| - Host
+              Sakuta{DM} - Developer
+              Vermillion{DM)
+              Ynnead - Developer
+              LeonidasPoA - Developer
+              Methonash{DM} - English/Swedish
+              Sixonefive{DM} - English/Portuguese
+
+              Facebook page!
+              https://www.facebook.com/a.carpathian.nightmare
+
+              ACN Discord
+              https://discord.gg/jG7JUN4
+
+              ACN Forum (archive of v1,v2, v3)
+              http://acnpoa.proboards.com
+
+              List of features on ACN:
+
+              100+ Subraces
+              Legendary Levels(60)
+              Character Deleter
+              GP,XP, Item Bank
+              Dynamic Market System
+              Party Loot Splitter
+              Omega Forge
+              Full Crafting Shop
+              PvP Bounty System
+              PvP Score System
+              Dynamic Arena(No DM Required)
+              Sequener Wands(Fast Buffing)
+              Unique Boss Encounters
+              Location Bindstones and Party Portal
+              Total PC Appearance Modifier
+              Chat Commands
+
+              Here is a list of people that contributed material to the NWN Community that made this module possible.
+
+              NWNX-EE Team
+              Higher Ground Legendary Levels
+              Omega Forge - OmegaDM
+              Scarface for Subrace System, Socket System,, XP System, GP Bank all which were exclusively tested on ACN.
+              Elwoodini for hosting ACN v1 & v2.
+              Karyn & Qwen for donating development PC.
+              Tartmaster for hosting ACN v3.
+              BassBastard for also hosting ACN v3 & v4 (Enhanced Edition).
+              Sakuta for helping with the map building for v4 (Enhanced Edition).
+              Ynnead for reworking the Legendary Levels and Subrace scripts to be compatible for NWNX-EE.
+
+              The module was built, programmed and created by Scott Milliorn.  Hall of Fame Gameworld on the Old NWN/IGN Vault.  Hak n' Slash and PvP.  ACN is the longest running PvP server with its original developer and owner in Neverwinter Nights.  ACN has the original PvP Score/Bounty Hunter System.  ACN was first launched in 2004.  Development began in 2003.  Former developer for the Ancient Warriors Clan, the original authors of Path of Ascension NwN.  Former {DM} for Chaotic World Legends (CW v3).
+    Name:
+      type: cexolocstr
+      value:
+        0: ACN - Server Information
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_FEATURES}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 3
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              March 25th, 2019
+
+              Chat Alignment script updated to allow you to change to whatever alignment you want.  Level up script and Legendary Levels still enforces the Druid alignment rule.
+
+              February 8th, 2019
+
+              Epic Spell: Epic Warding duration reverted to default
+              Epic Spell: Mummy Dust no longer cast Gate spell.
+              Fix has been put in for Dwarven Defender getting the wrong feat causing it to bug.
+
+
+              January 22nd, 2019
+
+              Epic spells improved.  Check Ruleset - Feats journal entry for more details.
+
+
+              January 19th, 2019
+
+              Epic Shadowlord feat updated for Shadowdancer class.  Upon taking the feat, you will gain what the summons would of gained at level 30 at the moment you take the feat plus more improvements.  More details are on discord in the general channel.
+
+              Animate Dead Improvement.  At Pale Master level 15 you will now get this.
+
+              Boss Battle sequence updated in Merry's Tomb.  Swarm effect has been added to the encounters to increase difficulty.
+
+
+              January 17th, 2019
+
+              Animal Companion:  Gains increased stats based on Animal Empathy skill.  You access this through talking to your animal companion.  Skill points counted towards this are capped at 120.  Make sure you use this first before buffing your companion with spells/feats.
+
+              Ability Points: Total Skill Points / 10
+              AC, Attack Bonus, Saves: Total Skill Points / 6
+              HP: Total Skill Points
+              Skills Bonus: Base Skill Points
+
+              Blackguard Create Undead has been improved.  It now scales every four levels in power.
+
+
+              January 13th, 2019
+
+              More work has been done to Merry's Tomb to try and fix the infinite spawn issue.
+
+              Character sheet info now displays on hostile NPC's when you examine the npc.
+
+              Turn Undead/Planar Turning updated.  Class level and turn level now accounts for legendary levels taken.
+    Name:
+      type: cexolocstr
+      value:
+        0: ACN - Updates
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_UPDATES}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 4
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: "ARCANE ARCHER:\n\nImbue Arrow: Radius 10 meters.\n\nSeeker Arrow:
+              Damage =  (Base damage of bow + strength modifier + feats (+2 per feat)
+              * critical damage) * Enchant Arrow bonus.\n\nHail of Arrows: weapon
+              base damage + strength modifier + feats (+1 per feat) + Enchant Arrow
+              bonus.\n\nArrow of Death: weapon base damage + strength modifier + weapon
+              specialization(+1) + Enchant Arrow bonus.  DC = 10 + class levels. \n\nGreat
+              Wisdom feats added to epic bonus feats.\n\n\nASSASSIN:\n\nHide in Plain
+              Sight: Level 8\n\nSpells:\n\nSpells are gained from Assassin Buff feat.
+              \ They auto casted based on caster level.  Caster level is based on
+              intelligence score.\n\nGhostly Visage: Level 1, Caster Level 1(20% Concealment)\n\nCat's
+              Grace: Level 3, Caster Level 2\n\nFox Cunning: Level 3, Caster Level
+              2\n\nMagic Circle Against Good: Level 5, Caster Level 3\n\nFalse Life:
+              Level 5, Caster Level 3\n\nImproved Invisibility: Level 7, Caster Level
+              4\n\nFreedom of Movement: Level 7, Caster Level 4\n\n\nBARD:\n\nSkill
+              points: 6 + int modifier\n\nSpells:\n\nTasha's Hideous Laughter: Level
+              1 \n\nRemove Fear: Level 1 \n\nFreedom of Movement: Level 4 \n\nShadow
+              Conjuration: Level 4"
+    Name:
+      type: cexolocstr
+      value:
+        0: Class Changes A-B
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_CL_CH_A_B}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |
+              BLACKGUARD:
+
+              Lay on Hands: Level 1, with class level counted towards levels.
+
+              Blackguard Create Undead has been improved.  It now scales every four levels in power.
+
+              Spells:
+
+              Spells are gained from Blackguard Buff feat.  They auto casted based on caster level.  Caster level is based on wisdom score.
+
+              Corrupt Weapon: Similar to Bless Weapon, but with 2d6 negative damage.  Level 1, Caster level 1.
+
+              Eagles Splendor: Level 3, Caster level 2.
+
+              Magic Circle Against Good: Level 5, Caster level 3.
+
+              Freedom of Movement: Level 7, Caster level 4.
+
+
+              CHAMPION OF TORM:
+
+              Divine Wraith: +5 on Damage Reduction on any level.
+
+
+              DRUID:
+
+              Item properties of weapons, gauntlet, armor, helmets, boots, rings, amulets, cloak, bracers merge together while shifted.
+
+              Spells:
+
+              Gust of Wind: Level 2
+
+              Endurance: Level 2
+
+              Cat's Grace: Level 2
+
+              Owl's Wisdom: Level 2
+
+              Ice Storm: Level 4
+
+              Sunbeam: Level 7
+
+              Earthquake: Level 8
+
+
+              DWARVEN DEFENDER:
+
+              Uncanny Dodge: 1 at level 2. 2 at level 4.  3 at level 6
+
+              Defensive Stance: Unlimited
+
+
+              HARPER SCOUT:
+
+              Tymora's smile: 2 + class levels in saving throw bonus.  Applies to allies also.  Free Action feat.
+
+              Invisibility: Replaced by Improved Invisibility.
+
+              Harper Potion:  Replaced with a mega buff spell free of charge.  Spells included are Aid, Barkskin, Bless, Bull's Strength, Cat's Grace, Clarity, Eagle Splendor, Endurance, Fox's Cunning, Ironguts, Light, Resistance, Owl's Wisdom, Camoflage, Darkvision.
+
+
+              MONK:
+
+              New Monk Weapons.  Handaxe, Light Hammer, Mace, Sickle, Dart.  Handaxe, Light Hammer, Mace, Sickle, and Dart,  They along with Shurikens are counted as Unarmed Strike/Kama for Attacks Per Round.
+
+              Skill: Spot added to class skill.
+    Name:
+      type: cexolocstr
+      value:
+        0: Class Changes B-M
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_CL_CH_C_M}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |
+              PALADIN:
+
+              Light: Level 1
+
+              Lesser Restoration: Level 1
+
+              Owl's Wisdom: Level 2
+
+              Remove Curse: Level 3
+
+              Restoration: Level 4
+
+              Bless Weapon: 2d6 Divine damage vs All
+
+
+              PALE MASTER:
+
+              Undead Graft: DC = 10 + class levels + Charisma modifer.  Duration is 1d4 + 1 round.
+
+              Deathless Master Touch: DC = 10 + class levels. Large creatures immune.
+
+              Animate Dead: at level 15 you gain an epic improved summoned creature.
+
+              PURPLE DRAGON KNIGHT:
+
+              Heroic Shield: +4 Dodge AC to all allies including the caster.  Duration is one turn with a one turn cooldown.
+
+              Rallying Cry: Duration is one turn.
+
+              Inspire Courage: 1+ bonus to attack, damage, and Will Saves per class level.  Free Action.
+
+              Oath of wrath:  Turns equal to twice the class level.  Applies to allies.
+
+              Final Stand:  2d10 + Class level + Charisma modifier for temporary hit points.  Radius is 10 meters.  Durations is turns.  Free Action.
+    Name:
+      type: cexolocstr
+      value:
+        0: Class Changes N-P
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_CL_CH_N_P}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |
+              RANGER:
+
+              Skill points: 6 + int modifier
+
+              Saves: Fortitude and Reflex
+
+              Improved Two-Weapon Fighting: Level 6
+
+              Woodland Stride: Level 7
+
+              Evasion: Level 9
+
+              Hide in Plain Sight: Level 17
+
+              Spells:
+
+              Blade Thirst: +5 enhancement bonus weapon or +5 Attack Bonus on any ranged weapon with a duration changed from rounds to hours at 2 hours per caster level.
+
+              Charm Person or Animal: Level 1
+
+              Endure Elements: Level 1
+
+              Barkskin: Level 2
+
+              Endurance: Level 2
+
+              Owl's Wisdom: Level 2
+
+              Spike Growth: Level 2
+
+
+              RED DRAGON DISCIPLE:
+
+              Breath weapon: DC = 10 + Class levels+ constitution modifier.
+
+
+              SHIFTER:
+
+              Skills: Spellcraft added as class skill
+
+              Item properties of weapons, gauntlet, armor, helmets, boots, rings, amulets, cloak, bracers merge together while shifted.
+
+
+              WEAPON MASTER:
+
+              Increased Multipler: Level 2
+              Superior Weapon Focus: Level 3
+    Name:
+      type: cexolocstr
+      value:
+        0: Class Changes Q-Z
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_CL_CH_Q_Z}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              Animal Companion:  Gains increased stats based on Animal Empathy skill.  You access this through talking to your animal companion.  Skill points counted towards this are capped at 120.  Make sure you use this first before buffing your companion with spells/feats.
+              Ability Points: Total Skill Points / 10
+              AC, Attack Bonus, Saves: Total Skill Points / 6
+              HP: Total Skill Points
+              Skills Bonus: Base Skill Points
+
+              Casters:  All Cantrips are unlimited uses per day.
+
+              Darts and Shurikens are counted as Unarmed Strike.
+
+              Disarm & Improved Disarm: Weapon falls into Targets inventory.
+
+              Epic Spell: Dragon Knight improved.
+
+              Epic Spell: Greater Ruin damage is now 35d6 + Spellcraft skill points.
+
+              Epic Spell: Hellball is now 40 meters in distance.  Damage is d6(caster level / 2).Epic Spell: Epic mage armor gains +5 Shield AC
+
+              Epic Spell: Mummy Dust improved.
+
+              Expertise turned off if you cast a spell.
+
+              Free Action Feats: Wholeness of Body, Bard Song, Barbarian Rage, Empty Body, Lay on Hands, War/Strength/Protection/Trickery Domain, Divine Might/Shield, Shadow Evade
+    Name:
+      type: cexolocstr
+      value:
+        0: Ruleset - Feats
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_NERFS_FEATS}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              Item Ruleset:
+
+              Items sold are only given 1/10 of the item value.
+
+              Make sure you leave one tab free of ANY items in the event a script strips off your equipped items.  Final warning, no refunds.  If you are caught with an item that is forbidden, it will be confiscated with notice and without a refund either by script or DM.
+
+              Socket Items have 5 slots.  The slots and gems stack.
+
+               * Item Property Slots: 8
+               * Enhancement Bonus: +5
+               * Attack Bonus: +5
+               * Armor Class: +5
+               * Ability Bonus: +2
+               * Damage Reduction: +5 -5
+               * Damage Resistance: -5
+               * Haste: Automatic
+               * Immunity: No
+               * On-Hit: Yes
+               * Regeneration: +1
+               * Saving Throws: +2
+               * Spell Resistance: 20
+               * Damage Bonus: 2d12
+               * Keen: Yes
+               * Vampiric Regeneration: +6
+               * Bonus Feat: No
+               * Bonus Spell Slot: Yes (Level 0-9)
+               * Cast Spell: Staves, Wands, Rods, Scroll
+               * Darkvision: No
+               * Freedom of Movement: No
+               * Improved Evasion: No
+               * Light: Yes
+               * Skill Point Bonus: +1
+               * True Seeing: No
+               * Extra Ranged Bonus: Yes
+               * Holy Avenger: No
+               * Massive Critical Damage Bonus: 2d12
+               * Visual Effects: Yes
+               * Mighty: +12
+    Name:
+      type: cexolocstr
+      value:
+        0: Ruleset - Items
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_RULES_ITEMS}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 10
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              Bounty Reward System Killing Spree Bonus! (BETA)
+
+              If you have 5 or more consecutive player kills (PK) you will be rewarded with a killing spree bonus.  Bonuses may or may not apply based on spells or gear equipped.  These bonuses are reapplied upon every new kill on after the 5th consecutive kill in a spree.  Duration of bonus is set in rounds (6 seconds) multipled by your killing spree score.  After that your bonus will disappear until you gain another PK.  You will lose your bonus upon any death.  However you can regain your bonus as long as you were not PK'd by another player and gain another PK.  Your bonus will also disappear if you log out or server resets.  It will reapply when you gain another PK.
+
+              AB Bonus: +5
+
+              AC Bonus: +5
+
+              Concealment Bonus: Equal to killing spree score up to 100%.
+
+              Damage Reduction Bonus: Amount of damage reduction is +5.  The amount of damage to reduce is 20.  Damage the effect can absorb before disappearing is equal to the killers maximum hit points.
+
+              Damage Shield: Damage to apply to the targets attacker after a successful hit starts at 5 and increments +1 per kill up to 10 plus 1d6 magical damage.  This shield stacks with other shields.
+
+              Extra Attacks Per Round: +1 (Needs to be tested)
+
+              Regeneration: +5 hit points per round.
+
+              Sanctuary: DC is +10 plus killing spree score.
+
+              Saving Throw Bonus: +5 to all saving throws.
+
+              Skill Bonus: +5 to all skills.
+
+              Spell Resistance: Bonus equal to killing spree score.
+
+              Temporary Hit Points: Bonus is equal to killing spree score.
+
+              Weapon Damage Bonus: 1d6 Positive.
+    Name:
+      type: cexolocstr
+      value:
+        0: Ruleset - PvP PK Bonus System
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_PK_BONUS}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 11
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: "A Carpathian Nightmare Ruleset\n\n1.  A DM can enforce a new rule
+              at anytime, written or verbal.  If you have a problem with it, contact
+              the Facebook page an post your thoughts there.\n\n2.  All hostile actions
+              are only allowed in PVP areas, \n\n3.  Boss camping prohibited.  (Script
+              Enforced).\n\n4.  Use the Carpathian Bank at your own risk.  No refunds,
+              sorry.\n\n5.  Abusing Bugs, Exploits, Haks, Cheats is prohibited.  A
+              possible reward can be given only from Milliorn if a player makes a
+              report that replicates the prohibited action that leads to the action
+              being fixed, or at the minimum to the attention of the ACN staff.  If
+              you are caught committing this prohibited action you could be punished
+              at the discretion of the ACN Staff.\n  \n6.  Do not disturb someones
+              bank chest when that chest is open (Script Enforced).\n\n7.  No Trap
+              Stacking! (Script Enforced).  Must separate them by at least 2 meters.\n\n8.
+              \ You must choose either Good/Evil Alignment to play this module.  Neutral
+              alignment is forbidden.  You will not be able to level up until you
+              do.  Read \"ACN FAQ\" to learn how to change your alignment.\n\n\nPvP
+              Rules:\n\n1.  Griefing is forbidden.  Griefers do not play the game
+              in order to achieve objectives defined by the game world. They seek
+              to harass other players.  They use tools such as stalking, insults,
+              and exploiting game mechanics. Griefing as a gaming play style is not
+              simply any action that may be considered morally incorrect.\n\nThe use
+              or abuse of a game mechanic that was not intended by the game's developers.
+              \ The inability of the victim to exact some means of retribution beyond
+              utilizing similar unintended game mechanics.  The intended purpose of
+              negatively impacting the gameplay of another person.  Players will often
+              consider the following actions to constitute griefing: kill stealing,
+              spamming, team killing (or team wounding), team flashing, door or path
+              blocking, ninja looting, spawn camping, and corpse camping.\n\n2.  No
+              resurrecting a player after you PK them with intent to commit further
+              hostile action against them.\n\n3.  Hostile action on a Spawn Point
+              or Area Transistion is prohibited.  This includes setting traps.\n\n4.
+              \ No Pickpocketing in Arena (Script Enforced).\n\n5.  Pickpocket once
+              every 6 seconds or 1 round).  Dungeon Masters are notified of every
+              theft made.  If you try to pickpocket more than allowed you are subject
+              to being punished (Script Enforced)."
+    Name:
+      type: cexolocstr
+      value:
+        0: Ruleset - Server & PvP
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_RULES_SERVER}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 12
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              Acid Splash: A target must succeed on a Dexterity save or take 1d6 acid damage.  Damage increases by 1d6 when you reach 5th, 11th, and 17th caster level.  5.0 edition rule.
+
+              Aid: +1 bonus to attack rolls, a +1 bonus on saving throws versus fear, and a +5 hp bonus per caster level to a max of +50 hp.  Ranger class gets 5 + 1d3 hp per caster level to a max of 80 hp.  3.5/5.0 edition rules (modified).
+
+              Bestow Curse: -4 penalty on AB and Saves if you are a Cleric, Sorcerer, or Wizard.  3.5 edition rules.
+
+              Bigby's Forceful Hand spell updated.  Duration capped at 20 rounds.  Caster 1d20 + 14 versus targets Take 20 + strength modifier + size modifier.
+
+              Bless Weapon: Can be applied to gloves now.
+
+              Bombardment: 1d8 damage per level to a max of 20d8.  3.0 edition rule correction.
+
+              Bulls Strength, Cat's Grace, Eagle's Splendor, Endurance, Fox's Cunning, Owl's Wisdom: +4 enhance ability.  3.5/5.0 edition rules.
+
+              Call Lightning:  3d6 points of electrical damage per caster level, to a maximum of 10d6.  Radius is increased from 5 meters to 10.  Druid class gets 3d10 damage up to 10d10 damage.  3.5/5.0 edition rules
+
+              Clairaudience/Clairvoyance:  Duration is now in turns. 3.5 edition rules
+
+              Cloudkill:  Turns per caster level.  3.5 edition rules
+
+              Creeping Doom:  Turns per caster level.  3.5 edition rules.
+    Name:
+      type: cexolocstr
+      value:
+        0: Spells - Changes A-C
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_SPELLS_0}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 13
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              Darkfire: The weapon or glove will do 1d6 points of damage with a custom progression.  Custom change to eliminate On-Hit Item Property.
+
+              Caster Level - Damage
+
+              3 = 1d4
+              5 = 1d6
+              7 = 1d8
+              9 = 2d4
+              11 = 1d10
+              13 = 1d12
+              15 = 2d6
+              17 = 2d8
+
+              Death Ward:  Changed duration from hours to turns.  3.5 edition rules.
+
+              Divine Favor:  +1 bonus to attack and weapon damage rolls for maximum of +3.  1d4 Holy damage added.  3.5/5.0 edition rules combined.
+
+              Divine Power: +6 bonus to Strength.  3.0/3.5/5 edition rules correction.
+
+              Earthquake:  Failed reflex save results in a Knockdown for one round.  Custom rule.
+
+              Elemental Shield:  1d6 points of damage +1 point per caster level (maximum +15). 3.5 edition rules.
+
+              Endure Elements:  Damage resistance 5/- against all elemental forms of damage.  Duration is 8 game hours.  3.0/3.5/5.0 edition rules (mix).
+
+              Energy Buffer: 1d6 damage resistance per caster level (maximum 15d6). Same for the amount before the spell is broken.  3.0 edition rules (corrected).
+
+              Entangle: 1 turn per caster level.
+
+              Evard's Black Tentacles: 1 round per caster level.  3.0/3.5 edition rules
+
+              Feeblemind:  Caster does 1d4 points of Intelligence and Charisma damage to the creature for every 4 caster levels.  Modified 3.5 Edition rules.
+
+              Flame Arrow: Each arrow does 1d6 points of fire damage.  1 arrow per caster level up to 30 arrows.  5.0 edition rules (modified).
+
+              Flame Weapon: Sets a melee weapon or glove aflame, granting 1d4 points of fire damage +0d2 per 2 caster level to a maximum of 1d12. At caster level 10+ you gain a maximum of Fire 1d12 + Positive 1d4.  Custom change to eliminate On-Hit Item Property.
+
+              Greater Dispelling:  1d20 + 1 per caster level (to a maximum of +20).  3.0/3.5 Edition rules.
+
+              Greater Magic Weapon:  Will now apply Attack Bonus to Ranged weapons and Gauntlets.  Custom rules.
+
+              Greater Restoration:  No longer heals HP. 3.0/3.5 Edition rules correction.
+
+              Harm: 10 points of damage per caster level to a maximum of 150 damage points.  Successful will save deals half damage.  Harm acts like Heal on the Undead.  3.5 edition rules.
+
+              Heal: 10 points of damage per caster level to a maximum of 150 damage points. Successful will save deals half damage.  Heal acts like Harm on the Undead.  3.5 edition rules.
+    Name:
+      type: cexolocstr
+      value:
+        0: Spells - Changes D-H
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_SPELLS_1}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 14
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: |-
+              Invisibility purge: Now removes Sanctuary and Greater Sanctuary when you enter the radius of effect. 3.5 edition rules.
+
+              Isaac's greater missile storm: Each missile does 1d6 points of magical damage up to 20 missles.  3.5 edition rules (Modifed).
+
+              Keen edge: Can be applied to all melee weapons.  Custom rules.
+
+              Lesser Mind Blank/Mind Blank: Duration is 24 turns (One game day).  3.5 edition rules.
+
+              Mage Armor: +4 Dodge AC Bonus. Custom 3.5 edition rules.
+
+              Mass Heal: All allies within the area of effect are restored to same as Heal spell.
+
+              Neutralize poison: Added an immunity to poison with a duration of 10 turns + 1 turn per caster level.  3.5 edition rules.
+
+              One with the land: +4 Search added.  3.0 edition rules (Correction).
+
+              Sound burst: Respects Fortitude Save.  3.0/3.5 edition rules (Correction).
+
+              Stoneskin: The spell absorbs to a maximum of 150 damage. 3.5 edition rules.
+
+              Sunbeam: Each creature takes 4d6 points of damage. 3.5 edition rules.
+
+              Time Stop: Duration is 9 seconds. 6 second cooldown after the 9 second duration.  40 meter radius of effect.  Spell Resistance check enable.  (Custom)
+
+              Undeath to Death: Fortitude saving throw instead of Will saving throw.  3.5 edition rules.
+    Name:
+      type: cexolocstr
+      value:
+        0: Spells - Changes I-Z
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_SPELLS_2}
+    XP: {type: dword, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 15
+    Comment: {type: cexostr, value: ''}
+    EntryList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        End: {type: word, value: 1}
+        ID: {type: dword, value: 1}
+        Text:
+          type: cexolocstr
+          value:
+            0: "UMD / Spellcraft and a ShareSpell feature.\n\nThe UMD system is by
+              the book so to speak.\n\nThis system will allow you to cast a spell
+              from a scroll or item if:\n\n - You can regularly cast that level spell
+              due to innate abilities.\n - You pass either a UMD or Spellcraft check
+              for that level spell.\n - You have the spell memorzied in your spellbook.\n\nShareSpell
+              - Simply cast a known spell using your innate ability upon yourself
+              and it will be transfered to your familiar. \n\nFailure to cast counts
+              as a use and per BW default, may result in the destruction of the item.\n\nIf
+              players have either a UMD or Spellcraft skill level of 5 or higher and
+              they have both skills, they recieve a synergy bonus.  This will result
+              in the player seeing a skill level 2 higher than on the character sheet
+              because the game does not account for this synergy even though it is
+              a standard 3rd Edition rule.  The code then appropriately decides which
+              skill to use (either craft or UMD) after this synergy adjustment is
+              made."
+    Name:
+      type: cexolocstr
+      value:
+        0: Spells - UMD
+    Picture: {type: word, value: 65535}
+    Priority: {type: dword, value: 4}
+    Tag: {type: cexostr, value: JOURNAL_UMD}
+    XP: {type: dword, value: 0}

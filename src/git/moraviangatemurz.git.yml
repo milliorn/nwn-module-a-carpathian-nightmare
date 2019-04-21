@@ -1,0 +1,4808 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: GIT
+__struct_id: 4294967295
+AreaProperties:
+  type: struct
+  value: !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 100
+    AmbientSndDay: {type: int, value: 62}
+    AmbientSndDayVol: {type: int, value: 90}
+    AmbientSndNight: {type: int, value: 62}
+    AmbientSndNitVol: {type: int, value: 90}
+    EnvAudio: {type: int, value: 8}
+    MusicBattle: {type: int, value: 70}
+    MusicDay: {type: int, value: 37}
+    MusicDelay: {type: int, value: 30000}
+    MusicNight: {type: int, value: 37}
+Creature List:
+  type: list
+  value: []
+Door List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 8
+    AnimationState: {type: byte, value: 1}
+    Appearance: {type: dword, value: 63}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0698}
+    CloseLockDC: {type: byte, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 80}
+    Description:
+      type: cexolocstr
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    GenericType_New: {type: dword, value: 0}
+    HP: {type: short, value: 80}
+    Hardness: {type: byte, value: 5}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LinkedTo: {type: cexostr, value: MoravianGatetoMurZhagulsCa}
+    LinkedToFlags: {type: byte, value: 1}
+    LoadScreenID: {type: word, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 5349
+      value:
+        0: Mur-Zhagul's Cave to Moravian Gate
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnFailToOpen: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 0}
+    Ref: {type: byte, value: 0}
+    Tag: {type: cexostr, value: MurZhagulsCavetoMoravianGa}
+    TemplateResRef: {type: resref, value: nw_door_ttr_05}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 17.8}
+    Y: {type: float, value: 140.14}
+    Z: {type: float, value: 20.6}
+Encounter List:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -0.7765}
+        Y: {type: float, value: -13.353}
+        Z: {type: float, value: 21.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 7.9303}
+        Y: {type: float, value: -13.0016}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 7.9902}
+        Y: {type: float, value: -12.0431}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 8.4695}
+        Y: {type: float, value: -10.3657}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 9.3082}
+        Y: {type: float, value: -9.1676}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 10.5063}
+        Y: {type: float, value: -8.3289}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 11.8242}
+        Y: {type: float, value: -7.7299}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 13.0822}
+        Y: {type: float, value: -7.6101}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 12.9384}
+        Y: {type: float, value: 0.3618}
+        Z: {type: float, value: 21.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 21.0455}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Comment: {type: cexostr, value: ''}
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 11.5813}
+        Y: {type: float, value: 148.3651}
+        Z: {type: float, value: 21.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 6.8956}
+    YPosition: {type: float, value: 152.8718}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -14.7242}
+        Y: {type: float, value: 13.1211}
+        Z: {type: float, value: 21.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -14.5807}
+        Y: {type: float, value: 5.1337}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -13.0831}
+        Y: {type: float, value: 4.954}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -11.7652}
+        Y: {type: float, value: 4.295}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -10.8067}
+        Y: {type: float, value: 3.5762}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -10.0878}
+        Y: {type: float, value: 2.6776}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -9.4289}
+        Y: {type: float, value: 1.2998}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -9.369}
+        Y: {type: float, value: 0.1616}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 21.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -0.4156}
+        Y: {type: float, value: 12.5868}
+        Z: {type: float, value: 21.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Comment: {type: cexostr, value: ''}
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 28.6294}
+        Y: {type: float, value: 147.6548}
+        Z: {type: float, value: 21.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 34.5072}
+    YPosition: {type: float, value: 140.0552}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -5.0321}
+        Y: {type: float, value: -5.3316}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -4.8214}
+        Y: {type: float, value: -14.4696}
+        Z: {type: float, value: 21.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 8.7996}
+        Y: {type: float, value: -13.645}
+        Z: {type: float, value: 21.1789}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 9.1102}
+        Y: {type: float, value: -0.394}
+        Z: {type: float, value: 21.1149}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -0.1797}
+        Y: {type: float, value: -1.5576}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -0.7189}
+        Y: {type: float, value: -2.8755}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -1.5575}
+        Y: {type: float, value: -3.9538}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -2.7557}
+        Y: {type: float, value: -4.6726}
+        Z: {type: float, value: 20.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        Comment: {type: cexostr, value: ''}
+        X: {type: float, value: -4.0137}
+        Y: {type: float, value: -5.2118}
+        Z: {type: float, value: 20.615}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Comment: {type: cexostr, value: ''}
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 29.4013}
+        Y: {type: float, value: 131.5651}
+        Z: {type: float, value: 21.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 25.1982}
+    YPosition: {type: float, value: 140.1569}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    Comment: {type: cexostr, value: ''}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        Comment: {type: cexostr, value: ''}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -7.403}
+        Y: {type: float, value: -14.6382}
+        Z: {type: float, value: 16.0324}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.146}
+        Y: {type: float, value: -14.3516}
+        Z: {type: float, value: 16.1253}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.1418}
+        Y: {type: float, value: -9.4863}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.9784}
+        Y: {type: float, value: -4.1138}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.5143}
+        Y: {type: float, value: 0.1433}
+        Z: {type: float, value: 16.331}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 16.2638}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 9.8219}
+        Y: {type: float, value: 111.0822}
+        Z: {type: float, value: 16.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 12.2682}
+    YPosition: {type: float, value: 121.4166}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.261}
+        Y: {type: float, value: -5.9368}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 24.3231}
+        Y: {type: float, value: -4.9181}
+        Z: {type: float, value: 15.7928}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 24.3345}
+        Y: {type: float, value: 9.525}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.8105}
+        Y: {type: float, value: 9.7207}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 20.4201}
+        Y: {type: float, value: -0.8481}
+        Z: {type: float, value: 16.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 36.9669}
+        Y: {type: float, value: 119.1824}
+        Z: {type: float, value: 16.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 19.0912}
+    YPosition: {type: float, value: 121.5963}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.0673}
+        Y: {type: float, value: -0.1957}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.3265}
+        Y: {type: float, value: 16.6207}
+        Z: {type: float, value: 16.1469}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.9663}
+        Y: {type: float, value: 14.7368}
+        Z: {type: float, value: 16.1091}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.1578}
+        Y: {type: float, value: 22.8988}
+        Z: {type: float, value: 16.0265}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.5005}
+        Y: {type: float, value: 21.7249}
+        Z: {type: float, value: 16.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 45.271}
+        Y: {type: float, value: 150.5192}
+        Z: {type: float, value: 16.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 37.3871}
+    YPosition: {type: float, value: 131.8103}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.036}
+        Y: {type: float, value: 4.7317}
+        Z: {type: float, value: 12.3149}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 12.3917}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.0112}
+        Y: {type: float, value: 5.7059}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.2425}
+        Y: {type: float, value: 1.7033}
+        Z: {type: float, value: 10.3378}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.4051}
+        Y: {type: float, value: 10.5835}
+        Z: {type: float, value: 11.3813}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 61.206}
+        Y: {type: float, value: 140.5536}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 46.6788}
+    YPosition: {type: float, value: 132.6982}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 3.8199}
+        Y: {type: float, value: 0.2336}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.7544}
+        Y: {type: float, value: -4.4731}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 10.2299}
+        Y: {type: float, value: -9.9306}
+        Z: {type: float, value: 11.0433}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 19.0265}
+        Y: {type: float, value: -10.067}
+        Z: {type: float, value: 11.0422}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 18.8949}
+        Y: {type: float, value: 7.2987}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.2201}
+        Y: {type: float, value: 7.6884}
+        Z: {type: float, value: 11.2129}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 77.4616}
+        Y: {type: float, value: 117.4098}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 64.9105}
+    YPosition: {type: float, value: 114.9252}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.007}
+        Y: {type: float, value: 7.4117}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.0988}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 19.0828}
+        Y: {type: float, value: 0.0561}
+        Z: {type: float, value: 11.0609}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 19.288}
+        Y: {type: float, value: 17.7793}
+        Z: {type: float, value: 11.0581}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 10.8336}
+        Y: {type: float, value: 17.8471}
+        Z: {type: float, value: 11.0714}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 11.308}
+        Y: {type: float, value: 16.3479}
+        Z: {type: float, value: 11.0934}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 7.5619}
+        Y: {type: float, value: 9.9424}
+        Z: {type: float, value: 11.0788}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 77.5449}
+        Y: {type: float, value: 92.7187}
+        Z: {type: float, value: 11.3399}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 64.44}
+    YPosition: {type: float, value: 86.8059}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -17.6549}
+        Y: {type: float, value: -7.8816}
+        Z: {type: float, value: 11.1206}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0579}
+        Y: {type: float, value: -7.5561}
+        Z: {type: float, value: 11.0739}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.5689}
+        Y: {type: float, value: 0.4775}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -6.6848}
+        Y: {type: float, value: 2.4557}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.0272}
+        Y: {type: float, value: 8.5948}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -9.4815}
+        Y: {type: float, value: 10.5047}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -17.3857}
+        Y: {type: float, value: 10.2303}
+        Z: {type: float, value: 11.095}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 52.8214}
+        Y: {type: float, value: 93.6037}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 64.2129}
+    YPosition: {type: float, value: 94.354}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -20.0834}
+        Y: {type: float, value: -15.3451}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -17.4107}
+        Y: {type: float, value: -18.0353}
+        Z: {type: float, value: 11.141}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.1926}
+        Y: {type: float, value: -17.7325}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -9.3058}
+        Y: {type: float, value: -12.6848}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -3.6442}
+        Y: {type: float, value: -7.9781}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.1653}
+        Y: {type: float, value: -8.1828}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.1984}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -16.514}
+        Y: {type: float, value: 1.696}
+        Z: {type: float, value: 11.2741}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -17.2185}
+        Y: {type: float, value: -10.0927}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -19.9308}
+        Y: {type: float, value: -10.9593}
+        Z: {type: float, value: 11.129}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 53.64}
+        Y: {type: float, value: 117.1967}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 64.9922}
+    YPosition: {type: float, value: 122.9921}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -2.9906}
+        Y: {type: float, value: 6.5108}
+        Z: {type: float, value: 11.284}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.3197}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.2404}
+        Y: {type: float, value: 1.0821}
+        Z: {type: float, value: 11.2943}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 4.4076}
+        Y: {type: float, value: 11.3306}
+        Z: {type: float, value: 11.2756}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.5492}
+        Y: {type: float, value: 11.4859}
+        Z: {type: float, value: 11.0171}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.4781}
+        Y: {type: float, value: 15.9191}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.7852}
+        Y: {type: float, value: 16.0555}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1123}
+        Y: {type: float, value: 11.2746}
+        Z: {type: float, value: 11.1091}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 24.6172}
+        Y: {type: float, value: 109.6336}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 18.5114}
+    YPosition: {type: float, value: 95.8973}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -6.2769}
+        Y: {type: float, value: -9.2659}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.8677}
+        Y: {type: float, value: -15.0284}
+        Z: {type: float, value: 6.2469}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.0527}
+        Y: {type: float, value: -14.5714}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 7.9892}
+        Y: {type: float, value: -18.157}
+        Z: {type: float, value: 6.1036}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.9467}
+        Y: {type: float, value: -18.5982}
+        Z: {type: float, value: 6.3823}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 12.0308}
+        Y: {type: float, value: -0.5978}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.2242}
+        Y: {type: float, value: -9.4154}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 36.6422}
+        Y: {type: float, value: 96.613}
+        Z: {type: float, value: 5.7324}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 28.6246}
+    YPosition: {type: float, value: 101.9378}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.3656}
+        Y: {type: float, value: -6.5414}
+        Z: {type: float, value: 6.022}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.191}
+        Y: {type: float, value: -6.9898}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.4152}
+        Y: {type: float, value: 0.8563}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.838}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 58.4273}
+        Y: {type: float, value: 79.4587}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 45.8649}
+    YPosition: {type: float, value: 82.2639}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.6534}
+        Y: {type: float, value: -5.6504}
+        Z: {type: float, value: 6.243}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 16.29}
+        Y: {type: float, value: -5.6789}
+        Z: {type: float, value: 6.0269}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.1052}
+        Y: {type: float, value: 11.1198}
+        Z: {type: float, value: 6.1135}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 11.3582}
+        Y: {type: float, value: 8.8923}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 11.3582}
+        Y: {type: float, value: 0.1495}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 90.5334}
+        Y: {type: float, value: 79.0175}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 76.784}
+    YPosition: {type: float, value: 81.5581}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.8307}
+        Y: {type: float, value: 33.7705}
+        Z: {type: float, value: 6.4084}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.4575}
+        Y: {type: float, value: 0.0873}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.432}
+        Y: {type: float, value: 33.9162}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 90.7566}
+        Y: {type: float, value: 115.9802}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 88.0617}
+    YPosition: {type: float, value: 98.9008}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.6867}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.9883}
+        Y: {type: float, value: -15.411}
+        Z: {type: float, value: 2.4176}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 20.161}
+        Y: {type: float, value: -16.3176}
+        Z: {type: float, value: 1.206}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 19.4142}
+        Y: {type: float, value: 1.3718}
+        Z: {type: float, value: 2.3985}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 86.5991}
+        Y: {type: float, value: 146.7334}
+        Z: {type: float, value: 0.935}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 76.2618}
+    YPosition: {type: float, value: 152.8424}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 2.2008}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.0963}
+        Y: {type: float, value: -18.0549}
+        Z: {type: float, value: 2.7134}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 18.5405}
+        Y: {type: float, value: -17.701}
+        Z: {type: float, value: 2.0348}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.3651}
+        Y: {type: float, value: -9.0237}
+        Z: {type: float, value: 0.7356}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 18.29}
+        Y: {type: float, value: 0.1441}
+        Z: {type: float, value: 1.0305}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 105.6185}
+        Y: {type: float, value: 145.0998}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 95.6638}
+    YPosition: {type: float, value: 154.0071}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.6267}
+        Y: {type: float, value: -28.1572}
+        Z: {type: float, value: 3.2073}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.5457}
+        Y: {type: float, value: -27.8712}
+        Z: {type: float, value: 2.6682}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.2596}
+        Y: {type: float, value: -0.5493}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 150.212}
+        Y: {type: float, value: 140.2138}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 138.7053}
+    YPosition: {type: float, value: 154.3013}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.4544}
+        Y: {type: float, value: -25.4474}
+        Z: {type: float, value: 1.0472}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 23.8761}
+        Y: {type: float, value: -25.4516}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 23.5229}
+        Y: {type: float, value: 0.3427}
+        Z: {type: float, value: 1.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 126.68}
+        Y: {type: float, value: 140.6032}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 114.2259}
+    YPosition: {type: float, value: 153.4093}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -16.0472}
+        Y: {type: float, value: -15.3615}
+        Z: {type: float, value: 6.0562}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -9.153}
+        Y: {type: float, value: -14.985}
+        Z: {type: float, value: 7.5792}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -10.3357}
+        Y: {type: float, value: -4.5175}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0468}
+        Y: {type: float, value: -4.9809}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.086}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -15.8942}
+        Y: {type: float, value: 1.5019}
+        Z: {type: float, value: 6.1588}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 108.7162}
+        Y: {type: float, value: 121.3414}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 121.9411}
+    YPosition: {type: float, value: 122.7899}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.453}
+        Y: {type: float, value: 0.6604}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 8.2164}
+        Y: {type: float, value: -17.3616}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.7405}
+        Y: {type: float, value: -17.4559}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.369}
+        Y: {type: float, value: 6.3667}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.8762}
+        Y: {type: float, value: 7.5191}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 151.5009}
+        Y: {type: float, value: 116.8974}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 139.3801}
+    YPosition: {type: float, value: 116.7231}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -3.2598}
+        Y: {type: float, value: 6.2661}
+        Z: {type: float, value: 6.2568}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.2631}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.8466}
+        Y: {type: float, value: 0.1891}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.7712}
+        Y: {type: float, value: 22.9124}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.7074}
+        Y: {type: float, value: 22.8759}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.4414}
+        Y: {type: float, value: 10.0682}
+        Z: {type: float, value: 6.5368}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 150.9697}
+        Y: {type: float, value: 85.0961}
+        Z: {type: float, value: 5.9152}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 148.5278}
+    YPosition: {type: float, value: 76.132}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -6.9597}
+        Y: {type: float, value: -24.9786}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.2358}
+        Y: {type: float, value: -25.5192}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -6.0124}
+        Y: {type: float, value: -0.5317}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 108.6079}
+        Y: {type: float, value: 89.4668}
+        Z: {type: float, value: 6.0938}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 111.4308}
+    YPosition: {type: float, value: 101.5686}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.5745}
+        Y: {type: float, value: -0.3572}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.34}
+        Y: {type: float, value: -8.798}
+        Z: {type: float, value: 11.0266}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -9.7827}
+        Y: {type: float, value: -9.059}
+        Z: {type: float, value: 12.9719}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -9.2993}
+        Y: {type: float, value: -14.1904}
+        Z: {type: float, value: 11.0269}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.2138}
+        Y: {type: float, value: -14.0145}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 10.4682}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 140.8087}
+        Y: {type: float, value: 109.9816}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 144.5395}
+    YPosition: {type: float, value: 114.5591}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.4512}
+        Y: {type: float, value: -5.3926}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.2748}
+        Y: {type: float, value: -14.1807}
+        Z: {type: float, value: 11.0384}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.2576}
+        Y: {type: float, value: -13.5339}
+        Z: {type: float, value: 11.245}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 8.9095}
+        Y: {type: float, value: 0.3517}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.0254}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.2345}
+        Y: {type: float, value: -4.9823}
+        Z: {type: float, value: 11.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 139.6951}
+        Y: {type: float, value: 90.6386}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 135.2403}
+    YPosition: {type: float, value: 100.0757}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -13.8332}
+        Y: {type: float, value: -5.9201}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.0995}
+        Y: {type: float, value: -5.6857}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -5.2754}
+        Y: {type: float, value: -0.1758}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.1172}
+        Y: {type: float, value: 8.7923}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -13.5686}
+        Y: {type: float, value: 8.7643}
+        Z: {type: float, value: 11.1123}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 122.4036}
+        Y: {type: float, value: 111.0367}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 129.9063}
+    YPosition: {type: float, value: 105.351}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.7419}
+        Y: {type: float, value: -13.4239}
+        Z: {type: float, value: 10.4503}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.8896}
+        Y: {type: float, value: -13.2294}
+        Z: {type: float, value: 11.083}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.594}
+        Y: {type: float, value: -4.6894}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 8.6117}
+        Y: {type: float, value: -4.5135}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 8.9047}
+        Y: {type: float, value: 0.2343}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.0385}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 118.1833}
+        Y: {type: float, value: 92.2799}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 115.9607}
+    YPosition: {type: float, value: 99.138}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -19.4733}
+        Y: {type: float, value: -17.9102}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1323}
+        Y: {type: float, value: -17.8461}
+        Z: {type: float, value: 6.0133}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -19.343}
+        Y: {type: float, value: 1.042}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 147.805}
+        Y: {type: float, value: 56.0168}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 154.3178}
+    YPosition: {type: float, value: 63.8321}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -27.1012}
+        Y: {type: float, value: 0.4829}
+        Z: {type: float, value: 6.3016}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0964}
+        Y: {type: float, value: 18.9266}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -27.0446}
+        Y: {type: float, value: 18.1689}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 121.7099}
+        Y: {type: float, value: 54.9793}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 134.7109}
+    YPosition: {type: float, value: 45.9295}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -37.727}
+        Y: {type: float, value: 0.1628}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0684}
+        Y: {type: float, value: 7.3121}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -36.7279}
+        Y: {type: float, value: 7.6981}
+        Z: {type: float, value: 6.2311}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 88.4167}
+        Y: {type: float, value: 61.0458}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 107.4005}
+    YPosition: {type: float, value: 57.2267}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -24.8967}
+        Y: {type: float, value: -1.2667}
+        Z: {type: float, value: 6.328}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -22.5266}
+        Y: {type: float, value: -8.5042}
+        Z: {type: float, value: 6.2059}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -24.2949}
+        Y: {type: float, value: -21.4075}
+        Z: {type: float, value: 6.0465}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -17.4986}
+        Y: {type: float, value: -21.5571}
+        Z: {type: float, value: 6.097}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -18.2477}
+        Y: {type: float, value: -6.5672}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.859}
+        Y: {type: float, value: -6.9734}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 51.153}
+        Y: {type: float, value: 60.998}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 69.94}
+    YPosition: {type: float, value: 64.727}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -33.2135}
+        Y: {type: float, value: 0.9102}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -32.8264}
+        Y: {type: float, value: -6.1022}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -2.7919}
+        Y: {type: float, value: -6.1567}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 6.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -6.3863}
+        Y: {type: float, value: 0.0381}
+        Z: {type: float, value: 6.0834}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 36.7631}
+        Y: {type: float, value: 39.3673}
+        Z: {type: float, value: 6.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 52.3532}
+    YPosition: {type: float, value: 43.2107}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -30.3135}
+        Y: {type: float, value: -6.4744}
+        Z: {type: float, value: 1.4341}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -22.3389}
+        Y: {type: float, value: -2.2143}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.8846}
+        Y: {type: float, value: -2.6051}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.782}
+        Y: {type: float, value: -5.1111}
+        Z: {type: float, value: 5.1355}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -3.7774}
+        Y: {type: float, value: 0.521}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -26.5071}
+        Y: {type: float, value: 0.4559}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -30.0226}
+        Y: {type: float, value: 3.0724}
+        Z: {type: float, value: 1.5681}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 57.0999}
+        Y: {type: float, value: 69.9177}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 71.9491}
+    YPosition: {type: float, value: 70.569}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.1635}
+        Y: {type: float, value: 10.296}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.3438}
+        Y: {type: float, value: 0.3968}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 25.9605}
+        Y: {type: float, value: 10.568}
+        Z: {type: float, value: 1.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 18.9994}
+        Y: {type: float, value: 78.7568}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 6.2536}
+    YPosition: {type: float, value: 70.787}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -19.1145}
+        Y: {type: float, value: -2.3495}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -18.9235}
+        Y: {type: float, value: -24.669}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.5897}
+        Y: {type: float, value: -25.2321}
+        Z: {type: float, value: 1.5296}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 32.8025}
+        Y: {type: float, value: 60.1616}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 41.5989}
+    YPosition: {type: float, value: 72.9531}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -2.0036}
+        Y: {type: float, value: -22.0269}
+        Z: {type: float, value: 1.3843}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 16.0653}
+        Y: {type: float, value: -22.1418}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.8256}
+        Y: {type: float, value: 0.21}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 10.0069}
+        Y: {type: float, value: 60.5096}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 6.3993}
+    YPosition: {type: float, value: 70.4826}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -14.2103}
+        Y: {type: float, value: 17.4131}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.8448}
+        Y: {type: float, value: 17.2007}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -6.6942}
+        Y: {type: float, value: 0.463}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.1016}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.713}
+        Y: {type: float, value: 22.4089}
+        Z: {type: float, value: 11.0799}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -13.7233}
+        Y: {type: float, value: 23.3742}
+        Z: {type: float, value: 11.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 102.2582}
+        Y: {type: float, value: 48.4799}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 103.9973}
+    YPosition: {type: float, value: 31.1994}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -23.1343}
+        Y: {type: float, value: -9.8328}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -16.7422}
+        Y: {type: float, value: -9.342}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -18.2472}
+        Y: {type: float, value: 1.4165}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.8314}
+        Y: {type: float, value: 7.5984}
+        Z: {type: float, value: 11.0333}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -23.0421}
+        Y: {type: float, value: 7.1964}
+        Z: {type: float, value: 11.0733}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 62.5242}
+        Y: {type: float, value: 51.6801}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 79.5882}
+    YPosition: {type: float, value: 47.2463}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 23.3496}
+        Y: {type: float, value: -0.2424}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 24.7316}
+        Y: {type: float, value: 15.0706}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.6588}
+        Y: {type: float, value: 17.3992}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.0801}
+        Y: {type: float, value: 6.0759}
+        Z: {type: float, value: 11.0934}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.4671}
+        Y: {type: float, value: 7.4658}
+        Z: {type: float, value: 11.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 97.4066}
+        Y: {type: float, value: 8.35}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 79.7327}
+    YPosition: {type: float, value: 5.3744}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.04}
+        Y: {type: float, value: -30.6026}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 17.4647}
+        Y: {type: float, value: -27.1025}
+        Z: {type: float, value: 11.0185}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 16.571}
+        Y: {type: float, value: -0.2522}
+        Z: {type: float, value: 15.7173}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.2875}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 55.8132}
+        Y: {type: float, value: 23.1694}
+        Z: {type: float, value: 11.4526}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 46.5538}
+    YPosition: {type: float, value: 32.9998}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.8359}
+        Y: {type: float, value: 16.1444}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.149}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 7.4528}
+        Y: {type: float, value: 0.1064}
+        Z: {type: float, value: 12.605}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 6.1267}
+        Y: {type: float, value: 10.3927}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.4781}
+        Y: {type: float, value: 9.253}
+        Z: {type: float, value: 16.2122}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 15.2116}
+        Y: {type: float, value: 16.6283}
+        Z: {type: float, value: 11.1231}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 7.9204}
+        Y: {type: float, value: 30.4046}
+        Z: {type: float, value: 11.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 6.2336}
+    YPosition: {type: float, value: 17.0857}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -25.0444}
+        Y: {type: float, value: 0.3425}
+        Z: {type: float, value: 11.0959}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -24.7881}
+        Y: {type: float, value: -6.5234}
+        Z: {type: float, value: 16.0699}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -11.2225}
+        Y: {type: float, value: -4.0829}
+        Z: {type: float, value: 11.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.475}
+        Y: {type: float, value: -6.235}
+        Z: {type: float, value: 16.0273}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 11.2957}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 33.6384}
+        Y: {type: float, value: 30.7901}
+        Z: {type: float, value: 11.1055}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 46.5894}
+    YPosition: {type: float, value: 32.9739}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.0904}
+        Y: {type: float, value: -18.2794}
+        Z: {type: float, value: 16.1762}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.8582}
+        Y: {type: float, value: -18.1933}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.9525}
+        Y: {type: float, value: 0.4022}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 16.1496}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 24.5862}
+        Y: {type: float, value: 15.5943}
+        Z: {type: float, value: 16.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 15.7309}
+    YPosition: {type: float, value: 24.065}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: -18.6899}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.6839}
+        Y: {type: float, value: -18.5864}
+        Z: {type: float, value: 16.1883}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.7109}
+        Y: {type: float, value: -0.766}
+        Z: {type: float, value: 16.0821}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 35.7173}
+        Y: {type: float, value: 16.7217}
+        Z: {type: float, value: 16.0545}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 29.6834}
+    YPosition: {type: float, value: 24.2785}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 16.2201}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.1802}
+        Y: {type: float, value: -26.7431}
+        Z: {type: float, value: 16.1791}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.3087}
+        Y: {type: float, value: -26.8658}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.0257}
+        Y: {type: float, value: 0.0301}
+        Z: {type: float, value: 16.0586}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 69.7518}
+        Y: {type: float, value: 29.2976}
+        Z: {type: float, value: 16.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 65.732}
+    YPosition: {type: float, value: 42.5708}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0944}
+        Y: {type: float, value: -26.2414}
+        Z: {type: float, value: 16.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.4853}
+        Y: {type: float, value: -26.606}
+        Z: {type: float, value: 16.0959}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 12.9348}
+        Y: {type: float, value: -0.1858}
+        Z: {type: float, value: 16.0084}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 90.8016}
+        Y: {type: float, value: 29.7696}
+        Z: {type: float, value: 16.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 80.0407}
+    YPosition: {type: float, value: 42.4183}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.3339}
+        Y: {type: float, value: -10.0242}
+        Z: {type: float, value: 2.2684}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.4905}
+        Y: {type: float, value: -8.0637}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.7866}
+        Y: {type: float, value: 5.0268}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.4231}
+        Y: {type: float, value: 5.2924}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.2924}
+        Y: {type: float, value: 4.443}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 4.9657}
+        Y: {type: float, value: 3.0056}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 4.3123}
+        Y: {type: float, value: 1.6988}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.6135}
+        Y: {type: float, value: 0.588}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.4375}
+        Y: {type: float, value: 0.1307}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.615}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 150.4121}
+        Y: {type: float, value: 8.867}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 139.8377}
+    YPosition: {type: float, value: 14.6625}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -0.3787}
+        Y: {type: float, value: 12.4581}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.3068}
+        Y: {type: float, value: -0.1307}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.6789}
+        Y: {type: float, value: -0.7187}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 3.855}
+        Y: {type: float, value: -1.6988}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 4.5083}
+        Y: {type: float, value: -2.6789}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.0311}
+        Y: {type: float, value: -3.7896}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.4231}
+        Y: {type: float, value: -5.2271}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.7207}
+        Y: {type: float, value: -5.4279}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 14.781}
+        Y: {type: float, value: 12.1486}
+        Z: {type: float, value: 1.5129}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 149.0512}
+        Y: {type: float, value: 30.058}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 139.9684}
+    YPosition: {type: float, value: 25.182}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -16.5116}
+        Y: {type: float, value: -14.8459}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.0683}
+        Y: {type: float, value: -14.6515}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 5.0964}
+        Y: {type: float, value: -5.0964}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 4.1163}
+        Y: {type: float, value: -4.9004}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 2.7442}
+        Y: {type: float, value: -4.443}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 1.7641}
+        Y: {type: float, value: -3.659}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.9801}
+        Y: {type: float, value: -2.7442}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.5227}
+        Y: {type: float, value: -1.5028}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.3267}
+        Y: {type: float, value: -0.5227}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -16.1228}
+        Y: {type: float, value: 0.7072}
+        Z: {type: float, value: 1.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 129.2626}
+        Y: {type: float, value: 12.1278}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 134.5631}
+    YPosition: {type: float, value: 19.8452}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhaguchieft}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 164}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulberse}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 165}
+        CR: {type: float, value: 41.0}
+        ResRef: {type: resref, value: murzhagulshama}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 9}
+    DifficultyIndex: {type: int, value: 4}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -2.657}
+        Y: {type: float, value: -14.0626}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 8.282}
+        Y: {type: float, value: -14.4936}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 8.6087}
+        Y: {type: float, value: -12.9255}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 9.0007}
+        Y: {type: float, value: -11.9454}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 10.0461}
+        Y: {type: float, value: -10.5733}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 10.9608}
+        Y: {type: float, value: -9.8546}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 12.333}
+        Y: {type: float, value: -9.4625}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.509}
+        Y: {type: float, value: -9.1358}
+        Z: {type: float, value: 0.615}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 13.2849}
+        Y: {type: float, value: -0.2592}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 1.025}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Mur-Zhagul Troll Group
+    MaxCreatures: {type: int, value: 4}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: area_spawn_murzh}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 2}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 300}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -0.0}
+        X: {type: float, value: 129.9755}
+        Y: {type: float, value: 29.8644}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: MurZhagulTrollGroup}
+    TemplateResRef: {type: resref, value: balshazaarkeepmo}
+    XPosition: {type: float, value: 126.3464}
+    YPosition: {type: float, value: 34.4655}
+    ZPosition: {type: float, value: 0.0}
+List:
+  type: list
+  value: []
+Placeable List:
+  type: list
+  value: []
+SoundList:
+  type: list
+  value: []
+StoreList:
+  type: list
+  value: []
+TriggerList:
+  type: list
+  value: []
+VarTable:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    Comment: {type: cexostr, value: ''}
+    Name: {type: cexostr, value: BOSS_ID}
+    Type: {type: dword, value: 1}
+    Value: {type: int, value: 3}
+WaypointList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 5
+    Appearance: {type: byte, value: 1}
+    Description:
+      type: cexolocstr
+      value: {}
+    HasMapNote: {type: byte, value: 1}
+    LinkedTo: {type: cexostr, value: ''}
+    LocalizedName:
+      type: cexolocstr
+      str_ref: 14814
+      value: {}
+    MapNote:
+      type: cexolocstr
+      str_ref: 14815
+      value:
+        0: Moravian Gate
+    MapNoteEnabled: {type: byte, value: 1}
+    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    TemplateResRef: {type: resref, value: nw_mapnote001}
+    XOrientation: {type: float, value: 0.0}
+    XPosition: {type: float, value: 15.0}
+    YOrientation: {type: float, value: 1.0}
+    YPosition: {type: float, value: 135.0}
+    ZPosition: {type: float, value: 20.59}
