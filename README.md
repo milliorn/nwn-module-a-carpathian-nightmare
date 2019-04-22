@@ -1,6 +1,6 @@
 # A Carpathian Nightmare v4 - Neverwinter Nights Enhanced Edition
 
-# Repository for the Neverwinter Nights module A Carpathian Nightmare.
+#### Repository for the Neverwinter Nights module A Carpathian Nightmare.
 
 ## Scripts
 ### List of scripts and what they do.
