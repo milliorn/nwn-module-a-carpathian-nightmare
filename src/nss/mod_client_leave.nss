@@ -1,5 +1,7 @@
 #include "nwnx_webhook"
 #include "inc_mod_events"
+#include "inc_private"
+
 void main()
 {
     object  oPC     = GetExitingObject(),
@@ -19,7 +21,7 @@ void main()
     iPCTot = iPCTot -1;
 
     string sOnline = " with " + IntToString(iPCTot) + " players online.";
-    string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+    string sWebhookUrl = sDiscordHook;
     string sPCName = "Player: " + GetName(oPC) + " - Account: " + GetPCPlayerName(oPC);
     string CurrentTime = NWNX_Time_GetSystemTime();
     string CurrentDate = NWNX_Time_GetSystemDate();

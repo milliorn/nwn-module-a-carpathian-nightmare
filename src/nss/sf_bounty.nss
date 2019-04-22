@@ -7,6 +7,7 @@
 #include "inc_mod_events"
 #include "nwnx_time"
 #include "nwnx_webhook"
+#include "inc_private"
 
 //Bounty Reward constants (This is multiplied by the Dead PCs Level)
 const int GP_REWARD = 1000, // GP Reward(This is multiplied by the
@@ -100,8 +101,7 @@ void main()
            sTime          = "<cσσσ>" + NWNX_Time_GetSystemTime() + "</c>",
            sDate          = "<cσσσ>" + NWNX_Time_GetSystemDate() + "</c>",
 
-           sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
-
+           sWebhookUrl = sDiscordHook;
     string sMessage;
 
     //Apply effects to dead PC

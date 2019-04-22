@@ -1,6 +1,7 @@
 #include "nwnx_time"
 #include "nwnx_webhook"
 #include "nwnx_admin"
+#include "inc_private"
 
 //Get the points of a statistic, if outside range, return 9999
 int CheckStats(int iScore);
@@ -355,7 +356,7 @@ int GetIsCharacterLegal(object oPC)
 
         DelayCommand(12.0, NWNX_Administration_DeletePlayerCharacter(oPC));
 
-        string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+        string sWebhookUrl = sDiscordHook;
         string sPCName = "Player: " + GetName(oPC) + " - Account: " + GetPCPlayerName(oPC);
         string CurrentTime = NWNX_Time_GetSystemTime();
         string CurrentDate = NWNX_Time_GetSystemDate();

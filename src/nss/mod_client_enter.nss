@@ -5,6 +5,7 @@
 #include "x2_inc_itemprop"
 #include "inc_mod_events"
 #include "acn_subfunc"
+#include "inc_private"
 
 void main()
 {
@@ -33,7 +34,7 @@ void main()
 
     string sOnline = " with " + IntToString(iPCTot) + " players online.";
 
-    string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+    string sWebhookUrl = sDiscordHook;
     string sPCName = "Player: " + GetName(oPC) + " - Account: " + GetPCPlayerName(oPC);
     string sMessage = sPCName + " - logged in" + sOnline;
 

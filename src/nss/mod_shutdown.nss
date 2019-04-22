@@ -3,6 +3,7 @@
 #include "nwnx_time"
 #include "nwnx_redis"
 #include "nwnx_redis_save"
+#include "inc_private"
 
 //  Boot all clients
 void ChatBootAllPC(object oPC);
@@ -35,7 +36,7 @@ void main()
         SpeakString( "All characters have been saved by auto-reboot script.", TALKVOLUME_SHOUT);
 
 //      Send a message to ACN Discord Channel of the client logging out
-        string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+        string sWebhookUrl = sDiscordHook;
         string CurrentTime = NWNX_Time_GetSystemTime();
         string CurrentDate = NWNX_Time_GetSystemDate();
         string sMessage = GetModuleName()+ " server reset started: " + CurrentTime + " on: " + CurrentDate + " (GMT)";

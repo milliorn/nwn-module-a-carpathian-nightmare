@@ -2,6 +2,7 @@
 #include "nwnx_webhook"
 #include "nwnx_admin"
 #include "nwnx_creature"
+#include "inc_private"
 
 // Color Text Constsants
 //const string TXT_COLOR_GRAY       = "<c°°°>"; // Gray
@@ -349,7 +350,7 @@ void NameChecker(object oPC)
 
         DelayCommand(6.0, NWNX_Administration_DeletePlayerCharacter(oPC, FALSE));
 
-        string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+        string sWebhookUrl = sDiscordHook;
         string sPCName = "Player: " + GetName(oPC) + " - Account: " + GetPCPlayerName(oPC);
         string CurrentTime = NWNX_Time_GetSystemTime();
         string CurrentDate = NWNX_Time_GetSystemDate();
@@ -390,7 +391,7 @@ void NameChecker(object oPC)
 
         BootPC(oPC, "Offensive Names prohibited");
 
-        string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+        string sWebhookUrl = sDiscordHook;
         string sPCName = "Player: " + GetName(oPC) + " - Account: " + GetPCPlayerName(oPC);
         string CurrentTime = NWNX_Time_GetSystemTime();
         string CurrentDate = NWNX_Time_GetSystemDate();

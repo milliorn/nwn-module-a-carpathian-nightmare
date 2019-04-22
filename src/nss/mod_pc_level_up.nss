@@ -2,6 +2,7 @@
 #include "acn_subfunc"
 #include "nwnx_webhook"
 #include "nwnx_time"
+#include "inc_private"
 
 void main()
 {
@@ -88,7 +89,7 @@ void main()
             DelayCommand(0.4, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_LOS_NORMAL_20), oPC));
             DelayCommand(0.7, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_LOS_NORMAL_30), oPC));
 
-            string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+            string sWebhookUrl = sDiscordHook;
             string CurrentTime = NWNX_Time_GetSystemTime();
             string CurrentDate = NWNX_Time_GetSystemDate();
             string sMessage = sName + " has advanced to level " + sLevel;

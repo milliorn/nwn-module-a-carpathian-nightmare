@@ -2,6 +2,7 @@
 #include "nwnx_time"
 #include "nwnx_chat"
 #include "nwnx_weapon"
+#include "inc_private"
 
 void main()
 {
@@ -120,7 +121,7 @@ void main()
 //  Make a note in Server log of when this script finishes and send a message
 //  to Discord that the module is loaded.
 
-    string sWebhookUrl = "/api/webhooks/472605187761242152/wqmbKttRf4VdSwhbg6C9fhy2GlQdtX8zCqohWwJesbyq3ImNx_s2AUpr0-E_p8m8VQo6/slack";
+    string sWebhookUrl = sDiscordHook;
     string CurrentTime = NWNX_Time_GetSystemTime();
     string CurrentDate = NWNX_Time_GetSystemDate();
     string sMessage = GetModuleName()+ " server is online: " + CurrentTime + " on: " + CurrentDate + " (GMT)";
