@@ -79,7 +79,7 @@ void main()
         iScore       = (iWin_Killer - iLose_Killer),
 
         iDead_LL = GetLocalInt(GetItemPossessedBy(oDead, "hgll_check_level"), "nLegendLevel"),
-        iKiller_LL = GetLocalInt(GetItemPossessedBy(oKiller, "plotItemTag"), "nLegendLevel");
+        iKiller_LL = GetLocalInt(GetItemPossessedBy(oKiller, "hgll_check_level"), "nLegendLevel");
 
     if (iDead_LL > 40) iDead_HD = iDead_LL;
     if (iKiller_LL > 40) iKiller_HD = iKiller_LL;

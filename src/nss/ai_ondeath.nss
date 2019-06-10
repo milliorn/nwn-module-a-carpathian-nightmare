@@ -51,7 +51,7 @@ void main()
     }
 */
     ExecuteScript("sf_xp", OBJECT_SELF);
-    ExecuteScript("sf_xp", OBJECT_SELF);
+    //ExecuteScript("sf_xp", OBJECT_SELF);
 
     object oItem = GetFirstItemInInventory(OBJECT_SELF);
     while (GetIsObjectValid(oItem) && GetLocalInt(oItem, "LOOT_DROP"))

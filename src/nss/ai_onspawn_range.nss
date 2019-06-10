@@ -336,6 +336,14 @@ void main()
     SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_SEARCH", 1);
     SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_STEALTH", 1);
 
+    if (GetResRef(OBJECT_SELF) == "vecnaadept" || GetResRef(OBJECT_SELF) == "vecnamaster" )
+    {
+        //SetLocalInt(OBJECT_SELF, "X2_L_BEH_MAGIC", iMagic);
+        SetLocalInt(OBJECT_SELF, "X2_SPELL_RANDOM", 1);
+        SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
+        return;
+    }
+
     if (GetLevelByClass(CLASS_TYPE_BARD, OBJECT_SELF) == TRUE       ||
         GetLevelByClass(CLASS_TYPE_CLERIC, OBJECT_SELF) == TRUE     ||
         GetLevelByClass(CLASS_TYPE_DRUID, OBJECT_SELF) == TRUE      ||

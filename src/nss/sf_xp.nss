@@ -86,7 +86,7 @@ const int FLOATING_TEXT = TRUE;
 // Default is 15.0 meters
 // I recommend you do NOT set this lower than about 5.0 meters
 // otherwise you could end up not getting any XP/GP reward
-const float PARTY_DIST = 40.0;
+const float PARTY_DIST = 45.0;
 
 // Party level gap for minimal XP
 // If the difference between highest level party member and the lowest
@@ -106,7 +106,7 @@ const float SUMMON_PENALTY = 0.0;
 // and there were 2 PC's they would get 100 XP each
 // If set FALSE they would get 200 XP each
 // Default TRUE
-const int PC_DIVIDE_XP = TRUE;
+const int PC_DIVIDE_XP = FALSE;
 
 
 
