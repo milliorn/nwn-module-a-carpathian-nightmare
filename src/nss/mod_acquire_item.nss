@@ -38,7 +38,7 @@ void main()
     SetIdentified(oItem, TRUE);
 
 //  Remove stolen flags
-    DelayCommand(7.0, SetStolenFlag(oItem, FALSE));
+    DelayCommand(6.0, SetStolenFlag(oItem, FALSE));
 
 //  Fix Barter Exploit that clones items
     if (GetIsPC(oFrom) && GetIsPC(oPC))
@@ -61,9 +61,10 @@ void main()
 
     else
     {
-        if (oFrom == OBJECT_INVALID)return;
-            SendMsgToFactionWithinDistance(oPC,"<cfÌþ>"+ sPlayerName +
-            "<cóóó> accquired <c óó>" + sName, 40.0);
+        if (oFrom == OBJECT_INVALID) return;
+
+        SendMsgToFactionWithinDistance(oPC,"<cfÌþ>"+ sPlayerName +
+        "<cóóó> accquired <c óó>" + sName, 40.0);
     }
 
 //  Add a variable to be checked for Pickpocket Abuse
@@ -112,6 +113,13 @@ void main()
 
         SetLocalInt(oPC, "STOP_PICK_ABUSE", TRUE);
         DelayCommand(6.0, DeleteLocalInt(oPC, "STOP_PICK_ABUSE"));
+    }
+
+//  Mark these items cursed so they cannot be sold in store
+    if (FindSubString(sName, "Asterius"))
+    {
+        SetPlotFlag(oItem, TRUE);
+        SpeakString("fuck", TALKVOLUME_SHOUT);
     }
 
 //  Clean off the vars that are set OnModuleLoad to mark items generated from

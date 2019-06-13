@@ -17,6 +17,7 @@
 
 #include "X0_INC_HENAI"
 #include "ch_inc_summon"
+#include "x2_inc_switches"
 
 void main()
 {
@@ -89,6 +90,17 @@ void main()
     ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), OBJECT_SELF);
     DelayCommand(1.0, SetName(OBJECT_SELF, "Summoned " + GetName(OBJECT_SELF, TRUE) + " (" + GetName(GetMaster()) + ")"));
 
+    // * If Incorporeal, apply changes
+    if (GetCreatureFlag(OBJECT_SELF, CREATURE_VAR_IS_INCORPOREAL) == TRUE)
+    {
+        effect eConceal = EffectConcealment(50, MISS_CHANCE_TYPE_NORMAL);
+        eConceal = ExtraordinaryEffect(eConceal);
+        effect eGhost = EffectCutsceneGhost();
+        eGhost = ExtraordinaryEffect(eGhost);
+        ApplyEffectToObject(DURATION_TYPE_PERMANENT, eConceal, OBJECT_SELF);
+        ApplyEffectToObject(DURATION_TYPE_PERMANENT, eGhost, OBJECT_SELF);
+
+    }
 }
 
 

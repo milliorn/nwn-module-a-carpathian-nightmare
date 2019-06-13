@@ -635,20 +635,10 @@ void CheckDroppedItem(object oItem, object oPC)
     int nGold = 0;
     int nMaxValue = GetGoldPieceValue(oItem);
     float nMultiplier = 0.1;
-    string sString = "Asterius";
 
     if (oDropped == oItem)
     {
-        if (GetLocalString(oItem, "NO_AMMO_SALE") == "TRUE")
-        {
-            FloatingTextStringOnCreature("Market bought " + GetName(oItem) + " for "
-            + "1 gp.", oPC);
-            GiveGoldToCreature(oPC, 1);
-            DestroyObject(oItem);
-            return;
-        }
-
-        if (GetName(oItem, TRUE) == sString)
+        if (GetLocalInt(oItem, "NO_AMMO_SALE") == TRUE)
         {
             FloatingTextStringOnCreature("Market bought " + GetName(oItem) + " for "
             + "1 gp.", oPC);
@@ -672,23 +662,7 @@ void CheckDroppedItem(object oItem, object oPC)
             DestroyObject(oItem);
             return;
         }
-/*
-        if (GetBaseItemType(oItem) == BASE_ITEM_ARROW       ||
-            GetBaseItemType(oItem) == BASE_ITEM_BOLT        ||
-            GetBaseItemType(oItem) == BASE_ITEM_BULLET      ||
-            GetBaseItemType(oItem) == BASE_ITEM_DART        ||
-            GetBaseItemType(oItem) == BASE_ITEM_SHURIKEN    ||
-            GetBaseItemType(oItem) == BASE_ITEM_TRAPKIT     ||
-            GetBaseItemType(oItem) == BASE_ITEM_THROWINGAXE)
-        {
-            FloatingTextStringOnCreature("Market bought " + GetName(oItem) + " for "
-            + "1 gp.", oPC);
-            GiveGoldToCreature(oPC, 1);
-            CopyItem(oItem, GetObjectByTag("MarketMerchant"), TRUE);
-            DestroyObject(oItem);
-            return;
-        }
-*/
+
         nGold = FloatToInt(GetGoldPieceValue(oItem) * nMultiplier);
 
         if (nGold < 1)

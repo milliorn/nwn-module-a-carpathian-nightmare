@@ -32,6 +32,15 @@ void BreakItemForGold(object oPC, object oItem)
             return;
         }
 
+        if (GetLocalInt(oItem, "NO_AMMO_SALE") == TRUE)
+        {
+            FloatingTextStringOnCreature("Market bought " + GetName(oItem) + " for "
+            + "1 gp.", oPC);
+            GiveGoldToCreature(oPC, 1);
+            DestroyObject(oItem);
+            return;
+        }
+
         // Abort if the item is plot flagged...
         if (GetPlotFlag(oItem)){
             FloatingTextStringOnCreature("<cú>You cannot break down plot items!  ", oPC, FALSE);
@@ -58,21 +67,7 @@ void BreakItemForGold(object oPC, object oItem)
             nGold = nFixedCost;
         }
 
-/*        if (GetBaseItemType(oItem) == BASE_ITEM_ARROW |
-                                      BASE_ITEM_BOLT |
-                                      BASE_ITEM_DART |
-                                      BASE_ITEM_SHURIKEN |
-                                      BASE_ITEM_THROWINGAXE)
-        {
-            nGold = FloatToInt(GetGoldPieceValue(oItem) * 0.1);
-            FloatingTextStringOnCreature("Market bought " + GetName(oItem) + " for "
-            + IntToString(nGold) + " gp.", oPC);
-            GiveGoldToCreature(oPC, nGold);
-            CopyItem(oItem, GetObjectByTag("MarketMerchant"), TRUE);
-            DestroyObject(oItem);
-            return;
-        }
-*/        // If a variable named ITEM_COST_SCALE is set on the targeted item, it will multiply
+        // If a variable named ITEM_COST_SCALE is set on the targeted item, it will multiply
         // the in-game value of the item by that number to get how much gold is received.
         else if (nCostScale > 0.0f)
         {
