@@ -116,11 +116,6 @@ void main()
     }
 
 //  Mark these items cursed so they cannot be sold in store
-    if (FindSubString(sName, "Asterius"))
-    {
-        SetPlotFlag(oItem, TRUE);
-        SpeakString("fuck", TALKVOLUME_SHOUT);
-    }
 
 //  Clean off the vars that are set OnModuleLoad to mark items generated from
 //  the loot chest that were obtained from chest.

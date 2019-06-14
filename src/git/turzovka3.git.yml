@@ -2268,16 +2268,10 @@ Encounter List:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
-        Appearance: {type: int, value: 272}
-        CR: {type: float, value: 10.0}
-        ResRef: {type: resref, value: turzovkahealer}
-        SingleSpawn: {type: byte, value: 0}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
         Appearance: {type: int, value: 260}
         CR: {type: float, value: 10.0}
         ResRef: {type: resref, value: turzovkamagegyps}
-        SingleSpawn: {type: byte, value: 1}
+        SingleSpawn: {type: byte, value: 0}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
         Appearance: {type: int, value: 258}
@@ -2286,11 +2280,17 @@ Encounter List:
         SingleSpawn: {type: byte, value: 0}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
+        Appearance: {type: int, value: 272}
+        CR: {type: float, value: 10.0}
+        ResRef: {type: resref, value: turzovkahealer}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
         Appearance: {type: int, value: 275}
         CR: {type: float, value: 10.0}
         ResRef: {type: resref, value: turzovkawarriorg}
         SingleSpawn: {type: byte, value: 0}
-    Difficulty: {type: int, value: 2}
+    Difficulty: {type: int, value: 0}
     DifficultyIndex: {type: int, value: 2}
     Faction: {type: dword, value: 1}
     Geometry:

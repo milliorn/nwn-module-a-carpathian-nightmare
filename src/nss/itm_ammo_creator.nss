@@ -14,8 +14,8 @@ void main()
 
     switch (nTargetType)
     {
-        case BASE_ITEM_ARROW:       SetLocalInt(oTarget, "NO_AMMO_SALE", TRUE);
-                                    SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
+        case BASE_ITEM_ARROW:       SetItemStackSize(oTarget, 999);
+                                    SetPlotFlag(oTarget, TRUE);
                                     break;
 
         case BASE_ITEM_BOLT:        SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
