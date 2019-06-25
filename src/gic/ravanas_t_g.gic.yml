@@ -6,10 +6,7 @@ Creature List:
   value: []
 Door List:
   type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Comment: {type: cexostr, value: BridgeDoor}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Comment: {type: cexostr, value: BridgeDoor}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Comment: {type: cexostr, value: BridgeDoor}}
+  value: []
 Encounter List:
   type: list
   value:
@@ -48,7 +45,10 @@ StoreList:
   value: []
 TriggerList:
   type: list
-  value: []
+  value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Comment: {type: cexostr, value: ''}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Comment: {type: cexostr, value: ''}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, Comment: {type: cexostr, value: ''}}
 WaypointList:
   type: list
   value:

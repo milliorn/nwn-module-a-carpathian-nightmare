@@ -145,6 +145,7 @@ Mod_GVar_List:
 Mod_HakList:
   type: list
   value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: real_skies}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: acn}}
 Mod_ID: {type: void, value: !binary "U1e3IlIFxuotSq8vTY436A=="}
 Mod_IsSaveGame: {type: byte, value: 0}
@@ -173,7 +174,7 @@ Mod_OnSpawnBtnDn: {type: resref, value: mod_pc_respawn}
 Mod_OnUnAqreItem: {type: resref, value: mod_unacquire_it}
 Mod_OnUsrDefined: {type: resref, value: ''}
 Mod_StartDay: {type: byte, value: 1}
-Mod_StartHour: {type: byte, value: 13}
+Mod_StartHour: {type: byte, value: 6}
 Mod_StartMonth: {type: byte, value: 6}
 Mod_StartMovie: {type: resref, value: ''}
 Mod_StartYear: {type: dword, value: 1372}

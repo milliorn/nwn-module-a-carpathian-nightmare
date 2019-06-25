@@ -19,7 +19,7 @@ object oSpell;
 
     while (iCount < iSpells)
         {
-            switch (Random(274))
+            switch (Random(275))
             {
                 case 0: sSpell = "nw_it_sparscr101"; break; //
                 case 1: sSpell = "nw_it_sparscr102"; break; // Protection from Alignment

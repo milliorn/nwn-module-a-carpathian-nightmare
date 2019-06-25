@@ -682,7 +682,7 @@ void HandleSelection()
 
                  //level up saves if they are set to increase
                  if (GetGainsSavesOnLevelUp(oPC))
-                        ModifySaves(oPC);
+                    ModifySaves(oPC);
 
                  //check to see if any skill points left over
                  nPointsAvailable = GetLocalInt(oPC, "PointsAvailable");

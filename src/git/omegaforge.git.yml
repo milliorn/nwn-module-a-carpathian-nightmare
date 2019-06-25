@@ -1715,8 +1715,6 @@ Placeable List:
       str_ref: 14694
       value:
         0: |-
-          Maximum Item Value allowed is 250,000 gold pieces.  Make sure you read the conversation and how much the item will be worth when the crafters tell you how much it will cost to do the forging.  NO REFUND.  You will not be able to equip the item if it exceeds the maximum gold piece value.
-
           All items left in the forge will be deleted if you leave the map.
 
           Do not use these as a storage.  You will lose all items.
@@ -1778,68 +1776,7 @@ StoreList:
   value: []
 TriggerList:
   type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 1
-    AutoRemoveKey: {type: byte, value: 0}
-    Cursor: {type: byte, value: 0}
-    DisarmDC: {type: byte, value: 0}
-    Faction: {type: dword, value: 1}
-    Geometry:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 3
-        PointX: {type: float, value: 0.0}
-        PointY: {type: float, value: 0.0}
-        PointZ: {type: float, value: 0.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 3
-        PointX: {type: float, value: 0.0741}
-        PointY: {type: float, value: -6.0053}
-        PointZ: {type: float, value: 0.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 3
-        PointX: {type: float, value: 9.7493}
-        PointY: {type: float, value: -6.0053}
-        PointZ: {type: float, value: 0.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 3
-        PointX: {type: float, value: 9.7864}
-        PointY: {type: float, value: 0.0}
-        PointZ: {type: float, value: 0.025}
-    HighlightHeight: {type: float, value: 0.0}
-    KeyName: {type: cexostr, value: ''}
-    LinkedTo: {type: cexostr, value: ''}
-    LinkedToFlags: {type: byte, value: 0}
-    LoadScreenID: {type: word, value: 0}
-    LocalizedName:
-      type: cexolocstr
-      str_ref: 14759
-      value: {}
-    OnClick: {type: resref, value: ''}
-    OnDisarm: {type: resref, value: ''}
-    OnTrapTriggered: {type: resref, value: ''}
-    PortraitId: {type: word, value: 0}
-    ScriptHeartbeat: {type: resref, value: ''}
-    ScriptOnEnter: {type: resref, value: obj_exam_forge}
-    ScriptOnExit: {type: resref, value: ''}
-    ScriptUserDefine: {type: resref, value: ''}
-    Tag: {type: cexostr, value: GenericTrigger}
-    TemplateResRef: {type: resref, value: newgeneric}
-    TrapDetectDC: {type: byte, value: 0}
-    TrapDetectable: {type: byte, value: 1}
-    TrapDisarmable: {type: byte, value: 1}
-    TrapFlag: {type: byte, value: 0}
-    TrapOneShot: {type: byte, value: 1}
-    TrapType: {type: byte, value: 0}
-    Type: {type: int, value: 0}
-    XOrientation: {type: float, value: 0.0}
-    XPosition: {type: float, value: 10.0656}
-    YOrientation: {type: float, value: 0.0}
-    YPosition: {type: float, value: 27.9485}
-    ZOrientation: {type: float, value: 0.0}
-    ZPosition: {type: float, value: 0.0}
+  value: []
 VarTable:
   type: list
   value:

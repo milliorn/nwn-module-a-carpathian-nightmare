@@ -242,3 +242,4 @@ struct NWNX_Weapon_DevastatingCriticalEvent_Data NWNX_Weapon_GetDevastatingCriti
 
     return data;
 }
+

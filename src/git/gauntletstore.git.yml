@@ -576,7 +576,7 @@ Placeable List:
     OnSpellCastAt: {type: resref, value: ''}
     OnTrapTriggered: {type: resref, value: ''}
     OnUnlock: {type: resref, value: ''}
-    OnUsed: {type: resref, value: ''}
+    OnUsed: {type: resref, value: obj_market_loot}
     OnUserDefined: {type: resref, value: ''}
     OpenLockDC: {type: byte, value: 18}
     Plot: {type: byte, value: 1}
@@ -9400,7 +9400,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 31}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 367882}
+            Cost: {type: dword, value: 335404}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -9456,15 +9456,6 @@ StoreList:
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 6}
                 Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 5}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 4}
             Repos_Posy: {type: word, value: 0}
             StackSize: {type: word, value: 50}
@@ -9481,7 +9472,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 63}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 367882}
+            Cost: {type: dword, value: 800000}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -9504,6 +9495,15 @@ StoreList:
             PropertiesList:
               type: list
               value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                ChanceAppear: {type: byte, value: 100}
+                CostTable: {type: byte, value: 10}
+                CostValue: {type: word, value: 1}
+                Param1: {type: byte, value: 255}
+                Param1Value: {type: byte, value: 0}
+                PropertyName: {type: word, value: 11}
+                Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
                 ChanceAppear: {type: byte, value: 100}
@@ -9530,6 +9530,24 @@ StoreList:
                 Param1: {type: byte, value: 255}
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 16}
+                Subtype: {type: word, value: 9}
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                ChanceAppear: {type: byte, value: 100}
+                CostTable: {type: byte, value: 4}
+                CostValue: {type: word, value: 15}
+                Param1: {type: byte, value: 255}
+                Param1Value: {type: byte, value: 0}
+                PropertyName: {type: word, value: 16}
+                Subtype: {type: word, value: 10}
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                ChanceAppear: {type: byte, value: 100}
+                CostTable: {type: byte, value: 4}
+                CostValue: {type: word, value: 15}
+                Param1: {type: byte, value: 255}
+                Param1Value: {type: byte, value: 0}
+                PropertyName: {type: word, value: 16}
                 Subtype: {type: word, value: 13}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
@@ -9539,15 +9557,6 @@ StoreList:
                 Param1: {type: byte, value: 255}
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 6}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 5}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
                 Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 5}
             Repos_Posy: {type: word, value: 0}
@@ -9565,7 +9574,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 59}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 367882}
+            Cost: {type: dword, value: 335404}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -9620,15 +9629,6 @@ StoreList:
                 Param1: {type: byte, value: 255}
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 6}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 5}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
                 Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 6}
             Repos_Posy: {type: word, value: 0}
@@ -11695,7 +11695,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 31}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 1069530}
+            Cost: {type: dword, value: 712530}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -11758,33 +11758,6 @@ StoreList:
                 Param1: {type: byte, value: 255}
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 74}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 28}
-                CostValue: {type: word, value: 4}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 85}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 29}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 86}
                 Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
@@ -11891,7 +11864,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 63}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 987901}
+            Cost: {type: dword, value: 649801}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -11913,6 +11886,15 @@ StoreList:
             PropertiesList:
               type: list
               value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                ChanceAppear: {type: byte, value: 100}
+                CostTable: {type: byte, value: 10}
+                CostValue: {type: word, value: 1}
+                Param1: {type: byte, value: 255}
+                Param1Value: {type: byte, value: 0}
+                PropertyName: {type: word, value: 11}
+                Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
                 ChanceAppear: {type: byte, value: 100}
@@ -11975,15 +11957,6 @@ StoreList:
                 Param1: {type: byte, value: 255}
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 74}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
                 Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
@@ -12081,7 +12054,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 63}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 2073680}
+            Cost: {type: dword, value: 1458000}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -12102,6 +12075,15 @@ StoreList:
             PropertiesList:
               type: list
               value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                ChanceAppear: {type: byte, value: 100}
+                CostTable: {type: byte, value: 10}
+                CostValue: {type: word, value: 1}
+                Param1: {type: byte, value: 255}
+                Param1Value: {type: byte, value: 0}
+                PropertyName: {type: word, value: 11}
+                Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
                 ChanceAppear: {type: byte, value: 100}
@@ -12174,33 +12156,6 @@ StoreList:
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 6}
                 Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 0}
-                CostValue: {type: word, value: 0}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 34}
-                Subtype: {type: word, value: 1}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 4}
-                CostValue: {type: word, value: 15}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 74}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 6}
             Repos_Posy: {type: word, value: 18}
             StackSize: {type: word, value: 50}
@@ -12217,7 +12172,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 31}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 976819}
+            Cost: {type: dword, value: 828244}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -12308,15 +12263,6 @@ StoreList:
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 74}
                 Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 8}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 9}
             Repos_Posy: {type: word, value: 9}
             StackSize: {type: word, value: 50}
@@ -12333,7 +12279,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 63}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 644405}
+            Cost: {type: dword, value: 378125}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -12354,6 +12300,15 @@ StoreList:
             PropertiesList:
               type: list
               value:
+              - !nwn-lib.elv.es,2013-07:struct
+                __struct_id: 0
+                ChanceAppear: {type: byte, value: 100}
+                CostTable: {type: byte, value: 10}
+                CostValue: {type: word, value: 1}
+                Param1: {type: byte, value: 255}
+                Param1Value: {type: byte, value: 0}
+                PropertyName: {type: word, value: 11}
+                Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
                 ChanceAppear: {type: byte, value: 100}
@@ -12399,15 +12354,6 @@ StoreList:
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 74}
                 Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 7}
             Repos_Posy: {type: word, value: 18}
             StackSize: {type: word, value: 50}
@@ -12424,7 +12370,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 31}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 616443}
+            Cost: {type: dword, value: 354112}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -12490,15 +12436,6 @@ StoreList:
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 74}
                 Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 2}
             Repos_Posy: {type: word, value: 13}
             StackSize: {type: word, value: 50}
@@ -12515,7 +12452,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 59}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 372645}
+            Cost: {type: dword, value: 176720}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -12571,15 +12508,6 @@ StoreList:
                 Param1: {type: byte, value: 255}
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 6}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
                 Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
@@ -13117,7 +13045,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 59}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 802501}
+            Cost: {type: dword, value: 754175}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -13192,15 +13120,6 @@ StoreList:
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 74}
                 Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 5}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
             Repos_PosX: {type: word, value: 3}
             Repos_Posy: {type: word, value: 19}
             StackSize: {type: word, value: 50}
@@ -13217,7 +13136,7 @@ StoreList:
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 31}
             Charges: {type: byte, value: 0}
-            Cost: {type: dword, value: 943950}
+            Cost: {type: dword, value: 610750}
             Cursed: {type: byte, value: 0}
             DescIdentified:
               type: cexolocstr
@@ -13284,33 +13203,6 @@ StoreList:
                 Param1: {type: byte, value: 255}
                 Param1Value: {type: byte, value: 0}
                 PropertyName: {type: word, value: 74}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 28}
-                CostValue: {type: word, value: 14}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 85}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 2}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 45}
-                Subtype: {type: word, value: 0}
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                ChanceAppear: {type: byte, value: 100}
-                CostTable: {type: byte, value: 29}
-                CostValue: {type: word, value: 12}
-                Param1: {type: byte, value: 255}
-                Param1Value: {type: byte, value: 0}
-                PropertyName: {type: word, value: 86}
                 Subtype: {type: word, value: 0}
               - !nwn-lib.elv.es,2013-07:struct
                 __struct_id: 0
@@ -17072,7 +16964,7 @@ StoreList:
             __struct_id: 18
             AddCost: {type: dword, value: 0}
             BaseItem: {type: int, value: 44}
-            Charges: {type: byte, value: 0}
+            Charges: {type: byte, value: 250}
             Cost: {type: dword, value: 79501}
             Cursed: {type: byte, value: 0}
             DescIdentified:

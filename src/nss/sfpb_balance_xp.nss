@@ -6,17 +6,14 @@
     Written By Scarface
 */
 //////////////////////////////////////////////////
-//#include "aps_include"
 #include "sfpb_config_xp"
 #include "nwnx_redis"
 
 void main()
 {
     // Vars
-    object oPC = GetLastSpeaker(), oBanker = OBJECT_SELF;
+    object oPC = GetLastSpeaker();
     string sID = SF_GetPlayerID(oPC);
-    //int nBanked = GetCampaignInt("BANK_XP", DATABASE_XP + sID);
-    //int nBanked = GetPersistentInt(oBanker, DATABASE_XP + sID, "BANK_XP");
 
     int zBanked = NWNX_Redis_GET("nwserver:players:" + sID + ":bank:xp");
     int nBanked = NWNX_Redis_GetResultAsInt(zBanked);

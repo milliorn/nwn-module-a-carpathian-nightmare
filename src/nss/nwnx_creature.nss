@@ -36,6 +36,13 @@ const int NWNX_CREATURE_CLERIC_DOMAIN_TRICKERY    = 19;
 const int NWNX_CREATURE_CLERIC_DOMAIN_WAR         = 20;
 const int NWNX_CREATURE_CLERIC_DOMAIN_WATER       = 21;
 
+const int NWNX_CREATURE_BONUS_TYPE_ATTACK        = 1;
+const int NWNX_CREATURE_BONUS_TYPE_DAMAGE        = 2;
+const int NWNX_CREATURE_BONUS_TYPE_SAVING_THROW  = 3;
+const int NWNX_CREATURE_BONUS_TYPE_ABILITY       = 4;
+const int NWNX_CREATURE_BONUS_TYPE_SKILL         = 5;
+const int NWNX_CREATURE_BONUS_TYPE_TOUCH_ATTACK  = 6;
+
 struct NWNX_Creature_SpecialAbility
 {
     int id;
@@ -120,6 +127,9 @@ int NWNX_Creature_GetRawAbilityScore(object creature, int ability);
 // Adjusts the provided ability score of a provided creature. Does not apply racial bonuses/penalties.
 void NWNX_Creature_ModifyRawAbilityScore(object creature, int ability, int modifier);
 
+// Gets the raw ability score a polymorphed creature had prior to polymorphing. Str/Dex/Con only.
+int NWNX_Creature_GetPrePolymorphAbilityScore(object creature, int ability);
+
 // Gets the memorised spell of the provided creature for the provided class, level, and index.
 // Index bounds: 0 <= index < NWNX_Creature_GetMemorisedSpellCountByLevel(creature, class, level).
 struct NWNX_Creature_MemorisedSpell NWNX_Creature_GetMemorisedSpell(object creature, int class, int level, int index);
@@ -167,6 +177,12 @@ void NWNX_Creature_SetMaxHitPointsByLevel(object creature, int level, int value)
 // Set creature's movement rate.
 void NWNX_Creature_SetMovementRate(object creature, int rate);
 
+// Returns the creature's current movement rate factor (base = 1.0)
+float NWNX_Creature_GetMovementRateFactor(object creature);
+
+// Sets the creature's current movement rate factor (base = 1.0)
+void NWNX_Creature_SetMovementRateFactor(object creature, float rate);
+
 // Set creature's raw good/evil alignment value.
 void NWNX_Creature_SetAlignmentGoodEvil(object creature, int value);
 
@@ -198,6 +214,11 @@ void NWNX_Creature_SetSkillRank(object creature, int skill, int rank);
 // Position should be 0, 1, or 2.
 // ClassID should be a valid ID number in classes.2da and be between 0 and 255.
 void NWNX_Creature_SetClassByPosition(object creature, int position, int classID);
+
+// Set the level at the given position for a creature. A creature should already
+// have a class in that position.
+// Position should be 0, 1, or 2.
+void NWNX_Creature_SetLevelByPosition(object creature, int position, int level);
 
 // Set creature's base attack bonus (BAB)
 // Modifying the BAB will also affect the creature's attacks per round and its
@@ -263,6 +284,69 @@ int NWNX_Creature_GetBaseSavingThrow(object creature, int which);
 
 // Sets the base saving throw of the creature
 void NWNX_Creature_SetBaseSavingThrow(object creature, int which, int value);
+
+// Add count levels of class to the creature, bypassing all validation
+// This will not work on player characters
+void NWNX_Creature_LevelUp(object creature, int class, int count=1);
+
+// Remove last count levels from a creature
+// This will not work on player characters
+void NWNX_Creature_LevelDown(object creature, int count=1);
+
+// Sets the creature's challenge rating
+void NWNX_Creature_SetChallengeRating(object creature, float fCR);
+
+// Returns the creature's highest attack bonus based on its own stats
+// NOTE: AB vs. <Type> and +AB on Gauntlets are excluded
+//
+// int isMelee values:
+//   TRUE: Get Melee/Unarmed Attack Bonus
+//   FALSE: Get Ranged Attack Bonus
+//   -1: Get Attack Bonus depending on the weapon creature has equipped in its right hand
+//       Defaults to Melee Attack Bonus if weapon is invalid or no weapon
+int NWNX_Creature_GetAttackBonus(object creature, int isMelee = -1, int isTouchAttack = FALSE, int isOffhand = FALSE, int includeBaseAttackBonus = TRUE);
+
+// Get highest level version of feat posessed by creature (e.g. for barbarian rage)
+int NWNX_Creature_GetHighestLevelOfFeat(object creature, int feat);
+
+// Get feat remaining uses of a creature
+int NWNX_Creature_GetFeatRemainingUses(object creature, int feat);
+
+// Get feat total uses of a creature
+int NWNX_Creature_GetFeatTotalUses(object creature, int feat);
+
+// Set feat remaining uses of a creature
+void NWNX_Creature_SetFeatRemainingUses(object creature, int feat, int uses);
+
+// Get total effect bonus
+int NWNX_Creature_GetTotalEffectBonus(object creature, int bonusType=NWNX_CREATURE_BONUS_TYPE_ATTACK, object target=OBJECT_INVALID, int isElemental=0,
+    int isForceMax=0, int savetype=-1, int saveSpecificType=-1, int skill=-1, int abilityScore=-1, int isOffhand=FALSE);
+
+// Set the original first or last name of creature
+//
+// For PCs this will persist to the .bic file if saved. Requires a relog to update.
+void NWNX_Creature_SetOriginalName(object creature, string name, int isLastName);
+
+// Get the original first or last name of creature
+string NWNX_Creature_GetOriginalName(object creature, int isLastName);
+
+// Set creature's spell resistance
+void NWNX_Creature_SetSpellResistance(object creature, int sr);
+
+// Get creature's animal companion creature type
+// type = ANIMAL_COMPANION_CREATURE_TYPE_*
+void NWNX_Creature_SetAnimalCompanionCreatureType(object creature, int type);
+
+// Set creature's familiar creature type
+// type = FAMILIAR_CREATURE_TYPE_*
+void NWNX_Creature_SetFamiliarCreatureType(object creature, int type);
+
+// Set creature's animal companion's name
+void NWNX_Creature_SetAnimalCompanionName(object creature, string name);
+
+// Set creature's familiar's name
+void NWNX_Creature_SetFamiliarName(object creature, string name);
+
 
 const string NWNX_Creature = "NWNX_Creature";
 
@@ -495,6 +579,17 @@ void NWNX_Creature_ModifyRawAbilityScore(object creature, int ability, int modif
     NWNX_CallFunction(NWNX_Creature, sFunc);
 }
 
+int NWNX_Creature_GetPrePolymorphAbilityScore(object creature, int ability)
+{
+    string sFunc = "GetPrePolymorphAbilityScore";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, ability);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueInt(NWNX_Creature, sFunc);
+}
+
 struct NWNX_Creature_MemorisedSpell NWNX_Creature_GetMemorisedSpell(object creature, int class, int level, int index)
 {
     string sFunc = "GetMemorisedSpell";
@@ -683,6 +778,26 @@ void NWNX_Creature_SetMovementRate(object creature, int rate)
 
     NWNX_CallFunction(NWNX_Creature, sFunc);
 }
+
+float NWNX_Creature_GetMovementRateFactor(object creature)
+{
+    string sFunc = "GetMovementRateFactor";
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueFloat(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetMovementRateFactor(object creature, float factor)
+{
+    string sFunc = "SetMovementRateFactor";
+
+    NWNX_PushArgumentFloat(NWNX_Creature, sFunc, factor);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
 void NWNX_Creature_SetAlignmentGoodEvil(object creature, int value)
 {
     string sFunc = "SetAlignmentGoodEvil";
@@ -779,6 +894,16 @@ void NWNX_Creature_SetClassByPosition(object creature, int position, int classID
 {
     string sFunc = "SetClassByPosition";
     NWNX_PushArgumentInt(NWNX_Creature, sFunc, classID);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, position);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetLevelByPosition(object creature, int position, int level)
+{
+    string sFunc = "SetLevelByPosition";
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, level);
     NWNX_PushArgumentInt(NWNX_Creature, sFunc, position);
     NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
 
@@ -940,3 +1065,194 @@ void NWNX_Creature_SetBaseSavingThrow(object creature, int which, int value)
     NWNX_CallFunction(NWNX_Creature, sFunc);
 }
 
+void NWNX_Creature_LevelUp(object creature, int class, int count=1)
+{
+    string sFunc = "LevelUp";
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, count);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, class);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_LevelDown(object creature, int count=1)
+{
+    string sFunc = "LevelDown";
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, count);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetChallengeRating(object creature, float fCR)
+{
+    string sFunc = "SetChallengeRating";
+    NWNX_PushArgumentFloat(NWNX_Creature, sFunc, fCR);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+int NWNX_Creature_GetAttackBonus(object creature, int isMelee = -1, int isTouchAttack = FALSE, int isOffhand = FALSE, int includeBaseAttackBonus = TRUE)
+{
+    string sFunc = "GetAttackBonus";
+
+    if (isMelee == -1)
+    {
+        object oWeapon = GetItemInSlot(INVENTORY_SLOT_RIGHTHAND, creature);
+
+        if (GetIsObjectValid(oWeapon))
+        {
+            isMelee = !GetWeaponRanged(oWeapon);
+        }
+        else
+        {// Default to melee for unarmed
+            isMelee = TRUE;
+        }
+    }
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, includeBaseAttackBonus);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isOffhand);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isTouchAttack);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isMelee);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueInt(NWNX_Creature, sFunc);
+}
+
+int NWNX_Creature_GetHighestLevelOfFeat(object creature, int feat)
+{
+    string sFunc = "GetHighestLevelOfFeat";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, feat);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueInt(NWNX_Creature, sFunc);
+}
+
+int NWNX_Creature_GetFeatRemainingUses(object creature, int feat)
+{
+    string sFunc = "GetFeatRemainingUses";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, feat);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueInt(NWNX_Creature, sFunc);
+}
+
+int NWNX_Creature_GetFeatTotalUses(object creature, int feat)
+{
+    string sFunc = "GetFeatTotalUses";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, feat);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueInt(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetFeatRemainingUses(object creature, int feat, int uses)
+{
+    string sFunc = "SetFeatRemainingUses";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, uses);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, feat);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+int NWNX_Creature_GetTotalEffectBonus(object creature, int bonusType=NWNX_CREATURE_BONUS_TYPE_ATTACK, object target=OBJECT_INVALID, int isElemental=0,
+    int isForceMax=0, int savetype=-1, int saveSpecificType=-1, int skill=-1, int abilityScore=-1, int isOffhand=FALSE)
+{
+    string sFunc = "GetTotalEffectBonus";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isOffhand);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, abilityScore);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, skill);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, saveSpecificType);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, savetype);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isForceMax);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isElemental);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, target);
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, bonusType);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueInt(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetOriginalName(object creature, string name, int isLastName)
+{
+    string sFunc = "SetOriginalName";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isLastName);
+    NWNX_PushArgumentString(NWNX_Creature, sFunc, name);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+string NWNX_Creature_GetOriginalName(object creature, int isLastName)
+{
+    string sFunc = "GetOriginalName";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, isLastName);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+    return NWNX_GetReturnValueString(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetSpellResistance(object creature, int sr)
+{
+    string sFunc = "SetSpellResistance";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, sr);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetAnimalCompanionCreatureType(object creature, int type)
+{
+    string sFunc = "SetAnimalCompanionCreatureType";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, type);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetFamiliarCreatureType(object creature, int type)
+{
+    string sFunc = "SetFamiliarCreatureType";
+
+    NWNX_PushArgumentInt(NWNX_Creature, sFunc, type);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetAnimalCompanionName(object creature, string name)
+{
+    string sFunc = "SetAnimalCompanionName";
+
+    NWNX_PushArgumentString(NWNX_Creature, sFunc, name);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}
+
+void NWNX_Creature_SetFamiliarName(object creature, string name)
+{
+    string sFunc = "SetFamiliarName";
+
+    NWNX_PushArgumentString(NWNX_Creature, sFunc, name);
+    NWNX_PushArgumentObject(NWNX_Creature, sFunc, creature);
+
+    NWNX_CallFunction(NWNX_Creature, sFunc);
+}

@@ -13,7 +13,7 @@
 
 void main()
 {
-    int iRoll = Random(37) +1;
+    int iRoll = Random(38) +1;
     int iSpeak = Random(94) +1;
     float fSpeed = IntToFloat(d4());
 

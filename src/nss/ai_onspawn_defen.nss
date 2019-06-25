@@ -325,9 +325,9 @@ void main()
     GenerateLoot();
 
 
-    int iCompassion = Random(100),
-        iMagic      = Random(100),
-        iOffense    = Random(100);
+    int iCompassion = d100(),
+        iMagic      = d100(),
+        iOffense    = d100();
 
     SetLocalInt(OBJECT_SELF, "X2_L_BEH_OFFENSE", iOffense);
 

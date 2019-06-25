@@ -16,12 +16,6 @@ void main()
         // in the database
         TakeGoldFromCreature(nAmount, oPC, TRUE);
 
-        //int nBanked = GetCampaignInt("BANK_GOLD", DATABASE_GOLD + sID);
-        //int nBanked = GetPersistentInt(oPC, DATABASE_GOLD + sID, "BANK_GOLD");
-        //nTotal = nAmount + nBanked;
-        //SetCampaignInt("BANK_GOLD", DATABASE_GOLD + sID, nTotal);
-        //SetPersistentInt(oPC, DATABASE_GOLD + sID, nTotal, 0, "BANK_GOLD");
-
         int zBanked = NWNX_Redis_GET("nwserver:players:" + sID + ":bank:gold");
         int nBanked = NWNX_Redis_GetResultAsInt(zBanked);
 

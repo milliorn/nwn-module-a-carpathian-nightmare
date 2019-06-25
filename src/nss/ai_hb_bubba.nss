@@ -12,7 +12,7 @@
 
 void main()
 {
-    int iSpeak = Random(94) +1;
+    int iSpeak = Random(93) +1;
 
     switch (iSpeak)
     {

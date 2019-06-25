@@ -4,7 +4,7 @@ __struct_id: 4294967295
 ChanceLightning: {type: int, value: 0}
 ChanceRain: {type: int, value: 0}
 ChanceSnow: {type: int, value: 0}
-Comments: {type: cexostr, value: ''}
+Comments: {type: cexostr, value: "Removed wall and put water next to ship.\r\n"}
 Creator_ID: {type: int, value: -1}
 DayNightCycle: {type: byte, value: 0}
 Expansion_List:
@@ -1480,12 +1480,12 @@ Tile_List:
     Tile_AnimLoop2: {type: byte, value: 1}
     Tile_AnimLoop3: {type: byte, value: 1}
     Tile_Height: {type: int, value: 0}
-    Tile_ID: {type: int, value: 154}
+    Tile_ID: {type: int, value: 25}
     Tile_MainLight1: {type: byte, value: 0}
-    Tile_MainLight2: {type: byte, value: 31}
+    Tile_MainLight2: {type: byte, value: 0}
     Tile_Orientation: {type: int, value: 3}
-    Tile_SrcLight1: {type: byte, value: 8}
-    Tile_SrcLight2: {type: byte, value: 8}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 1
     Tile_AnimLoop1: {type: byte, value: 1}
@@ -1684,12 +1684,12 @@ Tile_List:
     Tile_AnimLoop2: {type: byte, value: 1}
     Tile_AnimLoop3: {type: byte, value: 1}
     Tile_Height: {type: int, value: 0}
-    Tile_ID: {type: int, value: 105}
+    Tile_ID: {type: int, value: 110}
     Tile_MainLight1: {type: byte, value: 0}
     Tile_MainLight2: {type: byte, value: 0}
-    Tile_Orientation: {type: int, value: 2}
-    Tile_SrcLight1: {type: byte, value: 9}
-    Tile_SrcLight2: {type: byte, value: 9}
+    Tile_Orientation: {type: int, value: 0}
+    Tile_SrcLight1: {type: byte, value: 0}
+    Tile_SrcLight2: {type: byte, value: 0}
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 1
     Tile_AnimLoop1: {type: byte, value: 1}
@@ -1888,12 +1888,12 @@ Tile_List:
     Tile_AnimLoop2: {type: byte, value: 1}
     Tile_AnimLoop3: {type: byte, value: 1}
     Tile_Height: {type: int, value: 0}
-    Tile_ID: {type: int, value: 105}
-    Tile_MainLight1: {type: byte, value: 31}
-    Tile_MainLight2: {type: byte, value: 0}
-    Tile_Orientation: {type: int, value: 2}
-    Tile_SrcLight1: {type: byte, value: 0}
-    Tile_SrcLight2: {type: byte, value: 0}
+    Tile_ID: {type: int, value: 22}
+    Tile_MainLight1: {type: byte, value: 0}
+    Tile_MainLight2: {type: byte, value: 31}
+    Tile_Orientation: {type: int, value: 1}
+    Tile_SrcLight1: {type: byte, value: 9}
+    Tile_SrcLight2: {type: byte, value: 9}
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 1
     Tile_AnimLoop1: {type: byte, value: 1}
@@ -3311,6 +3311,6 @@ Tile_List:
     Tile_SrcLight1: {type: byte, value: 8}
     Tile_SrcLight2: {type: byte, value: 8}
 Tileset: {type: resref, value: tdt01}
-Version: {type: dword, value: 10}
+Version: {type: dword, value: 12}
 Width: {type: int, value: 17}
 WindPower: {type: int, value: 0}

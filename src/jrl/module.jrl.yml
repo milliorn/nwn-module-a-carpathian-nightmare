@@ -178,29 +178,38 @@ Categories:
         Text:
           type: cexolocstr
           value:
-            0: "June 13, 2019\n\nFix put in for Asterius Quiver.\nOnSpawn script code
-              added to summons/familiars to give 50% concealment to incorpreal creatures.\n\n\nJune
-              9th, 2019\n\nXP/GP will no longer be divided between party members.
-              \ This is to encourage players to login together and level up.  \n\nThe
-              Gauntlet bosses and mini-bosses that naturally do not get Immunity:
-              Sneak Attack now do not get this immunity.\n\nAttempting an improvement
-              on the A.I. of the Gauntlet 9 spawns.  Will increase spawn rate if needed
-              on another update.\n\nFix put in place to report the correct level of
-              the Killer in the bounty message script(untested).\n\nDiscord message
-              should be restored.\n\n\nMarch 25th, 2019\n\nChat Alignment script updated
-              to allow you to change to whatever alignment you want.  Level up script
-              and Legendary Levels still enforces the Druid alignment rule.\n\nFebruary
-              8th, 2019\n\nEpic Spell: Epic Warding duration reverted to default\nEpic
-              Spell: Mummy Dust no longer cast Gate spell.\nFix has been put in for
-              Dwarven Defender getting the wrong feat causing it to bug.\n\n\nJanuary
-              22nd, 2019\n\nEpic spells improved.  Check Ruleset - Feats journal entry
-              for more details.\n\n\nJanuary 19th, 2019\n\nEpic Shadowlord feat updated
-              for Shadowdancer class.  Upon taking the feat, you will gain what the
-              summons would of gained at level 30 at the moment you take the feat
-              plus more improvements.  More details are on discord in the general
-              channel.\n\nAnimate Dead Improvement.  At Pale Master level 15 you will
-              now get this.\n\nBoss Battle sequence updated in Merry's Tomb.  Swarm
-              effect has been added to the encounters to increase difficulty."
+            0: "June 24th, 2019\n\nLong awaited update to maps in place.  If transistions,
+              treasure, or npcs dont work let me know.\n\n\nJune 23rd, 2019\n\nAnother
+              fix in place for the Merry's Tomb map.\n\n\nJune 22nd, 2019\n\nFixed
+              an issue with the bank.  \n\nAdded a missing script to the party loot
+              splitter in Gauntlet shop.\n\nAdded 80% Weight Reduction to Throwing
+              Axes in Gauntlet shop.\n\nRemoved Mighty from Throwing weapons in Gauntlet
+              shop to uncap their Mighty bonus.\n\nAdded charges to the Rod of Thunder
+              and Lightning in Gauntlet shop.\n\nAdded description when you examine
+              Rare Gem Merchant.  Sell all the following gems: Alexandrite, Amethyst,
+              Aventurine, Diamond, Emerald, Fire Agate, Fire Opal, Flourspar, Garnet,
+              Greenstone, Malachite, Phenalope, Ruby, Sapphire, and Topaz to this
+              merchant for full price.\n\n\nJune 21st, 2019\n\nNWNX has been updated.
+              \ This has resolved the issue with saving throws not being applied in
+              Legendary Levels.\n\nAdded code in henchman scripts (pets) to try and
+              force it to run back and stay at a distance if they're a ranged npc.\n\nBug
+              fix for Bless Weapon script.  Will now apply On-Hit Slay Rak on ranged
+              ammo and throwing weapons.  Gloves and Melee weapons get 2d6 Divine
+              damage.  You must target the item you wish to cast on.  If you cast
+              on a PC it will default to a melee weapon, then a glove.  Neither exist,
+              nothing happens.\n\n\nJune 18th, 2019\n\nAdded Skyboxes hak to the module.\n\nRemoved
+              auto pop up message in Omega Forge and updated the sign.\n\nUpdated
+              various scripts that did math calculations.\n\nUpdated A.I. with minor
+              tweaks.\n\n\nJune 13, 2019\n\nFix put in for Asterius Quiver.\nOnSpawn
+              script code added to summons/familiars to give 50% concealment to incorpreal
+              creatures.\n\n\nJune 9th, 2019\n\nXP/GP will no longer be divided between
+              party members.  This is to encourage players to login together and level
+              up.  \n\nThe Gauntlet bosses and mini-bosses that naturally do not get
+              Immunity: Sneak Attack now do not get this immunity.\n\nAttempting an
+              improvement on the A.I. of the Gauntlet 9 spawns.  Will increase spawn
+              rate if needed on another update.\n\nFix put in place to report the
+              correct level of the Killer in the bounty message script(untested).\n\nDiscord
+              message should be restored."
     Name:
       type: cexolocstr
       value:
@@ -694,7 +703,7 @@ Categories:
 
               Bigby's Forceful Hand spell updated.  Duration capped at 20 rounds.  Caster 1d20 + 14 versus targets Take 20 + strength modifier + size modifier.
 
-              Bless Weapon: Can be applied to gloves now.
+              Bless Weapon:  On-Hit: Slay Rakshasa on targeted ranged ammo or throwing weapons.  2d6 Divine damage vs All on targeted melee weapons or glove.
 
               Bombardment: 1d8 damage per level to a max of 20d8.  3.0 edition rule correction.
 

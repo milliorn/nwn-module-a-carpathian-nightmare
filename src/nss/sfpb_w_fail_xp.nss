@@ -6,7 +6,6 @@
     Written By Scarface
 */
 //////////////////////////////////////////////////
-//#include "aps_include"
 #include "nwnx_redis"
 #include "sfpb_config_xp"
 int StartingConditional()
@@ -16,8 +15,6 @@ int StartingConditional()
     string sID = SF_GetPlayerID(oPC);
     int nXP = StringToInt(GetLocalString(OBJECT_SELF, "EXP"));
 
-    //int nBanked = GetCampaignInt("BANK_XP", DATABASE_XP + sID);
-    //int nBanked = GetPersistentInt(oBanker, DATABASE_XP + sID, "BANK_XP");
     int zBanked = NWNX_Redis_GET("nwserver:players:" + sID + ":bank:xp");
     int nBanked = NWNX_Redis_GetResultAsInt(zBanked);
 

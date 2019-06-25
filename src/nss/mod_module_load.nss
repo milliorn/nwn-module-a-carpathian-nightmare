@@ -3,6 +3,7 @@
 #include "nwnx_chat"
 #include "nwnx_weapon"
 #include "inc_private"
+#include "nwnx_object"
 
 void main()
 {
@@ -36,10 +37,9 @@ void main()
     {
         if(GetIsAreaInterior(oArea) != TRUE)
         {
-            SetSkyBox(Random(5), oArea);
-            SetFogAmount(Random(2), d12() + d3(), oArea);
+            SetFogAmount(FOG_TYPE_ALL, d12(), oArea);
 
-            switch (Random(16))
+            switch (Random(17))
             {
                 case 0:  SetFogColor(FOG_TYPE_ALL, FOG_COLOR_BLACK, oArea); break;
                 case 1:  SetFogColor(FOG_TYPE_ALL, FOG_COLOR_BLUE, oArea); break;
@@ -59,24 +59,28 @@ void main()
                 case 15: SetFogColor(FOG_TYPE_ALL, FOG_COLOR_YELLOW, oArea); break;
                 case 16: SetFogColor(FOG_TYPE_ALL, FOG_COLOR_YELLOW_DARK, oArea); break;
             }
-        }
 
-        oArea = GetNextArea();
-    }
-
-    oArea = GetFirstArea();
-    while (GetIsObjectValid(oArea))
-    {
-        if(GetIsAreaInterior(oArea) != TRUE)
-        {
-            switch (d4(1))
+            switch (d4())
             {
                 case 1:  SetWeather(oArea, WEATHER_CLEAR); break;
                 case 2:  SetWeather(oArea, WEATHER_RAIN); break;
                 case 3:  SetWeather(oArea, WEATHER_SNOW); break;
                 case 4:  SetWeather(oArea, WEATHER_USE_AREA_SETTINGS); break;
             }
+
+            if (GetSkyBox(oArea) == SKYBOX_NONE)
+            {
+                switch (Random(5))
+                {
+                    case 0:  SetSkyBox(SKYBOX_DESERT_CLEAR, oArea); break;
+                    case 1:  SetSkyBox(SKYBOX_GRASS_CLEAR, oArea); break;
+                    case 2:  SetSkyBox(SKYBOX_GRASS_STORM, oArea); SetWeather(oArea, WEATHER_RAIN); break;
+                    case 3:  SetSkyBox(SKYBOX_ICY, oArea); SetWeather(oArea, WEATHER_SNOW); break;
+                    case 4:  SetSkyBox(SKYBOX_WINTER_CLEAR, oArea); SetWeather(oArea, WEATHER_RAIN); break;
+                }
+            }
         }
+
         oArea = GetNextArea();
     }
 
@@ -129,4 +133,24 @@ void main()
     WriteTimestampedLogEntry("***SERVER LOADED***");
 
     ExecuteScript("x3_mod_def_load", OBJECT_SELF);
+
+    oArea = GetFirstArea();
+    while (GetIsObjectValid(oArea))
+    {
+        WriteTimestampedLogEntry(GetName(oArea));
+        WriteTimestampedLogEntry(" ");
+
+        object oObject = GetFirstObjectInArea(oArea);
+        while(GetIsObjectValid(oObject))
+        {
+            if (!NWNX_Object_GetPlaceableIsStatic(oObject))
+            {
+                WriteTimestampedLogEntry(GetName(oObject));
+            }
+            oObject = GetNextObjectInArea(oArea);
+        }
+        WriteTimestampedLogEntry(" ");
+        oArea = GetNextArea();
+    }
+
 }

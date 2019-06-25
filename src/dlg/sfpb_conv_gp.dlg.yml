@@ -21,7 +21,7 @@ EntryList:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
         Active: {type: resref, value: ''}
-        Index: {type: dword, value: 29}
+        Index: {type: dword, value: 27}
         IsChild: {type: byte, value: 0}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
@@ -44,8 +44,8 @@ EntryList:
     Text:
       type: cexolocstr
       value:
-        0: "Welcome to <StartHighlight>ACN's  Persistent Banking System</Start>. \n\nWhat
-          do you require?"
+        0: "Welcome to <StartHighlight>ACN Persistent GP Bank</Start>. \n\nWhat do
+          you require?"
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 1
     AnimLoop: {type: byte, value: 1}
@@ -77,7 +77,7 @@ EntryList:
     Text:
       type: cexolocstr
       value:
-        0: Please speak the amount of gold you want to withdraw, then select "Continue".
+        0: Please speak the amount of GP you want to withdraw, then select "Continue"...
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 2
     AnimLoop: {type: byte, value: 1}
@@ -103,13 +103,13 @@ EntryList:
         Active: {type: resref, value: ''}
         Index: {type: dword, value: 5}
         IsChild: {type: byte, value: 0}
-    Script: {type: resref, value: sfpb_amount}
+    Script: {type: resref, value: ''}
     Sound: {type: resref, value: ''}
     Speaker: {type: cexostr, value: ''}
     Text:
       type: cexolocstr
       value:
-        0: Are you sure you want to withdraw <CUSTOM1000> gold?
+        0: Are you sure you want to withdraw <CUSTOM1000> GP?
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 3
     AnimLoop: {type: byte, value: 1}
@@ -136,7 +136,7 @@ EntryList:
     Text:
       type: cexolocstr
       value:
-        0: You now have <CUSTOM1000> gold in your account.
+        0: You now have <CUSTOM1000> GP in your account.
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 4
     AnimLoop: {type: byte, value: 1}
@@ -163,7 +163,7 @@ EntryList:
     Text:
       type: cexolocstr
       value:
-        0: You don't have <CUSTOM1000> gold in your account.
+        0: You don't have <CUSTOM1000> GP in your account.
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 5
     AnimLoop: {type: byte, value: 1}
@@ -222,7 +222,7 @@ EntryList:
     Text:
       type: cexolocstr
       value:
-        0: Please speak the amount of gold you want to deposit, then select "Continue".
+        0: Please speak the amount of GP you want to deposit, then select "Continue".
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 7
     AnimLoop: {type: byte, value: 1}
@@ -248,15 +248,32 @@ EntryList:
         Active: {type: resref, value: ''}
         Index: {type: dword, value: 18}
         IsChild: {type: byte, value: 0}
-    Script: {type: resref, value: sfpb_amount}
+    Script: {type: resref, value: ''}
     Sound: {type: resref, value: ''}
     Speaker: {type: cexostr, value: ''}
     Text:
       type: cexolocstr
       value:
-        0: Are you sure you want to deposit <CUSTOM1000> gold?
+        0: Are you sure you want to deposit <CUSTOM1000> GP?
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 8
+    AnimLoop: {type: byte, value: 1}
+    Animation: {type: dword, value: 0}
+    Comment: {type: cexostr, value: ''}
+    Delay: {type: dword, value: 4294967295}
+    Quest: {type: cexostr, value: ''}
+    RepliesList:
+      type: list
+      value: []
+    Script: {type: resref, value: sfpb_deposit}
+    Sound: {type: resref, value: ''}
+    Speaker: {type: cexostr, value: ''}
+    Text:
+      type: cexolocstr
+      value:
+        0: You now have <CUSTOM1000> GP!
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
     AnimLoop: {type: byte, value: 1}
     Animation: {type: dword, value: 0}
     Comment: {type: cexostr, value: ''}
@@ -281,9 +298,9 @@ EntryList:
     Text:
       type: cexolocstr
       value:
-        0: You now have <CUSTOM1000> gold in your account.
+        0: You dont have <CUSTOM1000> GP to deposit !!!
   - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 9
+    __struct_id: 10
     AnimLoop: {type: byte, value: 1}
     Animation: {type: dword, value: 0}
     Comment: {type: cexostr, value: ''}
@@ -302,15 +319,15 @@ EntryList:
         Active: {type: resref, value: ''}
         Index: {type: dword, value: 23}
         IsChild: {type: byte, value: 0}
-    Script: {type: resref, value: sfpb_amount}
+    Script: {type: resref, value: ''}
     Sound: {type: resref, value: ''}
     Speaker: {type: cexostr, value: ''}
     Text:
       type: cexolocstr
       value:
-        0: You dont have <CUSTOM1000> gold to deposit !!!!!
+        0: You don't have <CUSTOM1000> GP to deposit.
   - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 10
+    __struct_id: 11
     AnimLoop: {type: byte, value: 1}
     Animation: {type: dword, value: 0}
     Comment: {type: cexostr, value: ''}
@@ -335,33 +352,6 @@ EntryList:
     Text:
       type: cexolocstr
       value:
-        0: You don't have <CUSTOM1000> gold to deposit.
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 11
-    AnimLoop: {type: byte, value: 1}
-    Animation: {type: dword, value: 0}
-    Comment: {type: cexostr, value: ''}
-    Delay: {type: dword, value: 4294967295}
-    Quest: {type: cexostr, value: ''}
-    RepliesList:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
-        Active: {type: resref, value: ''}
-        Index: {type: dword, value: 28}
-        IsChild: {type: byte, value: 0}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        Active: {type: resref, value: ''}
-        Index: {type: dword, value: 27}
-        IsChild: {type: byte, value: 0}
-    Script: {type: resref, value: ''}
-    Sound: {type: resref, value: ''}
-    Speaker: {type: cexostr, value: ''}
-    Text:
-      type: cexolocstr
-      value:
         0: Sorry, I did not understand that. Either the amount was too high, or the
           text spoken was invalid.
   - !nwn-lib.elv.es,2013-07:struct
@@ -377,21 +367,21 @@ EntryList:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
         Active: {type: resref, value: ''}
-        Index: {type: dword, value: 31}
+        Index: {type: dword, value: 29}
         IsChild: {type: byte, value: 0}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
         Active: {type: resref, value: ''}
-        Index: {type: dword, value: 30}
+        Index: {type: dword, value: 28}
         IsChild: {type: byte, value: 0}
-    Script: {type: resref, value: sfpb_balance}
+    Script: {type: resref, value: ''}
     Sound: {type: resref, value: ''}
     Speaker: {type: cexostr, value: ''}
     Text:
       type: cexolocstr
       value:
-        0: Your balance is <CUSTOM1000> gold.
-NumWords: {type: dword, value: 174}
+        0: Your balance is <CUSTOM1000> GP.
+NumWords: {type: dword, value: 168}
 PreventZoomIn: {type: byte, value: 0}
 ReplyList:
   type: list
@@ -432,7 +422,7 @@ ReplyList:
     Text:
       type: cexolocstr
       value:
-        0: Gold - Withdraw
+        0: GP - Withdraw
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 2
     AnimLoop: {type: byte, value: 1}
@@ -695,7 +685,7 @@ ReplyList:
     Text:
       type: cexolocstr
       value:
-        0: Gold - Deposit
+        0: GP - Deposit
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 15
     AnimLoop: {type: byte, value: 1}
@@ -823,7 +813,7 @@ ReplyList:
         Index: {type: dword, value: 8}
         IsChild: {type: byte, value: 0}
     Quest: {type: cexostr, value: ''}
-    Script: {type: resref, value: sfpb_deposit}
+    Script: {type: resref, value: ''}
     Sound: {type: resref, value: ''}
     Text:
       type: cexolocstr
@@ -853,13 +843,7 @@ ReplyList:
     Delay: {type: dword, value: 4294967295}
     EntriesList:
       type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
-        Active: {type: resref, value: ''}
-        Index: {type: dword, value: 0}
-        IsChild: {type: byte, value: 1}
-        LinkComment: {type: cexostr, value: ''}
+      value: []
     Quest: {type: cexostr, value: ''}
     Script: {type: resref, value: ''}
     Sound: {type: resref, value: ''}
@@ -951,44 +935,6 @@ ReplyList:
     Delay: {type: dword, value: 4294967295}
     EntriesList:
       type: list
-      value: []
-    Quest: {type: cexostr, value: ''}
-    Script: {type: resref, value: ''}
-    Sound: {type: resref, value: ''}
-    Text:
-      type: cexolocstr
-      value:
-        0: Leave
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 28
-    AnimLoop: {type: byte, value: 1}
-    Animation: {type: dword, value: 0}
-    Comment: {type: cexostr, value: ''}
-    Delay: {type: dword, value: 4294967295}
-    EntriesList:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
-        Active: {type: resref, value: ''}
-        Index: {type: dword, value: 6}
-        IsChild: {type: byte, value: 1}
-        LinkComment: {type: cexostr, value: ''}
-    Quest: {type: cexostr, value: ''}
-    Script: {type: resref, value: ''}
-    Sound: {type: resref, value: ''}
-    Text:
-      type: cexolocstr
-      value:
-        0: Go Back
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 29
-    AnimLoop: {type: byte, value: 1}
-    Animation: {type: dword, value: 0}
-    Comment: {type: cexostr, value: ''}
-    Delay: {type: dword, value: 4294967295}
-    EntriesList:
-      type: list
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
@@ -1001,9 +947,9 @@ ReplyList:
     Text:
       type: cexolocstr
       value:
-        0: Gold - Balance
+        0: GP - Balance
   - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 30
+    __struct_id: 28
     AnimLoop: {type: byte, value: 1}
     Animation: {type: dword, value: 0}
     Comment: {type: cexostr, value: ''}
@@ -1019,7 +965,7 @@ ReplyList:
       value:
         0: Leave
   - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 31
+    __struct_id: 29
     AnimLoop: {type: byte, value: 1}
     Animation: {type: dword, value: 0}
     Comment: {type: cexostr, value: ''}

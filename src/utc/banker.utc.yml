@@ -74,7 +74,7 @@ Color_Tattoo1: {type: byte, value: 1}
 Color_Tattoo2: {type: byte, value: 1}
 Comment: {type: cexostr, value: ''}
 Con: {type: byte, value: 14}
-Conversation: {type: resref, value: sfpb_conv}
+Conversation: {type: resref, value: sfpb_conv_gp}
 CurrentHitPoints: {type: short, value: 8}
 DecayTime: {type: dword, value: 5000}
 Deity: {type: cexostr, value: ''}
@@ -105,7 +105,7 @@ FeatList:
 FirstName:
   type: cexolocstr
   value:
-    0: GP/XP Banker
+    0: GP Banker
 Gender: {type: byte, value: 0}
 GoodEvil: {type: byte, value: 50}
 HitPoints: {type: short, value: 8}

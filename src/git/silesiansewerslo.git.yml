@@ -1219,6 +1219,76 @@ SoundList:
     XPosition: {type: float, value: 25.177}
     YPosition: {type: float, value: 295.4798}
     ZPosition: {type: float, value: 0.86}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 0}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 0}
+    IntervalVrtn: {type: dword, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 67911
+      value: {}
+    Looping: {type: byte, value: 1}
+    MaxDistance: {type: float, value: 15.0}
+    MinDistance: {type: float, value: 1.5}
+    PitchVariation: {type: float, value: 0.0}
+    Positional: {type: byte, value: 1}
+    Priority: {type: byte, value: 3}
+    Random: {type: byte, value: 0}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: al_cv_millwheel1}}
+    Tag: {type: cexostr, value: MillWheel}
+    TemplateResRef: {type: resref, value: millwheel}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 0}
+    XPosition: {type: float, value: 19.88}
+    YPosition: {type: float, value: 86.01}
+    ZPosition: {type: float, value: 1.51}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 6
+    Active: {type: byte, value: 1}
+    Continuous: {type: byte, value: 1}
+    Elevation: {type: float, value: 1.5}
+    GeneratedType: {type: dword, value: 0}
+    Hours: {type: dword, value: 0}
+    Interval: {type: dword, value: 30000}
+    IntervalVrtn: {type: dword, value: 5000}
+    LocName:
+      type: cexolocstr
+      str_ref: 67829
+      value: {}
+    Looping: {type: byte, value: 0}
+    MaxDistance: {type: float, value: 10.0}
+    MinDistance: {type: float, value: 1.0}
+    PitchVariation: {type: float, value: 0.2}
+    Positional: {type: byte, value: 0}
+    Priority: {type: byte, value: 19}
+    Random: {type: byte, value: 0}
+    RandomPosition: {type: byte, value: 0}
+    RandomRangeX: {type: float, value: 0.0}
+    RandomRangeY: {type: float, value: 0.0}
+    Sounds:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct {__struct_id: 0, Sound: {type: resref, value: as_cv_crank1}}
+    Tag: {type: cexostr, value: CrankCreaksLarge}
+    TemplateResRef: {type: resref, value: crankcreakslarge}
+    Times: {type: byte, value: 3}
+    Volume: {type: byte, value: 127}
+    VolumeVrtn: {type: byte, value: 0}
+    XPosition: {type: float, value: 21.1925}
+    YPosition: {type: float, value: 85.8659}
+    ZPosition: {type: float, value: 1.71}
 StoreList:
   type: list
   value: []

@@ -7,7 +7,7 @@
 */
 //////////////////////////////////////////////////
 
-#include "nwnx_names"
+//#include "nwnx_names"
 void main()
 {
     // Vars
@@ -15,5 +15,5 @@ void main()
     string sName = GetLocalString(oNPC, "NAME");
 
 //  Put name change code here
-    NWNX_Names_SetName(oPC, sName);
+    //NWNX_Names_SetName(oPC, sName);
 }

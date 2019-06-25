@@ -101,6 +101,13 @@ void main()
         ApplyEffectToObject(DURATION_TYPE_PERMANENT, eGhost, OBJECT_SELF);
 
     }
+
+    if (GetIsObjectValid(GetItemInSlot(INVENTORY_SLOT_ARROWS, OBJECT_SELF)) ||
+        GetIsObjectValid(GetItemInSlot(INVENTORY_SLOT_BOLTS, OBJECT_SELF))  ||
+        GetIsObjectValid(GetItemInSlot(INVENTORY_SLOT_BULLETS, OBJECT_SELF)))
+    {
+         SetCombatCondition(X0_COMBAT_FLAG_RANGED);
+    }
 }
 
 

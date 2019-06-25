@@ -37,7 +37,6 @@ void AddBlessEffectToWeapon(object oTarget, float fDuration)
    // If the spell is cast again, any previous enhancement boni are kept
    IPSafeAddItemProperty(oTarget, ItemPropertyEnhancementBonus(1), fDuration, X2_IP_ADDPROP_POLICY_KEEP_EXISTING,TRUE);
    // Replace existing temporary anti undead boni
-   //IPSafeAddItemProperty(oTarget, ItemPropertyDamageBonusVsRace(IP_CONST_RACIALTYPE_UNDEAD, IP_CONST_DAMAGETYPE_DIVINE, IP_CONST_DAMAGEBONUS_2d6), fDuration,X2_IP_ADDPROP_POLICY_REPLACE_EXISTING );
    IPSafeAddItemProperty(oTarget, ItemPropertyDamageBonus(IP_CONST_DAMAGETYPE_DIVINE, IP_CONST_DAMAGEBONUS_2d6), fDuration,X2_IP_ADDPROP_POLICY_REPLACE_EXISTING );
    IPSafeAddItemProperty(oTarget, ItemPropertyVisualEffect(ITEM_VISUAL_HOLY), fDuration,X2_IP_ADDPROP_POLICY_REPLACE_EXISTING,FALSE,TRUE );
    return;
@@ -70,35 +69,31 @@ void main()
     object oTarget = GetSpellTargetObject();
     int nDuration = 2 * GetCasterLevel(OBJECT_SELF);
     int nMetaMagic = GetMetaMagicFeat();
+
     if (nMetaMagic == METAMAGIC_EXTEND)
     {
        nDuration = nDuration * 2; //Duration is +100%
     }
 
     // ---------------- TARGETED ON BOLT  -------------------
-    if(GetIsObjectValid(oTarget) && GetObjectType(oTarget) == OBJECT_TYPE_ITEM)
+    if(GetIsObjectValid(oTarget) && GetObjectType(oTarget) == OBJECT_TYPE_ITEM &&
+        GetBaseItemType(oTarget) ==  BASE_ITEM_BOLT || GetBaseItemType(oTarget) ==  BASE_ITEM_ARROW ||
+        GetBaseItemType(oTarget) ==  BASE_ITEM_BULLET || GetBaseItemType(oTarget) ==  BASE_ITEM_DART ||
+        GetBaseItemType(oTarget) ==  BASE_ITEM_GRENADE || GetBaseItemType(oTarget) ==  BASE_ITEM_SHURIKEN ||
+        GetBaseItemType(oTarget) ==  BASE_ITEM_THROWINGAXE)
     {
         // special handling for blessing crossbow bolts that can slay rakshasa's
-        if (GetBaseItemType(oTarget) ==  BASE_ITEM_BOLT ||
-                                         BASE_ITEM_ARROW ||
-                                         BASE_ITEM_BULLET ||
-                                         BASE_ITEM_DART ||
-                                         BASE_ITEM_GRENADE ||
-                                         BASE_ITEM_THROWINGAXE)
-        {
-           SignalEvent(GetItemPossessor(oTarget), EventSpellCastAt(OBJECT_SELF, GetSpellId(), FALSE));
-           IPSafeAddItemProperty(oTarget, ItemPropertyOnHitCastSpell(123,1), RoundsToSeconds(nDuration), X2_IP_ADDPROP_POLICY_KEEP_EXISTING );
-           ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, GetItemPossessor(oTarget));
-           ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eDur, GetItemPossessor(oTarget), RoundsToSeconds(nDuration));
-           return;
-        }
+        SignalEvent(GetItemPossessor(oTarget), EventSpellCastAt(OBJECT_SELF, GetSpellId(), FALSE));
+        IPSafeAddItemProperty(oTarget, ItemPropertyOnHitCastSpell(123,1), RoundsToSeconds(nDuration), X2_IP_ADDPROP_POLICY_KEEP_EXISTING );
+        ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, GetItemPossessor(oTarget));
+        ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eDur, GetItemPossessor(oTarget), RoundsToSeconds(nDuration));
+        return;
     }
 
-   object oObject = GetItemInSlot(INVENTORY_SLOT_ARMS, OBJECT_SELF);
-   object oMyWeapon   =  IPGetTargetedOrEquippedMeleeWeapon();
+    object oMyWeapon   =  IPGetTargetedOrEquippedMeleeWeapon();
 
-   if(GetIsObjectValid(oMyWeapon) || GetBaseItemType(oObject) == BASE_ITEM_GLOVES)
-   {
+    if(GetIsObjectValid(oMyWeapon) || GetBaseItemType(oTarget) ==  BASE_ITEM_GLOVES)
+    {
         SignalEvent(GetItemPossessor(oMyWeapon), EventSpellCastAt(OBJECT_SELF, GetSpellId(), FALSE));
 
         if (nDuration>0)
@@ -106,27 +101,14 @@ void main()
            AddBlessEffectToWeapon(oMyWeapon, TurnsToSeconds(nDuration));
            ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, GetItemPossessor(oMyWeapon));
            ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eDur, GetItemPossessor(oMyWeapon), TurnsToSeconds(nDuration));
+            return;
         }
-        return;
+
     }
 
-    else if(GetBaseItemType(oTarget) == BASE_ITEM_BOLT || GetBaseItemType(oTarget) == BASE_ITEM_ARROW ||
-            GetBaseItemType(oTarget) == BASE_ITEM_BULLET || GetBaseItemType(oTarget) == BASE_ITEM_DART ||
-            GetBaseItemType(oTarget) == BASE_ITEM_GRENADE || GetBaseItemType(oTarget) == BASE_ITEM_THROWINGAXE)
+    else
     {
-        SignalEvent(GetItemPossessor(oTarget), EventSpellCastAt(OBJECT_SELF, GetSpellId(), FALSE));
-
-        if (nDuration>0)
-        {
-           AddBlessEffectToWeapon(oTarget, TurnsToSeconds(nDuration));
-           ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, GetItemPossessor(oTarget));
-           ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eDur, GetItemPossessor(oTarget), TurnsToSeconds(nDuration));
-        }
+        FloatingTextStrRefOnCreature(83615, OBJECT_SELF);
         return;
-    }
-        else
-    {
-           FloatingTextStrRefOnCreature(83615, OBJECT_SELF);
-           return;
     }
 }

@@ -6,7 +6,6 @@
     Written By Scarface
 */
 //////////////////////////////////////////////////
-//#include "aps_include"
 #include "sfpb_config_xp"
 #include "nwnx_redis"
 
@@ -17,8 +16,6 @@ void main()
     string sID = SF_GetPlayerID(oPC);
 
     int nWithdraw = StringToInt(GetLocalString(OBJECT_SELF, "EXP"));
-    //int nBanked = GetCampaignInt("BANK_XP", DATABASE_XP + sID);
-    //int nBanked = GetPersistentInt(oBanker, DATABASE_XP + sID, "BANK_XP");
     int iXP = GetXP(oPC);
 
     int zBanked = NWNX_Redis_GET("nwserver:players:" + sID + ":bank:xp");

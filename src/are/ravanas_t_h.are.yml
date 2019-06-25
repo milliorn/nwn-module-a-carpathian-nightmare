@@ -304,10 +304,10 @@ Tile_List:
     Tile_AnimLoop2: {type: byte, value: 1}
     Tile_AnimLoop3: {type: byte, value: 1}
     Tile_Height: {type: int, value: 0}
-    Tile_ID: {type: int, value: 68}
+    Tile_ID: {type: int, value: 5}
     Tile_MainLight1: {type: byte, value: 0}
     Tile_MainLight2: {type: byte, value: 0}
-    Tile_Orientation: {type: int, value: 1}
+    Tile_Orientation: {type: int, value: 0}
     Tile_SrcLight1: {type: byte, value: 3}
     Tile_SrcLight2: {type: byte, value: 3}
   - !nwn-lib.elv.es,2013-07:struct
@@ -316,12 +316,12 @@ Tile_List:
     Tile_AnimLoop2: {type: byte, value: 1}
     Tile_AnimLoop3: {type: byte, value: 1}
     Tile_Height: {type: int, value: 0}
-    Tile_ID: {type: int, value: 20}
+    Tile_ID: {type: int, value: 116}
     Tile_MainLight1: {type: byte, value: 0}
     Tile_MainLight2: {type: byte, value: 1}
     Tile_Orientation: {type: int, value: 2}
-    Tile_SrcLight1: {type: byte, value: 2}
-    Tile_SrcLight2: {type: byte, value: 2}
+    Tile_SrcLight1: {type: byte, value: 3}
+    Tile_SrcLight2: {type: byte, value: 3}
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 1
     Tile_AnimLoop1: {type: byte, value: 1}
@@ -364,22 +364,22 @@ Tile_List:
     Tile_AnimLoop2: {type: byte, value: 1}
     Tile_AnimLoop3: {type: byte, value: 1}
     Tile_Height: {type: int, value: 0}
-    Tile_ID: {type: int, value: 20}
+    Tile_ID: {type: int, value: 119}
     Tile_MainLight1: {type: byte, value: 0}
     Tile_MainLight2: {type: byte, value: 0}
     Tile_Orientation: {type: int, value: 0}
-    Tile_SrcLight1: {type: byte, value: 3}
-    Tile_SrcLight2: {type: byte, value: 3}
+    Tile_SrcLight1: {type: byte, value: 2}
+    Tile_SrcLight2: {type: byte, value: 2}
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 1
     Tile_AnimLoop1: {type: byte, value: 1}
     Tile_AnimLoop2: {type: byte, value: 1}
     Tile_AnimLoop3: {type: byte, value: 1}
     Tile_Height: {type: int, value: 0}
-    Tile_ID: {type: int, value: 68}
+    Tile_ID: {type: int, value: 5}
     Tile_MainLight1: {type: byte, value: 0}
     Tile_MainLight2: {type: byte, value: 0}
-    Tile_Orientation: {type: int, value: 3}
+    Tile_Orientation: {type: int, value: 1}
     Tile_SrcLight1: {type: byte, value: 3}
     Tile_SrcLight2: {type: byte, value: 3}
   - !nwn-lib.elv.es,2013-07:struct
@@ -635,6 +635,6 @@ Tile_List:
     Tile_SrcLight1: {type: byte, value: 3}
     Tile_SrcLight2: {type: byte, value: 3}
 Tileset: {type: resref, value: tde01}
-Version: {type: dword, value: 62}
+Version: {type: dword, value: 61}
 Width: {type: int, value: 7}
 WindPower: {type: int, value: 0}
