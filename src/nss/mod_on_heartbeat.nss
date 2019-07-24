@@ -1,14 +1,14 @@
+#include "nwnx_redis_short"
 #include "nwnx_time"
+#include "nwnx_util"
+
 
 void main()
 {
-    object oPC;
     object oModule = GetModule();
 
     int timekeeper = GetLocalInt(oModule, "loadtimer");
-    int iCurrentTime = NWNX_Time_GetTimeStamp();
-    int iBootTime = GetLocalInt(oModule, "RAW_BOOT_TIME");
-    int iUpTime = iCurrentTime - iBootTime;
+    int iUpTime = NWNX_Time_GetTimeStamp() - GetLocalInt(oModule, "RAW_BOOT_TIME");
 
     if (timekeeper == 0 && iUpTime > 60)
     {

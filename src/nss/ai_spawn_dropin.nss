@@ -22,7 +22,7 @@
 #include "x2_inc_switches"
 #include "inc_name_creator"
 #include "inc_loot"
-#include "inc_ai_cr"
+#include "inc_ai"
 
 void main()
 {
@@ -102,6 +102,8 @@ void main()
 //    GenerateNPCTreasure(); //* Use this to create a small amount of treasure on the creature
 
     PrintCRValue(OBJECT_SELF);
+    AIRandomSettings(OBJECT_SELF);
+    SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
 
     string sTag = GetTag(OBJECT_SELF);
     string sLeft = GetStringLeft(sTag, 3);
@@ -114,40 +116,7 @@ void main()
         return;
     }
 
+    SetFacing(IntToFloat(Random(360)));
     RandomNameNPC(OBJECT_SELF);
     GenerateLoot();
-    SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
-
-
-    int iCompassion = d100(),
-        iMagic      = d100(),
-        iOffense    = d100();
-
-    SetLocalInt(OBJECT_SELF, "X2_L_BEH_OFFENSE", iOffense);
-
-    SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_SEARCH", 1);
-    SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_STEALTH", 1);
-    SetLocalInt(OBJECT_SELF, "X2_SPELL_RANDOM", TRUE);
-
-    if (GetLevelByClass(CLASS_TYPE_BARD, OBJECT_SELF)       ||
-        GetLevelByClass(CLASS_TYPE_CLERIC, OBJECT_SELF)     ||
-        GetLevelByClass(CLASS_TYPE_DRUID, OBJECT_SELF)      ||
-        GetLevelByClass(CLASS_TYPE_PALADIN, OBJECT_SELF)    ||
-        GetLevelByClass(CLASS_TYPE_RANGER, OBJECT_SELF)     ||
-        GetLevelByClass(CLASS_TYPE_SORCERER, OBJECT_SELF)   ||
-        GetLevelByClass(CLASS_TYPE_WIZARD, OBJECT_SELF))
-
-    {
-        SetLocalInt(OBJECT_SELF, "X2_L_BEH_MAGIC", iMagic);
-        SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
-    }
-
-    if (GetLevelByClass(CLASS_TYPE_BARD, OBJECT_SELF) == TRUE   ||
-        GetLevelByClass(CLASS_TYPE_CLERIC, OBJECT_SELF) == TRUE ||
-        GetLevelByClass(CLASS_TYPE_DRUID, OBJECT_SELF) == TRUE  ||
-        GetLevelByClass(CLASS_TYPE_PALADIN, OBJECT_SELF) == TRUE ||
-        GetLevelByClass(CLASS_TYPE_RANGER, OBJECT_SELF) == TRUE)
-    {
-        SetLocalInt(OBJECT_SELF, "X2_L_BEH_COMPASSION", iCompassion);
-    }
 }

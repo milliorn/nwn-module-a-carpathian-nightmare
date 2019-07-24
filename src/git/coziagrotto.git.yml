@@ -263,13 +263,11 @@ Encounter List:
         Z: {type: float, value: 1.025}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
-        Comment: {type: cexostr, value: ''}
         X: {type: float, value: -1.1892}
         Y: {type: float, value: 26.7668}
         Z: {type: float, value: 1.025}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
-        Comment: {type: cexostr, value: ''}
         X: {type: float, value: -10.3544}
         Y: {type: float, value: 27.3708}
         Z: {type: float, value: 1.2371}
@@ -1116,9 +1114,9 @@ Encounter List:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 2
         Orientation: {type: float, value: -0.7854}
-        X: {type: float, value: 33.1454}
-        Y: {type: float, value: 20.9099}
-        Z: {type: float, value: 0.9308}
+        X: {type: float, value: 37.4301}
+        Y: {type: float, value: 21.5455}
+        Z: {type: float, value: 1.0}
     Tag: {type: cexostr, value: CoziaWraithSpider}
     TemplateResRef: {type: resref, value: coziawraithspide}
     XPosition: {type: float, value: 68.8285}
@@ -1132,11 +1130,11 @@ Encounter List:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
-        Appearance: {type: int, value: 162}
-        CR: {type: float, value: 51.0}
-        ResRef: {type: resref, value: coziawraithspi}
+        Appearance: {type: int, value: 463}
+        CR: {type: float, value: 67.0}
+        ResRef: {type: resref, value: coziahivemothe}
         SingleSpawn: {type: byte, value: 0}
-    Difficulty: {type: int, value: 9}
+    Difficulty: {type: int, value: 0}
     DifficultyIndex: {type: int, value: 4}
     Faction: {type: dword, value: 1}
     Geometry:
@@ -1144,36 +1142,36 @@ Encounter List:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
+        X: {type: float, value: -0.2492}
+        Y: {type: float, value: -25.6653}
+        Z: {type: float, value: 1.025}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
         X: {type: float, value: 0.0}
         Y: {type: float, value: 0.0}
         Z: {type: float, value: 1.025}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
-        X: {type: float, value: 0.1688}
-        Y: {type: float, value: 25.8392}
+        X: {type: float, value: -24.2332}
+        Y: {type: float, value: 2.0821}
         Z: {type: float, value: 1.025}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
-        X: {type: float, value: -7.1674}
-        Y: {type: float, value: 25.7059}
-        Z: {type: float, value: 1.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -7.873}
-        Y: {type: float, value: 0.0964}
+        X: {type: float, value: -23.9211}
+        Y: {type: float, value: -25.167}
         Z: {type: float, value: 1.025}
     LocalizedName:
       type: cexolocstr
       value:
-        0: Cozia Wraith Spider
-    MaxCreatures: {type: int, value: 8}
+        0: Cozia Hive Spider
+    MaxCreatures: {type: int, value: 1}
     OnEntered: {type: resref, value: ''}
     OnExhausted: {type: resref, value: ''}
     OnExit: {type: resref, value: ''}
     OnHeartbeat: {type: resref, value: ''}
     OnUserDefined: {type: resref, value: ''}
     PlayerOnly: {type: byte, value: 1}
-    RecCreatures: {type: int, value: 2}
+    RecCreatures: {type: int, value: 1}
     Reset: {type: byte, value: 1}
     ResetTime: {type: int, value: 600}
     Respawns: {type: int, value: -1}
@@ -1183,14 +1181,14 @@ Encounter List:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 2
-        Orientation: {type: float, value: 3.1416}
-        X: {type: float, value: 23.5775}
-        Y: {type: float, value: 22.8753}
-        Z: {type: float, value: 0.8008}
-    Tag: {type: cexostr, value: CoziaWraithSpider}
-    TemplateResRef: {type: resref, value: coziawraithspide}
-    XPosition: {type: float, value: 59.2484}
-    YPosition: {type: float, value: 6.3669}
+        Orientation: {type: float, value: -1.5708}
+        X: {type: float, value: 26.3071}
+        Y: {type: float, value: 20.1917}
+        Z: {type: float, value: 1.0}
+    Tag: {type: cexostr, value: CoziaHiveSpider}
+    TemplateResRef: {type: resref, value: coziahivespider}
+    XPosition: {type: float, value: 60.6968}
+    YPosition: {type: float, value: 31.8386}
     ZPosition: {type: float, value: 0.0}
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 7
@@ -1327,147 +1325,6 @@ Encounter List:
     TemplateResRef: {type: resref, value: coziawraithspide}
     XPosition: {type: float, value: 38.6812}
     YPosition: {type: float, value: 6.4633}
-    ZPosition: {type: float, value: 0.0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 7
-    Active: {type: byte, value: 1}
-    CreatureList:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
-        Appearance: {type: int, value: 162}
-        CR: {type: float, value: 51.0}
-        ResRef: {type: resref, value: coziawraithspi}
-        SingleSpawn: {type: byte, value: 0}
-    Difficulty: {type: int, value: 9}
-    DifficultyIndex: {type: int, value: 4}
-    Faction: {type: dword, value: 1}
-    Geometry:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: 0.0}
-        Y: {type: float, value: 0.0}
-        Z: {type: float, value: 1.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: 0.1246}
-        Y: {type: float, value: 25.6653}
-        Z: {type: float, value: 1.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -6.8524}
-        Y: {type: float, value: 27.0358}
-        Z: {type: float, value: 1.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -6.2295}
-        Y: {type: float, value: 0.1246}
-        Z: {type: float, value: 1.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -2.9901}
-        Y: {type: float, value: 0.1246}
-        Z: {type: float, value: 1.025}
-    LocalizedName:
-      type: cexolocstr
-      value:
-        0: Cozia Wraith Spider
-    MaxCreatures: {type: int, value: 8}
-    OnEntered: {type: resref, value: ''}
-    OnExhausted: {type: resref, value: ''}
-    OnExit: {type: resref, value: ''}
-    OnHeartbeat: {type: resref, value: ''}
-    OnUserDefined: {type: resref, value: ''}
-    PlayerOnly: {type: byte, value: 1}
-    RecCreatures: {type: int, value: 2}
-    Reset: {type: byte, value: 1}
-    ResetTime: {type: int, value: 600}
-    Respawns: {type: int, value: -1}
-    SpawnOption: {type: int, value: 0}
-    SpawnPointList:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 2
-        Orientation: {type: float, value: 1.5708}
-        X: {type: float, value: 11.5045}
-        Y: {type: float, value: 9.7214}
-        Z: {type: float, value: 1.0}
-    Tag: {type: cexostr, value: CoziaWraithSpider}
-    TemplateResRef: {type: resref, value: coziawraithspide}
-    XPosition: {type: float, value: 29.4453}
-    YPosition: {type: float, value: 6.6067}
-    ZPosition: {type: float, value: 0.0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 7
-    Active: {type: byte, value: 1}
-    CreatureList:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
-        Appearance: {type: int, value: 463}
-        CR: {type: float, value: 60.0}
-        ResRef: {type: resref, value: coziahivemothe}
-        SingleSpawn: {type: byte, value: 0}
-    Difficulty: {type: int, value: 0}
-    DifficultyIndex: {type: int, value: 4}
-    Faction: {type: dword, value: 1}
-    Geometry:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -0.2492}
-        Y: {type: float, value: -25.6653}
-        Z: {type: float, value: 1.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: 0.0}
-        Y: {type: float, value: 0.0}
-        Z: {type: float, value: 1.025}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -24.2332}
-        Y: {type: float, value: 2.0821}
-        Z: {type: float, value: 1.9739}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -23.9211}
-        Y: {type: float, value: -25.167}
-        Z: {type: float, value: 1.025}
-    LocalizedName:
-      type: cexolocstr
-      value:
-        0: Cozia Hive Spider
-    MaxCreatures: {type: int, value: 1}
-    OnEntered: {type: resref, value: ''}
-    OnExhausted: {type: resref, value: ''}
-    OnExit: {type: resref, value: ''}
-    OnHeartbeat: {type: resref, value: ''}
-    OnUserDefined: {type: resref, value: ''}
-    PlayerOnly: {type: byte, value: 1}
-    RecCreatures: {type: int, value: 1}
-    Reset: {type: byte, value: 1}
-    ResetTime: {type: int, value: 600}
-    Respawns: {type: int, value: -1}
-    SpawnOption: {type: int, value: 0}
-    SpawnPointList:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 2
-        Orientation: {type: float, value: -1.5708}
-        X: {type: float, value: 12.3766}
-        Y: {type: float, value: 19.1902}
-        Z: {type: float, value: 1.0}
-    Tag: {type: cexostr, value: CoziaHiveSpider}
-    TemplateResRef: {type: resref, value: coziahivespider}
-    XPosition: {type: float, value: 30.442}
-    YPosition: {type: float, value: 31.7737}
     ZPosition: {type: float, value: 0.0}
 List:
   type: list

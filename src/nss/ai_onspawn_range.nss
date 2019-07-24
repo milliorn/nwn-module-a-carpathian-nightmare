@@ -32,7 +32,7 @@
 #include "x2_inc_switches"
 #include "inc_name_creator"
 #include "inc_loot"
-#include "inc_ai_cr"
+#include "inc_ai"
 
 void main()
 {
@@ -164,7 +164,7 @@ void main()
     // * that contain a waypoint with one of the tags
     // * "NW_HOME", "NW_TAVERN", "NW_SHOP" will automatically
     // * have this condition set.
-    // SetAnimationCondition(NW_ANIM_FLAG_IS_MOBILE_CLOSE_RANGE);
+     SetAnimationCondition(NW_ANIM_FLAG_IS_MOBILE_CLOSE_RANGE);
 
 
     // **** Special Combat Tactics *****//
@@ -311,6 +311,8 @@ void main()
     }
 
     PrintCRValue(OBJECT_SELF);
+    AIRandomSettings(OBJECT_SELF);
+    SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
 
     string sTag = GetTag(OBJECT_SELF);
     string sLeft = GetStringLeft(sTag, 3);
@@ -323,48 +325,7 @@ void main()
         return;
     }
 
+    SetFacing(IntToFloat(Random(360)));
     RandomNameNPC(OBJECT_SELF);
     GenerateLoot();
-
-
-    int iCompassion = d100(),
-        iMagic      = d100(),
-        iOffense    = d100();
-
-    SetLocalInt(OBJECT_SELF, "X2_L_BEH_OFFENSE", iOffense);
-
-    SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_SEARCH", 1);
-    SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_STEALTH", 1);
-
-    if (GetResRef(OBJECT_SELF) == "vecnaadept" || GetResRef(OBJECT_SELF) == "vecnamaster" )
-    {
-        //SetLocalInt(OBJECT_SELF, "X2_L_BEH_MAGIC", iMagic);
-        SetLocalInt(OBJECT_SELF, "X2_SPELL_RANDOM", 1);
-        SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
-        return;
-    }
-
-    if (GetLevelByClass(CLASS_TYPE_BARD, OBJECT_SELF) == TRUE       ||
-        GetLevelByClass(CLASS_TYPE_CLERIC, OBJECT_SELF) == TRUE     ||
-        GetLevelByClass(CLASS_TYPE_DRUID, OBJECT_SELF) == TRUE      ||
-        GetLevelByClass(CLASS_TYPE_PALADIN, OBJECT_SELF) == TRUE    ||
-        GetLevelByClass(CLASS_TYPE_RANGER, OBJECT_SELF) == TRUE     ||
-        GetLevelByClass(CLASS_TYPE_SORCERER, OBJECT_SELF) == TRUE   ||
-        GetLevelByClass(CLASS_TYPE_WIZARD, OBJECT_SELF) == TRUE)
-
-    {
-        SetLocalInt(OBJECT_SELF, "X2_L_BEH_MAGIC", iMagic);
-        SetLocalInt(OBJECT_SELF, "X2_SPELL_RANDOM", 1);
-        SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
-    }
-
-    if (GetLevelByClass(CLASS_TYPE_BARD, OBJECT_SELF) == TRUE   ||
-        GetLevelByClass(CLASS_TYPE_CLERIC, OBJECT_SELF) == TRUE ||
-        GetLevelByClass(CLASS_TYPE_DRUID, OBJECT_SELF) == TRUE  ||
-        GetLevelByClass(CLASS_TYPE_PALADIN, OBJECT_SELF) == TRUE ||
-        GetLevelByClass(CLASS_TYPE_RANGER, OBJECT_SELF) == TRUE)
-    {
-        SetLocalInt(OBJECT_SELF, "X2_L_BEH_COMPASSION", iCompassion);
-    }
-
 }

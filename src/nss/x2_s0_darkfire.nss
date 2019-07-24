@@ -122,7 +122,7 @@ void main()
             return;
         }
 
-        if (nCasterLvl >= 17)
+        if (nCasterLvl > 16)
         {
             ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, GetItemPossessor(oMyWeapon));
             ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eDur, GetItemPossessor(oMyWeapon), TurnsToSeconds(nDuration));

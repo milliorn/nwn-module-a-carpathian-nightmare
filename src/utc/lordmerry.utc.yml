@@ -5,7 +5,7 @@ Appearance_Type: {type: word, value: 125}
 BodyBag: {type: byte, value: 0}
 CRAdjust: {type: int, value: 0}
 Cha: {type: byte, value: 14}
-ChallengeRating: {type: float, value: 77.0}
+ChallengeRating: {type: float, value: 72.0}
 ClassList:
   type: list
   value:
@@ -377,12 +377,12 @@ Equip_ItemList:
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, EquippedRes: {type: resref, value: x2_helm_004}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 2, EquippedRes: {type: resref, value: x2_mdrowar042}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 4, EquippedRes: {type: resref, value: nw_it_mboots022}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, EquippedRes: {type: resref, value: x2_it_mbracer009}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, EquippedRes: {type: resref, value: x0_it_mbracer002}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16, EquippedRes: {type: resref, value: x2_wblmhl005}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32, EquippedRes: {type: resref, value: x2_ashmto004}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 64, EquippedRes: {type: resref, value: x2_it_mcloak009}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 64, EquippedRes: {type: resref, value: x0_maarcl029}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 128, EquippedRes: {type: resref,
-      value: x2_it_mring016}}
+      value: x2_it_mring019}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 256, EquippedRes: {type: resref,
       value: x2_it_mring016}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 512, EquippedRes: {type: resref,
@@ -392,7 +392,7 @@ Equip_ItemList:
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 65536, EquippedRes: {type: resref,
       value: nw_it_crewpb008}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 131072, EquippedRes: {type: resref,
-      value: nw_it_creitemun3}}
+      value: merrymummyprop}}
 FactionID: {type: word, value: 1}
 FeatList:
   type: list

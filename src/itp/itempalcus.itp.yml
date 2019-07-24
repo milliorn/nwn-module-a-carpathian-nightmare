@@ -92,16 +92,16 @@ MAIN:
           value:
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
-            NAME: {type: cexostr, value: "+13 Bite2d6"}
-            RESREF: {type: resref, value: it_crewps016}
-          - !nwn-lib.elv.es,2013-07:struct
-            __struct_id: 0
             NAME: {type: cexostr, value: "+3 Bite1d4"}
             RESREF: {type: resref, value: it_crewps004}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
             NAME: {type: cexostr, value: "+5 Bite1d4"}
             RESREF: {type: resref, value: it_crewps003}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: "+5 Bite2d6"}
+            RESREF: {type: resref, value: it_crewps016}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
             NAME: {type: cexostr, value: "+9 Bite2d6"}
@@ -276,6 +276,10 @@ MAIN:
             STRREF: {type: dword, value: 12937}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
+            NAME: {type: cexostr, value: Merry Mummy Properties}
+            RESREF: {type: resref, value: merrymummyprop}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
             NAME: {type: cexostr, value: Mur-Zhagul Properties}
             RESREF: {type: resref, value: murzhagulprope}
           - !nwn-lib.elv.es,2013-07:struct
@@ -442,6 +446,10 @@ MAIN:
             __struct_id: 0
             NAME: {type: cexostr, value: Positive Elemental Properties}
             RESREF: {type: resref, value: su_poselemprop}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Ravana Properties}
+            RESREF: {type: resref, value: ravanapropertie}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
             NAME: {type: cexostr, value: Ravana Rak Properties}

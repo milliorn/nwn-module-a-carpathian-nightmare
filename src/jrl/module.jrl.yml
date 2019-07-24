@@ -178,38 +178,27 @@ Categories:
         Text:
           type: cexolocstr
           value:
-            0: "June 24th, 2019\n\nLong awaited update to maps in place.  If transistions,
-              treasure, or npcs dont work let me know.\n\n\nJune 23rd, 2019\n\nAnother
-              fix in place for the Merry's Tomb map.\n\n\nJune 22nd, 2019\n\nFixed
-              an issue with the bank.  \n\nAdded a missing script to the party loot
-              splitter in Gauntlet shop.\n\nAdded 80% Weight Reduction to Throwing
-              Axes in Gauntlet shop.\n\nRemoved Mighty from Throwing weapons in Gauntlet
-              shop to uncap their Mighty bonus.\n\nAdded charges to the Rod of Thunder
-              and Lightning in Gauntlet shop.\n\nAdded description when you examine
-              Rare Gem Merchant.  Sell all the following gems: Alexandrite, Amethyst,
-              Aventurine, Diamond, Emerald, Fire Agate, Fire Opal, Flourspar, Garnet,
-              Greenstone, Malachite, Phenalope, Ruby, Sapphire, and Topaz to this
-              merchant for full price.\n\n\nJune 21st, 2019\n\nNWNX has been updated.
-              \ This has resolved the issue with saving throws not being applied in
-              Legendary Levels.\n\nAdded code in henchman scripts (pets) to try and
-              force it to run back and stay at a distance if they're a ranged npc.\n\nBug
-              fix for Bless Weapon script.  Will now apply On-Hit Slay Rak on ranged
-              ammo and throwing weapons.  Gloves and Melee weapons get 2d6 Divine
-              damage.  You must target the item you wish to cast on.  If you cast
-              on a PC it will default to a melee weapon, then a glove.  Neither exist,
-              nothing happens.\n\n\nJune 18th, 2019\n\nAdded Skyboxes hak to the module.\n\nRemoved
-              auto pop up message in Omega Forge and updated the sign.\n\nUpdated
-              various scripts that did math calculations.\n\nUpdated A.I. with minor
-              tweaks.\n\n\nJune 13, 2019\n\nFix put in for Asterius Quiver.\nOnSpawn
-              script code added to summons/familiars to give 50% concealment to incorpreal
-              creatures.\n\n\nJune 9th, 2019\n\nXP/GP will no longer be divided between
-              party members.  This is to encourage players to login together and level
-              up.  \n\nThe Gauntlet bosses and mini-bosses that naturally do not get
-              Immunity: Sneak Attack now do not get this immunity.\n\nAttempting an
-              improvement on the A.I. of the Gauntlet 9 spawns.  Will increase spawn
-              rate if needed on another update.\n\nFix put in place to report the
-              correct level of the Killer in the bounty message script(untested).\n\nDiscord
-              message should be restored."
+            0: "July 23rd, 2019\n\nParty Portal restrictions removed.  In a coming
+              update I will put in a new way to portal in Astral.\n\nList of scripts
+              that were optimized: NW_CH_AC4, nw_c2_default3, nw_c2_default4, \n\n\nJuly
+              20th, 2019\n\nIncreased difficulty Merry and Cozia Hive Mother.\n\nAdded
+              Character sheet info to Gauntlet bosses.\n\nAdjusted !lfg command to
+              display legendary levels.\n\nSocket gems and socket items are now two
+              separate loot tables.\n\n\nJuly 18th, 2019\n\nRavana boss difficulty
+              increased.\nVarious and numerous optimizations to many scripts.\n\nJuly
+              16th, 2019\n\nAdded SR message to Animal Companion/Summon Familiar buff.
+              \ \n\nChanged duration for Animal Companion/Summon Familiar to Turns
+              * Base Skill Ranks.\n\nTurned the debug message for the xp script back
+              on.\n\nRemoved the spam messages in the Sequencer item when activated.
+              \ Now just sends a message to log.\n\nMoved Merry's Evil Blight vfx
+              to when you cast the spell onto the item and off of on-hit.  Causes
+              fps drops along with players saying it causes issues when playing.\n\n\nJuly
+              13th, 2019\n\nAdded a 50% chance on all the random coloring for area
+              maps aka the fog, moon and sun coloring.\n\nAdded random chance of wind
+              and other weather effects to outdoor maps.\n\nNew Animal Companion and
+              Familiar Buff script in place.  You access by talking to your pet and
+              asking it to buff up.  Details of the buff in the journal under Ruleset
+              - Feats.\n\nFixed issue with Blackguard Create Undead feat."
     Name:
       type: cexolocstr
       value:
@@ -483,11 +472,13 @@ Categories:
           type: cexolocstr
           value:
             0: |-
-              Animal Companion:  Gains increased stats based on Animal Empathy skill.  You access this through talking to your animal companion.  Skill points counted towards this are capped at 120.  Make sure you use this first before buffing your companion with spells/feats.
+              Animal Companion & Summon Familiar:  Gains increased stats based on Animal Empathy skill if Animal Companion or Concentration skill if Summon Familiar.  You access this through talking to your animal companion.  Skill points counted towards this are capped at 120.  Make sure you use this first before buffing your companion with spells/feats.  Duration is turns * Base Skill Points.
+
               Ability Points: Total Skill Points / 10
               AC, Attack Bonus, Saves: Total Skill Points / 6
               HP: Total Skill Points
-              Skills Bonus: Base Skill Points
+              Skills Bonus, Concealment, Spell Resistance: Base Skill Points
+              Haste
 
               Casters:  All Cantrips are unlimited uses per day.
 
@@ -737,53 +728,38 @@ Categories:
         Text:
           type: cexolocstr
           value:
-            0: |-
-              Darkfire: The weapon or glove will do 1d6 points of damage with a custom progression.  Custom change to eliminate On-Hit Item Property.
-
-              Caster Level - Damage
-
-              3 = 1d4
-              5 = 1d6
-              7 = 1d8
-              9 = 2d4
-              11 = 1d10
-              13 = 1d12
-              15 = 2d6
-              17 = 2d8
-
-              Death Ward:  Changed duration from hours to turns.  3.5 edition rules.
-
-              Divine Favor:  +1 bonus to attack and weapon damage rolls for maximum of +3.  1d4 Holy damage added.  3.5/5.0 edition rules combined.
-
-              Divine Power: +6 bonus to Strength.  3.0/3.5/5 edition rules correction.
-
-              Earthquake:  Failed reflex save results in a Knockdown for one round.  Custom rule.
-
-              Elemental Shield:  1d6 points of damage +1 point per caster level (maximum +15). 3.5 edition rules.
-
-              Endure Elements:  Damage resistance 5/- against all elemental forms of damage.  Duration is 8 game hours.  3.0/3.5/5.0 edition rules (mix).
-
-              Energy Buffer: 1d6 damage resistance per caster level (maximum 15d6). Same for the amount before the spell is broken.  3.0 edition rules (corrected).
-
-              Entangle: 1 turn per caster level.
-
-              Evard's Black Tentacles: 1 round per caster level.  3.0/3.5 edition rules
-
-              Feeblemind:  Caster does 1d4 points of Intelligence and Charisma damage to the creature for every 4 caster levels.  Modified 3.5 Edition rules.
-
-              Flame Arrow: Each arrow does 1d6 points of fire damage.  1 arrow per caster level up to 30 arrows.  5.0 edition rules (modified).
-
-              Flame Weapon: Sets a melee weapon or glove aflame, granting 1d4 points of fire damage +0d2 per 2 caster level to a maximum of 1d12. At caster level 10+ you gain a maximum of Fire 1d12 + Positive 1d4.  Custom change to eliminate On-Hit Item Property.
-
-              Greater Dispelling:  1d20 + 1 per caster level (to a maximum of +20).  3.0/3.5 Edition rules.
-
-              Greater Magic Weapon:  Will now apply Attack Bonus to Ranged weapons and Gauntlets.  Custom rules.
-
-              Greater Restoration:  No longer heals HP. 3.0/3.5 Edition rules correction.
-
-              Harm: 10 points of damage per caster level to a maximum of 150 damage points.  Successful will save deals half damage.  Harm acts like Heal on the Undead.  3.5 edition rules.
-
-              Heal: 10 points of damage per caster level to a maximum of 150 damage points. Successful will save deals half damage.  Heal acts like Harm on the Undead.  3.5 edition rules.
+            0: "Darkfire: The weapon or glove will do damage with a custom progression.
+              \ Custom change to eliminate On-Hit Item Property.\n\nCaster Level -
+              Damage\n\n3 = 1d4, 5 = 1d6, 7 = 1d8 \n9 = 2d4, 11 = 1d10, 13 = 1d12\n15
+              = 2d6, 17 = 2d8\n\nDeath Ward:  Changed duration from hours to turns.
+              \ 3.5 edition rules.\n\nDivine Favor:  +1 bonus to attack and weapon
+              damage rolls for maximum of +3.  1d4 Holy damage added.  3.5/5.0 edition
+              rules combined.\n\nDivine Power: +6 bonus to Strength.  3.0/3.5/5 edition
+              rules correction.\n\nEarthquake:  Failed reflex save results in a Knockdown
+              for one round.  Custom rule.\n\nElemental Shield:  1d6 points of damage
+              +1 point per caster level (maximum +15). 3.5 edition rules.\n\nEndure
+              Elements:  Damage resistance 5/- against all elemental forms of damage.
+              \ Duration is 8 game hours.  3.0/3.5/5.0 edition rules (mix).\n\nEnergy
+              Buffer: 1d6 damage resistance per caster level (maximum 15d6). Same
+              for the amount before the spell is broken.  3.0 edition rules (corrected).\n\nEntangle:
+              1 turn per caster level.\n\nEvard's Black Tentacles: 1 round per caster
+              level.  3.0/3.5 edition rules\n\nFeeblemind:  Caster does 1d4 points
+              of Intelligence and Charisma damage to the creature for every 4 caster
+              levels.  Modified 3.5 Edition rules.\n\nFlame Arrow: Each arrow does
+              1d6 points of fire damage.  1 arrow per caster level up to 30 arrows.
+              \ 5.0 edition rules (modified).\n\nFlame Weapon: The weapon or glove
+              will do damage with a custom progression.  Custom change to eliminate
+              On-Hit Item Property.\n\nCaster Level - Damage\n\n2 = 1d4, 4 = 1d6,
+              6 = 1d8\n8 = 2d4, 10 = 1d10, 12 = 1d12\n14 = 2d6, 16 = 2d8\n\nGreater
+              Dispelling:  1d20 + 1 per caster level (to a maximum of +20).  3.0/3.5
+              Edition rules.\n\nGreater Magic Weapon:  Will now apply Attack Bonus
+              to Ranged weapons and Gauntlets.  Custom rules.\n\nGreater Restoration:
+              \ No longer heals HP. 3.0/3.5 Edition rules correction.\n\nHarm: 10
+              points of damage per caster level to a maximum of 150 damage points.
+              \ Successful will save deals half damage.  Harm acts like Heal on the
+              Undead.  3.5 edition rules.\n\nHeal: 10 points of damage per caster
+              level to a maximum of 150 damage points. Successful will save deals
+              half damage.  Heal acts like Harm on the Undead.  3.5 edition rules."
     Name:
       type: cexolocstr
       value:

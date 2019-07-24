@@ -38,24 +38,34 @@ void main()
         DelayCommand(1.1,ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_COM_CHUNK_RED_BALLISTA), GetLocation(oPC)));
         DelayCommand(1.3,ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_COM_CHUNK_STONE_MEDIUM), GetLocation(oPC)));
         DelayCommand(1.5,ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_IMP_DESTRUCTION), GetLocation(oPC)));
+        return;
+    }
+
+    //  On every 20th transistion port oPC to boss.
+    if (!GetLocalInt(oPC, "RAVANA_TRANSISTION")) SetLocalInt(oPC, "RAVANA_TRANSISTION", 1);
+
+    if (GetLocalInt(oPC, "RAVANA_TRANSISTION") == 20)
+    {
+        SetLocalInt(oPC, "RAVANA_TRANSISTION", 0);
+        AssignCommand(oPC, JumpToLocation(iTarget10));
+        return;
     }
 
     else
     {
+        SetLocalInt(oPC, "RAVANA_TRANSISTION", GetLocalInt(oPC, "RAVANA_TRANSISTION") + 1);
+        switch (d10())
         {
-            switch (d10())
-            {
-                case  1:  AssignCommand(oPC, JumpToLocation(iTarget1)); break;
-                case  2:  AssignCommand(oPC, JumpToLocation(iTarget2)); break;
-                case  3:  AssignCommand(oPC, JumpToLocation(iTarget3)); break;
-                case  4:  AssignCommand(oPC, JumpToLocation(iTarget4)); break;
-                case  5:  AssignCommand(oPC, JumpToLocation(iTarget5)); break;
-                case  6:  AssignCommand(oPC, JumpToLocation(iTarget6)); break;
-                case  7:  AssignCommand(oPC, JumpToLocation(iTarget7)); break;
-                case  8:  AssignCommand(oPC, JumpToLocation(iTarget8)); break;
-                case  9:  AssignCommand(oPC, JumpToLocation(iTarget9)); break;
-                case  10: AssignCommand(oPC, JumpToLocation(iTarget10)); break;
-            }
+            case  1:  AssignCommand(oPC, JumpToLocation(iTarget1)); break;
+            case  2:  AssignCommand(oPC, JumpToLocation(iTarget2)); break;
+            case  3:  AssignCommand(oPC, JumpToLocation(iTarget3)); break;
+            case  4:  AssignCommand(oPC, JumpToLocation(iTarget4)); break;
+            case  5:  AssignCommand(oPC, JumpToLocation(iTarget5)); break;
+            case  6:  AssignCommand(oPC, JumpToLocation(iTarget6)); break;
+            case  7:  AssignCommand(oPC, JumpToLocation(iTarget7)); break;
+            case  8:  AssignCommand(oPC, JumpToLocation(iTarget8)); break;
+            case  9:  AssignCommand(oPC, JumpToLocation(iTarget9)); break;
+            case  10: AssignCommand(oPC, JumpToLocation(iTarget10)); break;
         }
     }
 }

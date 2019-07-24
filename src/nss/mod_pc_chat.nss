@@ -19,6 +19,7 @@
 
 void main()
 {
+
     object oPC = GetPCChatSpeaker(),
            oModule = GetModule();
 
@@ -29,7 +30,13 @@ void main()
            sText = GetStringUpperCase(GetPCChatMessage()),
            sMsg = GetPCChatMessage();
 
-    int iSpam = GetLocalInt(oPC, "PC_CHAT");
+    int iSpam = GetLocalInt(oPC, "PC_CHAT"),
+        iLegLvl = GetLocalInt(GetItemPossessedBy(oPC, "hgll_check_level"), "nLegendLevel");
+
+    if (GetIsObjectValid(oPC) == OBJECT_TYPE_ENCOUNTER) return;
+
+    //  Adjust level if we are legendary
+    if (iLegLvl > 40) sPCLevel = IntToString(iLegLvl);
 
     DelayCommand(0.6, DeleteLocalInt(oPC, "PC_CHAT"));
 
@@ -69,6 +76,7 @@ void main()
         SetPortraitId(oPC, iPortrait);
         DeleteLocalInt(oPC, "PORTRAIT");
         SetPCChatMessage("");
+        SendMessageToPC(oPC, "Portrait changed");
         return;
     }
 
@@ -79,6 +87,7 @@ void main()
         NWNX_Creature_SetSoundset(oPC, iVoice);
         DeleteLocalInt(oPC, "VOICE");
         SetPCChatMessage("");
+        SendMessageToPC(oPC, "Voice changed");
         return;
     }
 
@@ -89,6 +98,7 @@ void main()
         SetColor(oPC, COLOR_CHANNEL_SKIN, iSkin);
         DeleteLocalInt(oPC, "SKIN");
         SetPCChatMessage("");
+        SendMessageToPC(oPC, "Skin changed");
         return;
     }
 
@@ -99,6 +109,7 @@ void main()
         SetColor(oPC, COLOR_CHANNEL_HAIR, iHair);
         DeleteLocalInt(oPC, "HAIR");
         SetPCChatMessage("");
+        SendMessageToPC(oPC, "Hair changed");
         return;
     }
 
@@ -106,23 +117,27 @@ void main()
     {
         if (TestStringAgainstPattern(sText, "!dm_plot"))
         {
-                SetPCChatMessage("");
-                if (GetPlotFlag(oPC) == FALSE)
-                {
-                    SetPlotFlag(oPC, TRUE);
-                }
+            SetPCChatMessage("");
 
-                else if(GetPlotFlag(oPC) == TRUE)
-                {
-                    SetPlotFlag(oPC, TRUE);
-                }
+            if (GetPlotFlag(oPC) == FALSE)
+            {
+                SetPlotFlag(oPC, TRUE);
+                SendMessageToPC(oPC, "Plot set to true.");
                 return;
+            }
+
+            if(GetPlotFlag(oPC) == TRUE)
+            {
+                SetPlotFlag(oPC, TRUE);
+                SendMessageToPC(oPC, "Plot set to false.");
+            }
         }
         if (TestStringAgainstPattern(sText, "!dm_rez"))
         {
                 SetPCChatMessage("");
                 Raise(oPC);
                 ForceRest(oPC);
+                SendMessageToPC(oPC, "DM Resurrection.");
                 return;
         }
 
@@ -130,6 +145,7 @@ void main()
         {
                 SetPCChatMessage("");
                 GiveXPToCreature(oPC, 17498600);
+                SendMessageToPC(oPC, "Level 60.");
                 return;
         }
 
@@ -143,6 +159,7 @@ void main()
             int nTargetXP = (( nTargetLevel * ( nTargetLevel - 1 )) / 2 * 1000 );
 
             SetXP(oPC, nTargetXP);
+            SendMessageToPC(oPC, "Give Level.");
             return;
         }
 
@@ -158,6 +175,8 @@ void main()
             SetXP(oPC, nTargetXP);
 
             if (GetXP(oPC) == 0) SetXP(oPC, 1);
+
+            SendMessageToPC(oPC, "Take Level");
             return;
         }
 
@@ -180,6 +199,7 @@ void main()
             ExportAllCharacters();
             ExecuteScript("ws_saveall_sub", OBJECT_SELF);
             ExecuteScript("mod_shutdown", OBJECT_SELF);
+            return;
         }
     }
 
@@ -198,7 +218,7 @@ void main()
                 return;
             }
             // no break needed, we don't want to exit the switch, but continue to default
-                default:
+        default:
         }
 
     }
@@ -487,40 +507,40 @@ void main()
         // dice rolls          0   4    9   13 16  20 23 26 29
         switch (FindSubString("d10 d100 d12 d2 d20 d3 d4 d6 d8", sMsg))
         {
-            case 0:     SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d10 roll = </c>" + IntToString(d10()), TALKVOLUME_SHOUT);
+            case 0:     SetPCChatMessage(sPCName + "<cσσσ> d10 roll = </c>" + IntToString(d10()));
+                        //SpeakString(sPCName+ "<cσσσ> d10 roll = </c>" + IntToString(d10()), TALKVOLUME_SHOUT);
                         break;
 
-            case 4:     SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> % roll = </c>" + IntToString(d100()), TALKVOLUME_SHOUT);
+            case 4:     SetPCChatMessage(sPCName + "<cσσσ> % roll = </c>" + IntToString(d100()));
+                        //SpeakString(sPCName+ "<cσσσ> % roll = </c>" + IntToString(d100()), TALKVOLUME_SHOUT);
                         break;
 
-            case 9:     SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d12 roll = </c>" + IntToString(d12()), TALKVOLUME_SHOUT);
+            case 9:     SetPCChatMessage(sPCName + "<cσσσ> d12 roll = </c>" + IntToString(d12()));
+                        //SpeakString(sPCName+ "<cσσσ> d12 roll = </c>" + IntToString(d12()), TALKVOLUME_SHOUT);
                         break;
 
-            case 13:    SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d2 roll = </c>" + IntToString(d2()), TALKVOLUME_SHOUT);
+            case 13:    SetPCChatMessage(sPCName + "<cσσσ> d2 roll = </c>" + IntToString(d2()));
+                        //SpeakString(sPCName+ "<cσσσ> d2 roll = </c>" + IntToString(d2()), TALKVOLUME_SHOUT);
                         break;
 
-            case 16:    SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d20 roll = </c>" + IntToString(d20()), TALKVOLUME_SHOUT);
+            case 16:    SetPCChatMessage(sPCName + "<cσσσ> d20 roll = </c>" + IntToString(d20()));
+                        //SpeakString(sPCName+ "<cσσσ> d20 roll = </c>" + IntToString(d20()), TALKVOLUME_SHOUT);
                         break;
 
-            case 20:    SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d3 roll = </c>" + IntToString(d3()), TALKVOLUME_SHOUT);
+            case 20:    SetPCChatMessage(sPCName + "<cσσσ> d3 roll = </c>" + IntToString(d3()));
+                        //SpeakString(sPCName+ "<cσσσ> d3 roll = </c>" + IntToString(d3()), TALKVOLUME_SHOUT);
                         break;
 
-            case 23:    SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d4 roll = </c>" + IntToString(d4()), TALKVOLUME_SHOUT);
+            case 23:    SetPCChatMessage(sPCName + "<cσσσ> d4 roll = </c>" + IntToString(d4()));
+                        //SpeakString(sPCName+ "<cσσσ> d4 roll = </c>" + IntToString(d4()), TALKVOLUME_SHOUT);
                         break;
 
-            case 26:    SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d6 roll = </c>" + IntToString(d6()), TALKVOLUME_SHOUT);
+            case 26:    SetPCChatMessage(sPCName + "<cσσσ> d6 roll = </c>" + IntToString(d6()));
+                        //SpeakString(sPCName+ "<cσσσ> d6 roll = </c>" + IntToString(d6()), TALKVOLUME_SHOUT);
                         break;
 
-            case 29:    SetPCChatMessage("");
-                        SpeakString(sPCName+ "<cσσσ> d8 roll = </c>" + IntToString(d8()), TALKVOLUME_SHOUT);
+            case 29:    SetPCChatMessage(sPCName + "<cσσσ> d8 roll = </c>" + IntToString(d8()));
+                        //SpeakString(sPCName+ "<cσσσ> d8 roll = </c>" + IntToString(d8()), TALKVOLUME_SHOUT);
                         break;
 
         }
@@ -744,22 +764,22 @@ void main()
                     }
 
             case 15: if (!GetLocalInt(oPC, "SKIN"))
-                    {
+                     {
                         SetPCChatMessage("");
                         SetLocalInt(oPC, "SKIN", 1);
                         FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>color " +
                         "<cσσσ>found in the </c>ACN Forums<cσσσ> and press </c>Enter.", oPC, FALSE);
                         break;
-                    }
+                     }
 
             case 20: if (!GetLocalInt(oPC, "HAIR"))
-                    {
+                     {
                         SetPCChatMessage("");
                         SetLocalInt(oPC, "HAIR", 1);
                         FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>color " +
                         "<cσσσ>found in the </c>ACN Forum<cσσσ> and press </c>Enter.", oPC, FALSE);
                         break;
-                    }
+                     }
         }
     }
 }

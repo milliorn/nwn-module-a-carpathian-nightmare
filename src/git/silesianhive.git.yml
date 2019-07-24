@@ -191,6 +191,7 @@ Encounter List:
         __struct_id: 0
         Appearance: {type: int, value: 362}
         CR: {type: float, value: 34.0}
+        Comment: {type: cexostr, value: ''}
         ResRef: {type: resref, value: silesianhivemyrb}
         SingleSpawn: {type: byte, value: 0}
       - !nwn-lib.elv.es,2013-07:struct
@@ -1061,79 +1062,6 @@ Encounter List:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
-        Appearance: {type: int, value: 362}
-        CR: {type: float, value: 34.0}
-        ResRef: {type: resref, value: silesianhivemyrb}
-        SingleSpawn: {type: byte, value: 0}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
-        Appearance: {type: int, value: 362}
-        CR: {type: float, value: 34.0}
-        ResRef: {type: resref, value: silesianhivemyrm}
-        SingleSpawn: {type: byte, value: 0}
-    Difficulty: {type: int, value: 0}
-    DifficultyIndex: {type: int, value: 3}
-    Faction: {type: dword, value: 1}
-    Geometry:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: -6.1531}
-        Y: {type: float, value: 8.6988}
-        Z: {type: float, value: 4.9809}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: 0.0}
-        Y: {type: float, value: 0.0}
-        Z: {type: float, value: 4.8587}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: 4.1788}
-        Y: {type: float, value: -0.0005}
-        Z: {type: float, value: 4.8721}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: 10.522}
-        Y: {type: float, value: 9.1317}
-        Z: {type: float, value: 5.0949}
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 1
-        X: {type: float, value: 2.8225}
-        Y: {type: float, value: 16.7685}
-        Z: {type: float, value: 4.9788}
-    LocalizedName:
-      type: cexolocstr
-      value:
-        0: Silesian Hive Myrmarch
-    MaxCreatures: {type: int, value: 8}
-    OnEntered: {type: resref, value: ''}
-    OnExhausted: {type: resref, value: ''}
-    OnExit: {type: resref, value: ''}
-    OnHeartbeat: {type: resref, value: ''}
-    OnUserDefined: {type: resref, value: ''}
-    PlayerOnly: {type: byte, value: 1}
-    RecCreatures: {type: int, value: 4}
-    Reset: {type: byte, value: 1}
-    ResetTime: {type: int, value: 60}
-    Respawns: {type: int, value: -1}
-    SpawnOption: {type: int, value: 0}
-    SpawnPointList:
-      type: list
-      value: []
-    Tag: {type: cexostr, value: SilesianHiveMyrmarch}
-    TemplateResRef: {type: resref, value: silesianhivemyrm}
-    XPosition: {type: float, value: 112.7647}
-    YPosition: {type: float, value: 36.1132}
-    ZPosition: {type: float, value: 0.0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 7
-    Active: {type: byte, value: 1}
-    CreatureList:
-      type: list
-      value:
-      - !nwn-lib.elv.es,2013-07:struct
-        __struct_id: 0
         Appearance: {type: int, value: 363}
         CR: {type: float, value: 39.0}
         ResRef: {type: resref, value: silesianhivequ}
@@ -1213,6 +1141,85 @@ Encounter List:
     TemplateResRef: {type: resref, value: bosssilesianh001}
     XPosition: {type: float, value: 119.3103}
     YPosition: {type: float, value: 5.4585}
+    ZPosition: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 7
+    Active: {type: byte, value: 1}
+    CreatureList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 362}
+        CR: {type: float, value: 34.0}
+        ResRef: {type: resref, value: silesianhivemyrb}
+        SingleSpawn: {type: byte, value: 0}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
+        Appearance: {type: int, value: 362}
+        CR: {type: float, value: 34.0}
+        ResRef: {type: resref, value: silesianhivemyrm}
+        SingleSpawn: {type: byte, value: 0}
+    Difficulty: {type: int, value: 0}
+    DifficultyIndex: {type: int, value: 3}
+    Faction: {type: dword, value: 1}
+    Geometry:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -4.1565}
+        Y: {type: float, value: 5.5068}
+        Z: {type: float, value: 4.725}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.3551}
+        Y: {type: float, value: -0.214}
+        Z: {type: float, value: 4.825}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.0}
+        Y: {type: float, value: 0.0}
+        Z: {type: float, value: 4.825}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: 0.9272}
+        Y: {type: float, value: 1.9971}
+        Z: {type: float, value: 4.825}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 1
+        X: {type: float, value: -1.0828}
+        Y: {type: float, value: 5.7928}
+        Z: {type: float, value: 4.725}
+    LocalizedName:
+      type: cexolocstr
+      value:
+        0: Silesian Hive Myrmarch
+    MaxCreatures: {type: int, value: 8}
+    OnEntered: {type: resref, value: ''}
+    OnExhausted: {type: resref, value: ''}
+    OnExit: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    PlayerOnly: {type: byte, value: 1}
+    RecCreatures: {type: int, value: 4}
+    Reset: {type: byte, value: 1}
+    ResetTime: {type: int, value: 60}
+    Respawns: {type: int, value: -1}
+    SpawnOption: {type: int, value: 0}
+    SpawnPointList:
+      type: list
+      value:
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 2
+        Orientation: {type: float, value: -1.9635}
+        X: {type: float, value: 115.1152}
+        Y: {type: float, value: 38.7426}
+        Z: {type: float, value: 5.0}
+    Tag: {type: cexostr, value: SilesianHiveMyrmarch}
+    TemplateResRef: {type: resref, value: silesianhivemyrm}
+    XPosition: {type: float, value: 117.7213}
+    YPosition: {type: float, value: 18.7482}
     ZPosition: {type: float, value: 0.0}
 List:
   type: list
@@ -5519,15 +5526,6 @@ StoreList:
 TriggerList:
   type: list
   value: []
-VarTable:
-  type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 0
-    Comment: {type: cexostr, value: ''}
-    Name: {type: cexostr, value: NO_PORTALS}
-    Type: {type: dword, value: 1}
-    Value: {type: int, value: 1}
 WaypointList:
   type: list
   value:

@@ -27,6 +27,7 @@ Door List:
     AutoRemoveKey: {type: byte, value: 1}
     Bearing: {type: float, value: -0.0}
     CloseLockDC: {type: byte, value: 0}
+    Comment: {type: cexostr, value: ''}
     Conversation: {type: resref, value: ''}
     CurrentHP: {type: short, value: 10}
     Description:
@@ -302,15 +303,6 @@ StoreList:
 TriggerList:
   type: list
   value: []
-VarTable:
-  type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 0
-    Comment: {type: cexostr, value: ''}
-    Name: {type: cexostr, value: NO_PORTALS}
-    Type: {type: dword, value: 1}
-    Value: {type: int, value: 1}
 WaypointList:
   type: list
   value:

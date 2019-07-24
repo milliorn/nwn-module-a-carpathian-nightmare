@@ -9,8 +9,6 @@ void main()
      string sTag = GetTag(oItem);
      object oArea = GetArea(oPC);
 
-    if (!GetIsPC(oPC)) return;
-
     IPRemoveAllItemProperties(oItem, DURATION_TYPE_TEMPORARY);
 
     PrintGPValue(oItem);
@@ -30,19 +28,21 @@ void main()
 
     }
 
-//  Prevent items being dropped in a state of combat
-     if (GetIsInCombat(oPC))
-     {
-         if (!GetStolenFlag(oItem) && nGetIsWeapon(oItem) == TRUE)
-         {
-             CopyItem(oItem, oPC, TRUE);
-             DestroyObject(oItem, 0.2);
-         }
-         return;
-     }
+    if (GetIsDM(oPC)) return;
 
-     else
-     {
+    //  Prevent items being dropped in a state of combat
+    if (GetIsInCombat(oPC))
+    {
+        if (!GetStolenFlag(oItem) && nGetIsWeapon(oItem) == TRUE)
+        {
+            CopyItem(oItem, oPC, TRUE);
+            DestroyObject(oItem, 0.2);
+        }
+        return;
+    }
+
+    else
+    {
         DelayCommand(1.0,CheckDroppedItem(oItem, oPC));
 
         if (GetBaseItemType(oItem) == BASE_ITEM_TRAPKIT)
@@ -57,5 +57,5 @@ void main()
                 //NoTrapStacking(oPC, oItem);
             }
          }
-     }
+    }
 }

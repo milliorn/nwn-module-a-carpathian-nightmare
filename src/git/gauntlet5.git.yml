@@ -27,7 +27,6 @@ Door List:
     AutoRemoveKey: {type: byte, value: 0}
     Bearing: {type: float, value: 0.0}
     CloseLockDC: {type: byte, value: 0}
-    Comment: {type: cexostr, value: ''}
     Conversation: {type: resref, value: ''}
     CurrentHP: {type: short, value: 80}
     Description:
@@ -382,6 +381,7 @@ Encounter List:
         Z: {type: float, value: 0.1819}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
+        Comment: {type: cexostr, value: ''}
         X: {type: float, value: 0.0283}
         Y: {type: float, value: 2.4396}
         Z: {type: float, value: 0.1892}
@@ -1804,7 +1804,7 @@ Encounter List:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 2
-        Orientation: {type: float, value: 2.7489}
+        Orientation: {type: float, value: 2.7488}
         X: {type: float, value: 79.9277}
         Y: {type: float, value: 101.8358}
         Z: {type: float, value: 0.0}
@@ -2047,7 +2047,7 @@ Encounter List:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 2
-        Orientation: {type: float, value: -2.7489}
+        Orientation: {type: float, value: -2.7488}
         X: {type: float, value: 70.9389}
         Y: {type: float, value: 150.8842}
         Z: {type: float, value: 0.0}
@@ -2651,14 +2651,6 @@ StoreList:
 TriggerList:
   type: list
   value: []
-VarTable:
-  type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 0
-    Name: {type: cexostr, value: NO_PORTALS}
-    Type: {type: dword, value: 1}
-    Value: {type: int, value: 1}
 WaypointList:
   type: list
   value:

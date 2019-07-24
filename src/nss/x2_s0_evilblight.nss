@@ -45,13 +45,13 @@ void main()
 
     //Declare major variables
     object oTarget = GetSpellTargetObject();
-    effect eImpact = EffectVisualEffect(VFX_IMP_DOOM);
-    effect eVis = EffectVisualEffect(VFX_IMP_EVIL_HELP);
+//    effect eImpact = EffectVisualEffect(VFX_IMP_DOOM);
+//    effect eVis = EffectVisualEffect(VFX_IMP_EVIL_HELP);
     //effect eCurse = SupernaturalEffect(EffectCurse(3,3,3,3,3,3));
 
     //Apply Spell Effects
-    location lLoc = GetLocation(OBJECT_SELF);
-    ApplyEffectAtLocation(DURATION_TYPE_INSTANT, eVis, lLoc);
+//    location lLoc = GetLocation(OBJECT_SELF);
+//    ApplyEffectAtLocation(DURATION_TYPE_INSTANT, eVis, lLoc);
 
     //Get first target in the area of effect
     //oTarget = GetFirstObjectInShape(SHAPE_SPHERE, RADIUS_SIZE_COLOSSAL, GetLocation(OBJECT_SELF), FALSE, OBJECT_TYPE_CREATURE);
@@ -74,7 +74,7 @@ void main()
                     //Make Will Save
                 if (!MySavingThrow(SAVING_THROW_WILL, oTarget, GetSpellSaveDC()))
                 {
-                    ApplyEffectToObject(DURATION_TYPE_INSTANT, eImpact, oTarget);
+                    //ApplyEffectToObject(DURATION_TYPE_INSTANT, eImpact, oTarget);
                     ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eCurse, oTarget, 60.0);
                 }
             }

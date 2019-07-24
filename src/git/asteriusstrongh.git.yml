@@ -333,6 +333,7 @@ Encounter List:
         Z: {type: float, value: 0.125}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 1
+        Comment: {type: cexostr, value: ''}
         X: {type: float, value: 0.05}
         Y: {type: float, value: 10.6796}
         Z: {type: float, value: 0.225}
@@ -10647,15 +10648,6 @@ TriggerList:
     YPosition: {type: float, value: 42.4736}
     ZOrientation: {type: float, value: 0.0}
     ZPosition: {type: float, value: 0.0}
-VarTable:
-  type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 0
-    Comment: {type: cexostr, value: ''}
-    Name: {type: cexostr, value: NO_PORTALS}
-    Type: {type: dword, value: 1}
-    Value: {type: int, value: 1}
 WaypointList:
   type: list
   value:

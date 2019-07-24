@@ -302,7 +302,7 @@ void main()
     }
 
     GiveXP(oKiller, nXPToGive, fKillerBonus, nDiff, nPlayer);
-    //XPDebugMessage(oKiller, fCR, nDiff, nLoLevel, nHiLevel, fAvLevel);
+    XPDebugMessage(oKiller, fCR, nDiff, nLoLevel, nHiLevel, fAvLevel);
 }
 
 float CalculateXP(float fLevel, float fCR)
@@ -381,7 +381,8 @@ void GiveXP(object oKiller, int nXPToGive, float fKillerBonus, int nDiff, int nP
                         }
                         GiveGoldToCreature(oParty, FloatToInt((IntToFloat(nXPToGive) + fKillerBonus) * GP_REWARD_MULTIPLIER));
                     }
-                    GiveXPToCreature(oParty, (nXPToGive + FloatToInt(fKillerBonus)));
+                    //GiveXPToCreature(oParty, (nXPToGive + FloatToInt(fKillerBonus)));
+                    SetXP(oParty, GetXP(oParty) + nXPToGive + FloatToInt(fKillerBonus));
                 }
                 // Reward other party members
                 else
@@ -398,7 +399,8 @@ void GiveXP(object oKiller, int nXPToGive, float fKillerBonus, int nDiff, int nP
                         }
                         GiveGoldToCreature(oParty, FloatToInt((IntToFloat(nXPToGive) + fKillerBonus) * GP_REWARD_MULTIPLIER));
                     }
-                    GiveXPToCreature(oParty, nXPToGive);
+                    //GiveXPToCreature(oParty, nXPToGive);
+                    SetXP(oParty, GetXP(oParty) + nXPToGive);
                 }
             }
         }

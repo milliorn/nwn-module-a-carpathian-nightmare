@@ -22,7 +22,21 @@ void main()
             sName = GetName(oItem),
             sArea = GetTag(GetArea(oPC));
 
-//  Set the Gold Piece value in the items Description
+//  if we are not a dm or pc
+    if (!GetIsPC(oPC) || !GetIsDM(oPC))
+    {
+        //  Clean off the vars that are set OnModuleLoad to mark items generated from
+        //  the loot chest that were obtained from chest.
+        object oClean = GetFirstItemInInventory(OBJECT_SELF);
+        while (GetIsObjectValid(oClean) && GetLocalInt(oClean, "LOOT_DROP"))
+        {
+            DeleteLocalInt(oClean, "LOOT_DROP");
+            oClean = GetNextItemInInventory(OBJECT_SELF);
+        }
+        return;
+    }
+
+//Set the Gold Piece value in the items Description
     PrintGPValue(oItem);
 
 //  Clear all Temp Item Properties so they don't become permanent
@@ -31,14 +45,14 @@ void main()
 //  Hotfix for Evil Blight On Hit Cast Spell (Permanent) to be removed in the future
     IPRemoveMatchingItemProperties(oItem, ITEM_PROPERTY_ONHITCASTSPELL, DURATION_TYPE_PERMANENT);
 
-//  If DM we break the script
-    if (!GetIsPC(oPC)) return;
-
 //  Identify the Acquired Item
     SetIdentified(oItem, TRUE);
 
 //  Remove stolen flags
     DelayCommand(6.0, SetStolenFlag(oItem, FALSE));
+
+//  If DM we break the script
+    if (GetIsDM(oPC)) return;
 
 //  Fix Barter Exploit that clones items
     if (GetIsPC(oFrom) && GetIsPC(oPC))
@@ -113,16 +127,5 @@ void main()
 
         SetLocalInt(oPC, "STOP_PICK_ABUSE", TRUE);
         DelayCommand(6.0, DeleteLocalInt(oPC, "STOP_PICK_ABUSE"));
-    }
-
-//  Mark these items cursed so they cannot be sold in store
-
-//  Clean off the vars that are set OnModuleLoad to mark items generated from
-//  the loot chest that were obtained from chest.
-    object oClean = GetFirstItemInInventory(OBJECT_SELF);
-    while (GetIsObjectValid(oClean) && GetLocalInt(oClean, "LOOT_DROP"))
-    {
-        DeleteLocalInt(oClean, "LOOT_DROP");
-        oClean = GetNextItemInInventory(OBJECT_SELF);
     }
 }

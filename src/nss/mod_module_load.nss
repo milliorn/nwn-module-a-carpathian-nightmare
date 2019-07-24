@@ -1,9 +1,10 @@
+#include "inc_private"
 #include "nwnx_webhook"
 #include "nwnx_time"
 #include "nwnx_chat"
 #include "nwnx_weapon"
-#include "inc_private"
 #include "nwnx_object"
+#include "nwnx_area"
 
 void main()
 {
@@ -60,12 +61,99 @@ void main()
                 case 16: SetFogColor(FOG_TYPE_ALL, FOG_COLOR_YELLOW_DARK, oArea); break;
             }
 
-            switch (d4())
+            if (d2() == 1)
             {
-                case 1:  SetWeather(oArea, WEATHER_CLEAR); break;
-                case 2:  SetWeather(oArea, WEATHER_RAIN); break;
-                case 3:  SetWeather(oArea, WEATHER_SNOW); break;
-                case 4:  SetWeather(oArea, WEATHER_USE_AREA_SETTINGS); break;
+                switch (Random(17))
+                {
+                    case 0:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLACK); break;
+                    case 1:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLUE); break;
+                    case 2:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BLUE_DARK); break;
+                    case 3:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BROWN); break;
+                    case 4:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_BROWN_DARK); break;
+                    case 5:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_CYAN); break;
+                    case 6:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREEN); break;
+                    case 7:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREEN_DARK); break;
+                    case 8:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_GREY); break;
+                    case 9:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_MAGENTA); break;
+                    case 10: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_ORANGE); break;
+                    case 11: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_ORANGE_DARK); break;
+                    case 12: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_RED); break;
+                    case 13: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_RED_DARK); break;
+                    case 14: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_WHITE); break;
+                    case 15: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_YELLOW); break;
+                    case 16: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_AMBIENT, FOG_COLOR_YELLOW_DARK); break;
+                }
+            }
+
+            if (d2() == 1)
+            {
+                switch (Random(17))
+                {
+                    case 0:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLACK); break;
+                    case 1:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLUE); break;
+                    case 2:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BLUE_DARK); break;
+                    case 3:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BROWN); break;
+                    case 4:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_BROWN_DARK); break;
+                    case 5:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_CYAN); break;
+                    case 6:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREEN); break;
+                    case 7:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREEN_DARK); break;
+                    case 8:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_GREY); break;
+                    case 9:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_MAGENTA); break;
+                    case 10: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_ORANGE); break;
+                    case 11: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_ORANGE_DARK); break;
+                    case 12: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_RED); break;
+                    case 13: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_RED_DARK); break;
+                    case 14: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_WHITE); break;
+                    case 15: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_YELLOW); break;
+                    case 16: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_MOON_DIFFUSE, FOG_COLOR_YELLOW_DARK); break;
+                }
+            }
+
+            if (d2() == 1)
+            {
+                switch (Random(17))
+                {
+                    case 0:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLACK); break;
+                    case 1:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLUE); break;
+                    case 2:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BLUE_DARK); break;
+                    case 3:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BROWN); break;
+                    case 4:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_BROWN_DARK); break;
+                    case 5:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_CYAN); break;
+                    case 6:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREEN); break;
+                    case 7:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREEN_DARK); break;
+                    case 8:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_GREY); break;
+                    case 9:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_MAGENTA); break;
+                    case 10: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_ORANGE); break;
+                    case 11: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_ORANGE_DARK); break;
+                    case 12: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_RED); break;
+                    case 13: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_RED_DARK); break;
+                    case 14: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_WHITE); break;
+                    case 15: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_YELLOW); break;
+                    case 16: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_AMBIENT, FOG_COLOR_YELLOW_DARK); break;
+                }
+            }
+            if (d2() == 1)
+            {
+                switch (Random(17))
+                {
+                    case 0:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLACK); break;
+                    case 1:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLUE); break;
+                    case 2:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BLUE_DARK); break;
+                    case 3:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BROWN); break;
+                    case 4:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_BROWN_DARK); break;
+                    case 5:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_CYAN); break;
+                    case 6:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREEN); break;
+                    case 7:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREEN_DARK); break;
+                    case 8:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_GREY); break;
+                    case 9:  NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_MAGENTA); break;
+                    case 10: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_ORANGE); break;
+                    case 11: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_ORANGE_DARK); break;
+                    case 12: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_RED); break;
+                    case 13: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_RED_DARK); break;
+                    case 14: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_WHITE); break;
+                    case 15: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_YELLOW); break;
+                    case 16: NWNX_Area_SetSunMoonColors(oArea, NWNX_AREA_COLOR_TYPE_SUN_DIFFUSE, FOG_COLOR_YELLOW_DARK); break;
+                }
             }
 
             if (GetSkyBox(oArea) == SKYBOX_NONE)
@@ -74,12 +162,16 @@ void main()
                 {
                     case 0:  SetSkyBox(SKYBOX_DESERT_CLEAR, oArea); break;
                     case 1:  SetSkyBox(SKYBOX_GRASS_CLEAR, oArea); break;
-                    case 2:  SetSkyBox(SKYBOX_GRASS_STORM, oArea); SetWeather(oArea, WEATHER_RAIN); break;
-                    case 3:  SetSkyBox(SKYBOX_ICY, oArea); SetWeather(oArea, WEATHER_SNOW); break;
-                    case 4:  SetSkyBox(SKYBOX_WINTER_CLEAR, oArea); SetWeather(oArea, WEATHER_RAIN); break;
+                    case 2:  SetSkyBox(SKYBOX_GRASS_STORM, oArea);
+                             SetWeather(oArea, WEATHER_RAIN); break;
+                    case 3:  SetSkyBox(SKYBOX_ICY, oArea);
+                             SetWeather(oArea, WEATHER_SNOW); break;
+                    case 4:  SetSkyBox(SKYBOX_WINTER_CLEAR, oArea); break;
                 }
             }
         }
+
+        NWNX_Area_SetWindPower(oArea, Random(3));
 
         oArea = GetNextArea();
     }
@@ -130,10 +222,11 @@ void main()
     string CurrentDate = NWNX_Time_GetSystemDate();
     string sMessage = GetModuleName()+ " server is online: " + CurrentTime + " on: " + CurrentDate + " (GMT)";
     NWNX_WebHook_SendWebHookHTTPS("discordapp.com", sWebhookUrl , sMessage , "Server");
-    WriteTimestampedLogEntry("***SERVER LOADED***");
+    WriteTimestampedLogEntry("*** " + GetModuleName() + " - SERVER LOADED***");
 
     ExecuteScript("x3_mod_def_load", OBJECT_SELF);
 
+/*  Debug for finding non static placeables in module
     oArea = GetFirstArea();
     while (GetIsObjectValid(oArea))
     {
@@ -152,5 +245,5 @@ void main()
         WriteTimestampedLogEntry(" ");
         oArea = GetNextArea();
     }
-
+*/
 }

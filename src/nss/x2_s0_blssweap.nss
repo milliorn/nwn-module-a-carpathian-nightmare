@@ -101,7 +101,7 @@ void main()
            AddBlessEffectToWeapon(oMyWeapon, TurnsToSeconds(nDuration));
            ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, GetItemPossessor(oMyWeapon));
            ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eDur, GetItemPossessor(oMyWeapon), TurnsToSeconds(nDuration));
-            return;
+           return;
         }
 
     }

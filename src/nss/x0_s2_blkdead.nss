@@ -27,16 +27,16 @@ void main()
         eSummon = EffectSummonCreature("blckgrd_030",VFX_FNF_SUMMON_UNDEAD);
     }
     else if (nLevel >= 23) {
-        eSummon = EffectSummonCreature("blckgrd_027	",VFX_FNF_SUMMON_UNDEAD);
+        eSummon = EffectSummonCreature("blckgrd_027",VFX_FNF_SUMMON_UNDEAD);
     }
     else if (nLevel >= 19) {
-        eSummon = EffectSummonCreature("blckgrd_023	",VFX_FNF_SUMMON_UNDEAD);
+        eSummon = EffectSummonCreature("blckgrd_023",VFX_FNF_SUMMON_UNDEAD);
     }
     else if (nLevel >= 15) {
-        eSummon = EffectSummonCreature("blckgrd_015	",VFX_FNF_SUMMON_UNDEAD);
+        eSummon = EffectSummonCreature("blckgrd_015",VFX_FNF_SUMMON_UNDEAD);
     }
     else if (nLevel >= 11) {
-        eSummon = EffectSummonCreature("nw_blckgrd_11	",VFX_FNF_SUMMON_UNDEAD);
+        eSummon = EffectSummonCreature("nw_blckgrd_11",VFX_FNF_SUMMON_UNDEAD);
     }
     else if (nLevel >= 7) {
         eSummon = EffectSummonCreature("NW_S_DOOMKGHT",VFX_FNF_SUMMON_UNDEAD);

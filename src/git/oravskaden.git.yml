@@ -110,6 +110,7 @@ Encounter List:
         __struct_id: 0
         Appearance: {type: int, value: 27}
         CR: {type: float, value: 20.0}
+        Comment: {type: cexostr, value: ''}
         ResRef: {type: resref, value: oravskabugbearsh}
         SingleSpawn: {type: byte, value: 0}
     Difficulty: {type: int, value: 0}
@@ -3746,15 +3747,6 @@ StoreList:
 TriggerList:
   type: list
   value: []
-VarTable:
-  type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 0
-    Comment: {type: cexostr, value: ''}
-    Name: {type: cexostr, value: NO_PORTALS}
-    Type: {type: dword, value: 1}
-    Value: {type: int, value: 1}
 WaypointList:
   type: list
   value:

@@ -145,8 +145,20 @@ Mod_GVar_List:
 Mod_HakList:
   type: list
   value:
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: biocity}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: bioforest}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: biointerior}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: biomines}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: biorural}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: biosnow}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: real_skies}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: acn}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: aenea_spells}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: aenea_scrolls}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: aenea_classicons}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: aenea_featicons}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: dm_icons}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, Mod_Hak: {type: cexostr, value: radial_icons}}
 Mod_ID: {type: void, value: !binary "U1e3IlIFxuotSq8vTY436A=="}
 Mod_IsSaveGame: {type: byte, value: 0}
 Mod_MinGameVer: {type: cexostr, value: '1.77'}

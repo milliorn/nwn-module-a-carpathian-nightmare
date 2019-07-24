@@ -1,17 +1,7 @@
 void main()
 {
-    object oItem;
-    object oPC = GetExitingObject(),
-           oForge1 = GetNearestObjectByTag("omegaforge1"),
-           oForge2 = GetNearestObjectByTag("omegaforge2"),
-           oForge3 = GetNearestObjectByTag("omegaforge3"),
-           oForge4 = GetNearestObjectByTag("omegaforge4"),
-           oForge5 = GetNearestObjectByTag("omegaforge5"),
-           oLastUser1 = GetLocalObject(oForge1, "LAST_USER"),
-           oLastUser2 = GetLocalObject(oForge2, "LAST_USER"),
-           oLastUser3 = GetLocalObject(oForge3, "LAST_USER"),
-           oLastUser4 = GetLocalObject(oForge4, "LAST_USER"),
-           oLastUser5 = GetLocalObject(oForge5, "LAST_USER");
+    object oItem,
+           oPC = GetExitingObject();
 
     // Search area to find is any players are still in area
     object oObject = GetFirstObjectInArea(OBJECT_SELF);

@@ -57,5 +57,5 @@ void main()
         SetLocalInt(oBanker, "ANTI_CHEAT_XP", TRUE);
 
     // Set custom token
-    SetCustomToken(1111, IntToString(nTotal));
+    SetCustomToken(1111, IntToString(nAmount));
 }

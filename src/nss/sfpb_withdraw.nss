@@ -32,5 +32,5 @@ void main()
                         " gold</c> left</c>");
 
     // Set custom token
-    SetCustomToken(1000, IntToString(nTotal));
+    SetCustomToken(1000, IntToString(nWithdraw));
 }

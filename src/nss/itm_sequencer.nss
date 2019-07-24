@@ -54,7 +54,7 @@ void main()
 */
         //get number of spells stored
         nNumOfSpells = GetLocalInt(oItem, ksNumSpells);
-        FloatingTextStringOnCreature("Attempting to fast cast " + IntToString(nNumOfSpells) + " spells.", oPC, FALSE);
+        SendMessageToPC(oPC, "Attempting to fast cast " + IntToString(nNumOfSpells) + " spells.");
 
         if (oItem == GetItemActivatedTarget())
         {
@@ -80,11 +80,11 @@ void main()
                 //Get the name of the spell stored at location n
                 strSpellName = GetLocalString(oItem, ksCastSpellName + IntToString(n));
 
-                FloatingTextStringOnCreature("Casting spell "
+                SendMessageToPC(oPC, "Casting spell "
                             + strSpellName
                             + " at postion "
                             + IntToString(n)
-                            + " on item", oPC, FALSE);
+                            + " on item");
 
                 if(0 != nSpellId //if there was a valid spell id stored
                 && 1 <= GetHasSpell(nSpellId, oPC)) //and the caster has access to the spell

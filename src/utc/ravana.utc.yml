@@ -5,7 +5,7 @@ Appearance_Type: {type: word, value: 38}
 BodyBag: {type: byte, value: 0}
 CRAdjust: {type: int, value: -4}
 Cha: {type: byte, value: 19}
-ChallengeRating: {type: float, value: 60.0}
+ChallengeRating: {type: float, value: 63.0}
 ClassList:
   type: list
   value:
@@ -570,16 +570,16 @@ Equip_ItemList:
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1, EquippedRes: {type: resref, value: x0_armhe015}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 2, EquippedRes: {type: resref, value: x2_maarcl048}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 4, EquippedRes: {type: resref, value: nw_it_mboots005}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, EquippedRes: {type: resref, value: x0_it_mbracer002}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8, EquippedRes: {type: resref, value: x2_it_mbracer005}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16, EquippedRes: {type: resref, value: nw_it_crewbs001}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32, EquippedRes: {type: resref, value: x2_ashmto005}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 64, EquippedRes: {type: resref, value: x2_it_mcloak005}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 32, EquippedRes: {type: resref, value: x2_ashmto004}}
+  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 64, EquippedRes: {type: resref, value: x0_maarcl029}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 128, EquippedRes: {type: resref,
       value: x3_it_ringregen}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 256, EquippedRes: {type: resref,
       value: x3_it_ringregen}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 512, EquippedRes: {type: resref,
-      value: x2_it_mneck015}}
+      value: x2_it_mneck022}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 1024, EquippedRes: {type: resref,
       value: x2_it_mbelt002}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16384, EquippedRes: {type: resref,
@@ -589,7 +589,7 @@ Equip_ItemList:
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 65536, EquippedRes: {type: resref,
       value: nw_it_crewpb009}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 131072, EquippedRes: {type: resref,
-      value: nw_it_creitem020}}
+      value: ravanapropertie}}
 FactionID: {type: word, value: 1}
 FeatList:
   type: list
@@ -885,7 +885,7 @@ TemplateList:
   type: list
   value: []
 TemplateResRef: {type: resref, value: ravana}
-WalkRate: {type: int, value: 2}
+WalkRate: {type: int, value: 3}
 Wings_New: {type: dword, value: 0}
 Wis: {type: byte, value: 26}
 fortbonus: {type: short, value: 0}

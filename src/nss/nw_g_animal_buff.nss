@@ -7,6 +7,8 @@
 //:://////////////////////////////////////////////
 void main()
 {
+    object oMaster = GetPCSpeaker();
+
     effect eEffect = GetFirstEffect(OBJECT_SELF);
     while(GetIsEffectValid(eEffect))
     {
@@ -22,11 +24,25 @@ void main()
         eEffect = GetNextEffect(OBJECT_SELF);
     }
 
-    object oMaster = GetPCSpeaker();
-    int iRank = GetSkillRank(SKILL_ANIMAL_EMPATHY, oMaster);
-    int iRawRank = GetSkillRank(SKILL_ANIMAL_EMPATHY, oMaster, TRUE);
+    int iRank;
+    int iRawRank;
+
+    if (GetAssociateType(OBJECT_SELF) == ASSOCIATE_TYPE_ANIMALCOMPANION)
+    {
+        iRank = GetSkillRank(SKILL_ANIMAL_EMPATHY, oMaster);
+        iRawRank = GetSkillRank(SKILL_ANIMAL_EMPATHY, oMaster, TRUE);
+    }
+
+    if (GetAssociateType(OBJECT_SELF) == ASSOCIATE_TYPE_FAMILIAR)
+    {
+        iRank = GetSkillRank(SKILL_CONCENTRATION, oMaster);
+        iRawRank = GetSkillRank(SKILL_CONCENTRATION, oMaster, TRUE);
+    }
 
     if (iRank > 120) iRank == 120;
+    if (iRank < 10) iRank == 10;
+
+    if (iRawRank < 1) iRawRank == 1;
 
     string sMsg = "<c σ >Your creature gained the following bonuses.";
     sMsg += "\n";
@@ -41,6 +57,10 @@ void main()
     sMsg += "</c>Saves Bonus: <cσσσ>" + IntToString(iRank / 6);
     sMsg += "\n";
     sMsg += "</c>Skill Bonus: <cσσσ>" + IntToString(iRawRank);
+    sMsg += "\n";
+    sMsg += "</c>Concealment: <cσσσ>" + IntToString(iRawRank);
+    sMsg += "\n";
+    sMsg += "</c>Spell Resistance: <cσσσ>" + IntToString(iRawRank);
     SendMessageToPC(oMaster, sMsg);
 
     effect eCHA = EffectAbilityIncrease(ABILITY_CHARISMA, iRank / 10);      // +1 per 10 points
@@ -51,16 +71,15 @@ void main()
     effect eWIS = EffectAbilityIncrease(ABILITY_WISDOM, iRank / 10);        // +1 per 10 points
 
     effect eAC = EffectACIncrease(iRank / 6); // +1 per 6 points
-
     effect eAttack = EffectAttackIncrease(iRank / 6); // +1 per 6 points
-
     effect eSaves = EffectSavingThrowIncrease(SAVING_THROW_ALL, iRank / 6); // +1 per 6 points
-
     effect eHP = EffectTemporaryHitpoints(iRank); // HP gained equals iRank
-
     effect eSkill = EffectSkillIncrease(SKILL_ALL_SKILLS, iRawRank); // raw skill points
-
+    effect eConceal = EffectConcealment(iRawRank); // raw skill points
+    effect eHaste = EffectHaste();
+    effect eSR = EffectSpellResistanceIncrease(iRawRank); // raw skill points
     effect eLink = EffectLinkEffects(eCHA, eCON);
+
     eLink = EffectLinkEffects(eLink, eDEX);
     eLink = EffectLinkEffects(eLink, eINT);
     eLink = EffectLinkEffects(eLink, eSTR);
@@ -70,9 +89,12 @@ void main()
     eLink = EffectLinkEffects(eLink, eSaves);
     eLink = EffectLinkEffects(eLink, eHP);
     eLink = EffectLinkEffects(eLink, eSkill);
+    eLink = EffectLinkEffects(eLink, eConceal);
+    eLink = EffectLinkEffects(eLink, eHaste);
+    eLink = EffectLinkEffects(eLink, eSR);
 
     effect eBuff = ExtraordinaryEffect(eLink);
-    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eBuff, OBJECT_SELF, RoundsToSeconds(iRawRank)); // Duration is rounds = raw skill ranks
+    ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eBuff, OBJECT_SELF, TurnsToSeconds(iRawRank)); // Duration is turns = raw skill ranks
 
     effect eFNF = EffectVisualEffect(VFX_FNF_LOS_NORMAL_30);
     ApplyEffectAtLocation(DURATION_TYPE_INSTANT, eFNF, GetLocation(OBJECT_SELF));

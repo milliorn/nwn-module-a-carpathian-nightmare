@@ -27,6 +27,7 @@ Door List:
     AutoRemoveKey: {type: byte, value: 1}
     Bearing: {type: float, value: -3.1412}
     CloseLockDC: {type: byte, value: 0}
+    Comment: {type: cexostr, value: ''}
     Conversation: {type: resref, value: ''}
     CurrentHP: {type: short, value: 80}
     Description:
@@ -94,7 +95,7 @@ Encounter List:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
         Appearance: {type: int, value: 38}
-        CR: {type: float, value: 60.0}
+        CR: {type: float, value: 63.0}
         ResRef: {type: resref, value: ravana}
         SingleSpawn: {type: byte, value: 0}
     Difficulty: {type: int, value: 0}
@@ -429,15 +430,6 @@ StoreList:
 TriggerList:
   type: list
   value: []
-VarTable:
-  type: list
-  value:
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 0
-    Comment: {type: cexostr, value: ''}
-    Name: {type: cexostr, value: NO_PORTALS}
-    Type: {type: dword, value: 1}
-    Value: {type: int, value: 1}
 WaypointList:
   type: list
   value:

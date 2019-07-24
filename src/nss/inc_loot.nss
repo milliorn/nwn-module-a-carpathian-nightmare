@@ -749,6 +749,52 @@ void GenerateLootBoss()
     }
 }
 
+void GenerateLootSocketGem()
+{
+    // Vars
+    object oPC = OBJECT_SELF,
+           oChest = GetObjectByTag("LOOT_SOCKET_GEM_GENERATOR"),
+           oItem,
+           oCopy;
+
+    int nCount = GetLocalInt(oChest, "itemcount_socket_gem"),
+        nPick;
+
+
+//  Do a numeric count of all items in the placeables inventory
+    if (!nCount)
+    {
+        oItem=GetFirstItemInInventory(oChest);
+        do
+        {
+            nCount++;
+            oItem=GetNextItemInInventory(oChest);
+        }
+
+        while (GetIsObjectValid(oItem));
+        SetLocalInt(oChest, "itemcount_socket_gem", nCount);
+    }
+
+//  After we do a count of the placeables inventory we select a random item to copy
+    nPick = Random(nCount);
+    oItem = GetFirstItemInInventory(oChest);
+    while (nPick)
+    {
+        nPick--;
+        oItem=GetNextItemInInventory(oChest);
+    }
+
+//  Copy the item to the target inventory
+    oCopy = CopyItem(oItem, oPC, TRUE);
+
+//  We now check to make sure all appropriate flags are set and give it a random name
+    SetDroppableFlag(oCopy, TRUE);
+    SetItemCursedFlag(oCopy, FALSE);
+    SetPickpocketableFlag(oCopy, TRUE);
+    SetStolenFlag(oCopy, FALSE);
+    SetIdentified(oCopy, TRUE);
+}
+
 void GenerateLootSocket()
 {
     // Vars
@@ -1045,10 +1091,10 @@ void GenerateLoot()
 
     switch (iRoll)
     {
-        case 1: GenerateLootMisc();     break;
-        case 2: GenerateLootBasic();    break;
-        case 3: GenerateLootSocket();   break;
-        case 4: GenerateLootSocket();   break;
+        case 1: GenerateLootMisc();         break;
+        case 2: GenerateLootBasic();        break;
+        case 3: GenerateLootSocket();       break;
+        case 4: GenerateLootSocketGem();    break;
         default: break;
     }
 }
@@ -1059,9 +1105,10 @@ void GenerateLootTreature()
 
     switch (iRoll)
     {
-        case 1: GenerateLootMisc();     break;
-        case 2: GenerateLootBasic();    break;
-        case 3: GenerateLootSocket();   break;
+        case 1: GenerateLootMisc();         break;
+        case 2: GenerateLootBasic();        break;
+        case 3: GenerateLootSocket();       break;
+        case 4: GenerateLootSocketGem();    break;
         default: break;
     }
 }

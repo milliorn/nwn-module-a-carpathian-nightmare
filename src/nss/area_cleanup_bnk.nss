@@ -65,16 +65,6 @@ void main()
             AssignCommand(oObject, SetIsDestroyable(TRUE));
             DestroyObject(oObject);
         }
-
-        else if(GetTag(oObject) == "merchantraregems")
-        {
-            oItem = GetFirstItemInInventory(oObject);
-            while(GetIsObjectValid(oItem))
-            {
-                DestroyObject(oItem);
-                oItem = GetNextItemInInventory(oObject);
-            }
-        }
         // Check Next object to clean
         oObject = GetNextObjectInArea(OBJECT_SELF);
     }

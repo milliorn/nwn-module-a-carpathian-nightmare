@@ -12,7 +12,7 @@ void MarketPurge()
         oItem = GetNextItemInInventory(oStore);
     }
 
-    if (iStore > 200)
+    if (iStore > 600)
     {
         object oItem = GetFirstItemInInventory(oStore);
         while (GetIsObjectValid(oItem))

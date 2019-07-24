@@ -11,7 +11,7 @@ CreatureList:
     Appearance: {type: int, value: 17}
     CR: {type: float, value: 31.0}
     ResRef: {type: resref, value: silesianbombard}
-    SingleSpawn: {type: byte, value: 0}
+    SingleSpawn: {type: byte, value: 1}
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 0
     Appearance: {type: int, value: 18}
@@ -35,7 +35,7 @@ CreatureList:
     Appearance: {type: int, value: 20}
     CR: {type: float, value: 31.0}
     ResRef: {type: resref, value: silesianstinkb}
-    SingleSpawn: {type: byte, value: 0}
+    SingleSpawn: {type: byte, value: 1}
 Difficulty: {type: int, value: 0}
 DifficultyIndex: {type: int, value: 3}
 Faction: {type: dword, value: 1}

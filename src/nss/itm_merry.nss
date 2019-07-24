@@ -46,5 +46,14 @@ void main()
 
     IPSafeAddItemProperty(oSlot, ipCurse, 1440.0);
     FloatingTextStringOnCreature("King Merry's Curse has applied to your Right Hand Weapon.", oPC);
+
+    //Apply Spell Effects
+    effect eImpact = EffectVisualEffect(VFX_IMP_DOOM);
+    effect eVis = EffectVisualEffect(VFX_IMP_EVIL_HELP);
+
+    location lLoc = GetLocation(oPC);
+
+    ApplyEffectAtLocation(DURATION_TYPE_INSTANT, eVis, lLoc);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, eImpact, oTarget);
     return;
 }

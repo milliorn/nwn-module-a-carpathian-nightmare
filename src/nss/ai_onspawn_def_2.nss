@@ -84,4 +84,6 @@ void main()
     {
         SignalEvent(OBJECT_SELF,EventUserDefined(EVENT_USER_DEFINED_POSTSPAWN));
     }
+
+    SetAILevel(OBJECT_SELF, AI_LEVEL_HIGH);
 }

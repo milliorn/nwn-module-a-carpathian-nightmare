@@ -70,7 +70,6 @@ void main()
         }
     }
 
-
     if(GetSpawnInCondition(NW_FLAG_ATTACK_EVENT))
     {
         SignalEvent(OBJECT_SELF, EventUserDefined(EVENT_ATTACKED));

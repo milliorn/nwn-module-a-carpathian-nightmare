@@ -2,7 +2,7 @@
 #include "x0_i0_anims"
 // #include "x0_i0_walkway" - in x0_i0_anims
 #include "inc_loot"
-#include "inc_ai_cr"
+#include "inc_ai"
 
 const int EVENT_USER_DEFINED_PRESPAWN = 1510;
 const int EVENT_USER_DEFINED_POSTSPAWN = 1511;
@@ -188,7 +188,7 @@ void main()
     // * that contain a waypoint with one of the tags
     // * "NW_HOME", "NW_TAVERN", "NW_SHOP" will automatically
     // * have this condition set.
-    // SetAnimationCondition(NW_ANIM_FLAG_IS_MOBILE_CLOSE_RANGE);
+     SetAnimationCondition(NW_ANIM_FLAG_IS_MOBILE_CLOSE_RANGE);
 
 
     // **** Special Combat Tactics *****//
@@ -335,44 +335,13 @@ void main()
     }
 
     PrintCRValue(OBJECT_SELF);
+    AIRandomSettings(OBJECT_SELF);
+    SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
 
-    DelayCommand(0.1, GenerateLootBasic());
-    DelayCommand(0.2, GenerateLootBoss());
-    DelayCommand(0.3, GenerateLootMisc());
-    DelayCommand(0.4, GenerateLootSocket());
-
-    int iRandom = d100();
-
-    int iCompassion = d100(),
-        iMagic      = d100(),
-        iOffense    = d100();
-
-    SetLocalInt(OBJECT_SELF, "X2_L_BEH_OFFENSE", iOffense);
-    SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_SEARCH", 1);
-    SetLocalInt(OBJECT_SELF, "X2_L_SPAWN_USE_STEALTH", 1);
-
-    if (GetLevelByClass(CLASS_TYPE_BARD, OBJECT_SELF) == TRUE       ||
-        GetLevelByClass(CLASS_TYPE_CLERIC, OBJECT_SELF) == TRUE     ||
-        GetLevelByClass(CLASS_TYPE_DRUID, OBJECT_SELF) == TRUE      ||
-        GetLevelByClass(CLASS_TYPE_PALADIN, OBJECT_SELF) == TRUE    ||
-        GetLevelByClass(CLASS_TYPE_RANGER, OBJECT_SELF) == TRUE     ||
-        GetLevelByClass(CLASS_TYPE_SORCERER, OBJECT_SELF) == TRUE   ||
-        GetLevelByClass(CLASS_TYPE_WIZARD, OBJECT_SELF) == TRUE)
-
-    {
-        SetLocalInt(OBJECT_SELF, "X2_L_BEH_MAGIC", iMagic);
-        SetLocalInt(OBJECT_SELF, "X2_SPELL_RANDOM", 1);
-        SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY);
-    }
-
-    if (GetLevelByClass(CLASS_TYPE_BARD, OBJECT_SELF) == TRUE   ||
-        GetLevelByClass(CLASS_TYPE_CLERIC, OBJECT_SELF) == TRUE ||
-        GetLevelByClass(CLASS_TYPE_DRUID, OBJECT_SELF) == TRUE  ||
-        GetLevelByClass(CLASS_TYPE_PALADIN, OBJECT_SELF) == TRUE ||
-        GetLevelByClass(CLASS_TYPE_RANGER, OBJECT_SELF) == TRUE)
-    {
-        SetLocalInt(OBJECT_SELF, "X2_L_BEH_COMPASSION", iCompassion);
-    }
+    DelayCommand(0.3, GenerateLootBasic());
+    DelayCommand(0.4, GenerateLootBoss());
+    DelayCommand(0.1, GenerateLootMisc());
+    DelayCommand(0.2, GenerateLootSocket());
 
     if (GetResRef(OBJECT_SELF) == "bulette001")
     {

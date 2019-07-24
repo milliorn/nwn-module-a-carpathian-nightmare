@@ -38,6 +38,7 @@ void main()
         DelayCommand(2.0, AssignCommand(oCaster, JumpToLocation(GetLocation(GetWaypointByTag("WP_JAIL")))));
         return;
     }
+
     if(GetLastSpellHarmful())
     {
         SetCommandable(TRUE);
@@ -158,6 +159,4 @@ void main()
     {
         SignalEvent(OBJECT_SELF, EventUserDefined(EVENT_SPELL_CAST_AT));
     }
-
-
 }
