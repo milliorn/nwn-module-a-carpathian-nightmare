@@ -22,7 +22,7 @@ void main()
             sName = GetName(oItem),
             sArea = GetTag(GetArea(oPC));
 
-//  if we are not a dm or pc
+    //  if we are not a dm or pc
     if (!GetIsPC(oPC) || !GetIsDM(oPC))
     {
         //  Clean off the vars that are set OnModuleLoad to mark items generated from
@@ -36,25 +36,25 @@ void main()
         return;
     }
 
-//Set the Gold Piece value in the items Description
+    //Set the Gold Piece value in the items Description
     PrintGPValue(oItem);
 
-//  Clear all Temp Item Properties so they don't become permanent
+    //  Clear all Temp Item Properties so they don't become permanent
     IPRemoveAllItemProperties(oItem, DURATION_TYPE_TEMPORARY);
 
-//  Hotfix for Evil Blight On Hit Cast Spell (Permanent) to be removed in the future
+    //  Hotfix for Evil Blight On Hit Cast Spell (Permanent) to be removed in the future
     IPRemoveMatchingItemProperties(oItem, ITEM_PROPERTY_ONHITCASTSPELL, DURATION_TYPE_PERMANENT);
 
-//  Identify the Acquired Item
+    //  Identify the Acquired Item
     SetIdentified(oItem, TRUE);
 
-//  Remove stolen flags
+    //  Remove stolen flags
     DelayCommand(6.0, SetStolenFlag(oItem, FALSE));
 
-//  If DM we break the script
+    //  If DM we break the script
     if (GetIsDM(oPC)) return;
 
-//  Fix Barter Exploit that clones items
+    //  Fix Barter Exploit that clones items
     if (GetIsPC(oFrom) && GetIsPC(oPC))
     {
         ExportSingleCharacter(oFrom);
@@ -65,7 +65,7 @@ void main()
         ExecuteScript("ws_saveall_sub", oPC);
     }
 
-//  Display Custom Message to Party to notify what loot was acquired.
+    //  Display Custom Message to Party to notify what loot was acquired.
     if (sName == "")
     {
          SendMsgToFactionWithinDistance(oPC,"<cfÌþ>" + sPlayerName +
@@ -81,7 +81,7 @@ void main()
         "<cóóó> accquired <c óó>" + sName, 40.0);
     }
 
-//  Add a variable to be checked for Pickpocket Abuse
+    //  Add a variable to be checked for Pickpocket Abuse
     if (GetStolenFlag(oItem) == TRUE && sArea == "Arena")
     {
         SendMessageToAllDMs(sPlayerName + "<cþf > has possibly stolen </c>"+ sName +
@@ -101,7 +101,7 @@ void main()
         return;
     }
 
-//  Check for Pickpocket Abuse
+    //  Check for Pickpocket Abuse
     if (GetLocalInt(oPC, "STOP_PICK_ABUSE") == TRUE)
     {
         SendMessageToAllDMs(sPlayerName + "<cþf > has possibly stolen </c>"+ sName +
@@ -119,7 +119,7 @@ void main()
         return;
     }
 
-//  Add a variable to be checked for Pickpocket Abuse
+    //  Add a variable to be checked for Pickpocket Abuse
     if (GetStolenFlag(oItem) == TRUE && GetIsPC(oPC))
     {
         SendMessageToAllDMs(sPlayerName + "<cþf > has possibly stolen </c>"+ sName +

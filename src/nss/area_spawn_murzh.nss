@@ -1,6 +1,6 @@
 void main()
 {
-    object oEnter = GetExitingObject();
+    object oEnter = GetEnteringObject();
     int iObjectType = OBJECT_TYPE_CREATURE;
     string sTemplate = "murzhagultroll";
     location lLocation  = GetLocation(oEnter);
@@ -11,7 +11,7 @@ void main()
     {
         if (iRoll == 20)
         {
-            SetLocalString(oModule, "TROLL", "TRUE");
+            //SetLocalString(oModule, "TROLL", "TRUE");
             CreateObject(iObjectType, sTemplate, lLocation, TRUE);
             FloatingTextStringOnCreature("You see a <c ó >Green</c> Troll run away.", oEnter, TRUE);
         }

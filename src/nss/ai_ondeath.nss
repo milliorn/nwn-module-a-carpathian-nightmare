@@ -27,7 +27,7 @@ void main()
 //    int nAlign = GetAlignmentGoodEvil(OBJECT_SELF);
 //    object oKiller = GetLastKiller();
 
-    if (GetLocalInt(GetModule(),"X3_ENABLE_MOUNT_DB")&&GetIsObjectValid(GetMaster(OBJECT_SELF))) SetLocalInt(GetMaster(OBJECT_SELF),"bX3_STORE_MOUNT_INFO",TRUE);
+    //if (GetLocalInt(GetModule(),"X3_ENABLE_MOUNT_DB")&&GetIsObjectValid(GetMaster(OBJECT_SELF))) SetLocalInt(GetMaster(OBJECT_SELF),"bX3_STORE_MOUNT_INFO",TRUE);
 
 
     // If we're a good/neutral commoner,
@@ -53,6 +53,7 @@ void main()
     ExecuteScript("sf_xp", OBJECT_SELF);
     //ExecuteScript("sf_xp", OBJECT_SELF);
 
+    SetLootable(OBJECT_SELF, TRUE);
     object oItem = GetFirstItemInInventory(OBJECT_SELF);
     while (GetIsObjectValid(oItem) && GetLocalInt(oItem, "LOOT_DROP"))
     {

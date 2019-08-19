@@ -1,0 +1,69 @@
+--- !nwn-lib.elv.es,2013-07:struct
+__data_type: UTI
+__struct_id: 4294967295
+AddCost: {type: dword, value: 0}
+BaseItem: {type: int, value: 111}
+Charges: {type: byte, value: 0}
+Comment: {type: cexostr, value: ''}
+Cost: {type: dword, value: 4197114}
+Cursed: {type: byte, value: 0}
+DescIdentified:
+  type: cexolocstr
+  str_ref: 90996
+  value: {}
+Description:
+  type: cexolocstr
+  value: {}
+Identified: {type: byte, value: 1}
+LocalizedName:
+  type: cexolocstr
+  str_ref: 90995
+  value: {}
+ModelPart1: {type: byte, value: 11}
+ModelPart2: {type: byte, value: 11}
+ModelPart3: {type: byte, value: 11}
+PaletteID: {type: byte, value: 47}
+Plot: {type: byte, value: 0}
+PropertiesList:
+  type: list
+  value:
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 0}
+    CostValue: {type: word, value: 0}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 12}
+    Subtype: {type: word, value: 37}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 2}
+    CostValue: {type: word, value: 8}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 6}
+    Subtype: {type: word, value: 0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 26}
+    CostValue: {type: word, value: 39}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 82}
+    Subtype: {type: word, value: 124}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 0
+    ChanceAppear: {type: byte, value: 100}
+    CostTable: {type: byte, value: 0}
+    CostValue: {type: word, value: 0}
+    Param1: {type: byte, value: 255}
+    Param1Value: {type: byte, value: 0}
+    PropertyName: {type: word, value: 83}
+    Subtype: {type: word, value: 3}
+StackSize: {type: word, value: 1}
+Stolen: {type: byte, value: 0}
+Tag: {type: cexostr, value: X2_IT_WPMWHIP_H}
+TemplateResRef: {type: resref, value: it_wpmwhip_h001}

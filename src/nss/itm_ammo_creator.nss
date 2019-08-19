@@ -14,27 +14,13 @@ void main()
 
     switch (nTargetType)
     {
-        case BASE_ITEM_ARROW:       SetItemStackSize(oTarget, 999);
-                                    SetPlotFlag(oTarget, TRUE);
-                                    break;
-
-        case BASE_ITEM_BOLT:        SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
-                                    break;
-
-        case BASE_ITEM_BULLET:      SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
-                                    break;
-
-        case BASE_ITEM_DART:        SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
-                                    break;
-
-        case BASE_ITEM_SHURIKEN:    SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
-                                    break;
-
-        case BASE_ITEM_THROWINGAXE: SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
-                                    break;
-
-        case BASE_ITEM_GRENADE:     SetPlotFlag(CopyItem(oTarget, oPC, TRUE), TRUE);
-                                    break;
+        case BASE_ITEM_ARROW:
+        case BASE_ITEM_BOLT:
+        case BASE_ITEM_BULLET:  SetItemStackSize(oTarget, 999); SetPlotFlag(oTarget, TRUE); break;
+        case BASE_ITEM_DART:
+        case BASE_ITEM_SHURIKEN:
+        case BASE_ITEM_THROWINGAXE: SetItemStackSize(oTarget, 500); SetPlotFlag(oTarget, TRUE); break;
+        case BASE_ITEM_GRENADE: SetItemStackSize(oTarget, 10); SetPlotFlag(oTarget, TRUE); break;
 
         default: FloatingTextStringOnCreature("The Target Must Be An Ammuntion Type Item!", oPC, FALSE); break;
     }

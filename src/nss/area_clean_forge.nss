@@ -40,6 +40,8 @@ void main()
             oItem = GetFirstItemInInventory(oObject);
             while(GetIsObjectValid(oItem))
             {
+                AssignCommand(oItem, SetIsDestroyable(TRUE));
+                CopyItem(oItem, GetObjectByTag("MarketMerchant"), TRUE);
                 DestroyObject(oItem);
                 oItem = GetNextItemInInventory(oObject);
             }

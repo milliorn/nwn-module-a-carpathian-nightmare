@@ -1,39 +1,28 @@
 #include "nwnx_chat"
+#include "inc_mod_events"
 
-int GetIsPlayer(object oTarget)
+//  Get if object is PC or DM
+int GetIsPlayer();
+
+int GetIsPlayer()
 {
-    if (GetIsPC(oTarget) == TRUE)
-    {
-        return TRUE;
-    }
-
-    else if (GetIsDM(oTarget) == TRUE)
-    {
-        return TRUE;
-    }
-
+    if (GetIsPC(OBJECT_SELF) == TRUE && GetIsDM(OBJECT_SELF) == TRUE) return TRUE;
     else return FALSE;
 }
 
 void main()
 {
     if (NWNX_Chat_GetChannel() == 5) return;
-
-    object oPC = GetFirstPC();
-
-    object oNameSender = NWNX_Chat_GetSender();
-    string sNameSender = GetName(oNameSender);
-
-    object oNameReceiver = NWNX_Chat_GetTarget();
-    string sNameReceiver = GetName(oNameReceiver);
-
-    int iChannel = NWNX_Chat_GetChannel();
+    if (GetIsPlayer() == FALSE) return;
+    if (NWNX_Chat_GetSender() == OBJECT_INVALID) return;
 
     string sChannel;
     string sChat;
+    string sNameSender = GetName(NWNX_Chat_GetSender());
+    string sNameReceiver = GetName(NWNX_Chat_GetTarget());
+    string sMessage = NWNX_Chat_GetMessage();
 
-    if (GetIsPlayer(OBJECT_SELF) == FALSE) return;
-    if (NWNX_Chat_GetSender() == OBJECT_INVALID) return;
+    int iChannel = NWNX_Chat_GetChannel();
 
     switch (iChannel)
     {
@@ -53,8 +42,6 @@ void main()
         default: NWNX_Chat_SkipMessage();break;
     }
 
-    string sMessage = NWNX_Chat_GetMessage();
-
     sChat = " SENDER: "   + sNameSender +
             " RECEIVER: " + sNameReceiver +
             " CHANNEL: "  + sChannel +
@@ -67,43 +54,13 @@ void main()
             "<c σ > CHANNEL: <cσσ >"  + sChannel +
             "<c σ > MESSAGE: <cσσσ>"  + sMessage;
 
+    object oPC = GetFirstPC();
     while (GetIsObjectValid(oPC))
     {
-        if (GetPCPublicCDKey(oPC) == "QR4JFL9A")
+        if (GetIsGM(oPC))
         {
             NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
         }
-
-        if (GetPCPublicCDKey(oPC) == "QRMXQ6GM")
-        {
-            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
-        }
-
-        else if (GetPCPublicCDKey(oPC) == "QR7N9CLL")
-        {
-            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
-        }
-
-        else if (GetPCPublicCDKey(oPC) == "QR6MNHFV")
-        {
-            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
-        }
-
-        else if (GetPCPublicCDKey(oPC) == "QR4H676X")
-        {
-            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
-        }
-
-        else if (GetPCPublicCDKey(oPC) == "Q6UY7GCH")
-        {
-            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
-        }
-
-        else if (GetPCPublicCDKey(oPC) == "Q6UEVVE4")
-        {
-            NWNX_Chat_SendMessage(5, sChat, OBJECT_SELF, oPC);
-        }
-
         oPC = GetNextPC();
     }
 }

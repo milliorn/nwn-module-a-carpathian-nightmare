@@ -19,7 +19,7 @@ void main()
             sArea       = GetTag(GetArea(oPC));
 
 
-//  Force an alignment selection if they are Neutral alignment and NOT Druid
+    //  Force an alignment selection if they are Neutral alignment and NOT Druid
     if (iDruid == 0)
     {
         switch( GetAlignmentGoodEvil(oPC))
@@ -59,13 +59,9 @@ void main()
             }
         }
     }
-
-//  Max HP
-    //OnLevel_MaxHP(oPC);
-
-//  Reapply Haste and bounty flag, heal all HP then export .bic file and
-//  send a Shout message of the level up with a Discord message.
-    ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oPC);
+    //  Reapply Haste and bounty flag, heal all HP then export .bic file and
+    //  send a Shout message of the level up with a Discord message.
+    ApplyHaste(oPC);
     ForceRest(oPC);
     ExportSingleCharacter(oPC);
     ExecuteScript("ws_saveall_sub", oPC);
@@ -73,16 +69,10 @@ void main()
     ACN_SubRace_OnLevel(oPC);
     FloatingTextStringOnCreature("<c ó >Character Saved</c>", oPC, FALSE);
 
-//  Special VFX effects at level up milestones
-    if (iLevel == 5 ||
-        iLevel == 10 ||
-        iLevel == 15 ||
-        iLevel == 20 ||
-        iLevel == 25 ||
-        iLevel == 30 ||
-        iLevel == 35 ||
-        iLevel == 40)
-        {
+    //  Special VFX effects at level up milestones
+    switch(iLevel)
+    {
+        case 5: case 10: case 15: case 20: case 25: case 30: case 35: case 40:
             ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_WAIL_O_BANSHEES), oPC);
             ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_IMP_LIGHTNING_M), oPC);
             DelayCommand(0.1, ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_LOS_NORMAL_10), oPC));
@@ -95,9 +85,9 @@ void main()
             string sMessage = sName + " has advanced to level " + sLevel;
             SpeakString(sMessage, TALKVOLUME_SHOUT);
             NWNX_WebHook_SendWebHookHTTPS("discordapp.com", sWebhookUrl , sMessage , "Server");
-        }
+    }
 
-//  VFX effects at level up based on alignment
+    //  VFX effects at level up based on alignment
     int nAlign = GetAlignmentGoodEvil(oPC);
     switch (nAlign)
     {

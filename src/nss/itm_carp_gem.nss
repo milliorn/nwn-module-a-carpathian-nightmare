@@ -10,7 +10,7 @@ void CheckIsInBattle(object oPC, int iTimer, vector vLoc)
     ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_PWKILL), oPC);
     ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_IMP_LIGHTNING_S), oPC);
 
-//  Cancel teleport if hostile actions begin
+    //  Cancel teleport if hostile actions begin
     if (GetIsInCombat(oPC) || GetPositionFromLocation(GetLocation(oPC)) != vLoc)
 
     {
@@ -18,7 +18,7 @@ void CheckIsInBattle(object oPC, int iTimer, vector vLoc)
         return;
     }
 
-//  If timer runs out teleport PC
+    //  If timer runs out teleport PC
     if (iTimer <= 0)
     {
         location lLoc = GetLocation(GetWaypointByTag("NW_DEATH_TEMPLE"));
@@ -39,10 +39,9 @@ void main()
     {
         // Vars
         object oPC = GetItemActivator();
-        string sArea = GetTag(GetArea(oPC));
         vector vLoc = GetPositionFromLocation(GetLocation(oPC));
 
-//      Check if PC is in a forbidden area to teleport
+        //  Check if PC is in a forbidden area to teleport
         if (GetLocalInt(GetArea(oPC), "NO_TELEPORT"))
         {
             FloatingTextStringOnCreature("You cannot teleport from this area!!", oPC, FALSE);
@@ -50,7 +49,7 @@ void main()
 
         else
         {
-//          Disable teleport in combat
+            //  Disable teleport in combat
             if (GetIsInCombat(oPC))
             {
                 FloatingTextStringOnCreature("You cannot teleport while in battle", oPC, FALSE);

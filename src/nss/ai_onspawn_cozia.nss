@@ -343,6 +343,11 @@ void main()
     DelayCommand(0.1, GenerateLootMisc());
     DelayCommand(0.2, GenerateLootSocket());
 
-    effect eSwarm = EffectSwarm(TRUE, "coziawraithspi");
-    ApplyEffectToObject(DURATION_TYPE_INSTANT, eSwarm, OBJECT_SELF);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectSwarm(TRUE, "coziadirespide"), OBJECT_SELF);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectSwarm(TRUE, "coziagiantspid"), OBJECT_SELF);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectSwarm(TRUE, "coziaphasespid"), OBJECT_SELF);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectSwarm(TRUE, "coziaqueenspid"), OBJECT_SELF);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectSwarm(TRUE, "coziaspider"), OBJECT_SELF);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectSwarm(TRUE, "coziaswordspid"), OBJECT_SELF);
+    ApplyEffectToObject(DURATION_TYPE_INSTANT, EffectSwarm(TRUE, "coziawraithspi"), OBJECT_SELF);
 }

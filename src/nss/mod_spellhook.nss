@@ -1,12 +1,8 @@
-//::///////////////////////////////////////////////
-//:: Scarface's No PvP Exploit Fixes
-//:: sf_spellhook
 //:://////////////////////////////////////////////
 /*
      Spell hooking script to stop casting
      of spells/scrolls in certain areas.
 
-     Written By Scarface
      Additions by Milliorn
 */
 //:://////////////////////////////////////////////
@@ -121,9 +117,9 @@ void main()
                     FloatingTextStringOnCreature("No AoE Spell stacking allowed.  Minimum 2 meter radius.", oCaster, FALSE);
                 }
             }
-                oTarget =GetNextObjectInShape(SHAPE_SPHERE, 1.67,lLocal,FALSE,OBJECT_TYPE_AREA_OF_EFFECT);
+            oTarget = GetNextObjectInShape(SHAPE_SPHERE, 1.67,lLocal,FALSE,OBJECT_TYPE_AREA_OF_EFFECT);
         }
-            return;
+        return;
     }
 
     if ((oTarget == OBJECT_SELF)
@@ -145,7 +141,7 @@ void main()
         return;
     }
 
-    else if (SummonCheck(oCaster, nID) && !GetLocalInt(oCaster, "SUMMONSPAM"))
+    if (SummonCheck(oCaster, nID) && !GetLocalInt(oCaster, "SUMMONSPAM"))
     {
         SetLocalInt(oCaster, "SUMMONSPAM", TRUE);
         DelayCommand(1.0, SetLocalInt(oCaster, "SUMMONSPAM", FALSE));
@@ -165,7 +161,7 @@ void main()
         return;
     }
 
-//  Set and Clean a Var to stop and exploit with casting
+//  Set and Clean a Var to stop an exploit with casting
     SetLocalInt(oCaster, sSpell, nID);
     DelayCommand(0.1, DeleteLocalInt(oCaster, sSpell));
 }

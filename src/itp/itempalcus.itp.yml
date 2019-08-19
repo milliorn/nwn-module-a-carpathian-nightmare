@@ -200,6 +200,10 @@ MAIN:
             RESREF: {type: resref, value: su_devaclothes}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
+            NAME: {type: cexostr, value: Baator Succubus Properties}
+            RESREF: {type: resref, value: baatorsuccubus}
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
             NAME: {type: cexostr, value: Catapalon Properties}
             RESREF: {type: resref, value: su_catapalon_pro}
           - !nwn-lib.elv.es,2013-07:struct
@@ -1504,13 +1508,6 @@ MAIN:
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
             ID: {type: byte, value: 21}
-            LIST:
-              type: list
-              value:
-              - !nwn-lib.elv.es,2013-07:struct
-                __struct_id: 0
-                RESREF: {type: resref, value: it_mneck024}
-                STRREF: {type: dword, value: 13409}
             STRREF: {type: dword, value: 6750}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
@@ -1628,6 +1625,10 @@ MAIN:
         LIST:
           type: list
           value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Baator - Astral Key}
+            RESREF: {type: resref, value: baatorastral}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
             NAME: {type: cexostr, value: Gauntlet 3 Key}
@@ -2186,6 +2187,13 @@ MAIN:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
         ID: {type: byte, value: 47}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            RESREF: {type: resref, value: it_wpmwhip_h001}
+            STRREF: {type: dword, value: 90995}
         STRREF: {type: dword, value: 6776}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0

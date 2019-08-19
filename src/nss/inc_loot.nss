@@ -1101,7 +1101,7 @@ void GenerateLoot()
 
 void GenerateLootTreature()
 {
-    int iRoll = d3();
+    int iRoll = d4();
 
     switch (iRoll)
     {

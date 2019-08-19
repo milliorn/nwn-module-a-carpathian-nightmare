@@ -51,6 +51,10 @@ MAIN:
       value:
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
+        NAME: {type: cexostr, value: Baator Canine}
+        RESREF: {type: resref, value: baatorcanine}
+      - !nwn-lib.elv.es,2013-07:struct
+        __struct_id: 0
         NAME: {type: cexostr, value: Cozia Hive Spider}
         RESREF: {type: resref, value: coziahivespider}
       - !nwn-lib.elv.es,2013-07:struct
@@ -233,16 +237,19 @@ MAIN:
             RESREF: {type: resref, value: custom002}
           - !nwn-lib.elv.es,2013-07:struct
             __struct_id: 0
-            NAME: {type: cexostr, value: Boss Silesian Hive Mother}
-            RESREF: {type: resref, value: bosssilesianh001}
-          - !nwn-lib.elv.es,2013-07:struct
-            __struct_id: 0
             NAME: {type: cexostr, value: Jail Spawn}
             RESREF: {type: resref, value: jailspawn}
         STRREF: {type: dword, value: 6688}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0
         ID: {type: byte, value: 1}
+        LIST:
+          type: list
+          value:
+          - !nwn-lib.elv.es,2013-07:struct
+            __struct_id: 0
+            NAME: {type: cexostr, value: Boss - Hound of Baator}
+            RESREF: {type: resref, value: bosshoundofbaato}
         STRREF: {type: dword, value: 6689}
       - !nwn-lib.elv.es,2013-07:struct
         __struct_id: 0

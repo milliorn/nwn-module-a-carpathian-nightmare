@@ -1,14 +1,13 @@
 //::///////////////////////////////////////////////
 //:: Name: Chat Tools - Beta
-//:: FileName mod_chat
-//:: Copyright (c) 2001 Bioware Corp.
+//:: FileName mod_pc_chat
+//::
 //:://////////////////////////////////////////////
 /*
 
 */
 //:://////////////////////////////////////////////
-//:: Created By: Scarface
-//:: Modified By: Milliorn
+//:: By: Scott Milliorn
 //:: Created On: 26th August 2008
 //:: Updated On: 3rd October 2018
 //:://////////////////////////////////////////////
@@ -20,8 +19,10 @@
 void main()
 {
 
-    object oPC = GetPCChatSpeaker(),
-           oModule = GetModule();
+    object oPC = GetPCChatSpeaker();
+
+    //  If we are not a PC or DM then we stop here
+    if (!GetIsPC(oPC) && !GetIsDM(oPC)) return;
 
     string sPCName = GetName(oPC, TRUE),
            sLogInName = GetPCPlayerName(oPC),
@@ -32,8 +33,6 @@ void main()
 
     int iSpam = GetLocalInt(oPC, "PC_CHAT"),
         iLegLvl = GetLocalInt(GetItemPossessedBy(oPC, "hgll_check_level"), "nLegendLevel");
-
-    if (GetIsObjectValid(oPC) == OBJECT_TYPE_ENCOUNTER) return;
 
     //  Adjust level if we are legendary
     if (iLegLvl > 40) sPCLevel = IntToString(iLegLvl);
@@ -113,7 +112,87 @@ void main()
         return;
     }
 
-    if(GetPCPublicCDKey(oPC, TRUE) == "QR4JFL9A" || GetPCPublicCDKey(oPC, TRUE) == "QRMXQ6GM" || GetIsDM(oPC))
+    if (TestStringAgainstPattern(sText, "!dm_leader") && GetIsGM(oPC))
+    {
+        object oLeader = GetFactionLeader(oPC);
+        object oLeaderArea = GetArea(oLeader);
+        object oArea = GetArea(OBJECT_SELF);
+        location lTarget = GetLocation(oLeader);
+
+        SetPCChatMessage("");
+
+        if (oLeader == oPC)
+        {
+            FloatingTextStringOnCreature("<cσ  >You are the leader.", oPC);
+            return;
+        }
+
+        else if (GetArea(oLeader) == OBJECT_INVALID || oLeader == OBJECT_INVALID)
+        {
+            FloatingTextStringOnCreature("<cσ  >Unable to port to leader."
+            + " Try again in a few seconds", oPC, FALSE);
+            return;
+        }
+
+        else
+        {
+            DelayCommand(1.5, AssignCommand(oPC, JumpToLocation(lTarget)));
+            return;
+        }
+    }
+
+    if (TestStringAgainstPattern(sText, "!dm_room"))
+    {
+        string sName1 = GetName(oPC);
+
+        if (GetIsGM(oPC))
+        {
+            SetPCChatMessage("");
+            DelayCommand(2.0, AssignCommand(oPC, JumpToLocation(GetLocation(GetWaypointByTag("DM_ROOM")))));
+            FloatingTextStringOnCreature("<cσ  >Porting to DM Room.", oPC, FALSE);
+            return;
+        }
+    }
+
+    if (TestStringAgainstPattern(sText, "!dm_resetmod"))
+    {
+        if (GetIsGM(oPC))
+        {
+            SetPCChatMessage("");
+
+            WriteTimestampedLogEntry(sPCName +
+            " has activated SERVER RESET!!!Account: "
+            + GetPCPlayerName( oPC )+ " CD Key: "
+            + GetPCPublicCDKey( oPC )+ " IP: "
+            + GetPCIPAddress( oPC ));
+
+            SpeakString(sPCName +
+            " has activated SERVER RESET!!!Account: "
+            + GetPCPlayerName( oPC )+ " CD Key: "
+            + GetPCPublicCDKey( oPC ), TALKVOLUME_SHOUT);
+
+            ExportAllCharacters();
+            ExecuteScript("ws_saveall_sub", OBJECT_SELF);
+            ExecuteScript("mod_shutdown", OBJECT_SELF);
+            return;
+        }
+        else
+        {
+            WriteTimestampedLogEntry(sPCName +
+            " has attempted SERVER RESET!!!Account: "
+            + GetPCPlayerName(oPC) + " CD Key: "
+            + GetPCPublicCDKey(oPC) + " IP: "
+            + GetPCIPAddress(oPC));
+
+            SendMessageToAllDMs(sPCName +
+            " has attempted SERVER RESET!!!Account: "
+            + GetPCPlayerName(oPC) + " CD Key: "
+            + GetPCPublicCDKey(oPC));
+            return;
+        }
+    }
+
+    if(GetPCPublicCDKey(oPC, TRUE) == "QR4JFL9A" || GetPCPublicCDKey(oPC, TRUE) == "QRMXQ6GM")
     {
         if (TestStringAgainstPattern(sText, "!dm_plot"))
         {
@@ -128,16 +207,26 @@ void main()
 
             if(GetPlotFlag(oPC) == TRUE)
             {
-                SetPlotFlag(oPC, TRUE);
+                SetPlotFlag(oPC, FALSE);
                 SendMessageToPC(oPC, "Plot set to false.");
+                return;
             }
         }
+
         if (TestStringAgainstPattern(sText, "!dm_rez"))
         {
                 SetPCChatMessage("");
                 Raise(oPC);
                 ForceRest(oPC);
                 SendMessageToPC(oPC, "DM Resurrection.");
+                return;
+        }
+
+        else if (TestStringAgainstPattern(sText, "!dm_gold"))
+        {
+                SetPCChatMessage("");
+                GiveGoldToCreature(oPC, 10000000);
+                SendMessageToPC(oPC, "10 Million GP.");
                 return;
         }
 
@@ -179,28 +268,6 @@ void main()
             SendMessageToPC(oPC, "Take Level");
             return;
         }
-
-        else if (TestStringAgainstPattern(sText, "!dm_resetmod"))
-        {
-            SetPCChatMessage("");
-            string sName1 = GetName(oPC);
-
-            WriteTimestampedLogEntry(sName1+
-            " has activated SERVER RESET!!!Account: "
-            + GetPCPlayerName( oPC )+ " CD Key: "
-            + GetPCPublicCDKey( oPC )+ " IP: "
-            + GetPCIPAddress( oPC ));
-
-            SpeakString(sName1+
-            " has activated SERVER RESET!!!Account: "
-            + GetPCPlayerName( oPC )+ " CD Key: "
-            + GetPCPublicCDKey( oPC ), TALKVOLUME_SHOUT);
-
-            ExportAllCharacters();
-            ExecuteScript("ws_saveall_sub", OBJECT_SELF);
-            ExecuteScript("mod_shutdown", OBJECT_SELF);
-            return;
-        }
     }
 
     switch (GetPCChatVolume())
@@ -220,7 +287,6 @@ void main()
             // no break needed, we don't want to exit the switch, but continue to default
         default:
         }
-
     }
     // get the code (if any)
     string sCode = GetStringLeft (sMsg, 1);
@@ -231,7 +297,6 @@ void main()
     {
         int iVictory = d3();
         int iMoan = d3();
-
         // emote codes         0  3  6  9  12 15 18 21 24 27 30 33 36 39 42
         switch (FindSubString("go du do si gr bo bi re sa da st ta ch no pu", sMsg))
         {
@@ -304,7 +369,6 @@ void main()
             DoPuke(oPC);
             break;
         }
-
         // emote codes         0  3  6  9  12 15 18 21 24 27 30 33 36 39 42 45 48 51
         switch (FindSubString("co in fb ff lo bf li se me mo dr ti sq sc la be wo sp", sMsg))
         {
@@ -426,7 +490,6 @@ void main()
                      ApplyWeaponEffects(oPC, ITEM_VISUAL_ELECTRICAL);
                      break;
         }
-
         // Player codes        0   4        13   18      26     33  37
         switch (FindSubString("lfg re_equip save relevel server pvp bounties", sMsg))
         {
@@ -463,7 +526,6 @@ void main()
                      ChatBounties(oPC);
                      break;
         }
-
         // dice rolls          0    5
         switch (FindSubString("like dislike", sMsg))
         {
@@ -471,7 +533,6 @@ void main()
             {
                 SetPCChatMessage("");
                 SpeakString("<cσ σ>" +sPCName + " <c σσ> status has been set to <cσ  >Neutral.", TALKVOLUME_SHOUT);
-
                 // Loop all PC's in the module and set this PC to dislike them - uh oh
                 object oDislike = GetFirstPC();
                 while (GetIsObjectValid(oPC))
@@ -489,7 +550,6 @@ void main()
                 SetPCChatMessage("");
                 SpeakString("<cσ σ>" +sPCName +
                 " <c σσ> status has been set to <cσ  >Hostile.", TALKVOLUME_SHOUT);
-
                 // Loop all PC's in the module and set this PC to dislike them - uh oh
                 object oDislike = GetFirstPC();
                 while (GetIsObjectValid(oPC))
@@ -542,7 +602,6 @@ void main()
             case 29:    SetPCChatMessage(sPCName + "<cσσσ> d8 roll = </c>" + IntToString(d8()));
                         //SpeakString(sPCName+ "<cσσσ> d8 roll = </c>" + IntToString(d8()), TALKVOLUME_SHOUT);
                         break;
-
         }
         // Change Alignments    0          11         22            36           49
         switch (FindSubString("align_good align_evil align_chaotic align_lawful align_neutral", sMsg))
@@ -591,7 +650,6 @@ void main()
                         SetCreatureWingType(CREATURE_WING_TYPE_ANGEL, oPC);
                         break;
 
-
             case 6:     SetPCChatMessage("");
                         SetCreatureWingType(CREATURE_WING_TYPE_BAT, oPC);
                         break;
@@ -610,11 +668,11 @@ void main()
 
             case 30:    SetPCChatMessage("");
                         SetCreatureWingType(CREATURE_WING_TYPE_DRAGON, oPC);
-                        return;
+                        break;
 
             case 36:    SetPCChatMessage("");
                         SetCreatureWingType(CREATURE_WING_TYPE_NONE, oPC);
-                        return;
+                        break;
         }
         //                     0     6     12    18
         switch (FindSubString("t_bon t_dev t_liz t_non", sMsg))
@@ -625,17 +683,17 @@ void main()
 
             case 6:     SetPCChatMessage("");
                         SetCreatureTailType(CREATURE_TAIL_TYPE_DEVIL, oPC);
-                        return;
+                        break;
 
             case 12:    SetPCChatMessage("");
                         SetCreatureTailType(CREATURE_TAIL_TYPE_LIZARD, oPC);
-                        return;
+                        break;
 
             case 18:    SetPCChatMessage("");
                         SetCreatureTailType(CREATURE_TAIL_TYPE_NONE, oPC);
-                        return;
+                        break;
         }
-//                             0      7    12     19   24        34    40    46   51    57
+        //                     0      7    12     19   24        34    40    46   51    57
         switch (FindSubString("emotes wpnv player dice alignment wings tails eyes heads arms", sMsg))
         {
             case 0:     SetPCChatMessage("");
@@ -677,10 +735,7 @@ void main()
             case 57:    SetPCChatMessage("");
                         ChatListArm(oPC);
                         break;
-
-
         }
-
         //   Eyes visual codes 0    5    10   15   20   25   30   35
         switch (FindSubString("eyec eyeg eyen eyeo eyep eyer eyew eyey", sMsg))
         {
@@ -715,9 +770,7 @@ void main()
             case 35: SetPCChatMessage("");
                      ChatEyesYellow(oPC);
                      break;
-
         }
-
         //                     0     6
         switch (FindSubString("headn headp", sMsg))
         {
@@ -727,9 +780,8 @@ void main()
 
             case 6:     SetPCChatMessage("");
                         ChatHeadPrevious(oPC);
-                        return;
+                        break;
         }
-
         //                     0    5
         switch (FindSubString("armb armn", sMsg))
         {
@@ -739,47 +791,50 @@ void main()
 
             case 5:     SetPCChatMessage("");
                         ChatArmNormal(oPC);
-                        return;
+                        break;
         }
-
-//                             0        9     15   20
+        //                     0        9     15   20
         switch (FindSubString("portrait voice skin hair", sMsg))
         {
-            case 0: if (!GetLocalInt(oPC, "PORTRAIT"))
-                    {
-                        SetPCChatMessage("");
-                        SetLocalInt(oPC, "PORTRAIT", 1);
-                        FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>portrait " +
-                        "<cσσσ>found in the </c>portraits.2da<cσσσ> file and press </c>Enter.", oPC, FALSE);
-                        break;
-                    }
+            case 0:
+            if (!GetLocalInt(oPC, "PORTRAIT"))
+            {
+                SetPCChatMessage("");
+                SetLocalInt(oPC, "PORTRAIT", 1);
+                FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>portrait " +
+                "<cσσσ>found in the </c>portraits.2da<cσσσ> file and press </c>Enter.", oPC, FALSE);
+                break;
+            }
 
-            case 9: if (!GetLocalInt(oPC, "VOICE"))
-                    {
-                        SetPCChatMessage("");
-                        SetLocalInt(oPC, "VOICE", 1);
-                        FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>soundset " +
-                        "<cσσσ>found in the </c>soundset.2da<cσσσ> file and press </c>Enter.", oPC, FALSE);
-                        break;
-                    }
+            case 9:
+            if (!GetLocalInt(oPC, "VOICE"))
+            {
+                SetPCChatMessage("");
+                SetLocalInt(oPC, "VOICE", 1);
+                FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>soundset " +
+                "<cσσσ>found in the </c>soundset.2da<cσσσ> file and press </c>Enter.", oPC, FALSE);
+                break;
+            }
 
-            case 15: if (!GetLocalInt(oPC, "SKIN"))
-                     {
-                        SetPCChatMessage("");
-                        SetLocalInt(oPC, "SKIN", 1);
-                        FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>color " +
-                        "<cσσσ>found in the </c>ACN Forums<cσσσ> and press </c>Enter.", oPC, FALSE);
-                        break;
-                     }
+            case 15:
+            if (!GetLocalInt(oPC, "SKIN"))
+            {
+                SetPCChatMessage("");
+                SetLocalInt(oPC, "SKIN", 1);
+                FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>color " +
+                "<cσσσ>found in the </c>ACN Forums<cσσσ> and press </c>Enter.", oPC, FALSE);
+                break;
+            }
 
-            case 20: if (!GetLocalInt(oPC, "HAIR"))
-                     {
-                        SetPCChatMessage("");
-                        SetLocalInt(oPC, "HAIR", 1);
-                        FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>color " +
-                        "<cσσσ>found in the </c>ACN Forum<cσσσ> and press </c>Enter.", oPC, FALSE);
-                        break;
-                     }
+            case 20:
+            if (!GetLocalInt(oPC, "HAIR"))
+            {
+                SetPCChatMessage("");
+                SetLocalInt(oPC, "HAIR", 1);
+                FloatingTextStringOnCreature("<cσσσ>Type the </c>number<cσσσ> of the </c>color " +
+                "<cσσσ>found in the </c>ACN Forum<cσσσ> and press </c>Enter.", oPC, FALSE);
+                break;
+            }
         }
     }
 }

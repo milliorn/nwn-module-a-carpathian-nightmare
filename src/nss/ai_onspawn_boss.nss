@@ -349,33 +349,30 @@ void main()
         return;
     }
 
-    if (GetResRef(OBJECT_SELF) == "lordrucar")
+    else if (GetResRef(OBJECT_SELF) == "silesianhivequ" ||
+    GetResRef(OBJECT_SELF) == "silesianthehig")
+    {
+        SetObjectVisualTransform(OBJECT_SELF, OBJECT_VISUAL_TRANSFORM_SCALE, 1.3);
+        return;
+    }
+
+    else if (GetResRef(OBJECT_SELF) == "lordrucar")
     {
         SetObjectVisualTransform(OBJECT_SELF, OBJECT_VISUAL_TRANSFORM_SCALE, 1.5);
+        return;
+    }
+
+    else if (GetResRef(OBJECT_SELF) == "chiefdeliblato" ||
+    GetResRef(OBJECT_SELF) == "silesianhivemo" ||
+    GetResRef(OBJECT_SELF) == "lordmerry")
+    {
+        SetObjectVisualTransform(OBJECT_SELF, OBJECT_VISUAL_TRANSFORM_SCALE, 2.0);
         return;
     }
 
     else if (GetResRef(OBJECT_SELF) == "kjempethemist")
     {
         SetObjectVisualTransform(OBJECT_SELF, OBJECT_VISUAL_TRANSFORM_SCALE, 3.0);
-        return;
-    }
-
-    else if (GetResRef(OBJECT_SELF) == "chiefdeliblato" || GetResRef(OBJECT_SELF) == "silesianhivemo")
-    {
-        SetObjectVisualTransform(OBJECT_SELF, OBJECT_VISUAL_TRANSFORM_SCALE, 2.0);
-        return;
-    }
-
-    else if (GetResRef(OBJECT_SELF) == "silesianhivequ" || GetResRef(OBJECT_SELF) == "silesianthehig")
-    {
-        SetObjectVisualTransform(OBJECT_SELF, OBJECT_VISUAL_TRANSFORM_SCALE, 1.3);
-        return;
-    }
-
-    else if (GetResRef(OBJECT_SELF) == "lordmerry")
-    {
-        SetObjectVisualTransform(OBJECT_SELF, OBJECT_VISUAL_TRANSFORM_SCALE, 2.0);
         return;
     }
 }

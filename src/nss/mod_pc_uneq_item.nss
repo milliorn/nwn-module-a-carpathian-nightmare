@@ -19,6 +19,7 @@
 //#include "x2_inc_intweapon"
 //#include "x3_inc_horse"
 #include "inc_mod_events"
+#include "inc_2h_ac_boost"
 
 void main()
 {
@@ -26,6 +27,8 @@ void main()
      object oPC   = GetPCItemLastUnequippedBy();
 
     PrintGPValue(oItem);
+    TwoHandBoost(oPC);
+
     // -------------------------------------------------------------------------
     //  Intelligent Weapon System
     // -------------------------------------------------------------------------

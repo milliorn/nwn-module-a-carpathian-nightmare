@@ -395,5 +395,3 @@ void NWNX_Area_SetTileAnimationLoop(object oArea, float fTileX, float fTileY, in
 
     NWNX_CallFunction(NWNX_Area, sFunc);
 }
-
-//void main() {}

@@ -6,6 +6,8 @@
 /*
     Gives the target +20 AC Bonus to Deflection,
     Armor Enchantment, Natural Armor and Dodge.
+
+    EDIT: +20 to Armor AC
 */
 //:://////////////////////////////////////////////
 //:: Created By: Andrew Nobbs
@@ -37,7 +39,7 @@ void main()
     int nDuration = GetCasterLevel(OBJECT_SELF);
     int nMetaMagic = GetMetaMagicFeat();
     effect eVis = EffectVisualEffect(495);
-    effect eAC1, eAC2, eAC3, eAC4, eAC5;
+    //effect eAC1, eAC2, eAC3, eAC4, eAC5;
     //Fire cast spell at event for the specified target
     SignalEvent(oTarget, EventSpellCastAt(OBJECT_SELF, GetSpellId(), FALSE));
     //Check for metamagic extend
@@ -46,18 +48,18 @@ void main()
          nDuration = nDuration * 2;
     }
     //Set the four unique armor bonuses
-    eAC1 = EffectACIncrease(5, AC_ARMOUR_ENCHANTMENT_BONUS);
-    eAC2 = EffectACIncrease(5, AC_DEFLECTION_BONUS);
+    effect eAC1 = EffectACIncrease(20, AC_ARMOUR_ENCHANTMENT_BONUS);
+    /*eAC2 = EffectACIncrease(5, AC_DEFLECTION_BONUS);
     eAC3 = EffectACIncrease(5, AC_DODGE_BONUS);
     eAC4 = EffectACIncrease(5, AC_NATURAL_BONUS);
-    eAC5 = EffectACIncrease(5, AC_SHIELD_ENCHANTMENT_BONUS);
+    eAC5 = EffectACIncrease(5, AC_SHIELD_ENCHANTMENT_BONUS);*/
     effect eDur = EffectVisualEffect(VFX_DUR_SANCTUARY);
 
-    effect eLink = EffectLinkEffects(eAC1, eAC2);
-    eLink = EffectLinkEffects(eLink, eAC3);
+    effect eLink = EffectLinkEffects(eAC1, eDur);
+    /*eLink = EffectLinkEffects(eLink, eAC3);
     eLink = EffectLinkEffects(eLink, eAC4);
     eLink = EffectLinkEffects(eLink, eAC5);
-    eLink = EffectLinkEffects(eLink, eDur);
+    eLink = EffectLinkEffects(eLink, eDur);*/
 
     RemoveEffectsFromSpell(oTarget, GetSpellId());
 

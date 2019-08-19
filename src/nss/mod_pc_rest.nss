@@ -26,7 +26,7 @@ void main()
             ApplyEffectToObject(DURATION_TYPE_INSTANT, eSleep, oPC);
             ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eBlind, oPC, 12.0);
             ApplyEffectToObject(DURATION_TYPE_TEMPORARY, eDarkness, oPC, 12.0);
-            ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oPC);
+            ApplyHaste(oPC);
             break;
         }
         case REST_EVENTTYPE_REST_CANCELLED:
@@ -37,7 +37,7 @@ void main()
             FloatingTextStringOnCreature("<c ó >Character Saved</c>", oPC, FALSE);
             ExecuteScript("ws_saveall_sub", oPC);
             ApplyBountyFlag(oPC);
-            ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oPC);
+            ApplyHaste(oPC);
             break;
         }
         case REST_EVENTTYPE_REST_FINISHED:
@@ -48,7 +48,7 @@ void main()
             FloatingTextStringOnCreature("<c ó >Character Saved</c>", oPC, FALSE);
             ExecuteScript("ws_saveall_sub", oPC);
             ApplyBountyFlag(oPC);
-            ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oPC);
+            ApplyHaste(oPC);
             break;
         }
     }

@@ -1,16 +1,17 @@
 #include "inc_mod_events"
+
 void main()
 {
-object  oPlayer = GetLastPlayerDied(),
-        oKiller = GetLastHostileActor(oPlayer),
-        oArea  = GetArea(oPlayer);
+    object  oPlayer = GetLastPlayerDied(),
+            oKiller = GetLastHostileActor(oPlayer),
+            oArea  = GetArea(oPlayer);
 
-string  sArea = GetTag(GetArea(oPlayer)),
-        sArea2 = GetName(oArea),
-        sName = GetName(oPlayer),
-        sName2 = GetName(oKiller);
+    string  sArea = GetTag(GetArea(oPlayer)),
+            sArea2 = GetName(oArea),
+            sName = GetName(oPlayer),
+            sName2 = GetName(oKiller);
 
-//  Reset Faction Reputation to PC
+    //  Reset Faction Reputation to PC
     SetFactionsFriendly(oPlayer);
 
     if (sArea == "Arena")
@@ -27,7 +28,7 @@ string  sArea = GetTag(GetArea(oPlayer)),
         return;
     }
 
-//  Reset the dueling PC's, auto raise the defeated PC, and shout the results of the duel
+    //  Reset the dueling PC's, auto raise the defeated PC, and shout the results of the duel
     else if (sArea == "GladiatorPit")
     {
         AssignCommand(oPlayer, ClearAllActions());
@@ -42,7 +43,7 @@ string  sArea = GetTag(GetArea(oPlayer)),
         return;
     }
 
-//  Auto Raise PC if they die in these areas
+    //  Auto Raise PC if they die in these areas
     else if (GetLocalInt(oArea, "PC_AUTO_RAISE"))
     {
         AssignCommand(oKiller, ClearAllActions(TRUE));
@@ -50,7 +51,7 @@ string  sArea = GetTag(GetArea(oPlayer)),
         return;
     }
 
-//  Check if its a PK from PvP and apply the Respawn GUI with a death VFX
+    //  Check if its a PK from PvP and apply the Respawn GUI with a death VFX
     else
     {
         ExecuteScript("sf_bounty", OBJECT_SELF);

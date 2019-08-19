@@ -19,6 +19,7 @@
 //#include "x2_inc_intweapon"
 //#include "x3_inc_horse"
 #include "inc_mod_events"
+#include "inc_2h_ac_boost"
 
 //const int ITEM_MAX_LVL = 250000;
 
@@ -30,6 +31,7 @@ void main()
     int nCost = GetGoldPieceValue(oItem);
 
     PrintGPValue(oItem);
+    TwoHandBoost(oPC);
 //    ItemLevelRestriction(oPC, oItem);
 
 //    object oPC   = GetPCItemLastEquippedBy();

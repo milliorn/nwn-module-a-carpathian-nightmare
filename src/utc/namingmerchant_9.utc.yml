@@ -184,8 +184,6 @@ Equip_ItemList:
   value:
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 2, EquippedRes: {type: resref, value: nw_cloth005}}
   - !nwn-lib.elv.es,2013-07:struct {__struct_id: 16, EquippedRes: {type: resref, value: nw_wswdg001}}
-  - !nwn-lib.elv.es,2013-07:struct {__struct_id: 8192, EquippedRes: {type: resref,
-      value: nw_wambo001}}
 FactionID: {type: word, value: 2}
 FeatList:
   type: list
@@ -223,48 +221,8 @@ ItemList:
   value:
   - !nwn-lib.elv.es,2013-07:struct
     __struct_id: 0
-    InventoryRes: {type: resref, value: nw_wbwxl001}
+    InventoryRes: {type: resref, value: nw_wambo001}
     Repos_PosX: {type: word, value: 0}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 1
-    InventoryRes: {type: resref, value: nw_it_torch001}
-    Repos_PosX: {type: word, value: 2}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 2
-    InventoryRes: {type: resref, value: nw_it_mpotion001}
-    Repos_PosX: {type: word, value: 3}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 3
-    InventoryRes: {type: resref, value: nw_it_mpotion001}
-    Repos_PosX: {type: word, value: 4}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 4
-    InventoryRes: {type: resref, value: nw_it_mpotion001}
-    Repos_PosX: {type: word, value: 5}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 5
-    InventoryRes: {type: resref, value: nw_it_sparscr102}
-    Repos_PosX: {type: word, value: 6}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 6
-    InventoryRes: {type: resref, value: nw_it_sparscr105}
-    Repos_PosX: {type: word, value: 7}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 7
-    InventoryRes: {type: resref, value: nw_it_sparscr108}
-    Repos_PosX: {type: word, value: 8}
-    Repos_Posy: {type: word, value: 0}
-  - !nwn-lib.elv.es,2013-07:struct
-    __struct_id: 8
-    InventoryRes: {type: resref, value: nw_it_sparscr109}
-    Repos_PosX: {type: word, value: 9}
     Repos_Posy: {type: word, value: 0}
 LastName:
   type: cexolocstr

@@ -24,7 +24,31 @@ void main()
         return;
     }
 
+    else if (GetHitDice(oPC) <= 15)
+    {
+        FloatingTextStringOnCreature("<có  >Free Party Portal travel until level 15."
+        + "  After that the fee is 10,000 gold pieces.", oPC);
+        ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, oPC);
+        DelayCommand(1.5, AssignCommand(oPC, JumpToLocation(iTarget)));
+        return;
+    }
+
+    else if (GetGold(oPC) <= 10000)
+    {
+        FloatingTextStringOnCreature("<có  >You do not have 10,000 gold pieces "
+        + "to use the Party Portal.", oPC, FALSE);
+        return;
+    }
+
     else
-    DelayCommand(1.5,(AssignCommand(oPC, JumpToLocation(iTarget))));
-    ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, oPC);
+    {
+        TakeGoldFromCreature(10000, oPC, TRUE);
+        DelayCommand(1.5,(AssignCommand(oPC, JumpToLocation(iTarget))));
+        ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, oPC);
+    }
 }
+
+
+
+
+

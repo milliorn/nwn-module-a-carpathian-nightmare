@@ -7,11 +7,6 @@ void main()
 
     AssignCommand(oPC, ClearAllActions(TRUE));
 
-    /*if (!GetIsObjectValid(GetNearestObjectByTag("MerryPriest", oMerry)))
-    {
-        CreateObject(OBJECT_TYPE_CREATURE, "merrypriest", GetLocation(oMerry));
-    }*/
-
     if (OBJECT_INVALID == GetNearestObjectByTag("MerryPriest", oMerry))
     {
         CreateObject(OBJECT_TYPE_CREATURE, "merrypriest", GetLocation(oMerry));

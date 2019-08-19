@@ -178,10 +178,19 @@ Categories:
         Text:
           type: cexolocstr
           value:
-            0: "July 23rd, 2019\n\nParty Portal restrictions removed.  In a coming
-              update I will put in a new way to portal in Astral.\n\nList of scripts
-              that were optimized: NW_CH_AC4, nw_c2_default3, nw_c2_default4, \n\n\nJuly
-              20th, 2019\n\nIncreased difficulty Merry and Cozia Hive Mother.\n\nAdded
+            0: "August 7th, 2019\n\nEMA can only be accessed by Cleric, Druid, Wizard,
+              and Sorcerer.\n\nTweaks to Chat script.\n\nCozia boss difficulty increased.\n\nParty
+              Portal redone.  Now charges a fee of 10,000gp if your level 15+.\n\n\nAugust
+              2nd, 2019\n\nShield AC +5 is given to a PC if the PC equips a weapon
+              that is one size larger than the PC size and has no shield equipped.
+              \ You will need to re-equip the item after you rest, death, level up,
+              log in, or dispelled.  Rule can be found in Ruleset - Items\n\nJuly
+              30th, 2019\n\nBard, Cleric, and Druids can now take all Epic Spell feats.\n\nEpic
+              Spell: Epic Mage Armor is now +20 Armor AC.\n\n\nJuly 24th, 2019\n\nArea
+              cleanup scripts optimized.\n\n\nJuly 23rd, 2019\n\nParty Portal restrictions
+              removed.  In a coming update I will put in a new way to portal in Astral.\n\nList
+              of scripts that were optimized: NW_CH_AC4, nw_c2_default3, nw_c2_default4,
+              \n\n\nJuly 20th, 2019\n\nIncreased difficulty Merry and Cozia Hive Mother.\n\nAdded
               Character sheet info to Gauntlet bosses.\n\nAdjusted !lfg command to
               display legendary levels.\n\nSocket gems and socket items are now two
               separate loot tables.\n\n\nJuly 18th, 2019\n\nRavana boss difficulty
@@ -192,13 +201,7 @@ Categories:
               on.\n\nRemoved the spam messages in the Sequencer item when activated.
               \ Now just sends a message to log.\n\nMoved Merry's Evil Blight vfx
               to when you cast the spell onto the item and off of on-hit.  Causes
-              fps drops along with players saying it causes issues when playing.\n\n\nJuly
-              13th, 2019\n\nAdded a 50% chance on all the random coloring for area
-              maps aka the fog, moon and sun coloring.\n\nAdded random chance of wind
-              and other weather effects to outdoor maps.\n\nNew Animal Companion and
-              Familiar Buff script in place.  You access by talking to your pet and
-              asking it to buff up.  Details of the buff in the journal under Ruleset
-              - Feats.\n\nFixed issue with Blackguard Create Undead feat."
+              fps drops along with players saying it causes issues when playing."
     Name:
       type: cexolocstr
       value:
@@ -486,11 +489,15 @@ Categories:
 
               Disarm & Improved Disarm: Weapon falls into Targets inventory.
 
+              Epic Spell: Cleric, and can now take all Epic Spells.  May be unavailable for these classes in Legendary Levels.
+
               Epic Spell: Dragon Knight improved.
 
               Epic Spell: Greater Ruin damage is now 35d6 + Spellcraft skill points.
 
-              Epic Spell: Hellball is now 40 meters in distance.  Damage is d6(caster level / 2).Epic Spell: Epic mage armor gains +5 Shield AC
+              Epic Spell: Hellball is now 40 meters in distance.  Damage is d6(caster level / 2).
+
+              Epic Spell: Epic Mage Armor is +20 Armor Class.  Pale Master does not have access to this.
 
               Epic Spell: Mummy Dust improved.
 
@@ -520,6 +527,8 @@ Categories:
           value:
             0: |-
               Item Ruleset:
+
+              Shield AC +5 is given to a PC if the PC equips a weapon that is one size larger than the PC size and has no shield equipped.  You may need to re-equip the item after you rest, death, level up, log in, or dispelled.  Make sure you equip the item first before you buff because it will remove all AC buffs when you un-equip the item.
 
               Items sold are only given 1/10 of the item value.
 

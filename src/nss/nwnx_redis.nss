@@ -5857,13 +5857,13 @@ int NWNX_Redis_XCLAIM(
 }
 
 int NWNX_Redis_XPENDING(
-    string key,
-    string group,
-    string start = "",
-    string end = "",
-    // Redis type: integer
-    int count = 0,
-    string consumer = ""
+	string key,
+	string group,
+	string start = "",
+	string end = "",
+	// Redis type: integer
+	int count = 0,
+	string consumer = ""
 ) {
   NWNX_PushArgumentString("NWNX_Redis", "Deferred", "XPENDING");
   NWNX_PushArgumentString("NWNX_Redis", "Deferred", key);

@@ -33,15 +33,14 @@ void main()
     }
 
     string sOnline = " with " + IntToString(iPCTot) + " players online.";
-
     string sWebhookUrl = sDiscordHook;
     string sPCName = "Player: " + GetName(oPC) + " - Account: " + GetPCPlayerName(oPC);
     string sMessage = sPCName + " - logged in" + sOnline;
 
-//  Send a message to ACN Discord Channel of the client logging in.
+    //  Send a message to ACN Discord Channel of the client logging in.
     NWNX_WebHook_SendWebHookHTTPS("discordapp.com", sWebhookUrl, sMessage , "Server");
 
-//  Load Server Journal Entries
+    //  Load Server Journal Entries
     AddJournalQuestEntry("JOURNAL_ACN_FAQ", 1, oPC, TRUE, TRUE, FALSE);
     AddJournalQuestEntry("JOURNAL_UPDATES", 1, oPC, TRUE, TRUE, FALSE);
     AddJournalQuestEntry("JOURNAL_NERFS_FEATS", 1, oPC,TRUE, TRUE, FALSE);
@@ -66,23 +65,17 @@ void main()
         oItem = GetNextItemInInventory(oPC);
     }
 */
-//  Redundant check to Boot PC if they have an illegal character and somehow bypassed the ELC
+    //  Redundant check to Boot PC if they have an illegal character and somehow bypassed the ELC
     if(GetSubRace(oPC) == "ILLEGAL_CHARACTER")
     {
         NWNX_Administration_DeletePlayerCharacter(oPC , FALSE);
         return;
     }
 
-//  Run DM Verification code
+    //  Run DM Verification code
     if (GetIsDM(oPC))
     {
-        if (sCDKEY == "QR4JFL9A"    ||  //milliorn
-            sCDKEY == "QRMXQ6GM"    ||  //milliorn
-            sCDKEY == "QR7N9CLL"    ||  //Cain
-            sCDKEY == "QR6MNHFV"    ||  //sakuta
-            sCDKEY == "QR4H676X"    ||  //Vermillion
-            sCDKEY == "Q6UY7GCH"    ||  //Methonash
-            sCDKEY == "Q6UEVVE4")       //sixonfive
+        if (GetIsGM(oPC))
         {
             SendMessageToAllDMs("<c ó >Entering DM's CD Key VERIFIED: </c>" +
             sName + "<c ó > Account: </c>" + GetPCPlayerName(GetEnteringObject())+
@@ -104,56 +97,55 @@ void main()
             return;
         }
     }
-
-//  Redundant DM check to break the script if its a DM.
+    //  Redundant DM check to break the script if its a DM.
     if (!GetIsPC(oPC)) return;
 
-//  Only show IP of login to DM channel
+    //  Only show IP of login to DM channel
     SendMessageToAllDMs(GetPCIPAddress(oPC));
 
-//  Write a server log of the entering PC
+    //  Write a server log of the entering PC
     string sBIC = NWNX_Player_GetBicFileName(oPC);
 
     WriteTimestampedLogEntry("Player: " + sName + " Account: " + sAccount + " ID: "
     + sCDKEY + " IP: " + GetPCIPAddress(oPC) + " BIC: " + sBIC);
 
-//  Verify PC Name isn't banned for being offensive
+    //  Verify PC Name isn't banned for being offensive
     NameChecker(oPC);
 
-//  Check if the player has a legal character - ELC Check if new and do a new player strip down
+    //  Check if the player has a legal character - ELC Check if new and do a new player strip down
     if (!GetIsObjectValid(oCarpGem))
     {
         if(!GetIsCharacterLegal(oPC)) return;
         else StripPC(oPC);
     }
 
-//  Check for duped items from the radial crafting menu
+    //  Check for duped items from the radial crafting menu
     PurifyAllItems(oPC, TRUE, TRUE);
 
-//  Notify Server on Shout of a Login.
+    //  Notify Server on Shout of a Login.
     SpeakString("<c ó >Player: <cfÌþ>" + sName +
     "<c ó > - Account: <cfÌþ>" + sAccount +
     "<c ó > - ID: <cfÌþ>" + sCDKEY, TALKVOLUME_SHOUT);
 
-//  Automated visual upon PC entering the module casted on the starting location.
+    //  Automated visual upon PC entering the module casted on the starting location.
     DelayCommand(6.0, ApplyEffectAtLocation(DURATION_TYPE_INSTANT, EffectVisualEffect(VFX_FNF_TIME_STOP), GetStartingLocation()));
 
-//  Apply Auto-Haste
-    ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oPC);
+    //  Apply Auto-Haste
+    ApplyHaste(oPC);
 
-//  Load PC HP's
+    //  Load PC HP's
     HitPointsAntiCheatOnEnter(oPC);
 
-//  Load Bounty System Flag
+    //  Load Bounty System Flag
     ApplyBountyFlag(oPC);
 
-//  Stop Custom pets from spamming
+    //  Stop Custom pets from spamming
     SetLocalInt(oPC, "SUMMONSPAM", TRUE);
     DelayCommand(1.0, SetLocalInt(oPC, "SUMMONSPAM", FALSE));
 
-//  Apply subraces
+    //  Apply subraces
     ACN_SubRace_OnEnter(oPC);
 
-//  Chat Cooldown Var
+    //  Chat Cooldown Var
     DelayCommand(0.9, DeleteLocalInt(oPC, "PC_CHAT"));
 }

@@ -2291,6 +2291,536 @@ Placeable List:
     X: {type: float, value: 40.0694}
     Y: {type: float, value: 2.4646}
     Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 4}
+    Appearance: {type: dword, value: 472}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 84596
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 84590
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 1007}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: X2_PLC_SCIRCLE}
+    TemplateResRef: {type: resref, value: x2_plc_scircle}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 40.0}
+    Y: {type: float, value: 30.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 826}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14725
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 111349
+      value: {}
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 0}
+    PortraitId: {type: word, value: 1226}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 1}
+    Tag: {type: cexostr, value: x3_plc_slightr}
+    TemplateResRef: {type: resref, value: x3_plc_slightr}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 0}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 40.0}
+    Y: {type: float, value: 30.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 4}
+    Appearance: {type: dword, value: 159}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14672
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14673
+      value:
+        0: Portal - Baator
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: port_baator}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 517}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: portal_baator_1}
+    TemplateResRef: {type: resref, value: plc_magicblue}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 40.0}
+    Y: {type: float, value: 30.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 140}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14563
+      value:
+        0: |-
+          Mur-Zhagul's Cave
+
+
+          Mur-Zhagul's gear can be found here.  The items have +1 to Regeneration on them.  You find them by hunting down and killing the Green Troll.  Green Troll randomly spawns everywhere in the map.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14561
+      value:
+        0: Sign - Mur-Zhagul's Cave
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 498}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SignMurZhagulsCave}
+    TemplateResRef: {type: resref, value: plc_billboard3}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 8.0}
+    Y: {type: float, value: 139.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 140}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14563
+      value:
+        0: |-
+          Asterius Labyrinth
+
+
+          Fight your way through a labyrinth.  Unlock doors with switches to get through to the Stronghold.  Defeat Asterius in the stronghold to gain his Quiver.  Asterius Quiver can be used on ranged ammo to replenish the item to its max stack size.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14561
+      value:
+        0: Sign - Asterius Labyrinth
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 498}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: SignAsteriusLabyrinth}
+    TemplateResRef: {type: resref, value: plc_billboard3}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 71.0}
+    Y: {type: float, value: 139.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 140}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: 1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14563
+      value:
+        0: |-
+          Merry's Cemetery
+
+
+          Inside the cemetery you will find the tomb of Merry.  Inside the tomb you need to collect his bones from specific mummies and put his bones back into his coffin.  Reward for this is Merry's Finger that you use on your weapon.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14561
+      value:
+        0: Sign - Merry's Cemetery
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 498}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: MerchantsShingle3}
+    TemplateResRef: {type: resref, value: plc_billboard3}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 1.0}
+    Y: {type: float, value: 69.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 140}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -1.5708}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14563
+      value:
+        0: |-
+          Cozia Woods
+
+
+          Cozia Woods has a grotto that has a mother spider.  Defeating this mother will grant you a Rod of Arachnid.
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14561
+      value:
+        0: Cozia Woods
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 498}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: MerchantsShingle3}
+    TemplateResRef: {type: resref, value: plc_billboard3}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 79.0}
+    Y: {type: float, value: 69.0}
+    Z: {type: float, value: 0.0}
+  - !nwn-lib.elv.es,2013-07:struct
+    __struct_id: 9
+    AnimationState: {type: byte, value: 0}
+    Appearance: {type: dword, value: 140}
+    AutoRemoveKey: {type: byte, value: 0}
+    Bearing: {type: float, value: -0.0}
+    BodyBag: {type: byte, value: 0}
+    CloseLockDC: {type: byte, value: 0}
+    Conversation: {type: resref, value: ''}
+    CurrentHP: {type: short, value: 15}
+    Description:
+      type: cexolocstr
+      str_ref: 14563
+      value: {}
+    DisarmDC: {type: byte, value: 15}
+    Faction: {type: dword, value: 1}
+    Fort: {type: byte, value: 16}
+    HP: {type: short, value: 15}
+    Hardness: {type: byte, value: 5}
+    HasInventory: {type: byte, value: 0}
+    Interruptable: {type: byte, value: 1}
+    KeyName: {type: cexostr, value: ''}
+    KeyRequired: {type: byte, value: 0}
+    LocName:
+      type: cexolocstr
+      str_ref: 14561
+      value:
+        0: Sign - Baator
+    Lockable: {type: byte, value: 0}
+    Locked: {type: byte, value: 0}
+    OnClick: {type: resref, value: ''}
+    OnClosed: {type: resref, value: ''}
+    OnDamaged: {type: resref, value: ''}
+    OnDeath: {type: resref, value: ''}
+    OnDisarm: {type: resref, value: ''}
+    OnHeartbeat: {type: resref, value: ''}
+    OnInvDisturbed: {type: resref, value: ''}
+    OnLock: {type: resref, value: ''}
+    OnMeleeAttacked: {type: resref, value: ''}
+    OnOpen: {type: resref, value: ''}
+    OnSpellCastAt: {type: resref, value: ''}
+    OnTrapTriggered: {type: resref, value: ''}
+    OnUnlock: {type: resref, value: ''}
+    OnUsed: {type: resref, value: ''}
+    OnUserDefined: {type: resref, value: ''}
+    OpenLockDC: {type: byte, value: 18}
+    Plot: {type: byte, value: 1}
+    PortraitId: {type: word, value: 498}
+    Ref: {type: byte, value: 0}
+    Static: {type: byte, value: 0}
+    Tag: {type: cexostr, value: MerchantsShingle3}
+    TemplateResRef: {type: resref, value: plc_billboard3}
+    TrapDetectDC: {type: byte, value: 0}
+    TrapDetectable: {type: byte, value: 1}
+    TrapDisarmable: {type: byte, value: 1}
+    TrapFlag: {type: byte, value: 0}
+    TrapOneShot: {type: byte, value: 1}
+    TrapType: {type: byte, value: 0}
+    Type: {type: byte, value: 0}
+    Useable: {type: byte, value: 1}
+    Will: {type: byte, value: 0}
+    X: {type: float, value: 36.0}
+    Y: {type: float, value: 31.0}
+    Z: {type: float, value: 0.0}
 SoundList:
   type: list
   value: []
@@ -2438,14 +2968,15 @@ WaypointList:
     LocalizedName:
       type: cexolocstr
       str_ref: 14814
-      value: {}
+      value:
+        0: Moravian Gate to Carpathia
     MapNote:
       type: cexolocstr
       str_ref: 14815
       value:
         0: Carpathia
     MapNoteEnabled: {type: byte, value: 1}
-    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    Tag: {type: cexostr, value: NW_MAP_MoravianGatetoCarpathi}
     TemplateResRef: {type: resref, value: nw_mapnote001}
     XOrientation: {type: float, value: 0.0}
     XPosition: {type: float, value: 45.0}
@@ -2463,14 +2994,15 @@ WaypointList:
     LocalizedName:
       type: cexolocstr
       str_ref: 14814
-      value: {}
+      value:
+        0: Moravian Gate to Gauntlet
     MapNote:
       type: cexolocstr
       str_ref: 14815
       value:
         0: Gauntlet
     MapNoteEnabled: {type: byte, value: 1}
-    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    Tag: {type: cexostr, value: NW_MAP_MoravianGatetoGauntlet}
     TemplateResRef: {type: resref, value: nw_mapnote001}
     XOrientation: {type: float, value: 0.0}
     XPosition: {type: float, value: 35.0}
@@ -2488,14 +3020,15 @@ WaypointList:
     LocalizedName:
       type: cexolocstr
       str_ref: 14814
-      value: {}
+      value:
+        0: Moravian Gate to Mur-Zhagul's Cave
     MapNote:
       type: cexolocstr
       str_ref: 14815
       value:
         0: Mur-Zhagul's Cave
     MapNoteEnabled: {type: byte, value: 1}
-    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    Tag: {type: cexostr, value: NW_MAP_MoravianGatetoMurZhag}
     TemplateResRef: {type: resref, value: nw_mapnote001}
     XOrientation: {type: float, value: 0.0}
     XPosition: {type: float, value: 9.0}
@@ -2513,14 +3046,15 @@ WaypointList:
     LocalizedName:
       type: cexolocstr
       str_ref: 14814
-      value: {}
+      value:
+        0: Moravian Gate to Asterius Labyrinth
     MapNote:
       type: cexolocstr
       str_ref: 14815
       value:
         0: Asterius Labyrinth
     MapNoteEnabled: {type: byte, value: 1}
-    Tag: {type: cexostr, value: NW_MAPNOTE001}
+    Tag: {type: cexostr, value: NW_MAP_MoravianGatetoAsterius}
     TemplateResRef: {type: resref, value: nw_mapnote001}
     XOrientation: {type: float, value: 0.0}
     XPosition: {type: float, value: 71.0}

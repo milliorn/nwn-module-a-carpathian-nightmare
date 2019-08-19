@@ -70,11 +70,14 @@ void PurifyItem(object oItem, object oPC, int nIsEntering)
         //slightly shorter message.
 
         if (nIsEntering)
-        sDupeReport = "Crafting Duplicate: '" + GetName(oItem) + "' detected on entering player: "+GetName(oPC)+".  Item destroyed.";
-        else sDupeReport="Crafting Duplicate: '" + GetName(oItem) + "' detected on player: " + GetName(oPC) + ".  Item Destroyed.";
-        DestroyObject(oItem);
-        WriteTimestampedLogEntry(sDupeReport);
-        SendMessageToAllDMs(sDupeReport);
+            sDupeReport = "Crafting Duplicate: '" + GetName(oItem) + "' detected on entering player: "
+            + GetName(oPC) + ".  Item destroyed.";
+        else
+            sDupeReport = "Crafting Duplicate: '" + GetName(oItem) + "' detected on player: "
+            + GetName(oPC) + ".  Item Destroyed.";
+            DestroyObject(oItem);
+            WriteTimestampedLogEntry(sDupeReport);
+            SendMessageToAllDMs(sDupeReport);
     }
 }
 
@@ -132,7 +135,7 @@ void SendMsgToFactionWithinDistance(object oPC, string sMessage, float fDist)
         {
             DelayCommand(0.3, FloatingTextStringOnCreature(sMessage, oFaction));
         }
-            oFaction = GetNextFactionMember(oPC);
+        oFaction = GetNextFactionMember(oPC);
     }
 }
 
@@ -426,6 +429,13 @@ void StripPC(object oPC)
     SetXP(oPC, 1);
 }
 
+//  Apply Permanent Haste
+void ApplyHaste(object oPC);
+void ApplyHaste(object oPC)
+{
+    ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oPC);
+}
+
 //  Raise a PC with full HP, Spells, Feats
 void Raise(object oPlayer);
 void Raise(object oPlayer)
@@ -435,7 +445,7 @@ void Raise(object oPlayer)
 
         ApplyEffectToObject(DURATION_TYPE_INSTANT,EffectResurrection(),oPlayer);
         ApplyEffectToObject(DURATION_TYPE_INSTANT,EffectHeal(GetMaxHitPoints(oPlayer)), oPlayer);
-        ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oPlayer);
+        ApplyHaste(oPlayer);
 
         //Search for negative effects
         while(GetIsEffectValid(eBad))
@@ -515,13 +525,12 @@ void ApplyPenalty(object oDead)
     }
 }
 
-// Determine Base Item Type
+//  Return TRUE if its a weapon that can be disarmed
 int nGetIsWeapon(object oItem);
 int nGetIsWeapon(object oItem)
 {
     switch (GetBaseItemType(oItem))
     {
-
         case BASE_ITEM_BASTARDSWORD:
         case BASE_ITEM_BATTLEAXE:
         case BASE_ITEM_CLUB:
@@ -559,10 +568,8 @@ int nGetIsWeapon(object oItem)
         case BASE_ITEM_TWOBLADEDSWORD:
         case BASE_ITEM_WARHAMMER:
         case BASE_ITEM_WHIP:
-
         {
             return TRUE;
-
         }
     }
     return FALSE;
@@ -607,24 +614,24 @@ void NoTrapStacking(object oPC, object oItem)
     int iTrapSpacing = FloatToInt(fTrapSpacing);
 
     if (iTrapSpacing <= 2)
-        {
-            AssignCommand(oPC, ClearAllActions(TRUE));
-            SetTrapActive(oNewTrap, FALSE);
-            SetTrapDetectable(oNewTrap, FALSE);
-            SetTrapDetectDC(oNewTrap, 0);
-            SetTrapDisabled(oNewTrap);
-            SetTrapDisarmable(oNewTrap, TRUE);
-            SetTrapDisarmDC(oNewTrap, 0);
-            SetTrapRecoverable(oNewTrap, TRUE);
+    {
+        AssignCommand(oPC, ClearAllActions(TRUE));
+        SetTrapActive(oNewTrap, FALSE);
+        SetTrapDetectable(oNewTrap, FALSE);
+        SetTrapDetectDC(oNewTrap, 0);
+        SetTrapDisabled(oNewTrap);
+        SetTrapDisarmable(oNewTrap, TRUE);
+        SetTrapDisarmDC(oNewTrap, 0);
+        SetTrapRecoverable(oNewTrap, TRUE);
 
-            CreateItemOnObject(sTrapResRef, oPC, 1);
+        CreateItemOnObject(sTrapResRef, oPC, 1);
 
-            FloatingTextStringOnCreature("Traps cannot be stacked", oPC, FALSE);
+        FloatingTextStringOnCreature("Traps cannot be stacked", oPC, FALSE);
 
-            SendMessageToAllDMs("<cþf >Player: </c>"+sName+
-            "<cþf > Account: </c>"+sLogInName+"<cþf > - ID: </c>"+sCDKEY+
-            "<cþf > has tried to stack traps!");
-        }
+        SendMessageToAllDMs("<cþf >Player: </c>"+sName+
+        "<cþf > Account: </c>"+sLogInName+"<cþf > - ID: </c>"+sCDKEY+
+        "<cþf > has tried to stack traps!");
+    }
 }
 
 //  Check items being dropped and determine what action to take
@@ -678,10 +685,12 @@ void CheckDroppedItem(object oItem, object oPC)
     }
 }
 
+//  Insert a random word into the Bounty Hunter Message
+string PVP_GetRandomShoutString();
 string PVP_GetRandomShoutString()
 {
     string sAction;
-    switch (Random(25))
+    switch (Random(24))
     {
         case 0: sAction = "pk'd"; break;
         case 1: sAction = "destroyed"; break;
@@ -723,7 +732,8 @@ void RemoveAllEffects(object oCreature)
         RemoveEffect(oCreature,eCurrentEffect);
         eCurrentEffect = GetNextEffect(oCreature);
     }
-        ApplyEffectToObject(DURATION_TYPE_PERMANENT, SupernaturalEffect(EffectHaste()), oCreature);
+
+    ApplyHaste(oCreature);
 }
 
 //  Max HP script by Ynnead.  Currently the .ini file for the server or nwnx
@@ -791,4 +801,22 @@ void OnLevel_MaxHP(object oPC)
     NWNX_Creature_SetMaxHitPointsByLevel(oPC, GetHitDice(oPC), nClassDie);
 }
 
-/*void main() {}
+//  CD Verification for ACN Staff
+int GetIsGM(object oPC);
+int GetIsGM(object oPC)
+{
+    string sCDKEY = GetPCPublicCDKey(oPC, TRUE);
+
+    if(sCDKEY == "QR4JFL9A" ||  //milliorn
+    sCDKEY == "QRMXQ6GM"    ||  //milliorn
+    sCDKEY == "QR7N9CLL"    ||  //Cain
+    sCDKEY == "QR6MNHFV"    ||  //sakuta
+    sCDKEY == "QR4H676X"    ||  //Vermillion
+    sCDKEY == "Q6UY7GCH"    ||  //Methonash
+    sCDKEY == "Q6UEVVE4")       //sixonfive
+    {
+        return TRUE;
+    }
+
+    else return FALSE;
+}
